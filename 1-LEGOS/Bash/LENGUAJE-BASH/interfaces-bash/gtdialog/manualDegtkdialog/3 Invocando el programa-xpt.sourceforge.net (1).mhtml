@@ -1,0 +1,1940 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://xpt.sourceforge.net/techdocs/language/gtkdialog/gtkde03-GtkdialogUserManual/ar01s04.html#_3_1_examples
+Subject: 3 Invocando el programa
+Date: Mon, 6 Mar 2023 19:45:07 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----"
+
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: text/html
+Content-ID: <frame-0028092181D285ADE13C1F2068C939D9@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://xpt.sourceforge.net/techdocs/language/gtkdialog/gtkde03-GtkdialogUserManual/ar01s04.html#_3_1_examples
+
+<!--?xml version=3D"1.0" encoding=3D"UTF-8" standalone=3D"no"?--><!DOCTYPE =
+html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/=
+xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3.org/1999/x=
+html" class=3D"translated-ltr"><head><meta http-equiv=3D"Content-Type" cont=
+ent=3D"text/html; charset=3DUTF-8"><meta name=3D"keywords" content=3D"the l=
+abel widget action button can gtkdialog with and file program checkbox inpu=
+t item for this variable command entry state will are dialog pixmap use def=
+ault text visible example have when exit one user define not which directiv=
+e menu menuitem name next pushbutton vbox any but disabl home how menubar">=
+<meta name=3D"summary" content=3D"the label widget action button can gtkdia=
+log with and file program checkbox input item for this variable command ent=
+ry state will are dialog pixmap use default text visible example have when =
+exit one user define not which directive menu menuitem name next pushbutton=
+ vbox any but disabl home how menubar"><title>3 Invocando el programa</titl=
+e><link rel=3D"stylesheet" href=3D"https://xpt.sourceforge.net/asciidoc/sty=
+lesheets/docbook-xsl.css" type=3D"text/css"><meta name=3D"generator" conten=
+t=3D"DocBook XSL Stylesheets V1.71.0"><link rel=3D"start" href=3D"https://x=
+pt.sourceforge.net/techdocs/language/gtkdialog/gtkde03-GtkdialogUserManual/=
+index.html" title=3D"Manual de usuario de Gtkdialog"><link rel=3D"up" href=
+=3D"https://xpt.sourceforge.net/techdocs/language/gtkdialog/gtkde03-Gtkdial=
+ogUserManual/index.html" title=3D"Manual de usuario de Gtkdialog"><link rel=
+=3D"prev" href=3D"https://xpt.sourceforge.net/techdocs/language/gtkdialog/g=
+tkde03-GtkdialogUserManual/ar01s03.html" title=3D"2. Introducci=C3=B3n"><li=
+nk rel=3D"next" href=3D"https://xpt.sourceforge.net/techdocs/language/gtkdi=
+alog/gtkde03-GtkdialogUserManual/ar01s05.html" title=3D"4 widgets"><link ty=
+pe=3D"text/css" rel=3D"stylesheet" charset=3D"UTF-8" href=3D"https://www.gs=
+tatic.com/_/translate_http/_/ss/k=3Dtranslate_http.tr.cYEbrOmw59Q.L.W.O/d=
+=3D0/rs=3DAN8SPfpU282joXDlbkUblMtWLWoZn4bb2g/m=3Del_main_css"></head><body>=
+<div class=3D"navheader"><table width=3D"100%" summary=3D"Navigation header=
+"><tbody><tr><td width=3D"20%" align=3D"left"><a accesskey=3D"p" href=3D"ht=
+tps://xpt.sourceforge.net/techdocs/language/gtkdialog/gtkde03-GtkdialogUser=
+Manual/ar01s03.html"><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;">Anterior</font></font></a>&nbsp;</td><th widt=
+h=3D"60%" align=3D"center">&nbsp;</th><td width=3D"20%" align=3D"right">&nb=
+sp;<a accesskey=3D"n" href=3D"https://xpt.sourceforge.net/techdocs/language=
+/gtkdialog/gtkde03-GtkdialogUserManual/ar01s05.html"><font style=3D"vertica=
+l-align: inherit;"><font style=3D"vertical-align: inherit;">Pr=C3=B3ximo</f=
+ont></font></a></td></tr></tbody></table><hr></div><div class=3D"section" l=
+ang=3D"en" xml:lang=3D"en"><div class=3D"titlepage"><div><div><h2 class=3D"=
+title" style=3D"clear: both"><a id=3D"_3_invoking_the_program"></a><font st=
+yle=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">3=
+ Invocando el programa</font></font></h2></div></div></div><div class=3D"se=
+ction" lang=3D"en" xml:lang=3D"en"><div class=3D"titlepage"><div><div><h3 c=
+lass=3D"title"><a id=3D"_3_1_examples"></a><font style=3D"vertical-align: i=
+nherit;"><font style=3D"vertical-align: inherit;">3.1 Ejemplos</font></font=
+></h3></div></div></div><p><font style=3D"vertical-align: inherit;"><font s=
+tyle=3D"vertical-align: inherit;">Nuestro primer programa de ejemplo muestr=
+a c=C3=B3mo llamar a </font></font><span class=3D"emphasis"><em><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">'gtk=
+dialog'</font></font></em></span><font style=3D"vertical-align: inherit;"><=
+font style=3D"vertical-align: inherit;"> desde un script BASH.</font></font=
+></p><pre class=3D"literallayout"><font style=3D"vertical-align: inherit;">=
+<font style=3D"vertical-align: inherit;">#! </font><font style=3D"vertical-=
+align: inherit;">/bin/bash</font></font></pre><pre class=3D"literallayout">=
+<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
+erit;">exportar MAIN_DIALOG=3D'</font></font><font></font><font style=3D"ve=
+rtical-align: inherit;"><font style=3D"vertical-align: inherit;">
+ &lt;vbox&gt;</font></font><font></font><font style=3D"vertical-align: inhe=
+rit;"><font style=3D"vertical-align: inherit;">
+  &lt;texto&gt;</font></font><font></font><font style=3D"vertical-align: in=
+herit;"><font style=3D"vertical-align: inherit;">
+    &lt;label&gt;Esta es una etiqueta...&lt;/label&gt;</font></font><font><=
+/font><font style=3D"vertical-align: inherit;"><font style=3D"vertical-alig=
+n: inherit;">
+  &lt;/texto&gt;</font></font><font></font><font style=3D"vertical-align: i=
+nherit;"><font style=3D"vertical-align: inherit;">
+  &lt;hbox&gt;</font></font><font></font><font style=3D"vertical-align: inh=
+erit;"><font style=3D"vertical-align: inherit;">
+   &lt;bot=C3=B3n ok&gt;&lt;/bot=C3=B3n&gt;</font></font><font></font><font=
+ style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;=
+">
+   &lt;bot=C3=B3n cancelar&gt;&lt;/bot=C3=B3n&gt;</font></font><font></font=
+><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: in=
+herit;">
+  &lt;/hbox&gt;</font></font><font></font><font style=3D"vertical-align: in=
+herit;"><font style=3D"vertical-align: inherit;">
+ &lt;/vbox&gt;'</font></font></pre><pre class=3D"literallayout"><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">gtkd=
+ialog --programa MAIN_DIALOG</font></font></pre><p><font style=3D"vertical-=
+align: inherit;"><font style=3D"vertical-align: inherit;">Este ejemplo util=
+iza una forma muy sencilla de abrir un cuadro de di=C3=A1logo. </font><font=
+ style=3D"vertical-align: inherit;">Almacenamos la descripci=C3=B3n del cua=
+dro de di=C3=A1logo en la variable de entorno </font></font><span class=3D"=
+emphasis"><em><font style=3D"vertical-align: inherit;"><font style=3D"verti=
+cal-align: inherit;">'MAIN_DIALOG'</font></font></em></span><font style=3D"=
+vertical-align: inherit;"><font style=3D"vertical-align: inherit;"> que se =
+exporta a los procesos secundarios con BASH </font></font><span class=3D"em=
+phasis"><em><font style=3D"vertical-align: inherit;"><font style=3D"vertica=
+l-align: inherit;">'export'</font></font></em></span><font style=3D"vertica=
+l-align: inherit;"><font style=3D"vertical-align: inherit;">=20
+incorporado. </font><font style=3D"vertical-align: inherit;">Luego llamamos=
+ al programa </font></font><span class=3D"emphasis"><em><font style=3D"vert=
+ical-align: inherit;"><font style=3D"vertical-align: inherit;">'gtkdialog'<=
+/font></font></em></span><font style=3D"vertical-align: inherit;"><font sty=
+le=3D"vertical-align: inherit;"> con la opci=C3=B3n </font></font><span cla=
+ss=3D"emphasis"><em><font style=3D"vertical-align: inherit;"><font style=3D=
+"vertical-align: inherit;">'=E2=80=94program'</font></font></em></span><fon=
+t style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit=
+;">=20
+seguida del nombre de la variable que contiene la descripci=C3=B3n del cuad=
+ro de di=C3=A1logo. </font><font style=3D"vertical-align: inherit;">Es simp=
+le y f=C3=A1cil escribir scripts BASH de esta manera.</font></font></p><p><=
+font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inhe=
+rit;">Se puede usar un m=C3=A9todo de llamada similar cuando se necesita la=
+ entrada del usuario. </font><font style=3D"vertical-align: inherit;">El
+  </font></font><span class=3D"emphasis"><em><font style=3D"vertical-align:=
+ inherit;"><font style=3D"vertical-align: inherit;">'gtkdialog'</font></fon=
+t></em></span><font style=3D"vertical-align: inherit;"><font style=3D"verti=
+cal-align: inherit;"> env=C3=ADa el estado de los widgets a la salida est=
+=C3=A1ndar al salir y as=C3=AD es como podemos obtener la entrada del usuar=
+io para el programa BASH. </font><font style=3D"vertical-align: inherit;">E=
+l siguiente c=C3=B3digo de ejemplo muestra el proceso de lectura.</font></f=
+ont></p><pre class=3D"literallayout"><font style=3D"vertical-align: inherit=
+;"><font style=3D"vertical-align: inherit;">#! </font><font style=3D"vertic=
+al-align: inherit;">/bin/bash</font></font></pre><pre class=3D"literallayou=
+t"><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">exportar DIALOG=3D'</font></font><font></font><font style=3D"vert=
+ical-align: inherit;"><font style=3D"vertical-align: inherit;">
+&lt;vbox&gt;</font></font><font></font><font style=3D"vertical-align: inher=
+it;"><font style=3D"vertical-align: inherit;">
+  &lt;entrada&gt;</font></font><font></font><font style=3D"vertical-align: =
+inherit;"><font style=3D"vertical-align: inherit;">
+    &lt;variable&gt;ENTRADA&lt;/variable&gt;</font></font><font></font><fon=
+t style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit=
+;">
+  &lt;/entrada&gt;</font></font><font></font><font style=3D"vertical-align:=
+ inherit;"><font style=3D"vertical-align: inherit;">
+  &lt;hbox&gt;</font></font><font></font><font style=3D"vertical-align: inh=
+erit;"><font style=3D"vertical-align: inherit;">
+    &lt;bot=C3=B3n ok&gt;&lt;/bot=C3=B3n&gt;</font></font><font></font><fon=
+t style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit=
+;">
+    &lt;bot=C3=B3n cancelar&gt;&lt;/bot=C3=B3n&gt;</font></font><font></fon=
+t><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: i=
+nherit;">
+  &lt;/hbox&gt;</font></font><font></font><font style=3D"vertical-align: in=
+herit;"><font style=3D"vertical-align: inherit;">
+&lt;/vbox&gt;'</font></font></pre><pre class=3D"literallayout"><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">I=3D=
+$SIF; </font><font style=3D"vertical-align: inherit;">IFS=3D""</font></font=
+><font></font><font style=3D"vertical-align: inherit;"><font style=3D"verti=
+cal-align: inherit;">
+para DECLARACIONES en $(gtkdialog --program DIALOG); </font><font style=3D"=
+vertical-align: inherit;">hacer</font></font><font></font><font style=3D"ve=
+rtical-align: inherit;"><font style=3D"vertical-align: inherit;">
+  eval $DECLARACIONES</font></font><font></font><font style=3D"vertical-ali=
+gn: inherit;"><font style=3D"vertical-align: inherit;">
+hecho</font></font><font></font><font style=3D"vertical-align: inherit;"><f=
+ont style=3D"vertical-align: inherit;">
+IFS=3D$I</font></font></pre><pre class=3D"literallayout"><font style=3D"ver=
+tical-align: inherit;"><font style=3D"vertical-align: inherit;">if [ "$SALI=
+R" =3D "OK" ]; </font><font style=3D"vertical-align: inherit;">entonces</fo=
+nt></font><font></font><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;">
+  echo "Usted ingres=C3=B3: $ENTRADA".</font></font><font></font><font styl=
+e=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">
+dem=C3=A1s</font></font><font></font><font style=3D"vertical-align: inherit=
+;"><font style=3D"vertical-align: inherit;">
+  echo "Presion=C3=B3 el bot=C3=B3n Cancelar".</font></font><font></font><f=
+ont style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inher=
+it;">
+fi</font></font></pre><p><font style=3D"vertical-align: inherit;"><font sty=
+le=3D"vertical-align: inherit;">En el script de ejemplo, usamos el </font><=
+/font><span class=3D"emphasis"><em><font style=3D"vertical-align: inherit;"=
+><font style=3D"vertical-align: inherit;">'for'</font></font></em></span><f=
+ont style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inher=
+it;"> incorporado para revisar la lista </font></font><span class=3D"emphas=
+is"><em><font style=3D"vertical-align: inherit;"><font style=3D"vertical-al=
+ign: inherit;">'gtkdialog'</font></font></em></span><font style=3D"vertical=
+-align: inherit;"><font style=3D"vertical-align: inherit;"> producida. </fo=
+nt><font style=3D"vertical-align: inherit;">Cambiar el separador de campo (=
+IFS) es un poco molesto pero necesario ya que esta es la =C3=BAnica forma d=
+e proteger los caracteres de espacio en la entrada del usuario.</font></fon=
+t></p><p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">En proyectos de software m=C3=A1s grandes, puede ser una bu=
+ena idea dividir el c=C3=B3digo en archivos separados. </font><font style=
+=3D"vertical-align: inherit;">Dado que </font></font><span class=3D"emphasi=
+s"><em><font style=3D"vertical-align: inherit;"><font style=3D"vertical-ali=
+gn: inherit;">'gtkdialog'</font></font></em></span><font style=3D"vertical-=
+align: inherit;"><font style=3D"vertical-align: inherit;"> puede leer el pr=
+ograma de descripci=C3=B3n del archivo, es f=C3=A1cil escribir programas au=
+toejecutables con =C3=A9l. </font><font style=3D"vertical-align: inherit;">=
+As=C3=AD es como se construy=C3=B3 el siguiente ejemplo.</font></font></p><=
+pre class=3D"literallayout"><font style=3D"vertical-align: inherit;"><font =
+style=3D"vertical-align: inherit;">#! </font><font style=3D"vertical-align:=
+ inherit;">/usr/local/bin/gtkdialog-f</font></font><font></font><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">
+&lt;vbox&gt;</font></font><font></font><font style=3D"vertical-align: inher=
+it;"><font style=3D"vertical-align: inherit;">
+  &lt;casilla de verificaci=C3=B3n&gt;</font></font><font></font><font styl=
+e=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">
+    &lt;label&gt;Esta es una casilla&lt;/label&gt;</font></font><font></fon=
+t><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: i=
+nherit;">
+    &lt;variable&gt;CHEQUE1&lt;/variable&gt;</font></font><font></font><fon=
+t style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit=
+;">
+  &lt;/casilla de verificaci=C3=B3n&gt;</font></font><font></font><font sty=
+le=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">
+  &lt;casilla de verificaci=C3=B3n&gt;</font></font><font></font><font styl=
+e=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">
+    &lt;label&gt;Otra&lt;/label&gt;</font></font><font></font><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">
+    &lt;variable&gt;CHEQUEO2&lt;/variable&gt;</font></font><font></font><fo=
+nt style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inheri=
+t;">
+  &lt;/casilla de verificaci=C3=B3n&gt;</font></font><font></font><font sty=
+le=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">
+  &lt;bot=C3=B3n&gt;</font></font><font></font><font style=3D"vertical-alig=
+n: inherit;"><font style=3D"vertical-align: inherit;">
+    &lt;etiqueta&gt;Aceptar&lt;/etiqueta&gt;</font></font><font></font><fon=
+t style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit=
+;">
+  &lt;/bot=C3=B3n&gt;</font></font><font></font><font style=3D"vertical-ali=
+gn: inherit;"><font style=3D"vertical-align: inherit;">
+&lt;/vbox&gt;</font></font></pre><p><font style=3D"vertical-align: inherit;=
+"><font style=3D"vertical-align: inherit;">Cuando se usa de esta manera, el=
+ estado de los widgets puede obtenerse de la salida est=C3=A1ndar del scrip=
+t como de costumbre.</font></font></p></div></div><div class=3D"navfooter">=
+<br><hr width=3D"50%" align=3D"left"><a href=3D"http://sourceforge.net/"><i=
+mg src=3D"http://sflogo.sourceforge.net/sflogo.php?group_id=3D163815&amp;ty=
+pe=3D1" width=3D"88" height=3D"31" border=3D"0" alt=3D"Logotipo de SourceFo=
+rge.net" align=3D"right" vspace=3D"15"></a><a href=3D"https://sourceforge.n=
+et/forum/forum.php?forum_id=3D619514"><img src=3D"http://xpt.sourceforge.ne=
+t/images/xpt.gif" width=3D"146" height=3D"31" border=3D"0" alt=3D"Xpt.Sourc=
+eForge.net" title=3D"suntong001()usuarios*sourceforge*net" align=3D"right" =
+vspace=3D"15" hspace=3D"6"></a><a rel=3D"license" href=3D"http://creativeco=
+mmons.org/licenses/by-sa/3.0/"><img alt=3D"Licencia Creative Commons Recono=
+cimiento-CompartirIgual" style=3D"border-width:0" src=3D"http://creativecom=
+mons.org/images/public/somerights20.png" align=3D"right" vspace=3D"15"></a>=
+   <span class=3D"image"><span class=3D"socialAddButton" id=3D"socialAddBut=
+ton-delicious"><a href=3D"http://del.icio.us/post?url=3Dhttps%3A%2F%2Fxpt.s=
+ourceforge.net%2Ftechdocs%2Flanguage%2Fgtkdialog%2Fgtkde03-GtkdialogUserMan=
+ual%2Far01s04.html%23_3_1_examples&amp;title=3D3%20Invoking%20the%20Program=
+" title=3D"A=C3=B1adir a Del.icio.us"><img src=3D"https://xpt.sourceforge.n=
+et/sb/images/delicious.png" alt=3D"Delicioso" border=3D"0"></a></span> <spa=
+n class=3D"socialAddButton" id=3D"socialAddButton-digg"><a href=3D"http://d=
+igg.com/submit?phase=3D2&amp;url=3Dhttps%3A%2F%2Fxpt.sourceforge.net%2Ftech=
+docs%2Flanguage%2Fgtkdialog%2Fgtkde03-GtkdialogUserManual%2Far01s04.html%23=
+_3_1_examples&amp;title=3D3%20Invoking%20the%20Program" title=3D"Agregar a =
+la excavaci=C3=B3n"><img src=3D"https://xpt.sourceforge.net/sb/images/digg.=
+png" alt=3D"cavar" border=3D"0"></a></span> <span class=3D"socialAddButton"=
+ id=3D"socialAddButton-furl"><a href=3D"http://furl.net/storeIt.jsp?t=3D3%2=
+0Invoking%20the%20Program&amp;u=3Dhttps%3A%2F%2Fxpt.sourceforge.net%2Ftechd=
+ocs%2Flanguage%2Fgtkdialog%2Fgtkde03-GtkdialogUserManual%2Far01s04.html%23_=
+3_1_examples" title=3D"A=C3=B1adir a FURL"><img src=3D"https://xpt.sourcefo=
+rge.net/sb/images/furl.png" alt=3D"AFERRAR" border=3D"0"></a></span> <span =
+class=3D"socialAddButton" id=3D"socialAddButton-blinklist"><a href=3D"http:=
+//blinklist.com/index.php?Action=3DBlink/addblink.php&amp;Name=3D3%20Invoki=
+ng%20the%20Program&amp;Url=3Dhttps%3A%2F%2Fxpt.sourceforge.net%2Ftechdocs%2=
+Flanguage%2Fgtkdialog%2Fgtkde03-GtkdialogUserManual%2Far01s04.html%23_3_1_e=
+xamples" title=3D"Agregar a la lista parpadeante"><img src=3D"https://xpt.s=
+ourceforge.net/sb/images/blinklist.png" alt=3D"lista parpadeante" border=3D=
+"0"></a></span> <span class=3D"socialAddButton" id=3D"socialAddButton-reddi=
+t"><a href=3D"http://reddit.com/submit?url=3Dhttps%3A%2F%2Fxpt.sourceforge.=
+net%2Ftechdocs%2Flanguage%2Fgtkdialog%2Fgtkde03-GtkdialogUserManual%2Far01s=
+04.html%23_3_1_examples&amp;title=3D3%20Invoking%20the%20Program" title=3D"=
+agregar a reddit"><img src=3D"https://xpt.sourceforge.net/sb/images/reddit.=
+png" alt=3D"Reddit" border=3D"0"></a></span> <span class=3D"socialAddButton=
+" id=3D"socialAddButton-feedmelinks"><a href=3D"http://feedmelinks.com/cate=
+gorize?from=3Dtoolbar&amp;op=3Dsubmit&amp;name=3D3%20Invoking%20the%20Progr=
+am&amp;url=3Dhttps%3A%2F%2Fxpt.sourceforge.net%2Ftechdocs%2Flanguage%2Fgtkd=
+ialog%2Fgtkde03-GtkdialogUserManual%2Far01s04.html%23_3_1_examples&amp;vers=
+ion=3D0.7" title=3D"A=C3=B1adir a Feed Me Enlaces"><img src=3D"https://xpt.=
+sourceforge.net/sb/images/feedmelinks.png" alt=3D"Alimentarme enlaces" bord=
+er=3D"0"></a></span> <span class=3D"socialAddButton" id=3D"socialAddButton-=
+technorati"><a href=3D"http://www.technorati.com/faves?add=3Dhttps%3A%2F%2F=
+xpt.sourceforge.net%2Ftechdocs%2Flanguage%2Fgtkdialog%2Fgtkde03-GtkdialogUs=
+erManual%2Far01s04.html%23_3_1_examples" title=3D"Agregar a Technorati"><im=
+g src=3D"https://xpt.sourceforge.net/sb/images/technorati.png" alt=3D"Techn=
+orati" border=3D"0"></a></span> <span class=3D"socialAddButton" id=3D"socia=
+lAddButton-stumbleupon"><a href=3D"http://www.stumbleupon.com/refer.php?url=
+=3Dhttps%3A%2F%2Fxpt.sourceforge.net%2Ftechdocs%2Flanguage%2Fgtkdialog%2Fgt=
+kde03-GtkdialogUserManual%2Far01s04.html%23_3_1_examples&amp;title=3D3%20In=
+voking%20the%20Program" title=3D"Agregar a Tropezar"><img src=3D"https://xp=
+t.sourceforge.net/sb/images/stumbleupon.png" alt=3D"Tropezar con" border=3D=
+"0"></a></span> <span class=3D"socialAddButton" id=3D"socialAddButton-googl=
+e"><a href=3D"http://www.google.com/bookmarks/mark?op=3Dedit&amp;output=3Dp=
+opup&amp;bkmk=3Dhttps%3A%2F%2Fxpt.sourceforge.net%2Ftechdocs%2Flanguage%2Fg=
+tkdialog%2Fgtkde03-GtkdialogUserManual%2Far01s04.html%23_3_1_examples&amp;t=
+itle=3D3%20Invoking%20the%20Program" title=3D"Agregar a marcadores de Googl=
+e"><img src=3D"https://xpt.sourceforge.net/sb/images/google.png" alt=3D"Mar=
+cadores de Google" border=3D"0"></a></span> <span class=3D"socialAddButton"=
+ id=3D"socialAddButton-yahoo_myweb"><a href=3D"http://myweb2.search.yahoo.c=
+om/myresults/bookmarklet?u=3Dhttps%3A%2F%2Fxpt.sourceforge.net%2Ftechdocs%2=
+Flanguage%2Fgtkdialog%2Fgtkde03-GtkdialogUserManual%2Far01s04.html%23_3_1_e=
+xamples&amp;t=3D3%20Invoking%20the%20Program" title=3D"Agregar a Yahoo Mi W=
+eb"><img src=3D"https://xpt.sourceforge.net/sb/images/yahoo_myweb.png" alt=
+=3D"Yahoo Mi Web" border=3D"0"></a></span> <span class=3D"socialAddButton" =
+id=3D"socialAddButton-newsvine"><a href=3D"http://www.newsvine.com/_wine/sa=
+ve?u=3Dhttps%3A%2F%2Fxpt.sourceforge.net%2Ftechdocs%2Flanguage%2Fgtkdialog%=
+2Fgtkde03-GtkdialogUserManual%2Far01s04.html%23_3_1_examples&amp;h=3D3%20In=
+voking%20the%20Program" title=3D"Agregar a Newsvine"><img src=3D"https://xp=
+t.sourceforge.net/sb/images/newsvine.png" alt=3D"Newsvine" border=3D"0"></a=
+></span> <span class=3D"socialAddButton" id=3D"socialAddButton-socializer">=
+<a href=3D"http://ekstreme.com/socializer/?url=3Dhttps%3A%2F%2Fxpt.sourcefo=
+rge.net%2Ftechdocs%2Flanguage%2Fgtkdialog%2Fgtkde03-GtkdialogUserManual%2Fa=
+r01s04.html%23_3_1_examples&amp;title=3D3%20Invoking%20the%20Program" title=
+=3D"A=C3=B1adir a Socializador"><img src=3D"https://xpt.sourceforge.net/sb/=
+images/socializer.png" alt=3D"socializador" border=3D"0"></a></span> <span =
+class=3D"socialAddButton" id=3D"socialAddButton-magnolia"><a href=3D"http:/=
+/ma.gnolia.com/bookmarklet/add?url=3Dhttps%3A%2F%2Fxpt.sourceforge.net%2Fte=
+chdocs%2Flanguage%2Fgtkdialog%2Fgtkde03-GtkdialogUserManual%2Far01s04.html%=
+23_3_1_examples&amp;title=3D3%20Invoking%20the%20Program" title=3D"A=C3=B1a=
+dir a Magnolia"><img src=3D"https://xpt.sourceforge.net/sb/images/magnolia.=
+png" alt=3D"Magnolia" border=3D"0"></a></span> <span class=3D"socialAddButt=
+on" id=3D"socialAddButton-rawsugar"><a href=3D"http://www.rawsugar.com/tagg=
+er/?turl=3Dhttps%3A%2F%2Fxpt.sourceforge.net%2Ftechdocs%2Flanguage%2Fgtkdia=
+log%2Fgtkde03-GtkdialogUserManual%2Far01s04.html%23_3_1_examples&amp;tttl=
+=3D3%20Invoking%20the%20Program" title=3D"A=C3=B1adir a RawSugar"><img src=
+=3D"https://xpt.sourceforge.net/sb/images/rawsugar.png" alt=3D"Az=C3=BAcar =
+sin refinar" border=3D"0"></a></span> <span class=3D"socialAddButton" id=3D=
+"socialAddButton-squidoo"><a href=3D"http://www.squidoo.com/lensmaster/book=
+mark?https%3A%2F%2Fxpt.sourceforge.net%2Ftechdocs%2Flanguage%2Fgtkdialog%2F=
+gtkde03-GtkdialogUserManual%2Far01s04.html%23_3_1_examples" title=3D"A=C3=
+=B1adir a Squidoo"><img src=3D"https://xpt.sourceforge.net/sb/images/squido=
+o.png" alt=3D"Calamardo" border=3D"0"></a></span> <span class=3D"socialAddB=
+utton" id=3D"socialAddButton-spurl"><a href=3D"http://www.spurl.net/spurl.p=
+hp?url=3Dhttps%3A%2F%2Fxpt.sourceforge.net%2Ftechdocs%2Flanguage%2Fgtkdialo=
+g%2Fgtkde03-GtkdialogUserManual%2Far01s04.html%23_3_1_examples&amp;title=3D=
+3%20Invoking%20the%20Program" title=3D"A=C3=B1adir a Spurl"><img src=3D"htt=
+ps://xpt.sourceforge.net/sb/images/spurl.png" alt=3D"estimular" border=3D"0=
+"></a></span> <span class=3D"socialAddButton" id=3D"socialAddButton-blinkbi=
+ts"><a href=3D"http://blinkbits.com/bookmarklets/save.php?v=3D1&amp;source_=
+url=3Dhttps%3A%2F%2Fxpt.sourceforge.net%2Ftechdocs%2Flanguage%2Fgtkdialog%2=
+Fgtkde03-GtkdialogUserManual%2Far01s04.html%23_3_1_examples&amp;title=3D3%2=
+0Invoking%20the%20Program" title=3D"A=C3=B1adir a Blink Bits"><img src=3D"h=
+ttps://xpt.sourceforge.net/sb/images/blinkbits.png" alt=3D"BlinkBits" borde=
+r=3D"0"></a></span> <span class=3D"socialAddButton" id=3D"socialAddButton-n=
+etvouz"><a href=3D"http://netvouz.com/action/submitBookmark?url=3Dhttps%3A%=
+2F%2Fxpt.sourceforge.net%2Ftechdocs%2Flanguage%2Fgtkdialog%2Fgtkde03-Gtkdia=
+logUserManual%2Far01s04.html%23_3_1_examples&amp;title=3D3%20Invoking%20the=
+%20Program&amp;popup=3Dno" title=3D"A=C3=B1adir a Netvouz"><img src=3D"http=
+s://xpt.sourceforge.net/sb/images/netvouz.png" alt=3D"Netvouz" border=3D"0"=
+></a></span> <span class=3D"socialAddButton" id=3D"socialAddButton-rojo"><a=
+ href=3D"http://www.rojo.com/add-subscription/?resource=3Dhttps%3A%2F%2Fxpt=
+.sourceforge.net%2Ftechdocs%2Flanguage%2Fgtkdialog%2Fgtkde03-GtkdialogUserM=
+anual%2Far01s04.html%23_3_1_examples" title=3D"A=C3=B1adir a Rojo"><img src=
+=3D"https://xpt.sourceforge.net/sb/images/rojo.png" alt=3D"Rojo" border=3D"=
+0"></a></span> <span class=3D"socialAddButton" id=3D"socialAddButton-bmarks=
+"><a href=3D"http://blogmarks.net/my/new.php?mini=3D1&amp;simple=3D1&amp;ur=
+l=3Dhttps%3A%2F%2Fxpt.sourceforge.net%2Ftechdocs%2Flanguage%2Fgtkdialog%2Fg=
+tkde03-GtkdialogUserManual%2Far01s04.html%23_3_1_examples&amp;title=3D3%20I=
+nvoking%20the%20Program" title=3D"A=C3=B1adir a Marcas de blog"><img src=3D=
+"https://xpt.sourceforge.net/sb/images/bmarks.png" alt=3D"Marcas de blog" b=
+order=3D"0"></a></span> <span class=3D"socialAddButton" id=3D"socialAddButt=
+on-shadows"><a href=3D"http://www.shadows.com/shadows.aspx?url=3Dhttps%3A%2=
+F%2Fxpt.sourceforge.net%2Ftechdocs%2Flanguage%2Fgtkdialog%2Fgtkde03-Gtkdial=
+ogUserManual%2Far01s04.html%23_3_1_examples" title=3D"Agregar a las sombras=
+"><img src=3D"https://xpt.sourceforge.net/sb/images/shadows.png" alt=3D"Osc=
+uridad" border=3D"0"></a></span> <span class=3D"socialAddButton" id=3D"soci=
+alAddButton-simpy"><a href=3D"http://www.simpy.com/simpy/LinkAdd.do?href=3D=
+https%3A%2F%2Fxpt.sourceforge.net%2Ftechdocs%2Flanguage%2Fgtkdialog%2Fgtkde=
+03-GtkdialogUserManual%2Far01s04.html%23_3_1_examples&amp;title=3D3%20Invok=
+ing%20the%20Program" title=3D"Agregar a Simpy"><img src=3D"https://xpt.sour=
+ceforge.net/sb/images/simpy.png" alt=3D"simple" border=3D"0"></a></span> <s=
+pan class=3D"socialAddButton" id=3D"socialAddButton-comments"><a href=3D"ht=
+tp://co.mments.com/track?url=3Dhttps%3A%2F%2Fxpt.sourceforge.net%2Ftechdocs=
+%2Flanguage%2Fgtkdialog%2Fgtkde03-GtkdialogUserManual%2Far01s04.html%23_3_1=
+_examples&amp;title=3D3%20Invoking%20the%20Program" title=3D"A=C3=B1adir a =
+comentarios"><img src=3D"https://xpt.sourceforge.net/sb/images/comments.png=
+" alt=3D"Comentarios" border=3D"0"></a></span> <span class=3D"socialAddButt=
+on" id=3D"socialAddButton-scuttle"><a href=3D"http://www.scuttle.org/bookma=
+rks.php/maxpower?action=3Dadd&amp;address=3Dhttps%3A%2F%2Fxpt.sourceforge.n=
+et%2Ftechdocs%2Flanguage%2Fgtkdialog%2Fgtkde03-GtkdialogUserManual%2Far01s0=
+4.html%23_3_1_examples&amp;title=3D3%20Invoking%20the%20Program" title=3D"A=
+gregar a Scuttle"><img src=3D"https://xpt.sourceforge.net/sb/images/scuttle=
+.png" alt=3D"Escotilla" border=3D"0"></a></span> <span class=3D"socialAddBu=
+tton" id=3D"socialAddButton-bloglines"><a href=3D"http://www.bloglines.com/=
+sub/https%3A%2F%2Fxpt.sourceforge.net%2Ftechdocs%2Flanguage%2Fgtkdialog%2Fg=
+tkde03-GtkdialogUserManual%2Far01s04.html%23_3_1_examples" title=3D"A=C3=B1=
+adir a Bloglines"><img src=3D"https://xpt.sourceforge.net/sb/images/bloglin=
+es.png" alt=3D"Bloglines" border=3D"0"></a></span> <span class=3D"socialAdd=
+Button" id=3D"socialAddButton-tailrank"><a href=3D"http://tailrank.com/shar=
+e/?title=3D3%20Invoking%20the%20Program&amp;link_href=3Dhttps%3A%2F%2Fxpt.s=
+ourceforge.net%2Ftechdocs%2Flanguage%2Fgtkdialog%2Fgtkde03-GtkdialogUserMan=
+ual%2Far01s04.html%23_3_1_examples" title=3D"A=C3=B1adir a Tailrank"><img s=
+rc=3D"https://xpt.sourceforge.net/sb/images/tailrank.png" alt=3D"Rango de c=
+ola" border=3D"0"></a></span> <span class=3D"socialAddButton" id=3D"socialA=
+ddButton-wists"><a href=3D"http://wists.com/r.php?c=3D&amp;r=3Dhttps%3A%2F%=
+2Fxpt.sourceforge.net%2Ftechdocs%2Flanguage%2Fgtkdialog%2Fgtkde03-Gtkdialog=
+UserManual%2Far01s04.html%23_3_1_examples&amp;title=3D3%20Invoking%20the%20=
+Program" title=3D"Agregar a Wists"><img src=3D"https://xpt.sourceforge.net/=
+sb/images/wists.png" alt=3D"Wistas" border=3D"0"></a></span> <span class=3D=
+"socialAddButton" id=3D"socialAddButton-fark"><a href=3D"http://cgi.fark.co=
+m/cgi/fark/edit.pl?new_url=3Dhttps%3A%2F%2Fxpt.sourceforge.net%2Ftechdocs%2=
+Flanguage%2Fgtkdialog%2Fgtkde03-GtkdialogUserManual%2Far01s04.html%23_3_1_e=
+xamples&amp;new_comment=3D3%20Invoking%20the%20Program&amp;linktype=3D" tit=
+le=3D"A=C3=B1adir a FARK"><img src=3D"https://xpt.sourceforge.net/sb/images=
+/fark.png" alt=3D"FARK" border=3D"0"></a></span> <span class=3D"socialAddBu=
+tton" id=3D"socialAddButton-smarking"><a href=3D"http://smarking.com/editbo=
+okmark/?url=3Dhttps%3A%2F%2Fxpt.sourceforge.net%2Ftechdocs%2Flanguage%2Fgtk=
+dialog%2Fgtkde03-GtkdialogUserManual%2Far01s04.html%23_3_1_examples&amp;tit=
+le=3D3%20Invoking%20the%20Program" title=3D"A=C3=B1adir a marcar"><img src=
+=3D"https://xpt.sourceforge.net/sb/images/smarking.png" alt=3D"marcando" bo=
+rder=3D"0"></a></span> <span class=3D"socialAddButton" id=3D"socialAddButto=
+n-segnalo"><a href=3D"http://segnalo.com/post.html.php?url=3Dhttps%3A%2F%2F=
+xpt.sourceforge.net%2Ftechdocs%2Flanguage%2Fgtkdialog%2Fgtkde03-GtkdialogUs=
+erManual%2Far01s04.html%23_3_1_examples&amp;title=3D3%20Invoking%20the%20Pr=
+ogram" title=3D"Agregar a Segnalo"><img src=3D"https://xpt.sourceforge.net/=
+sb/images/segnalo.png" alt=3D"Segnalo" border=3D"0"></a></span> </span><br>=
+<a href=3D"https://xpt.sourceforge.net/techdocs/language/gtkdialog/gtkde03-=
+GtkdialogUserManual/single/"><font style=3D"vertical-align: inherit;"><font=
+ style=3D"vertical-align: inherit;">Versi=C3=B3n de un solo archivo disponi=
+ble aqu=C3=AD</font></font></a><font style=3D"vertical-align: inherit;"><fo=
+nt style=3D"vertical-align: inherit;"> . </font></font><br><font style=3D"v=
+ertical-align: inherit;"><font style=3D"vertical-align: inherit;">=C3=9Alti=
+ma actualizaci=C3=B3n el 2008-07-05. </font></font><br><font style=3D"verti=
+cal-align: inherit;"><font style=3D"vertical-align: inherit;">Para discutir=
+, </font></font><a href=3D"https://sourceforge.net/forum/forum.php?forum_id=
+=3D619514"><font style=3D"vertical-align: inherit;"><font style=3D"vertical=
+-align: inherit;">comenta aqu=C3=AD</font></font></a><font style=3D"vertica=
+l-align: inherit;"><font style=3D"vertical-align: inherit;"> .</font></font=
+><hr><table width=3D"100%" summary=3D"Navigation footer"><tbody><tr><td wid=
+th=3D"40%" align=3D"left"><a accesskey=3D"p" href=3D"https://xpt.sourceforg=
+e.net/techdocs/language/gtkdialog/gtkde03-GtkdialogUserManual/ar01s03.html"=
+><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: in=
+herit;">Anterior</font></font></a>&nbsp;</td><td width=3D"20%" align=3D"cen=
+ter">&nbsp;</td><td width=3D"40%" align=3D"right">&nbsp;<a accesskey=3D"n" =
+href=3D"https://xpt.sourceforge.net/techdocs/language/gtkdialog/gtkde03-Gtk=
+dialogUserManual/ar01s05.html"><font style=3D"vertical-align: inherit;"><fo=
+nt style=3D"vertical-align: inherit;">Pr=C3=B3ximo</font></font></a></td></=
+tr><tr><td width=3D"40%" align=3D"left" valign=3D"top">&nbsp;</td><td width=
+=3D"20%" align=3D"center"><a accesskey=3D"h" href=3D"https://xpt.sourceforg=
+e.net/techdocs/language/gtkdialog/gtkde03-GtkdialogUserManual/index.html"><=
+font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inhe=
+rit;">Hogar</font></font></a></td><td width=3D"40%" align=3D"right" valign=
+=3D"top">&nbsp;</td></tr></tbody></table></div><div id=3D"goog-gt-" class=
+=3D"skiptranslate VIpgJd-yAWNEb-L7lbkb" dir=3D"ltr"><div style=3D"padding: =
+8px;"><div><div class=3D"VIpgJd-yAWNEb-l4eHX"><img src=3D"https://www.gstat=
+ic.com/images/branding/product/1x/translate_24dp.png" width=3D"20" height=
+=3D"20" alt=3D"Google Traductor de Google"></div></div></div><div style=3D"=
+padding: 8px; float: left; width: 100%;"><h1 class=3D"VIpgJd-yAWNEb-r4nke V=
+IpgJd-yAWNEb-mrxPge">Texto original</h1></div><div style=3D"padding: 8px;">=
+<div class=3D"VIpgJd-yAWNEb-nVMfcd-fmcmS"></div></div><div class=3D"VIpgJd-=
+yAWNEb-cGMI2b" style=3D"padding: 8px;"><div class=3D"VIpgJd-yAWNEb-Z0Arqf-P=
+LDbbf"><span class=3D"VIpgJd-yAWNEb-Z0Arqf-hSRGPd">Sugiere una traducci=C3=
+=B3n mejor</span></div><div class=3D"VIpgJd-yAWNEb-fw42Ze-Z0Arqf-haAclf"><h=
+r style=3D"color: #ccc; background-color: #ccc; height: 1px; border: none;"=
+><div class=3D"VIpgJd-yAWNEb-Z0Arqf-H9tDt"></div></div></div><div class=3D"=
+VIpgJd-yAWNEb-jOfkMb-Ne3sFf" style=3D"display: none;"></div></div>
+</body></html>
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://xpt.sourceforge.net/asciidoc/stylesheets/docbook-xsl.css
+
+@charset "utf-8";
+
+span.strong { font-weight: bold; }
+
+body blockquote { margin-top: 0.75em; line-height: 1.5; margin-bottom: 0.75=
+em; }
+
+html body { margin: 1em 5%; line-height: 1.2; }
+
+body div { margin: 0px; }
+
+h1, h2, h3, h4, h5, h6, div.toc p b, div.list-of-figures p b, div.list-of-t=
+ables p b, div.abstract p.title { color: rgb(82, 123, 189); font-family: ta=
+homa, verdana, sans-serif; }
+
+div.toc p:first-child, div.list-of-figures p:first-child, div.list-of-table=
+s p:first-child, div.example p.title { margin-bottom: 0.2em; }
+
+body h1, body h2, body h3 { text-align: center; padding-top: 0.5em; padding=
+-bottom: 0.5em; }
+
+body h1 { margin: 0em 0px 0px -4%; line-height: 1.3; color: steelblue; }
+
+body h2 { margin: 0.5em 0px 0px -4%; line-height: 1.3; color: rgb(51, 0, 15=
+3); }
+
+body h3 { margin: 0.8em 0px 0px -3%; line-height: 1.3; color: rgb(0, 102, 1=
+53); }
+
+body h4 { margin: 0.8em 0px 0px -3%; line-height: 1.3; }
+
+body h5 { margin: 0.8em 0px 0px -2%; line-height: 1.3; }
+
+body h6 { margin: 0.8em 0px 0px -1%; line-height: 1.3; }
+
+body hr { border: none; }
+
+div.footnotes hr { border: 1px solid ivory; }
+
+div.navheader th, div.navheader td, div.navfooter td { font-family: sans-se=
+rif; font-size: 0.9em; font-weight: bold; color: rgb(82, 123, 189); }
+
+div.navheader img, div.navfooter img { border-style: none; }
+
+div.navheader a, div.navfooter a { font-weight: normal; }
+
+div.navfooter hr { border: 1px solid ivory; }
+
+body td { line-height: 1.2; }
+
+body th { line-height: 1.2; }
+
+ol { line-height: 1.2; }
+
+ul, body dir, body menu { line-height: 1.2; }
+
+html { margin: 0px; padding: 0px; }
+
+body h1, body h2, body h3, body h4, body h5, body h6 { margin-left: 0px; }
+
+body pre { margin: 0.5em 10% 0.5em 1em; line-height: 1; color: navy; }
+
+tt.literal, code.literal { color: navy; }
+
+.programlisting, .screen { border: 1px solid ivory; background: rgb(244, 24=
+4, 244); margin: 0.5em 10% 0.5em 0px; padding: 0.5em 1em; }
+
+div.sidebar { background: rgb(255, 255, 238); margin: 1em 10% 0.5em 0px; pa=
+dding: 0.5em 1em; border: 1px solid ivory; }
+
+div.sidebar * { padding: 0px; }
+
+div.sidebar div { margin: 0px; }
+
+div.sidebar p.title { font-family: sans-serif; margin-top: 0.5em; margin-bo=
+ttom: 0.2em; }
+
+div.bibliomixed { margin: 0.5em 5% 0.5em 1em; }
+
+div.glossary dt { font-weight: bold; }
+
+div.glossary dd p { margin-top: 0.2em; }
+
+dl { margin: 0.8em 0px; line-height: 1.2; }
+
+dt { margin-top: 0.5em; }
+
+dt span.term { font-style: italic; }
+
+div.variablelist dd p { margin-top: 0px; }
+
+div.itemizedlist li, div.orderedlist li { margin-left: -0.8em; margin-top: =
+0.5em; }
+
+ul, ol { list-style-position: outside; }
+
+div.sidebar ul, div.sidebar ol { margin-left: 2.8em; }
+
+div.itemizedlist p.title, div.orderedlist p.title, div.variablelist p.title=
+ { margin-bottom: -0.8em; }
+
+div.revhistory table { border-collapse: collapse; border: none; }
+
+div.revhistory th { border: none; color: rgb(82, 123, 189); font-family: ta=
+homa, verdana, sans-serif; }
+
+div.revhistory td { border: 1px solid ivory; }
+
+div.toc dl, div.toc dt, div.list-of-figures dl, div.list-of-figures dt, div=
+.list-of-tables dl, div.list-of-tables dt, div.indexdiv dl, div.indexdiv dt=
+ { line-height: normal; margin-top: 0px; margin-bottom: 0px; }
+
+div.table table, div.informaltable table { margin-left: 0px; margin-right: =
+5%; margin-bottom: 0.8em; }
+
+div.informaltable table { margin-top: 0.4em; }
+
+div.table thead, div.table tfoot, div.table tbody, div.informaltable thead,=
+ div.informaltable tfoot, div.informaltable tbody { border-top: 2px solid r=
+gb(82, 123, 189); border-bottom: 2px solid rgb(82, 123, 189); }
+
+div.table thead, div.table tfoot, div.informaltable thead, div.informaltabl=
+e tfoot { font-weight: bold; }
+
+div.mediaobject img { border: 1px solid ivory; margin-bottom: 0.8em; }
+
+div.figure p.title, div.table p.title { margin-top: 1em; margin-bottom: 0.4=
+em; }
+
+@media print {
+  div.navheader, div.navfooter { display: none; }
+}
+
+a:link { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: underline overline; }
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.cYEbrOmw59Q.L.W.O/d=0/rs=AN8SPfpU282joXDlbkUblMtWLWoZn4bb2g/m=el_main_css
+
+@charset "utf-8";
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd { left: 0px; top: 0px; height: 39px; width: 100%=
+; z-index: 10000001; position: fixed; border-top: none; border-right: none;=
+ border-left: none; border-image: initial; border-bottom: 1px solid rgb(107=
+, 144, 218); margin: 0px; box-shadow: rgb(153, 153, 153) 0px 0px 8px 1px; }
+
+.VIpgJd-ZVi9od-xl07Ob-OEVmcd { z-index: 10000002; border: none; position: f=
+ixed; box-shadow: rgb(153, 153, 153) 0px 3px 8px 2px; }
+
+.VIpgJd-ZVi9od-SmfZ-OEVmcd { z-index: 10000000; border: none; margin: 0px; =
+}
+
+.goog-te-gadget { font-family: arial; font-size: 11px; color: rgb(102, 102,=
+ 102); white-space: nowrap; }
+
+.goog-te-gadget img { vertical-align: middle; border: none; }
+
+.goog-te-gadget-simple { background-color: rgb(255, 255, 255); border-width=
+: 1px; border-style: solid; border-color: rgb(155, 155, 155) rgb(213, 213, =
+213) rgb(232, 232, 232); font-size: 10pt; display: inline-block; padding-to=
+p: 1px; padding-bottom: 2px; cursor: pointer; }
+
+.goog-te-gadget-icon { margin-left: 2px; margin-right: 2px; width: 19px; he=
+ight: 19px; border: none; vertical-align: middle; }
+
+.goog-te-combo { margin-left: 4px; margin-right: 4px; vertical-align: basel=
+ine; }
+
+.goog-te-gadget .goog-te-combo { margin: 4px 0px; }
+
+.VIpgJd-ZVi9od-l4eHX-hSRGPd, .VIpgJd-ZVi9od-l4eHX-hSRGPd:link, .VIpgJd-ZVi9=
+od-l4eHX-hSRGPd:visited, .VIpgJd-ZVi9od-l4eHX-hSRGPd:hover, .VIpgJd-ZVi9od-=
+l4eHX-hSRGPd:active { font-size: 12px; font-weight: bold; color: rgb(68, 68=
+, 68); text-decoration: none; }
+
+.VIpgJd-ZVi9od-ORHb .VIpgJd-ZVi9od-l4eHX-hSRGPd, .VIpgJd-ZVi9od-TvD9Pc-hSRG=
+Pd { display: block; margin: 0px 10px; }
+
+.VIpgJd-ZVi9od-ORHb .VIpgJd-ZVi9od-l4eHX-hSRGPd { padding-top: 2px; padding=
+-left: 4px; }
+
+.goog-te-combo, .VIpgJd-ZVi9od-ORHb *, .VIpgJd-ZVi9od-SmfZ *, .VIpgJd-ZVi9o=
+d-xl07Ob *, .VIpgJd-ZVi9od-vH1Gmf *, .VIpgJd-ZVi9od-l9xktf * { font-family:=
+ arial; font-size: 10pt; }
+
+.VIpgJd-ZVi9od-ORHb { margin: 0px; background-color: rgb(228, 239, 251); ov=
+erflow: hidden; }
+
+.VIpgJd-ZVi9od-ORHb img { border: none; }
+
+.VIpgJd-ZVi9od-ORHb-bN97Pc { color: rgb(0, 0, 0); }
+
+.VIpgJd-ZVi9od-ORHb-bN97Pc img { vertical-align: middle; }
+
+.VIpgJd-ZVi9od-ORHb-Tswv1b { color: rgb(102, 102, 102); vertical-align: top=
+; margin-top: 0px; font-size: 7pt; }
+
+.VIpgJd-ZVi9od-ORHb-KE6vqe { width: 8px; }
+
+.VIpgJd-ZVi9od-LgbsSe { border-color: rgb(231, 231, 231); border-style: non=
+e solid solid none; border-width: 0px 1px 1px 0px; }
+
+.VIpgJd-ZVi9od-LgbsSe div { border-color: rgb(204, 204, 204) rgb(153, 153, =
+153) rgb(153, 153, 153) rgb(204, 204, 204); border-style: solid; border-wid=
+th: 1px; height: 20px; }
+
+.VIpgJd-ZVi9od-LgbsSe button { background: transparent; border: none; curso=
+r: pointer; height: 20px; overflow: hidden; margin: 0px; vertical-align: to=
+p; white-space: nowrap; }
+
+.VIpgJd-ZVi9od-LgbsSe button:active { background: none 0px 0px repeat scrol=
+l rgb(204, 204, 204); }
+
+.VIpgJd-ZVi9od-SmfZ { margin: 0px; background-color: rgb(255, 255, 255); wh=
+ite-space: nowrap; }
+
+.VIpgJd-ZVi9od-SmfZ-hSRGPd { text-decoration: none; font-weight: bold; font=
+-size: 10pt; border: 1px outset rgb(136, 136, 136); padding: 6px 10px; whit=
+e-space: nowrap; position: absolute; left: 0px; top: 0px; }
+
+.VIpgJd-ZVi9od-SmfZ-hSRGPd img { margin-left: 2px; margin-right: 2px; width=
+: 19px; height: 19px; border: none; vertical-align: middle; }
+
+.VIpgJd-ZVi9od-SmfZ-hSRGPd span { text-decoration: underline; margin-left: =
+2px; margin-right: 2px; vertical-align: middle; }
+
+.goog-te-float-top .VIpgJd-ZVi9od-SmfZ-hSRGPd { padding: 2px; border-top-wi=
+dth: 0px; }
+
+.goog-te-float-bottom .VIpgJd-ZVi9od-SmfZ-hSRGPd { padding: 2px; border-bot=
+tom-width: 0px; }
+
+.VIpgJd-ZVi9od-xl07Ob-lTBxed { text-decoration: none; color: rgb(0, 0, 204)=
+; white-space: nowrap; margin-left: 4px; margin-right: 4px; }
+
+.VIpgJd-ZVi9od-xl07Ob-lTBxed span { text-decoration: underline; }
+
+.VIpgJd-ZVi9od-xl07Ob-lTBxed img { margin-left: 2px; margin-right: 2px; }
+
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed { color: rgb(0, 0, 0); =
+}
+
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed span { text-decoration:=
+ none; }
+
+.VIpgJd-ZVi9od-xl07Ob { background-color: rgb(255, 255, 255); text-decorati=
+on: none; border: 2px solid rgb(195, 217, 255); overflow: hidden scroll; po=
+sition: absolute; left: 0px; top: 0px; }
+
+.VIpgJd-ZVi9od-xl07Ob-ibnC6b { padding: 3px; text-decoration: none; }
+
+.VIpgJd-ZVi9od-xl07Ob-ibnC6b, .VIpgJd-ZVi9od-xl07Ob-ibnC6b:link { color: rg=
+b(0, 0, 204); background: rgb(255, 255, 255); }
+
+.VIpgJd-ZVi9od-xl07Ob-ibnC6b:visited { color: rgb(85, 26, 139); }
+
+.VIpgJd-ZVi9od-xl07Ob-ibnC6b:hover { background: rgb(195, 217, 255); }
+
+.VIpgJd-ZVi9od-xl07Ob-ibnC6b:active { color: rgb(0, 0, 204); }
+
+.VIpgJd-ZVi9od-vH1Gmf { background-color: rgb(255, 255, 255); text-decorati=
+on: none; border: 1px solid rgb(107, 144, 218); overflow: hidden; padding: =
+4px; }
+
+.VIpgJd-ZVi9od-vH1Gmf-KrhPNb { width: 16px; }
+
+.VIpgJd-ZVi9od-vH1Gmf-hgDUwe { margin: 6px 0px; height: 1px; background-col=
+or: rgb(170, 170, 170); overflow: hidden; }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd div {=
+ padding: 4px; }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b .uDEFge { display: none; }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd .uDEFge { }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd .fmcmS { padding-left: 4px; padding-rig=
+ht: 4px; }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd { text-de=
+coration: none; }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b:link div, .V=
+IpgJd-ZVi9od-vH1Gmf-ibnC6b:visited div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b:active=
+ div { color: rgb(0, 0, 204); background: rgb(255, 255, 255); }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b:hover div { color: rgb(255, 255, 255); backgro=
+und: rgb(51, 102, 204); }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SM=
+d:link div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd:visited div, .VIpgJd-ZVi9od=
+-vH1Gmf-ibnC6b-gk6SMd:hover div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd:active=
+ div { color: rgb(0, 0, 0); font-weight: bold; }
+
+.VIpgJd-ZVi9od-l9xktf { background-color: rgb(255, 255, 255); overflow: hid=
+den; padding: 8px; border: none; border-radius: 10px; }
+
+.VIpgJd-ZVi9od-l9xktf-OEVmcd { background-color: rgb(255, 255, 255); border=
+: 1px solid rgb(107, 144, 218); box-shadow: rgb(153, 153, 153) 0px 3px 8px =
+2px; border-radius: 8px; }
+
+.VIpgJd-ZVi9od-l9xktf img { border: none; }
+
+.VIpgJd-ZVi9od-l9xktf-fmcmS { margin-top: 6px; }
+
+.VIpgJd-ZVi9od-l9xktf-VgwJlc { margin-top: 6px; white-space: nowrap; }
+
+.VIpgJd-ZVi9od-l9xktf-VgwJlc * { vertical-align: middle; }
+
+.VIpgJd-ZVi9od-l9xktf-VgwJlc .DUGJie { background-image: url("https://www&g=
+oogle.com/images/zippy_minus_sm.gif"); }
+
+.VIpgJd-ZVi9od-l9xktf-VgwJlc .TdyTDe { background-image: url("https://www&g=
+oogle.com/images/zippy_plus_sm.gif"); }
+
+.VIpgJd-ZVi9od-l9xktf-VgwJlc span { color: rgb(0, 0, 204); text-decoration:=
+ underline; cursor: pointer; margin: 0px 4px; }
+
+.VIpgJd-ZVi9od-l9xktf-I9GLp { margin: 6px 0px 0px; }
+
+.VIpgJd-ZVi9od-l9xktf-I9GLp form { margin: 0px; }
+
+.VIpgJd-ZVi9od-l9xktf-I9GLp form textarea { margin-bottom: 4px; width: 100%=
+; }
+
+.VIpgJd-ZVi9od-l9xktf-yePe5c { margin: 6px 0px 4px; }
+
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf { z-index: 1000; position: fixed; transition-d=
+elay: 0.6s; left: -1000px; top: -1000px; }
+
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc { transition-delay: 0s; left: -14px; to=
+p: -14px; }
+
+.VIpgJd-ZVi9od-aZ2wEe-OiiCO { display: flex; -webkit-box-align: center; ali=
+gn-items: center; -webkit-box-pack: center; justify-content: center; width:=
+ 104px; height: 104px; border-radius: 50px; background: url("https://www.gs=
+tatic.com/images/branding/product/2x/translate_24dp.png") 50% 50% no-repeat=
+ rgb(255, 255, 255); transition: all 0.6s ease-in-out 0s; transform: scale(=
+0.4); opacity: 0; }
+
+.VIpgJd-ZVi9od-aZ2wEe-OiiCO-ti6hGc { transform: scale(0.5); opacity: 1; }
+
+.VIpgJd-ZVi9od-aZ2wEe { margin: 2px 0px 0px 2px; animation: 1.4s linear 0s =
+infinite normal none running spinner-rotator; }
+
+@-webkit-keyframes spinner-rotator {=20
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(270deg); }
+}
+
+@keyframes spinner-rotator {=20
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(270deg); }
+}
+
+.VIpgJd-ZVi9od-aZ2wEe-Jt5cK { stroke-dasharray: 187; stroke-dashoffset: 0; =
+stroke: rgb(66, 133, 244); transform-origin: center center; animation: 1.4s=
+ ease-in-out 0s infinite normal none running spinner-dash; }
+
+@-webkit-keyframes spinner-dash {=20
+  0% { stroke-dashoffset: 187; }
+  50% { stroke-dashoffset: 46.75; transform: rotate(135deg); }
+  100% { stroke-dashoffset: 187; transform: rotate(450deg); }
+}
+
+@keyframes spinner-dash {=20
+  0% { stroke-dashoffset: 187; }
+  50% { stroke-dashoffset: 46.75; transform: rotate(135deg); }
+  100% { stroke-dashoffset: 187; transform: rotate(450deg); }
+}
+
+.VIpgJd-yAWNEb-L7lbkb html, .VIpgJd-yAWNEb-L7lbkb body, .VIpgJd-yAWNEb-L7lb=
+kb div, .VIpgJd-yAWNEb-L7lbkb span, .VIpgJd-yAWNEb-L7lbkb iframe, .VIpgJd-y=
+AWNEb-L7lbkb h1, .VIpgJd-yAWNEb-L7lbkb h2, .VIpgJd-yAWNEb-L7lbkb h3, .VIpgJ=
+d-yAWNEb-L7lbkb h4, .VIpgJd-yAWNEb-L7lbkb h5, .VIpgJd-yAWNEb-L7lbkb h6, .VI=
+pgJd-yAWNEb-L7lbkb p, .VIpgJd-yAWNEb-L7lbkb a, .VIpgJd-yAWNEb-L7lbkb img, .=
+VIpgJd-yAWNEb-L7lbkb ol, .VIpgJd-yAWNEb-L7lbkb ul, .VIpgJd-yAWNEb-L7lbkb li=
+, .VIpgJd-yAWNEb-L7lbkb table, .VIpgJd-yAWNEb-L7lbkb form, .VIpgJd-yAWNEb-L=
+7lbkb tbody, .VIpgJd-yAWNEb-L7lbkb tr, .VIpgJd-yAWNEb-L7lbkb td { margin: 0=
+px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; =
+font-weight: inherit; font-stretch: inherit; font-family: inherit; font-siz=
+e: 100%; vertical-align: baseline; text-align: left; line-height: normal; }
+
+.VIpgJd-yAWNEb-L7lbkb ol, .VIpgJd-yAWNEb-L7lbkb ul { list-style: none; }
+
+.VIpgJd-yAWNEb-L7lbkb table { border-collapse: collapse; border-spacing: 0p=
+x; }
+
+.VIpgJd-yAWNEb-L7lbkb caption, .VIpgJd-yAWNEb-L7lbkb th, .VIpgJd-yAWNEb-L7l=
+bkb td { text-align: left; font-weight: normal; }
+
+div > .VIpgJd-yAWNEb-L7lbkb { padding: 10px 14px; }
+
+.VIpgJd-yAWNEb-L7lbkb { color: rgb(34, 34, 34); background-color: rgb(255, =
+255, 255); border: 1px solid rgb(238, 238, 238); box-shadow: rgba(0, 0, 0, =
+0.2) 0px 4px 16px; display: none; font-family: arial; font-size: 10pt; widt=
+h: 420px; padding: 12px; position: absolute; z-index: 10000; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-nVMfcd-fmcmS, .VIpgJd-yAWNEb-yAWNEb-Vy=
+2Aqc-pbTTYe { clear: both; font-size: 10pt; position: relative; text-align:=
+ justify; width: 100%; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-r4nke { color: rgb(153, 153, 153); fon=
+t-family: arial, sans-serif; margin: 4px 0px; text-align: left; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-TvD9Pc-LgbsSe { display: none; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-l4eHX { float: left; margin: 0px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-Z0Arqf-PLDbbf { display: inline-block;=
+ }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-fw42Ze-Z0Arqf-haAclf { display: none; =
+width: 100%; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-Z0Arqf-H9tDt { margin-top: 20px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-LK5yu { float: left; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-qwU8Me { float: right; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-cGMI2b { min-height: 15px; position: r=
+elative; height: 1%; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-jOfkMb-Ne3sFf { background: rgb(41, 14=
+5, 13); border-radius: 4px; box-shadow: rgb(30, 102, 9) 0px 2px 2px inset; =
+color: white; font-size: 9pt; font-weight: bolder; margin-top: 12px; paddin=
+g: 6px; text-shadow: rgb(30, 102, 9) 1px 1px 1px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-Z0Arqf-hSRGPd { color: rgb(17, 85, 204=
+); cursor: pointer; font-family: arial; font-size: 11px; margin-right: 15px=
+; text-decoration: none; }
+
+.VIpgJd-yAWNEb-L7lbkb > textarea { font-family: arial; resize: vertical; wi=
+dth: 100%; margin-bottom: 10px; border-radius: 1px; border-width: 1px; bord=
+er-style: solid; border-color: silver rgb(217, 217, 217) rgb(217, 217, 217)=
+; border-image: initial; font-size: 13px; height: auto; overflow-y: auto; p=
+adding: 1px; }
+
+.VIpgJd-yAWNEb-L7lbkb textarea:focus { box-shadow: rgba(0, 0, 0, 0.3) 0px 1=
+px 2px inset; border: 1px solid rgb(77, 144, 254); outline: none; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-Z0Arqf-IbE0S { margin-right: 10px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp { min-height: 25px; verti=
+cal-align: middle; padding-top: 8px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp { margin-bottom: 0px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input { display: inline-block; min-width: 54px; border: 1px solid rgba(0=
+, 0, 0, 0.1); text-align: center; color: rgb(68, 68, 68); font-size: 11px; =
+font-weight: bold; height: 27px; outline: 0px; padding: 0px 8px; vertical-a=
+lign: middle; line-height: 27px; margin: 0px 16px 0px 0px; box-shadow: rgba=
+(0, 0, 0, 0.1) 0px 1px 2px; border-radius: 2px; transition: all 0.218s ease=
+ 0s; background-color: rgb(245, 245, 245); background-image: -webkit-linear=
+-gradient(top, rgb(245, 245, 245), rgb(241, 241, 241)); user-select: none; =
+cursor: default; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input:hover { border: 1px solid rgb(198, 198, 198); color: rgb(34, 34, 3=
+4); transition: all 0s ease 0s; background-color: rgb(248, 248, 248); backg=
+round-image: -webkit-linear-gradient(top, rgb(248, 248, 248), rgb(241, 241,=
+ 241)); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input:active { border: 1px solid rgb(198, 198, 198); color: rgb(51, 51, =
+51); background-color: rgb(246, 246, 246); background-image: -webkit-linear=
+-gradient(top, rgb(246, 246, 246), rgb(241, 241, 241)); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input:focus .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yA=
+WNEb-Z0Arqf-I9GLp input.AHmuwe .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-=
+I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:active, .VIpgJd-yAWNEb-L7lbkb .VIpg=
+Jd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:focus:active { box=
+-shadow: rgba(255, 255, 255, 0.5) 0px 0px 0px 1px inset; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input:focus, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-y=
+AWNEb-Z0Arqf-I9GLp input.AHmuwe { outline: none; border: 1px solid rgb(77, =
+144, 254); z-index: 4 !important; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input.gk6SMd { background-color: rgb(238, 238, 238); background-image: -=
+webkit-linear-gradient(top, rgb(238, 238, 238), rgb(224, 224, 224)); box-sh=
+adow: rgba(0, 0, 0, 0.1) 0px 1px 2px inset; border: 1px solid rgb(204, 204,=
+ 204); color: rgb(51, 51, 51); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf { color: white; border-color: rgb(48,=
+ 121, 237); background-color: rgb(77, 144, 254); background-image: -webkit-=
+linear-gradient(top, rgb(77, 144, 254), rgb(71, 135, 237)); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf:hover .VIpgJd-yAWNEb-L7lbkb .VIpgJd-y=
+AWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-=
+sFeBqf:focus, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAW=
+NEb-Z0Arqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf.AHmuwe .VIpgJd-yAWNEb-L=
+7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd=
+-yAWNEb-Z0Arqf-sFeBqf:active { border-color: rgb(48, 121, 237); background-=
+color: rgb(53, 122, 232); background-image: -webkit-linear-gradient(top, rg=
+b(77, 144, 254), rgb(53, 122, 232)); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf:hover { box-shadow: rgb(255, 255, 255=
+) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.1) 0px 1px 1px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input:focus, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-y=
+AWNEb-Z0Arqf-I9GLp input.AHmuwe, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5=
+e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:active, .VIpgJd-yAWNEb-L7lbkb .VI=
+pgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:hover, .VIpgJd-y=
+AWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input =
+.VIpgJd-yAWNEb-Z0Arqf-sFeBqf:focus, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4=
+Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf.A=
+Hmuwe, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0A=
+rqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf:active, .VIpgJd-yAWNEb-L7lbkb =
+.VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd-yAWNE=
+b-Z0Arqf-sFeBqf:hover { border-color: rgb(48, 121, 237); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-mrxPge { color: rgb(153, 153, 153); fo=
+nt-family: arial, sans-serif; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-W0vJo-fmcmS { color: rgb(153, 1=
+53, 153); font-size: 11px; font-family: arial, sans-serif; margin: 15px 0px=
+ 5px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-u0pjoe-fmcmS { color: rgb(136, =
+0, 0); display: none; font-size: 9pt; }
+
+.VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q { background-color: rgb(201, 215, 241); b=
+ox-shadow: rgb(153, 153, 170) 2px 2px 4px; box-sizing: border-box; position=
+: relative; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-xl07Ob .VIpgJd-yAWNEb-VIpgJd-xl=
+07Ob { background: rgb(255, 255, 255); border: 1px solid rgb(221, 221, 221)=
+; box-shadow: rgb(153, 153, 170) 0px 2px 4px; min-width: 0px; outline: none=
+; padding: 0px; position: absolute; z-index: 2000; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-xl07Ob .VIpgJd-yAWNEb-VIpgJd-j7=
+LFlb { cursor: pointer; padding: 2px 5px 5px; margin-right: 0px; border-sty=
+le: none; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-xl07Ob .VIpgJd-yAWNEb-VIpgJd-j7=
+LFlb:hover { background: rgb(221, 221, 221); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-xl07Ob .VIpgJd-yAWNEb-VIpgJd-j7=
+LFlb h1 { font-size: 100%; font-weight: bold; margin: 4px 0px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-xl07Ob .VIpgJd-yAWNEb-VIpgJd-j7=
+LFlb strong { color: rgb(52, 90, 173); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-VIpgJd-eKm5Fc-hFsbo { text-align: righ=
+t; position: absolute; right: 0px; left: auto; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-VIpgJd-j7LFlb-SIsrTd .VIpgJd-yAWNEb-VI=
+pgJd-eKm5Fc-hFsbo { text-align: left; position: absolute; left: 0px; right:=
+ auto; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-yAWNEb-Vy2Aqc-fmcmS, .VIpgJd-yAWNEb-L7=
+lbkb .VIpgJd-yAWNEb-TVLw9c-ppHlrf-sn54Q { background-color: rgb(241, 234, 0=
+); border-radius: 4px; box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 4px; box-sizi=
+ng: border-box; color: rgb(241, 234, 0); cursor: pointer; margin: -2px -2px=
+ -2px -3px; padding: 2px 2px 2px 3px; position: relative; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-TVLw9c-ppHlrf-sn54Q { color: rgb(34, 3=
+4, 34); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-yAWNEb-Vy2Aqc-pbTTYe { color: white; p=
+osition: absolute !important; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-TVLw9c-ppHlrf, .VIpgJd-yAWNEb-L7lbkb .=
+VIpgJd-yAWNEb-TVLw9c-ppHlrf .VIpgJd-yAWNEb-TVLw9c-ppHlrf-sn54Q { background=
+-color: rgb(201, 215, 241); border-radius: 4px 4px 0px 0px; box-shadow: rgb=
+a(0, 0, 0, 0.5) 3px 3px 4px; box-sizing: border-box; cursor: pointer; margi=
+n: -2px -2px -2px -3px; padding: 2px 2px 3px 3px; position: relative; }
+
+.VIpgJd-yAWNEb-L7lbkb span:focus { outline: none; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-TVLw9c-DyVDA { background-color: trans=
+parent; border: 1px solid rgb(77, 144, 254); border-radius: 0px; margin: -2=
+px; padding: 1px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-yAWNEb-TVLw9c-sn54Q-LzX3ef { border-le=
+ft: 2px solid red; margin-left: -2px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-yAWNEb-TVLw9c-sn54Q-YIAiIb { border-ri=
+ght: 2px solid red; margin-right: -2px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-YPqjbf { padding: 2px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-YPqjbf-fmcmS { font-size: 11px;=
+ padding: 2px 2px 3px; margin: 0px; background-color: rgb(255, 255, 255); c=
+olor: rgb(51, 51, 51); border-width: 1px; border-style: solid; border-color=
+: rgb(192, 192, 192) rgb(217, 217, 217) rgb(217, 217, 217); border-image: i=
+nitial; display: inline-block; vertical-align: top; height: 21px; box-sizin=
+g: border-box; border-radius: 1px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-YPqjbf-fmcmS:hover { border-wid=
+th: 1px; border-style: solid; border-color: rgb(160, 160, 160) rgb(185, 185=
+, 185) rgb(185, 185, 185); border-image: initial; box-shadow: rgba(0, 0, 0,=
+ 0.1) 0px 1px 2px inset; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-YPqjbf-fmcmS:focus { box-shadow=
+: rgba(0, 0, 0, 0.3) 0px 1px 2px inset; outline: none; border: 1px solid rg=
+b(77, 144, 254); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-YPqjbf-sFeBqf { font-size: 11px=
+; padding: 2px 6px 3px; margin: 0px 0px 0px 2px; height: 21px; }
+
+.VIpgJd-yAWNEb-hvhgNd { font-family: "Google Sans", Arial, sans-serif; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c { position: absolu=
+te; top: 10px; left: 14px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-l4eHX-SIsrTd { position: absolu=
+te; top: 10px; right: 14px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c, .VIpgJd-yAWNEb-h=
+vhgNd .VIpgJd-yAWNEb-hvhgNd-k77Iif-SIsrTd { margin: 16px; padding: 0px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-IuizWc { margin: 0px 0px 0px 36=
+px; padding: 0px; color: rgb(116, 119, 117); font-size: 14px; font-weight: =
+500; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-k77Iif-SIsrTd .VIpgJd-yAWNEb-hv=
+hgNd-IuizWc { text-align: right; margin: 0px 36px 0px 0px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-nVMfcd-fmcmS .VIpgJd-yAWNEb-hvhgNd-axA=
+V1 { width: auto; padding: 12px 0px 0px; color: rgb(31, 31, 31); font-size:=
+ 16px; text-align: initial; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-nVMfcd-fmcmS .VIpgJd-yAWNEb-hvhgNd-axA=
+V1 .VIpgJd-yAWNEb-SIsrTd { text-align: right; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid { border-radius: 0px 0px=
+ 12px 12px; margin: 0px; background: rgb(241, 244, 249); position: relative=
+; min-height: 50px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid .VIpgJd-yAWNEb-SIsrTd { =
+text-align: right; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od { display: inline=
+-block; width: 77%; padding: 12px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od .VIpgJd-yAWNEb-SI=
+srTd { text-align: right; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-UTujCb { color: rgb(31, 31, 31)=
+; font-size: 12px; font-weight: 500; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od .VIpgJd-yAWNEb-SI=
+srTd .VIpgJd-yAWNEb-hvhgNd-UTujCb { text-align: right; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-eO9mKe { color: rgb(68, 71, 70)=
+; font-size: 12px; padding-top: 4px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od .VIpgJd-yAWNEb-SI=
+srTd .VIpgJd-yAWNEb-hvhgNd-eO9mKe { text-align: right; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-xgov5 { position: absolute; top=
+: 10px; right: 5px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-xgov5 .VIpgJd-yAWNEb-SIsrTd { l=
+eft: 5px; right: auto; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-THI6Vb { }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-bgm6sf { margin: -4px 2px 0px 0=
+px; padding: 2px 0px 0px; width: 48px; height: 48px; border: none; border-r=
+adius: 24px; cursor: pointer; background: none; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-bgm6sf:hover { background: rgb(=
+232, 235, 236); }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-aXYTce { display: none; }
+
+.VIpgJd-yAWNEb-wdjgF { font-family: "Google Sans", Arial, sans-serif; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c { position: absolut=
+e; top: 10px; left: 10px; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-l4eHX-SIsrTd { position: absolut=
+e; top: 10px; right: 10px; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c { margin: 16px 16p=
+x 16px 48px; padding: 0px; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-k77Iif-SIsrTd { margin: 16px 48p=
+x 16px 16px; padding: 0px; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-IuizWc { margin: 0px; padding: 0=
+px; color: rgb(31, 31, 31); font-size: 14px; font-weight: 500; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-k77Iif-SIsrTd .VIpgJd-yAWNEb-hvh=
+gNd-IuizWc { text-align: right; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-nVMfcd-fmcmS .VIpgJd-yAWNEb-hvhgNd-axAV=
+1 { width: auto; padding: 8px 0px 6px; color: rgb(31, 31, 31); font-size: 1=
+6px; text-align: initial; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-nVMfcd-fmcmS .VIpgJd-yAWNEb-hvhgNd-axAV=
+1 .VIpgJd-yAWNEb-SIsrTd { text-align: right; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-fAt1Sb { height: 0px; width: 70%=
+; border-right: none; border-bottom: none; border-left: none; border-image:=
+ initial; border-top: 1px solid rgb(194, 231, 255); border-collapse: collap=
+se; background: none; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-yVJrbd { margin: 0px; padding: 0=
+px; color: rgb(11, 87, 208); font-size: 14px; font-weight: 500; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-k77Iif-SIsrTd .VIpgJd-yAWNEb-hvh=
+gNd-yVJrbd { text-align: right; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-IkhkZd { width: auto; padding: 8=
+px 0px 0px; color: rgb(11, 87, 208); font-size: 16px; text-align: initial; =
+}
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-IkhkZd .VIpgJd-yAWNEb-SIsrTd { t=
+ext-align: right; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-N7Eqid { border-radius: 0px 0px =
+12px 12px; margin: 0px; background: rgb(241, 244, 249); position: relative;=
+ min-height: 50px; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-N7Eqid .VIpgJd-yAWNEb-SIsrTd { t=
+ext-align: right; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od { display: inline-=
+block; width: 77%; padding: 12px; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od .VIpgJd-yAWNEb-SIs=
+rTd { text-align: right; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-UTujCb { color: rgb(31, 31, 31);=
+ font-size: 12px; font-weight: 500; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od .VIpgJd-yAWNEb-SIs=
+rTd .VIpgJd-yAWNEb-hvhgNd-UTujCb { text-align: right; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-eO9mKe { color: rgb(68, 71, 70);=
+ font-size: 12px; padding-top: 4px; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od .VIpgJd-yAWNEb-SIs=
+rTd .VIpgJd-yAWNEb-hvhgNd-eO9mKe { text-align: right; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-xgov5 { position: absolute; top:=
+ 10px; right: 5px; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-xgov5 .VIpgJd-yAWNEb-SIsrTd { le=
+ft: 5px; right: auto; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-THI6Vb { }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-bgm6sf { margin: -4px 2px 0px 0p=
+x; padding: 2px 0px 0px; width: 48px; height: 48px; border: none; border-ra=
+dius: 24px; cursor: pointer; background: none; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-bgm6sf:hover { background: rgb(2=
+32, 235, 236); }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-aXYTce { display: none; }
+
+sentinel { }
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://sflogo.sourceforge.net/sflogo.php?group_id=163815&type=1
+
+iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAMAAABUFvrSAAAAwFBMVEX///+KiorFxsaPkJCbnJyN
+jY3k5OT//v70fCCBgoKhoqKGh4e+vr7MzMz8/PykpKRub29SU1OXmJjx8fH1iDRNTk6zs7N9fX30
+fSGurq6UlZWnqKjp6em1trb+7+N3eHhdXl7/+vbPz8/82sDS0tLZ2dn19fXf39/s7Oz96ttHSEj1
+gir4q2/V1ta4ubn5+fllZmb2j0D3m1T0gCbCwsKfn5/7zan94Mm7u7v6x5/6wpf+8+r81bf3n1z5
+tH/70K/QZEL7AAAB/klEQVRIx+3T2ZKiMBQG4B8IhF0WFQUUXBDEDW3t1ra75/3fag7YOjM1c6k3
+U/4XoZKQr5JDAJ555n/JvN37eADLh+3e6byb3x0ebnsnTHrt+d1d9R2n0etNnsqhAqwY69tQRBqw
+skySDjEQHwSakmRZHoOFYShiFhleDnQZ686AIjLkKUSJ8u2eF++4yr6xKUyYLRuZzMctGumLZhd5
+gJWWQ+lD45wDnUDXrTitmFbu4TitquKK6+iS6+suY+zi8k91d77KK73mhbrZH3/BMDaG35xIa9rO
+oH6rsoGWu3E85GUcONTj0Kt6fqsugTdVbU+G3zKXpSmURp95Nzg+yvwiIjFNi2D5eLTTelopM8dT
+wtR2u7Aty9dTajB5WbzhQ1V7pwnsrfpVr8wZU1p/wpEm8Ru8348JrpJkk0bUj8uVI7hpAXeATVKK
+eidJVmjk4YuqLs58qX6OLmsFLtcPa13UT5aZXW5kCGZ/lcKhavc7M9pxaSJIaCgV9fSC1PJru/3j
+6opT5BLWfQ5F4jCop3GqsR/4VlCAjvIbXLhOJJcDUI0jt1DcYB11RN0dDAZXmUq7VHfNfu2D4NFX
+spgXbagazKDelG5d1qWLaIQxDEEQLAjj5grpgUDHPqxhh2u6jpqxtvcapfnzSB7e3LvmYzl6iEv5
+epD7zDPP/Cs/ATAUMp2tlKkZAAAAAElFTkSuQmCC
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://xpt.sourceforge.net/images/xpt.gif
+
+R0lGODlhkgAfAPfpAAAAAAEBAQICAgQEBAUFBQYGBgcHBwgICAkJCQoKCgsLCwwMDBAQEBERERUV
+FRYWFhcXFxkZGRoaGhsbGx0dHR4eHiAgICEhISIiIiMjIyQkJCUlJSYmJigoKCkpKSoqKisrKyws
+LC0tLS4uLi8vLzAwMDExMTIyMjMzMzQ0NDU1NTY2Njc3Nzg4ODo6Ojs7Ozw8PD4+Pj8/P0BAQEFB
+QUJCQkNDQ0VFRUZGRkdHR0hISElJSUpKSktLS0xMTE1NTU5OTk9PT1BQUFFRUVJSUlNTU1RUVFVV
+VVZWVldXV1hYWFlZWVtbW1xcXF5eXl9fX2BgYGFhYWJiYmNjY2RkZGVlZWZmZmdnZ2hoaGlpaWpq
+amtra2xsbG1tbW5ubm9vb3BwcHFxcXJycnNzc3R0dHV1dXZ2dnh4eHl5eXp6ent7e3x8fH19fX5+
+fn9/f4CAgIGBgYKCgoODg4SEhIWFhYaGhoeHh4mJiYqKiouLi4yMjI2NjY6Ojo+Pj5CQkJGRkZKS
+kpOTk5SUlJWVlZaWlpeXl5iYmJmZmZqampubm52dnZ6enp+fn6CgoKGhoaKioqOjo6ampqenp6io
+qKmpqaqqqqurq6ysrK2tra6urq+vr7CwsLGxsbKysrOzs7S0tLW1tba2tre3t7i4uLm5ubq6uru7
+u7y8vL29vb6+vr+/v8DAwMHBwcLCwsPDw8TExMXFxcbGxsfHx8jIyMnJycrKysvLy8zMzM3Nzc7O
+zs/Pz9HR0dLS0tPT09TU1NXV1dbW1tfX19jY2NnZ2dra2tvb29zc3N3d3d7e3t/f3+Dg4OHh4eLi
+4uPj4+Tk5OXl5ebm5ufn5+jo6Onp6erq6uvr6+zs7O3t7e7u7u/v7/Dw8PHx8fLy8vPz8/T09PX1
+9fb29vf39/j4+Pn5+fr6+vv7+/z8/P39/f7+/v///8zMzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAOoALAAAAACSAB8A
+AAj+AHcJHEiwoMGDCBMqXMiwocOHEBUei0ixosWLGDMSnHLsGKqPIEOKHEkSZKmSKFOqXMmypcuX
+H6dw9Dikps2bOHPq3Mmzp8+fQIMKHXoTlcyORjt2LKa0aVOmS49BjSrV6VOrVJUWm+qUKdeqVr9y
+9Xr16tisVKd+BevxaFu0UOOy7Yq1qlqzdemKpauVL9myYPfqrXvWqdGZSbHKlRtWcV7Cj6P+hdw4
+cmW8SxlD3or0CuIpf62dy1bsV2nTpnO5OnaOmqyz1sQty/XtXLHXksVl2yXuW+nTqH+pLvZNHLXf
+qHPJ+nVMnLjbd3XnIm4cOepirmQdq/3s9Oldr5n+ct/6CzX4X8vOfQO/tpTbxB3TW1MuK5dy+7Is
+8dl+7I5m9asoYhwojUySS1XL6FaIbrvc58oq9eViSR/WfLOMLBjeJwsqhTRCjTjPEGgggrrxQY2F
+GGYYoSt9CIhifRHKskqHv6h3jIr3cdjIM7qV0sckWR2GFGhLZRMbKGiIMYaSY4zhxRJIFLPMMzxo
+RxWIjVzx4SoSKlIKc8ukF+Uknonhyi5ieDYFElOMRg0dU1yhphcYiiHLlrtY4iWYrA3xTTbUyOGF
+GEoSKsYUP8ihGzV8MLmkGMqJ0cmijTJJaKSl5IKKNXJcwVxTqHg2pFbP5LLMJMVQQ4011qj6TCH+
+V8y2iwelWDUfGkPYR8IU9jXSiCwXZiNCH3f8wAMSijTCQQw//DAEH89QE4MIODRr7Ri5DFGIcizw
+mgskjbgyWzYxtBZDC5CsqqqqljgxyTKBdgLoupaAUswPdMArRyet0tvJMT+IgYoik8hBwi5UhTrT
+KkQq1UknjSzTKqurZvPLHRA+I8K/VFmzixdIyLKLCGtccccypSgCyjHZeHCHUtTk0nIhSs1nDQc0
+W/WLE1csR/IVdDyT8srftLAqB5DURrE1FtPRSS7W/JDNOf1SM0k2xziBBNQ8KN3vJN9kPQPL9XmA
+CltCvtXUL6UUcgcdcMdtCZVTrCLOFZbEt8z+MctkI84QvM6KSikl583vNy7DLMvMTbkizhT/hsl3
+339fkYvgoMgxheFMk/DL46iI80vcdLyLQ93i3PFNJ6Tf4fcQODiuOiitTz3E2NnYZ7ZhbjHcl3rZ
+7N3UMt9Q00IMpbjyCyquNN/84q6QQIeMu//SiJKfN3JBIZw9A6wHimhVynKrOP98NrKwcAf1Z1uv
+JG/KNpLLL6swtffe4ljTwgzjb3V/R7v4xiq61T/7KWUX2VjFro5hDVegwgOrcEopRKU2pTzDFYVA
+gwY3iAYv/IAEPYPVEsbAwTEsgQUxAIUl5MCC1XTEFXyYAg48wIK8VQUUfSCBDTsiCxGScIP+JiQB
+/yyxhha48BgwlCEHWACJQkxhhBxM0g9EMIUerkkMJTxhDDphRSgC8YQzyNsyiGjEvqQNPh3JRSGQ
+MIM2urGNPBBDBGXRh9u9cQY4cJdHMvippXQCDUuQA1dWAYkxWAkqdLTjG3kwBSBxCA0IawqSkCBI
+V9zhdjFwYyZ5cAVULAOGinRjHoGERD784I54bKRS2oaGPg7pM5vpyiTGMAVFHMguluGMZOZiFuFN
+hjId+UUMBYnLwhTGMoDpS2Da8pnJrKUjfAgjKsrHg5w15ploQeZjfqmVFlhiFREoBTa1eRa5PMAJ
+DyDLOM84E6kwZipeuEMnKgAAAFzgXqz+m4Ic4EQHVGgODaXYRR/0eSDN0cEJ/1wZUhKaixjy4UD8
+lIMT4DaFgzr0FwKtaC4AcI56ooIPTnjoMQwa0ooiNKNyuGVHDgonmmWUDrmgA0cBgDB1poWZo3KM
+UiCxhE4QoAKWmAQqeLCLB8x0pldwxfjGYLZpiqAUHO3DNFGRiyYdo2SrQIUsxsACGbmCBaA4akej
+Gq5VlCICTVUgRycRga5qFawc5UO4ONTRtIpAocfg6B3UiAQOfGQVIgDAJM4RAbwmE6dtuctaLpAL
+EdTwBwdYBQHGSlkAIA4ACxjDKjxgz1wY9RwzuOwBxgCAX1iWs6PdxQwAgINdRECs9QT+bS5WuwQe
+uIKzF5DFUVULgBm4lqMzmG1vO3pbAFRAFhFQCkdFsADi4najM41gWLiisJzO5S8cJQAAxHEADsjh
+AnmFLQ8gocIfnOO85xBHbFlL3k78AADFAMB4QeHecxAAEgRQL2xn2tFCxBa9HaXsfSe7Xvvit6Pi
+AHBpOwJbAOu3oyrlJlPYuRhe0nQKAKAGC0BaCDnE9gAi6GgftMuBsHEAAA/A8ExHbM9vAADDLL7A
+N34xA0j49sMhXu8uWuDEJRzjxCk+Ko1tvAsdx6AR5QLAj1GM4YP6t7LFALKKO1pTXoIqTnxDY1mY
+QgIWUKNF50DD6g7g4W31oaOQYt7+FYzIPB6sN82yuEJpAQDnK7j1q0a15ZnX24INlaIBfWYeDmba
+VhnJggSfBQALNMWHjgbaFYOG73pnymZI1/MYETjbU/4y4fe0c5egAkAE+FCjb3jYA8UYQj1XzepW
+A6ARro61rEuhalmv+gCyDiuroVpPObjZCaZtNaxtzephA6BW5bwyLLeJFBa0mgRbKYYTWUq4KayB
+qnfQ52oMioo1WBsVLS0FGr6di2zzoabTrig/yz0FPhSD3XJwBT+P0dCQQnQKJGhBMWwTgwbAWzua
+KwRLDVpvOWjHFWJYg2awYpQrWPemVpnRGK5ASm1exuJ4WfiWs6nrVZNS4xhXJu8yHO4RjZj85ChP
+uULOODiYuPzlMI+5zFtykpEchSg4z7nOd87zntuETT4PutCHTvShBAQAOw==
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://creativecommons.org/images/public/somerights20.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAMAAABUFvrSAAAABGdBTUEAAK/INwWK6QAAABl0RVh0
+U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABFUExURSAgILC2r9XX1VZXVpaXlu/v77zA
+vLi9uLK3scDEv8nNyK2yrLW6tMXJxK60rXx8fEBAQM3QzKyyq6uxqv///wAAAAAAACmwp6sAAAAX
+dFJOU/////////////////////////////8A5kDmXgAAAtxJREFUeNq0luuWqyAMhVNAbb0ltmTe
+/1HPDqBiW6c9P4Y1i0qEb203CQz96J+0H1J97O1ubRjmeb5cr+PYdW17u92maer7fikNj/00Idy2
+XTeO1+vlMs/DMKS1K0iVTriXxO0yt8IWdCZ3hTwbOXF3cg2+vxVsXNBGb19IfsxoI2+SN/D9PfiR
+uUMSfC2CzQeggCVhAZttCPBUJGcv5mcvXhTvgsdKsFcK0Rrc80smP0m+fw2uuKzSxNwcKe9mvHjx
+Dvxk8eoEwJPqFNfmMKhc/gK8erxZXBSbYI5N4DY6Zhe9squ9WBPuC8WrxUWwE10i2b6RErlJvSuS
+K5M/bd6wgZPibLFovEF0YH30bYwqlcnjwYstkQ+KE3k+KL4ZuC9gxwo3DHyu+P7ZioNi1yAZVFRE
+G5cUL0+KP+fx/OJxzxpi54Ujiwwx5M17UjyfKz73eFRqtnSD9jF7XNJtrLPi3Ip5TbdxTzfn1W9g
+PC+uFPUh3YZfFb+vvImwYbk8RKl3VU1vTszfl/Rm8uJ6pLEPLeMsksnVp9A3lXc/7t7h1HRM6WYg
+27hfzs3HaR7vx2Yt2doj+PBwSw3uziz+j4PemnPbHfIi+Gixgf+oAYwTnGnBQRujCAoWe89q/aBR
+kGYtoTAiIxDSG7EJ1omNLZ4iDjG/DgwsMXgsU1vqvYHtAkpMdKgzdFiDeWozDQwt6FTLyhy5Nr7J
+UVsJMO4c3GYJ3DLO3A0sCYyzmFawzUwYzuCyMke44RUsCaxmQQYH+1ozQTYr8K0Ax5jA+EpKVjTJ
+irKyfL3ER5OiK5iEgstgdukhK8ZlkcBxt4IkNAaGQUlbWZkjGp0/KJa8NQYWg7xYUXlsv5UVZWWO
+aJOJu2IY4HwTGx+lXWSzIoNDrBSHdJUWMGyxcbbCwLfkVaQ1K3CVoVw9jgEm7wmbxfaPCWJMTMSI
+eUEYf2mmpmcy720s9pDeivVc3vxdgfwTYABlOKHZNVc3hgAAAABJRU5ErkJggg==
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/delicious.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABGdBTUEAAK/INwWK6QAAAAlwSFlz
+AAAASAAAAEgARslrPgAAAZBJREFUKM9lUsuKIkEQjHy0ra2HwYNX/R/B+SKR+ae5zX6G9wWPSyMN
+bUmhnZlzKG3G2aAosshHRUQV7fd7IlLVpmmYGU8sFiB6xGae87XrBrNQIlqtVpvNZjKZiEipiMDx
+CDMAIIK7pXSfz/+m9E9Vdb1eb7dbMxORCBBhGPD+jpQeN4iYmXx8fL69nblpmrquAUSEu0c44GY+
+mzngzM7sIgFgOq1ns0aZuTBhZmaOAABmuAN42ZlFhBU/EKX8KeP/OAIvDURUckQvDUA8C6Dj4Pv9
+Xmxlxu2GyUSZIYIIqIbZY4ouFovj8bjb7ZqmMbPSX1X119cf1crdiWBmfX9p2/50EiUiM7terzln
+L+oAEVGNqgr3ICKiUPXyji8aRjCzO8oigjsiHs/OReuvhogymEpqLCAiNbPCRFXdPSIiQlXNjIjc
+nYiGYbAnNOecUgJQzmXS7Xbr+15Vi4Fmdrlcik7tum4+nx8Oh1+/tW3bkUlx5Xw+55zVzFJKy+Vy
+Op2KSGEfEafTaeRtZjnnYuM3lXoNcZjThHcAAAAielRYdFNvZnR3YXJlAAB42nNMyU9KVfDMTUxP
+DUpNTKkEAC+cBdSuDKlNAAAAAElFTkSuQmCC
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/digg.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABGdBTUEAAK/INwWK6QAAAAlwSFlz
+AAAASAAAAEgARslrPgAAAjdJREFUKM89kk9O60AMhz2O04laiTZS1QqowgLECRASf3oIDsQpOAVr
+lhyAPSxYlgUqlUoygiSTmWTG8xbz3vPKm5/1+bPF/f09ImZZJqVMkgT+FSIKIWLvvddaG2OYmRAx
+z/P5fD6dTonIWhtCEEIMw9D3fQyEEPI8V0pVVUVSysViMZ1O67oWQhwfH6dpaq3d7XZFUYQQpJSb
+zYaZF4tF27Y0mUwQUWu9Wq2892VZnpyczGazqqpub2+dc0SktVZKjUajLMsohBBCuLy8LIoCAN7e
+3jabTSRxzu33ewBomqau68iMfd+naVoURdM0u91uuVwqpVar1Wg0IiJEJCJmns/nfd8750gIEW10
+Xae1ttYCwOnp6evr6+Pj4zAMiFiW5dXV1cfHh/eeAEAIEemttczsvTfGXF9fx7BzTggxmUz6vkdE
+8fDwsFwu67pmZiEEIkYNd3d3v7+/UW6api8vL9vt1ntPzExEFxcX2+2WiM7Pz7XW7+/vzGyMCSF4
+75nZOTebzZRSBABE1DTN19eXEOLo6IjorzpmbttWa53nOTOHEACAEHEYhqqqzs7OAODz8/Pw8BAR
+nXPMvN/vy7KMgegGAeDn50cIsV6v1+u11rosyzRNkyQhIimllDL6jWzUtu14PP7+/n56eoojDw4O
+lFLPz8/WWmPMMAzxcPEhkpubmyRJ0jQ1xjjnsixjZgD47y2+Vgihruu6romZq6rqum48HidJErUg
+IiLGLQGAmbXWXdcx8x/NMor4xC0TpAAAACJ6VFh0U29mdHdhcmUAAHjac0zJT0pV8MxNTE8NSk1M
+qQQAL5wF1K4MqU0AAAAASUVORK5CYII=
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/furl.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABGdBTUEAAK/INwWK6QAAAAlwSFlz
+AAAASAAAAEgARslrPgAAApdJREFUKM9NkMFrVFcYxc/33Tv3zXtvXiaZjBOj1qpgg6BQreCiC11Y
+cNPgP1AspdBq/4a40J3uRArisl0UFGpLpBCoQYsg2GJxVWSMjNF2MiYzyfhm5t335t7PhVn0bH6b
+8zuLQwsLC8xsjEmSShSF3nsiggAEACJgpizL+v3UWuu918xcnZzcPTub59xqrRlTEvFCxLztFUUx
+Xavt+7D+Zr3T7fa0MWb3rtmJ6szjJ9f7w0VlqyKOBOmmdV7gUYpymJO1xvl6fWYwGOiJpGILevTb
+tfkTPx87zS7tcA7apCz6rDt3VLnKVPeP9MXS7fsI9nyZJIkOo/Dl67W1p4vHDtFflxBPKFp3mwcv
+HPj8ImzDdtG8e/mjrSX//H5anS+ZMnvng7JRemrQk8maRIEYi0Nnzu6Ya8R//5TfPFDxNxwwthGz
+EhFNROK9iNMBXC60Ucv5kyDa5/JRZ3kRr3qZ7qsaCE4gDGi8j2I/gs72Nr74nmdO8XTAWj745uro
+2bn20rfkVgB+X9wGIFBQqVu9+6C73ixF2m5tNm/fyZZ/UG9XxADw/xMIyDwp+Ol28eeVcfOpABu/
+PgwXL+TtH6lM8ECxPawhAIkbirThx64yuaO2cw8J0LqndoESUC7yL6TPJAQCE1MxdigGIdTWP+C9
+R/THh8cEu/rQjpD/h2GbOEUgFvAAaZtl9dpUfvjTN73loxNwcahbzyAr+0evXAlihA3Y66I+p01Q
+5IXeepvun65Xz3536xdVev67bT7Gra/BiqkQjr2oUOxw58Hyma/iOF5db2lrbafTqTdm4tPn0uPz
+7AnjHAQEhkAKVIgPTBBW4l53Y5Rl2nvf7fUGw0GSJKWwDAioDAB++0cQuaJ4vdoajTIReQeIT0ZY
+YuHm7wAAACJ6VFh0U29mdHdhcmUAAHjac0zJT0pV8MxNTE8NSk1MqQQAL5wF1K4MqU0AAAAASUVO
+RK5CYII=
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/blinklist.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABGdBTUEAAK/INwWK6QAAAAlwSFlz
+AAAASAAAAEgARslrPgAAAqhJREFUKM890s9rXFUUAODz486bO6+TGeZlmrRB2zQhtA2FSkAqbRWk
+glZ04c5C1Z3tqiC4DbgtrgoiraArcSelceFCKO1OhShFbCe0BEyamtLkTibz3p078+ae487vb/hw
+eXmZiKy11lpiVlFEMAiMIABjUQFUkRBCCEFEDBFlWZZlWS1NDZGtUFTcG8b9Ui3jpGVLkA9HhR90
+nXPOGWttlmWT7XZzos6mstbXbalBo/F0AE2jOzHPMJxsjQd5XwG898Zam6Zpo16vpvWHReXXkCzN
+T5+dwQaVI0r+3D74019bD314t6XNA8WutYaZkThNzOaQO4PqldePnO7d15Ufoci13pi7cOnUW+du
+3F17EsojSYWJjKoiQJSYtSffX5xZfPyDfPW5bv2LddShlqv3jn926+r5M1/f61SAE0JCFbETdmP1
+3J2PXt1c4b0etg/zbA0PAR9m7jyCO18eTX1Rbe1HZgICVSWigcef7+L1yyhD/GJFX/sAh6oJYAa6
+1Zlw6wuHWlVGUSVAAAVggDkLFy6Bresv32DndyVAQC0AJg6ODmTPuvlIlBAJkHmY+5eXNj69nX98
+E6so316PD55oibI1lhHj2ffWeWbU201xLAr8zsWLjUaj2co2zMz9Z+PpY7OthSkcP8WxwOwCf3j1
++dIn363un6j0XsL+C+cMIiJCFJ005brb/X6tdebEtfljbzf3HpdTi/9U528/2On3u2+2ow8CQCbG
+KDGOorR0/MZU8nd359Fa8Udl6rfudPu5nq5tHCd/6qhGH10ZRaIJIXjvizwHAMO8kOCc+s3BXhE5
+I3mlEmsERV728nw48CEEE0JwzgGA956ZRZUAEkPnDYnoi22JCiJx4L1zLoRgRMQ557231jKzqgIA
+AKgCICAAIsYY/+/9H1oebZubv+7uAAAAInpUWHRTb2Z0d2FyZQAAeNpzTMlPSlXwzE1MTw1KTUyp
+BAAvnAXUrgypTQAAAABJRU5ErkJggg==
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/reddit.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABGdBTUEAAK/INwWK6QAAAAlwSFlz
+AAAASAAAAEgARslrPgAAAsVJREFUKM890k1r40YAgOH50EjjGTlRldhOYneTTdVQ8MG0iSEQaPpB
+ICa7UCgsgdx77H1bXHrrof+glPyFnLrpYWGhh5RtyC0QX7KpiWuXtbS2ZI80kjyeHgL9Ae/hhQe2
+222EEKWUUoox1loDACCEhJAkSYrFYpZlURQBAKSU8/ncQAi5ruu6LmPs/wAAgDG+ubmpVqu3t7eT
+yWRlZcW27eFwaFBKXdddWlqybRshBCHEGHPOz8/Pd3d3r6+vfd9fX1+3bZsQEkWRQSlljDmOY9t2
+oVCYzWZCiMFgIKXc2tra29vrdDpXV1ee5/m+Tyk1MMYQwvF4nGVZGIbv/GGhwO66Xa31q5cvNdCr
+1Vq9Xh+Px2maEkKMh5ubTqd3f99ofPzRJztr5eXPv/wCQPTveDro/3Pxx6uJEJ7nra6uIoTwwcFB
+v9+Xcby9vf3s668+fHvtMoPXPE6tyt1rb5F6n7V63W632yWE5HmOGGOcc4uQk5MT692d/vFb8OvP
+Gsz18B788I365ae15YWnT54Oh2+llKZp4qOjI8bYcqnUaDQUtOBaGX76BJUewUIRvP9I1Zt4vZ7P
+8jzLi8WiEAK3Wi3XdcMwJIRUNx73lz4YKNOA80jEfxcqxXrTxOi3Fy+m02mpVAqCwMjz3HEcy7LO
+zs5M08QIXlz8aVpWHMc2Y7X3Wr+//uvuzZudnZ0kSbTWBsY4juNyuby/v396erqwsOB53nQ6xRgD
+hJ5/932lUjk+PhZCRFGEEDKUUrPZzLIszrnv+4uLi5ubm1mWYYwBAGmaKqUcxxmNRvP5XCllSCmF
+EEmSRFFUqVQODw+bzaZSCiGklPJ9//LystfrYYwnk4mUEkkpgyAYjUac81qtBgDQWj+gklIihDY2
+NrTWYRgGQZCmKWy32xBCzjljTClFCCGEPIDVWqdpCgBACAkhhBBa6/8AFuJWT5envEYAAAAielRY
+dFNvZnR3YXJlAAB42nNMyU9KVfDMTUxPDUpNTKkEAC+cBdSuDKlNAAAAAElFTkSuQmCC
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/feedmelinks.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAArwAAAK8AFCrDSYAAAC
+jUlEQVQoz1XSzW/TZgCA8cdv3zhO0wwHtzSmFQ0QKkjWqWVwqHZAmrRKaNrXdRfEnzFN6onb/oRN
+4jbthkDACRga04RG2QelaZe1eIUuKTSJXSI7r+Pm9Q5Ik/jdnvtjLC8vCyEsyzKzWQyRM4aZg4iD
+AYA0k8xoX4+Q6kEcK6W01lIIYdv2oWLRGcvlVaeaeEfadd1rQiqK06/sd+tyJrScTi/a9/0gCKRl
+WYeKxaOH35lTG+7WDXY3SbXIZAE6z0tbD0tTp1unP109XAGUUtLMZp2x3FzccH//Hr+FM83xc0yU
+Afb+wVthZ90Nfd6/FBfKfjcrMcSo6rreDfwWM/NcuExtiTEHIOxSv8OP37H9h/vXzdHylxhC5oSu
+6Rc0GzjTXLjM2S9oezy+BjD7AQufo4fc+oZ/12vHXvwtHJlJovG9J6Sa4+eoLdH2uH4FbwVg/T6f
+fU1tiad3aT8fDxqZ4YLgIKa7g5ljskJhnI2fePaIMCAM8B7T+JXCOBMzSJP2NkkseMMQCAlA+qZ5
+iwGQppAKpIntMojobKN6VBYpn8XKY+UpL3DqPFFA0GSYUJxCmjKRuXbhTOnZI7wVNn+h+hGffEX9
+HkD1Q0qz/Hkb7zcM0XaqiT8q+6lcM0+UJmZ4ucX9bxnJUFnk2DzAIGL9Hg+usucxeWLNmOrrRJLq
+yHJasxfd6Ac2HvB6j8oikycBXm7S+JndTfJ269TFyHRIm3IQx51wsFqcp3rgNm6ys0arQa4A0O8x
+THCmW7Mfr+bnOkE4iGOplNr3u0Ccn8ufOVrdXz3SfKh7bQyE7b6aPF+33wstpxOE+35XKSW11kEQ
+KKX8bBZjpKErGbtEIQEYySTJWL+jSXf/3/s/YPYs4jJY1hcAAAAuelRYdFNvZnR3YXJlAAB42vNN
+TC7Kz01NyUxUcMssSi3PL8ouVvCNUDAyMDABAJYuCXpmsVrSAAAAAElFTkSuQmCC
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/technorati.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABGdBTUEAAK/INwWK6QAAAAlwSFlz
+AAAASAAAAEgARslrPgAAAodJREFUKM9N0s1u1FYUwPFzzr22rz1DMvZkFEAJIVPUsAAhBGHRsoJN
+BWTPCp4kj1KJZygCwYKuqAAhgVgQia8ASlCTmYmT+fD1HXvOPSwQVX+P8NcfNzc3icgYY4xRikRE
+QOAnBEREZu+cc8557zURZVmWZe0kMYhEEGgVEhAAePAzrjzUIt7aMs/zPM+1MSbL2u2FdK7RajQb
+VnqH5V7lKwDQFHbi4zEuFRM7Lo4A0FqrjTFxEqXHOmiqb9HfvWpru3w1qQ4AoBm2V5OLJ8yFjqxr
+WrDWGmM0KQrIVDD+LH+9/frYqPkzC791ki4A9O32p97L9/LiXOfLMtwIyJAiLSxBROP5N293Hq+m
+61eX7y4ma0k4DwC2Gu4vvnu6c+9N70G6vBSM1oRFKwon3PsyepiZld+X75xNr7vZhGcMALFqnU2v
+C8Cw7G+NHp7mVFFIhKrmam+43W1f7rauFNURS/2jKUtdVEfd1nq3fXlvuF1zRahIRAgxDKLxdFDy
+KFQxCAh4AQ8CoYpLHo2ngzCICFFEiKWOdXo+2/gwePZ050/rD6IgSYJWErRM2Cgl/2f33sfB8/PZ
+RqxTlloDMjjTlVvRSvh651G/+Hrx5Ebk5wWkgP1Xu/e/DbcurdxaKv/Yd0NA1ojkqdYQrcZXdxvv
+3vefbfWeMFSKgsV4LQrjKydu/xpfK0oWmiGSZmbvubZYShGHzUunbjar075GpXQn7iJBUx2vcpza
+Q+89M2vnXFmWo/EompMz6lpz+ksgxwBJvK/HUxE5gomXWVEU1lrnnHbO5QeH4Kk5i7SaG037Qv8C
+CAAiIgAgEDNba/M8d85p732e59ZaM4hJIaCAIPwPIjLzf3t/BzPfZP/2NHGZAAAAInpUWHRTb2Z0
+d2FyZQAAeNpzTMlPSlXwzE1MTw1KTUypBAAvnAXUrgypTQAAAABJRU5ErkJggg==
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/stumbleupon.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAArwAAAK8AFCrDSYAAAC+UlEQVQ4y2WTv28bZQCGn++Hc3f+2TOtg0mTtpAgBaKoRGoVgVwJ
+RiR2JCYkNqRurJFQR8TECBUDM39A1S6VkqqAhAokIBK3KTQkJLH95WL77mzfdx9DAwvvu7/L+zxi
+bW3NSSkJggDf95FSIhBIJP/GnRUB1lrSNCVJEvI8R0spCcOQMAwpl8oUSgUiGXGcd0hI8J1HXdQp
+j8roXJPZjDiOMcZgjEEHQUAYhjTON6hOV/nj8p/clfdYP93gr/wZdVtnRaxwvXudlm0xNSkQDU4B
+SNMU7fs+5VKZ8nSFzZktvsy+4pf+T4zTEbl17Of77Of7HBT+5q1ai2q/RuYscRzj+z5aSYUuaX5v
+bHN7+DW9pMdrLCGlQigw4xOeDNtIT2CDgBMjcQi01iil0AKBsYZ7J3e5XHiFjyu3GEQeNs+pFz38
+MOLz5BaTOMEVfDYPR5SzmIoC5xxSIOhMOmxGW9wI3mQuu8GDnxvc/tbyxTenTB29ztXiMm7ikEKw
+3Rnx/fYeSTpCCPH8q5SUdrrD/c46J7WHvP9OQGs5ZPfomD0zIChM4YQD4Rji86w7ZDQaIwDpcIQq
+5I3iVTbMOp/tfsqgeJ93l85RqpVInORK9QoL5xcQBAzHY9wkxbkcBGiHo2Eb3PQ+IW4qMjumNLzI
+d08HRIcxD3YjPlp8j4WXWjxqSx4/fcJKCQpK4tzZwBSa2Myw3g7p9UecRhG/7T2m5yR3Hh1wMBTU
+lOTXrR+Z7rdZvPYCvu9BBFoIAQgUI447e9zZjBj3U9AKfI/+MGPj4Q5qEDHvGVbnFZdmm7gz1LW1
+lkmW0fTgw8WA6azPxvaIds8y6TsUE5qFhEvVPtfmplhdeplq9RzdnsFai07TlDiOGQz6vFit8MFy
+hdWm4oedIw4PDcKmzNUkr168wOxMk2qtxng8IY6Hz1FOkgRjDABxnFDQigsevD1fZDyrcS5HK4nn
+eTgE3a4hjof0ej2SJEHneY4xhjRNz3RWgEMIgQAQ4Nx/Zv9P538AMiJ54fn4dRQAAAAoelRYdFNv
+ZnR3YXJlAAB42vNNTC7Kz01NyUxUcMssSi3PL8ouVrAAAGAVCCeCgzaLAAAAAElFTkSuQmCC
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/google.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAArwAAAK8AFCrDSYAAACwUlEQVQ4y32TPW8cVRiFn/u+d3Zm9sPrJU4gAeJYBBOMbEwK6OgQ
+RIICgURLk4I/4V9AQ0VNQYEAIRCKEAUFTUwsEb6yISSKFRsZYpSNvezszOydey8FRlTwtKd5pHOO
+2djYiKpCO8tJsxxVhch/4oOnqirKssQHj1UVst4CdXeOzgNjVATEIBIRICBgIsSID5HGGygNnVGH
+YlRg23nGNDnFN9VDXFjeRBWcKrVrqP5sqBpFski/rdiWUrmGajjkRPtJfJljsyxD0pzVZIU3l59B
+E/h+u+TGrUNGdytcYTAdaB1PWTvbY20xpf7ybbZswq3cYlUVoyBJTZJ02Lw55f1PfmdpYDl/ro9o
+xr3asfXDDnfv7LD46goDZ7DWoKrYGEFMRMRxY/uQzy/dYSGD1158lLOnM0QSXDPH+qJyUIzp9iyz
+ViAqECMWQEyCbwZsDu/z217NW28s8fiZLk0I1MGjCOeWBgQd4H3NyEfiUVMWAxIjrnbcvD+lyCJz
+84IhQb1g+DtHIwaP4mm5FGkpCFgiBInUeOIkUE0cMQARvAETDRUzXGVQtVjjCNaB/GMAQCBPPHM2
+4ep+4PbulJXHFlARyqZhazjmytURWavLc6spp9WDBAiCYCB6JSfl+ad7zGvKBx/9yrVfxkAklcBC
+llGOSj779FuuD3ewMcEcKYgBPDAzcP6JOS6+forxHwXvvHuNj7/Y5fJ3hxzU8OCZHv0TBf1BRSJg
+jqZtvffE4JAww5qcl196hPljGV99vctPP95ju38ML456BhdeWOXZ9ZPoz5dpmoiPHluWNbG9x17n
+Q967bWmlFh62HH+lZjr1NFGIQCZQ9VtcmgjL+1co+mtUJsOWZUWnGPNUqoTrBqcgxtNVoWeEGP+9
+Ztj3OFezfXKdSWWpplOsD57iYEJe5TSZECXwf3jvGc9alOWU4D1/AZ7vQMhjeuaFAAAAKHpUWHRT
+b2Z0d2FyZQAAeNrzTUwuys9NTclMVHDLLEotzy/KLlawAABgFQgngoM2iwAAAABJRU5ErkJggg==
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/yahoo_myweb.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAArwAAAK8AFCrDSYAAAC
+OElEQVQoz41ST0gUURz+vXlvxhlncZ2UhXBKWfyzSu0aCYsSLCh4iwRBWAzEg0chMvRQCJJePOnN
+mx08ZUYIHkIQvHgSD1EQikL+Sbc5zIDNvLe+fe91WDUIqb7z9/Hx/UGTk5MYY9M0LcvSdR1uAuec
+UsoYE0IQjHF1dbXjOJWVlZqm3SiQUkZR5Pt+EASExGJViYRTW2vbNkIIABDnIOUfmjAMAYAxRnIb
+G05NjRGLGYZhaBpR6qy3l7ouKHXNVkpJw7AYsyyLnFO6s7Q0KiUAvAdYB3jS2ppZXdWCACFEpORK
+Acb84qLY3a1XVJBPfX3FbPZwd/fuyko9QMPgIG5sLHpew+LiF8beZTLPXDe+tgYAe+3tKpHQ4oaR
+7ur6NjLyI59/CPB8a+vO8XF8c3O/WHzd3NwyPX3e0gIALwF2ADAAUUpJzmU8fjw6CqVSYnk5OTZ2
+6vsvksmhubn7Bwe3FxYuAL6aZhrjKgDtd3OmeTgxEeRy4HlPLWtoft6tq5MInSP0yrbvjY+nUykh
+BLkUaJpVKFhnZ3oYIoA2IepPTpBtG4bxJp+PuW53T4/neXDtgHT9+/r61vDwh+3ttwC5KNqbmdEL
+hZ+zs01h+Li/XwhRZl46YCH2U6mPAwOEkHLxtxwn2dT0eWrq9OjIvWIDAOGcSylLpVK2o+NRZ6e6
+2kspxTnPpFIP2to45+WYnHNCKY2iqLz8XxCGYRRFlFLCGPN9HwAopf88H2OMCCGCIGCM/ee9fwGe
+YCHFsiM0lAAAACh6VFh0U29mdHdhcmUAAHja801MLsrPTU3JTFRwyyxKLc8vyi5WsAAAYBUIJ4KD
+NosAAAAASUVORK5CYII=
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/newsvine.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAArwAAAK8AFCrDSYAAAC
+WUlEQVQoz21SS0hUYRT+/sed+/KB5oCSRYLNQiSwTRIpthDDjFJwUYaCWvSgDMRIAstSqEXQQ2pT
+Ui2CxDCsRS/TEIVCJDAKJrACEzEfSc29d2bu//8tJkyxszrP7zvn45C2tjbOODQakR4IIQAl1JeC
+UUpAACiolIDNJYk4jpSSM8bMZGt09kNfeGhzVs5SZGn+188tm/I+TX2OCx+AkKIsd3tlqEQ3jIWF
+BWqb1qKM9IUHEY+eKK/rqGkJJqXcPNRum7YQvohHQcjz8PAXZya4LsM0TWqYhmEaAAHlryZGfCGO
+VzSkJ6dJIbLTghXbyiAFgEAgYFmWYRiUMc4YBwDO+0eeHrvRPDnzjRASTEq9frizrqQKQgAAwBhn
+jFFAAQoA/HjDrtqiguJ7Aw/jfuxCTcvjdy+uPLmDBByQaFsOACnyN4Zaq47uv9rkxqLdr3tejr9R
+jIGQBGDC6D9X0y/2dpV31p/aXb8+PXMs/L50a0lXYzuED/x3ACCETM9NN3Wfn16cLcovvHTwtFIK
+q23FSvHoueqTkah7+VGXGdBrivftOFvtxDwwnhBqDQNlY5MTedm5DaUHpFJHbrXaXCsMFWA1CQUI
+QACAa/cHevZ21FECWzdSDauztrV5T+OKGwgAKoQvllOMQ9Ov9d/+7Tpnqpu+zk7dHewFY4miEL4Q
+gnuu51EPUH95AHBNKDn88e2DwV4JgGsQfiwWcxzH8zwacZ00aleGdgJghDJCOWVu1H02PkQ0nWk6
+lCoLFeVYmT/m51zXJSvfm1GWEHdDRtb3+Rkh5dr3/gMPJQS1HiKHEgAAACh6VFh0U29mdHdhcmUA
+AHja801MLsrPTU3JTFRwyyxKLc8vyi5WsAAAYBUIJ4KDNosAAAAASUVORK5CYII=
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/socializer.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAArwAAAK8AFCrDSYAAAC
+PUlEQVQoz42STWsTURSGz7kfM2OSyczETNvUFsQW2irYYo24cSEIVnDpXpdu9Cf0h0ihC39A60bB
+hS50Y+lCpKUIobZJtIQ0ycSZSe5k5t7rIhURCnpWZ/NwzsP74vr6OiHEsizTyiNyOG+0ThMRCyGU
+UowQ4rqu67q2XaCUngtIKcMwCoIgCAJmWZbrur4/4Tg240wjgpKg9d+AsqwcAAghmGmatl1wHJsz
+PjrZM4ZdNnOT5D0NUkpFKVEKOAcAEGLQC/IMkVNGCUX8WZs82mh0Gh+i+wVnFerXm01ZrRpLS4aU
+QCmhlCJyBshAg0bGR6Etu+9t/SJ+5R03jK3q4ZFRq9WePc9PVyYHg7P3CAAAICY92jvQ/SjpQxTF
+p+1mq30Sx8H+fuPbYY9SgngGMADMkph8fVvpbr2mwzckJT9m5Lun/U4RgNTry5ubSS53urBg/r6A
+AOmA9OrHI+Olyu0ZqdO6q5q3M2kDXJDS3tnB7e1ap9MlhAAAAa3B8oaXH1Bv4YoCQ6EoH5ilBgID
+oAAj328Vi3GWZX8cGGf80qJXWX2Ud67yQmf+E1/etaw8ADGMbG1NPH6yWC77SqmxAyAAUKN98Q5J
+/Wp7t9366Ppf5m58rn9PXDdcWcmVvPJgkJ5Ja51mWaakxmKlkJt66Mxfc27hnC7dgzjmpunNzvpZ
+xqRMpJRapywRcRhG4+QpJVOl8nR5AgA0KETQGpTSw2Hc70dhGCUiZkKIIAjGyf+zfEIIppQab73g
+v+r9CxKYJOGYNAB0AAAALnpUWHRTb2Z0d2FyZQAAeNrzTUwuys9NTclMVHDLLEotzy/KLlbwjVAw
+MjAwAQCWLgl6ZrFa0gAAAABJRU5ErkJggg==
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/magnolia.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAArwAAAK8AFCrDSYAAACgUlEQVQ4y2WTzW5bVRSFv73Pse+9uYmxnVQ0USvSdBCYAWIAFROI
+GOaV8mYZVEKtxBsEEaXppEa1c238c4+dc85mYAsqWOOlrbXXj1xdXZlTpawqymoPdR63nqIxAMIW
+RvYlqeiT4yMhtLRtS84Z71TpDw8Z1gV1nKK+w8GHX+lObjEUBMQym+FL5mcXpHLAMh/SPIxpmgZf
+VhXDuuDpx9/Yu38NKGYCCt5lEMgJiskt5eSGdPqK6vwSOCKEgC+rPeo4pb5/TcYhAlUv0z/eUB1E
+RIz1yjMddVk2HdzdG/Yx2uc/U5YVXp1HfWcrF+gfR47PF/SO1jiXtgqyMnhW8OGmZvK+i3v3Fv/k
+G9RXqFtP6d1dYyZUvczJlwsGT1eoJHISLCliRm/Y8uyrOb0nERPP/t311myNgc7kD0RhcLKhdxiw
+LGCyzcAMTLAk7PXWDE7WOA/dyS0aw9ZmE0UclPsR9RmM/8DAQNQo6og6w3CA7B4HREBkS/z/Af7t
+hOzIOygYipETrJe6lS+fXAVsWwZAeWwdOYKQAEOzL1kPz8gJpqOSxaxAdvljhiGIGOIyYeWZjgpS
+hM3wJdmXaCr6zF9coCSWU8/o95rlrAIF8Rn1CRTCssvopmY26iA5sji7IBV9fI6PpHJAOv0B9+4t
+H+8L1itP/yRQ1hGATXBMRwV/jTrkTSK9eEUsB+TFHB9CyzIfUp1fsg+4uzfM/vTMxzXqQTByElIE
+yYl4+j3L80uWiw0htPi2bWkexsAR7fOfcEdfc3B3TXdyS0xuZ6bhTQiff8vDF7+wWmxoHsa0bYvP
+OdM0DSEEyrJCfYUb/oh+9t0nc95VoVOzGc8I7eqfOf8NPvM1870to24AAAAoelRYdFNvZnR3YXJl
+AAB42vNNTC7Kz01NyUxUcMssSi3PL8ouVrAAAGAVCCeCgzaLAAAAAElFTkSuQmCC
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/rawsugar.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAArwAAAK8AFCrDSYAAAC1klEQVQ4y32Sz09cVRiGn/OdO8O9obYyQ1tmFEawBMMwig3BahpN
+/AGzakwT043u3PhP8Pc0LrRLE60lFk1NxIIB1E0pBS5OM7mMw8C9M/eec7qYIrrxXXyrN8/iex+1
+tLTkRIQg8PF9H601/xdjDEmSEMcJ1lo8EaFQuEihWCafz6OUwhiDcw6lFFo0qDOAtZa01yOKQqKo
+iRcEPi8OlTDqCtHRMdYZdvf3SDPTL6cpWgso1YcCk9NjXCimxHEHz/cDtBbW/tygc3LE9OQUJ91j
+0iyj1025++M99sNdUOBSgwM++fwj6rM1Aj9AtNaICMYYRGmKQ0X8IIfkYHamRv29BTzR9E5iRHuI
+aFKTIqLQWuOBA0BrD9E9ft/e4quvb9NsRnywUGeuNs/ISInMdHn7/atYYxkdLaKU4ADv9DnOWXBw
+cegSr06+hn8upHypDA6mahVq8xVqc+N0ogxnFV5iwP0H4LDWMfHyBJ/e/Iz9Rkjr7xZ3V76nMltk
+Zn6Ub+/8xOYvu1xffJO3xsZAgZwCRIRuGrP39AmZTWk0G9y+8yX37y/TbBzSPbY82gxZXV4nDP/C
+WIviXwAtGlHCw6017j1YpjxSoladIZfP88fqNgc7LV5/Z5rh0WGUPfPCA1DPN467Ce3DFg/XVykN
+lfl48QbhwQEba+ts/LrNws05wt2QvJ/DGnsGEBF6WY+VByt0uzGNpw2++eE7mkcR7aMOweAgNhXO
+n3uBVybHaB22ca6/nmeMwVpHZgxPdh5jej3wB/htc4NHe9tUZ8e5vvgh1asVWu0WWz/vUHhpEOcc
+xhi8JElI0x5T1Qq3vqhjrUGJYDLDQJDj2rtVLpcK6JzQbLS4MnOZ8vgwzljiOMGL44TDKORCMaX+
+Rq3vvevrJaIYiHOoxwnGOs5nwrXxCYzJaDdbJEmMZ60liprEcYfAD9BaP3fzVJB/DqCw1hDHCUkS
+Y6zlGdQmZBniZL2jAAAAKHpUWHRTb2Z0d2FyZQAAeNrzTUwuys9NTclMVHDLLEotzy/KLlawAABg
+FQgngoM2iwAAAABJRU5ErkJggg==
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/squidoo.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAArwAAAK8AFCrDSYAAACuklEQVQ4y12TTYscVRSGn/tRH11Vmemej444oyEzmySIIiouRFDi
+Qne60R/g0v8we/+B/0AiQhBc6UrBBBVUUImJ3wvHyfRMbtd0ddXtqrr3uuhJEzxwFmfzcM7hecXB
+wUGQUpGmKYNBSqwlPoBHoAS4AIQAgBAC5xzWWpqmwXuPVlIyGq2ztTkiywvGicV6xVk/YBQ3VK2k
+JTmHBJxz1HWNMQZjDDrLMvZ2NnhirSOKzpAhoF3FrNglkhGP91PmAppojJcxru+pqgoAay16MEjJ
+i4I0tQztPRZkKN+w0d1hlj9DnwwZV/foOKFce5YuyQGo65o0TZFBSGYLwSy+RJXuofqKWX6VOt5l
+ZL4gdDWz5DLZ5BsGs7tIKVFao5RCKYUmgCAwaI+I3YyoM8S+5nTjNaTr2HrwOWX+HDQlorWAWD01
+hIAGcEFAWyJZ4KM1to9vEreHOAbE5ne2Jn9yll/BDq/w/9IAInikPcXrBdPNV1CLI8b3P6arHHZq
+0A76+BrO9aA6xCMAuZwC9HOS6g9kP6e8+Do2uYo/K3FVyz8Gfvz7XybffYL66zaynYMQ5xsECELj
+sh2Kk1sUd9/Hthrf1ITac38e8dWT77D5xnvIRPPblzcYhkNEtPHwhEAIUOX7TLK3KaY/0dQ9nVhD
+qF/4uW/pX3qXa9Jx+4c7HOtdns4LxKJbAoQQS8NIeFC8gFl/EULAO0ecfsvU/cppcZEPbn7I1599
+yvW33kQ/tkm/6BBCoJ1zLLvHuw4Z5NJ7An02Zr35npPyiAsvv8r1y5fYrw8J5YSeBOcc2lpLXdcr
+PZVSqw8LfYGd7R2Ob33EfP95nkprxvWc1hXM7XypctM0GGNWej4KAFDDPbZVSV6eIKWnjEbUTYsx
+U5qmQXvvMcZgrSVNU5RShHPTzjOMEAIRZjQ8jHOzivN/JeBsuRJftkYAAAAoelRYdFNvZnR3YXJl
+AAB42vNNTC7Kz01NyUxUcMssSi3PL8ouVrAAAGAVCCeCgzaLAAAAAElFTkSuQmCC
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/spurl.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAArwAAAK8AFCrDSYAAACJklEQVQ4y3WTzU4UURCFv3tv093jDxhHZKEJKxNd+BJsfSfeDeOC
+lQ8g0bgAE0T8mYGZ233vqXLRAxijldSyTs53qiocHh56ipG+7+j7GSklwPlnhYBJrNeZnDMyo0kx
+sjPfZXtvn67riDHdDfgk5e6A4w5VlS4PrC5PWXy/oOn7ju29fXj1hlUBOZg7ZmBmSI5MmCqqhrvw
+7cCcI8bVkqbvZ3Rdx6qCmdNGCMHw4AhhbhhCLsYgrodC9UDbtsxmPU1KiZQScugivH4KTx/Ejf84
+2d8gnC8L704KX5eVGAIpJZobNnMnRmP3fuRx73xZiCLHfeqAc5UrY6mYhG+Cbm7yMoFhyAJnv8TR
+x4FlruCGqpAqY63koYIHCNwJuE/8CgZEnj1KHLzoqGpv05cZZz8yxyc/uVxVbOtvB+YUE+cLaEKk
+S04bb+zD4wct97ac95+cWio0fwo4BIzrURx/HsENk6iamFNwDl4+4snDZrNaTbneIuCUUkmIl3tb
+zO9Fqgw3R2bE4OzPe3IRZkaVNscFDSHg7pQqUhDzWcvznYR5xDf8uDNWcXa5YhgLuN0ea2PSZMkq
+V6Xy9sOChCHT1JpwzIw8Vn5dD6QQMZvmmvU60+WMbweqwbdslFKQKlXCpGmNZjhGIhBTYhgGcs40
+OWdWl6fMOaJtt4gh4tHx4NBwe0g3WZmMYRioi3PWOdPIjMX3C8bVktms37zz/0sSOWfWOSMZvwEy
+1622mmPvsgAAACh6VFh0U29mdHdhcmUAAHja801MLsrPTU3JTFRwyyxKLc8vyi5WsAAAYBUIJ4KD
+NosAAAAASUVORK5CYII=
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/blinkbits.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAArwAAAK8AFCrDSYAAAB+UlEQVQ4y32TzWrTQRTFf/ORdP75MG0SrRU3ET+6EQotQtc+gUtx
+o1v3bvMIPoNLfQE3gksXPoEotFRFLG0zmK+ZJP+ZcTHVUkhz4W4Gzplzzr1X9Pv9pKRkrSgwpoZS
+isTyEiRiKPHe45wjxoiWUrK+0ebGtQrX9Qip1BVowazaZUwTNxlhrcVaiy6KgvV2l7uVA/bO3gB6
+CTqB0gxau3ztPmFQ2wTAe480xlCr1TDGAALEeQOkmBsBIdA++8SD47d09JhavYExBqmUQmmFlJJL
+5oWErT24uQN6Lb/JChv2M013iNRVlFLIlK6ITCrYeQG9x6DOCVKCog2VOqRESgnJqiodfHsPi0nO
+od7hpPeUUWMbkUL+ZyXBfAzDHxDLnMP0jHI2A6kQ5GxWE+g1aG5B0cmWEmwevWP3+2ua4ZQkVhII
+WL8D+6/g4TOoNrLkOEfbL4j5CBBLh34x++kJHH7MNhZuuUjxb+bLanoKBx9gMc6KUgABg9YjZtUO
+ggk6hEAoA1EFoIR44SB3ysBKwbizjy3u86u6zXgIMfxBe+9xkxHHrVuI2y8RUl0s0qgNW88hlghV
+wTd6DFWXydDiJid479HOOawdAG1s/R5KqP8R8NuD6GUlCxA2EMqfTKdTrLU459AxRqy1eO8xxuRz
+vmI7hRCEEC6d81/2adXwhXYUhQAAACh6VFh0U29mdHdhcmUAAHja801MLsrPTU3JTFRwyyxKLc8v
+yi5WsAAAYBUIJ4KDNosAAAAASUVORK5CYII=
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/netvouz.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAArwAAAK8AFCrDSYAAACXklEQVQ4y4WTvWuUQRDGf7O7d3lzOZOYqFyMgkIK7QwiARGt/La0
+MYVY+AeIWAkGUoqksbAVRFGCiKUfSCzSJIXgRyFGVPKhF5OLSbz3bt+7d3ctzCUkCnmm2mHmmXlm
+dmRgYCBopWmOckRRhNaaBjyeEPzqW4kQvCOxlthanPMYrTT5zhxme41sJIgSGlaI9tBi2gAQYKnm
+mPhVYSGu0laeI1kqYZqjv8kfeh4jCCEEHA6F4mThIscKl8jrdkSE0WKZGyPfeG+rXN8CHUmMiqKI
+KIpwwZHTrRzcepxt2W7qPuHV7CNeFO9RThdZQwCgqelvntJao5TGhRQjWfo6T3O26zLt2R3EbomX
+sw94VrxLOZ1HkFUarRVaa0yDVRBcSNFiONx5Dh9Sns7cYaFeZOTnMN25vYic2tAHDYL1MCpLX8c5
+jMowPDVEOV0mTpfI/ydWbXRogedTFZ58qbIvf4Lzu67QmulcqSn/FtvoEISZuMat8WnK9Z2c7zmJ
+lgxZpanXw+YEAdAilKp1ro9NIWo3F3rOsCUjjBbt5hIAckaRMYqFSp2BsRkeTiySuP+GNgjWtPkQ
+OFJooX//dvJZzWy5xuD4NPc/lUh9IKvUytZWJDjn8N6tk9DVorjWW8Ao4fa7Wb7HdW6++cHR3W0s
+px5EcM7jnMNYawm2RmD9gHZEhqsHCiDC0Nsin5cTJj/O4wG0Ikks1lpM1VbQczl66aelOc/kXIl5
+83r1qxxKHIOtVVwAQsAHj00SWn/PEVuLcd5RLlVojnOoSPNVTxPC5LoTbpe1KTnnsba6es5/AEqu
+Bk5Yg6TAAAAAKHpUWHRTb2Z0d2FyZQAAeNrzTUwuys9NTclMVHDLLEotzy/KLlawAABgFQgngoM2
+iwAAAABJRU5ErkJggg==
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/rojo.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAArwAAAK8AFCrDSYAAACYklEQVQ4y42TzUojQRSFv+rq2IkmIWr8aVQSHRcShMGFIAMuBBe6
+8Ql8BsEX8A18CDeCG30I90FxM0haYxSdGW0NJrErP1U1i8SMDINMbWpR9557zzl1xN7enpVS4nke
+8UQCKSWfHa01SimaSqG1xpVSkslkGM1mSSeTYC0AArD/ALBArV4nDEOq1Squ53mMjo6Sz2Zx7+54
+vb7uFmqNabfBcZCxGAiBtZYh3yeTywEQKYUbTyRIp1K4lQrB/j61IMBai3Qc4iMjdJSiVashHAdr
+LQnfZ3Znh9TcHPF4vEtBWEutXKYeBOh2m9jQENNra8ysr9O4v6d0dETt5qY79e6O2tUV5HK4UuIA
+WGuxgOlxHF9exl9dpVqp4KbTzGxs4AwMdN+FACH6ejhdxQRGCJpCoGMxRpaWaDw98f34mMbjIyKV
+oiUELaAF6A+iun17rEUZw9D4OMOLi1hjmN3aIjY2xuXJCW+tFqJX2+lP/gDQAZS1uFJiBwaYXlmh
++vBA8eCAMAgQ9o+p+gPA+40Rgo6UhPf3lE5PaYQhwvPwJiaQw8O0XZcm0PyLQhfAWnSPn9KaH5eX
+FA8P+RkEfNnc5Ov2Nun5eVQPoNNrFoDb52UMyhg6QPn8nJuLC5qNBpOFAn6hgBkcJAIwhrYx/V/q
+aq2xQpD0fRK+T3h7S/jy0l/xtVikfHaGkJI2kM5mSU1NgeN0sxApRa1eZzKf59vuLr9Kpf56715b
+Y3puC0amp0kuLPD49oZSCrepFGEYApDM58nOzHyaRhyHxygifH5GRVGXQrVaJVKKRDz+33FWUYQ2
+ht8sFxxPeFfaLAAAACh6VFh0U29mdHdhcmUAAHja801MLsrPTU3JTFRwyyxKLc8vyi5WsAAAYBUI
+J4KDNosAAAAASUVORK5CYII=
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/bmarks.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAArwAAAK8AFCrDSYAAAB
+9ElEQVQoz32SUUsbQRSF752Z7YwZbSeamiUKuqEY+1CCpVbwtb+qUPxL/Qd5suBLAwGhTYSSh9ZC
+2SSryzSz7s7cPsQGbaDnZe7D+Th3LgfPzs4YY0oppRQiEhERwYqKonDOhRAEY8wYU6/XEXE+nxtj
+pJQhhIdu7721NsuyLMuEUsoYE8fx8Ovw/NN5t9tNkqTRaCillmmIaK0FAOeckFJqrbXWUSScc/1+
+fzweHxwcJEnSbDa11ktMay2lFADAOQeAULHgIkKcpOnFdDoajvaT/Xa7vb29bYwhooWNLbakgGo3
+r59c81oV3BPykKbpYDDo9Xqj0YgxtvyPuH8Drh9Odl5dzr9M8svGTT/GgL7yaZrmtzkirgAEyEDo
+0ry9Xu9MzPHP2UWL/3hxfHSa7LW9r1YAACKggBQY1+XT7q+1vRtdzFtwpCsfoAS8PzSDxyJCAAh3
+nNeq4vnV5/jDt/WPvKoBsX8TFkJcMMQiEoJLtqGi2kODWEkg5CQUrJXNzaqzOTk1ZYfQPwK894CA
+AADEZZDVVqt8szk9eXZ3qKtdICAIiOi9BwBRFIW11tZs6YuIqZ3bd/X89cbvjqy2iHgOt8tqWGuL
+ohDOuSzLEDCqXra/v1dlzP2GDWhpBn+vvyyfc06EEBaTnCmENYAZwfQ/9f4DjtgR0oPNdasAAAAo
+elRYdFNvZnR3YXJlAAB42vNNTC7Kz01NyUxUcMssSi3PL8ouVrAAAGAVCCeCgzaLAAAAAElFTkSu
+QmCC
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/shadows.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAArwAAAK8AFCrDSYAAAC30lEQVQ4y2WTy28bVRjFf/dhz7XHjjN2rJCKxClxH1IjiEQlFl0A
+CxACCcSmOyS66xaJdf4bNmwQu4gWpFZiAUioCCiQ9AE0dXBie+yxPTO2585lkSpU4kjf4myOvnN0
+jtjd3XVSSkqlEsYYpNI4BAACBzhw7pQLgbWWNE1JkoQ8z9FSSoIgIAgCKiUP30UUFhHkMNdVZl4d
+JxQ8E81sRhzHhGFIGIboUqlEEASsNOqszf7ifOcLqtO/yV2RqLrFYesDxsEFMnn6jcggHscApGmK
+NsZQ9n2Wyh6rnR/xf/ueYesas2aL5fQIb/gHd9seTwpPmKcx7VmLS/kmfuxjjEErpVBKobSGYhmU
+oBh1AYmbjfih8YAvyxGj5Cm9aYelQYXrvMdFtYlSCuncaUi5LDJqvcHw0tuo4RhzsM+vxR7ftI+5
+Mlnj0/QG16fv0H94xO3kFqEMEU6gOYMgrZ2ns3MT1Y5wznFQP6CT71G832FKCzvW8FhgCxk0HQj+
+E3DA06zMY9VkZGBhYTG6wrb2uac+49ajPcx0lYv1y7xbeZ3A1enSRQsgR7Cf+OxF53iYlxiFlsmR
+w3U1V5sf8eLOGuvbX7OeNXi5/iqrtkH/pIdzDi0EHFvD59E63ZnHVRPykj9i0ci4P1/m7i+Ozf1N
+Pnn/Bpc3JBJBEidnxrXAEVFkP6vxlunz8bl/WC5muE3o71hk4HHnq4TvjipsbEiWsDwPKRBkC5iO
+BL50VIxDSfC0wveXqDYbZKZMhxLx85k/q7a2uSWbZ0QnKXeGDjfwaBRytC5wqGvcvjdAj/9kS79A
+VVTJbY619ux0nKRUygNey3/np58zHmU5BeOBm7FIe8xPHrDdLrC1MkfEYyZZxmQyIY7j0yonaUpt
+2uXDpmOrss63vRqdqUUohU4c11YVb24bqkQcdy2ZtWdjSpIEbW3OaBhiTMorJuTCSpF5kIMQCOfw
+xQI/HdA/hAH8b87/Aq6AZhAPFgMAAAAAKHpUWHRTb2Z0d2FyZQAAeNrzTUwuys9NTclMVHDLLEot
+zy/KLlawAABgFQgngoM2iwAAAABJRU5ErkJggg==
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/simpy.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAArwAAAK8AFCrDSYAAAC
+CUlEQVQoz3VSsW4TQRB9M7vnPfsc586JEgeJIiQpEuUXKBENPT+DUvIf1NT8AiUSAimAglCQEE7i
+2JfY59v17e5QnBK5YTTF6Ok9ad68obOzM2ZO09QYIyACAMFaCYggzjlrbYxRM3Oe53le5JuDrm5q
+r4MoQmipmiVNZLmiu7t5Wc7KstRpmubFcKfoHpnvI1yMY3+aHNfdIxClYVqYyd6gGVcbP5MNANZa
+bUy62dP7/uPTq3fGTw8Ji+xk/OwNst2R/ZTSWK9gOIn9Y2t3Z8YwiLv+ajR5b8IUDBCy5bdi8qGI
+55m+0UpBVEeFkf7RVRXALABCze4atOaz/oPVHVqIAJBGTQgCMInEdNdtP4dA2qZEnry8VafOs4iI
+CCB1sh+4TxANRMvF7+I1ixtUnyPU9fDVcvjCc288v9n2XxNu5rR36U5sACC6XaJKjy4P3g47zkv8
+8jfeX9yLzPvm4HB0iuCFVBUtMAPAj+mI6s1k63zSndqk8dGHWC79r2sbuReRyINFXotUdCetvXgf
+iIgIIcRVACdmPfs1AVEIniFE9AAQJErwWLsgAwghtKTQrHaKLE04xhhjTFh2BiaGphWHEABo51xV
+VVVVARARVmqrC+pkAKJbKPGLRUNELcc5p621ZVkCyLJMKQURImK3BBCDv60X7QpVVZVlaa3VMcZ2
+Msbg//X43v8AZdExQkpDCjAAAAAoelRYdFNvZnR3YXJlAAB42vNNTC7Kz01NyUxUcMssSi3PL8ou
+VrAAAGAVCCeCgzaLAAAAAElFTkSuQmCC
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/comments.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAArwAAAK8AFCrDSYAAAC
+O0lEQVQoz22QPWtUaRzFf+e5z32ZeONkRo3RbWSJxRJYt1tFkDTbbSfYCfY2foJ8A2sRqwXBVtjS
+xoibXXYFB1YhgmDQqMlk9M6Yce6dOzPP38Kojac4nOZwXrS2tuacy7JGkmZIYHBAfFNWj8dVVYUQ
+vHOutbBwvJ0ficvIJiYn5815yZki5OSimeJiWL/tFUXR91nWON7Oz+dbJwcbLlQWjLhBo012iLhJ
+Ok/atPml3Xr+IZRl5ZM0OxKPThbrtE6HH1d5ucHrRwpTWDSXEeaEaVIuNWjNJ0mSeqRoOnLlbjhz
+hZVLDLt6fo/ZPvICMzMhpFBFHEXyB9tGA23eZbDFiweMeoSUKAY+n2CISWKzJuABJGY13SfU+/Q2
+mZQsnWHuMB/3GCEwiXROFr4YzGg0+fmynf5dj27RfcK5a2RN/r1B8RxFkodgFuBrJReR5mQt0jnF
+qcUNs6DJB8o9EIrA0PRLAqIa0Lmtrb/ZeczHLn9dF2L7H1xEMqRO5J3igA4MBo78B479xHCH2ZT2
+Mhjdpyyu2PJvvHvG+2e4ydcEI8tZuWi/XNZ6xPZ//HoVif1tTq1y9hqdP9jpWDKBxGM2izJrHLVX
+G/KOnY4NXrL5J5LevzCf8f8dbd1XFAXnMfP1uCqmrd326uLefb1apxwwm/D4JkDZV9XTboc07y1e
+6A+zejzwVVW+LdIHttw+dCLKShaEhAUAOTDMQpQWw/xNUVZV6UMIRdEvy/HrNEM534VZPe5XVRlC
++ATfHgxvcB4SbQAAACh6VFh0U29mdHdhcmUAAHja801MLsrPTU3JTFRwyyxKLc8vyi5WsAAAYBUI
+J4KDNosAAAAASUVORK5CYII=
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/scuttle.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAArwAAAK8AFCrDSYAAAC
+R0lEQVQoz0WSTW/TQBiE512vvetsPkxTQqEttEiUrzPiwplfwO/pz+LKGQ6AxKGlSOVDlSgNSdzE
+66y93n05FMpzGo00h9EMHR4eCiG01kop/IU0WZLaecH/rKZpnHMxRimEKIqiKApjTJIkDMrj7yfm
+K/Xvvf+9x8wAQgjW2rIsy7KUWuuiKCaTiTGGGZqq2+ujmzvbq+XlLb1oew/AgYistQCcc1IpZYzp
+GWP6IyY5vnw7GkZlSKrB3erDTAza3gEQGTDGKKUkQJSoNFbDxbu2Opf0I9+7IeKUpLkxMf7sjau/
+qNGOF3dEIgHIjNb77ev87HRjVKZ50KONVGZoW0p6Os+2tqlrvgVUXH2ahYeAEAnCJp2O5cfRZjUY
+U6Yc+V/wM7QXIs61CWZsesOu5z/vFm2WCunQPwkvHqcVimekFPsSzXcKlwgCIUPSJ5G7uZ/X+c82
+9cFLZrj8YKVFXi5HO/uUelLbcKeojxHXCHW9oulZtzCv1nGT4zcBsGd1gfvzZeKrqUADktD7GD5H
+thVDV12cL+SzOHxKCAAkAIBjbzckLbfHYEHcgRtAQO1ATpCfSL4Z5YBRXweuYHALdqHznb0Uok2V
+IHbglnF9Ecir5QnEoW1XC2+ndn5hfV9hmWdVZvqdW5MGQCEEALJpGmttr65tV/5azepsz9KjTo4F
+N7KZD1ZHiY9OD61dWWubppHOubIsAWr0JKWXgYdRDBGJARK702RXCO/Xg2V9Xpalc07GGK/UQmkQ
+gefA7H8vEgDA0+t7/wF3jEjqdWsTggAAACh6VFh0U29mdHdhcmUAAHja801MLsrPTU3JTFRwyyxK
+Lc8vyi5WsAAAYBUIJ4KDNosAAAAASUVORK5CYII=
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/bloglines.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAArwAAAK8AFCrDSYAAAC
+FUlEQVQoz3WRP2tUURDFz9x739/dxQ3ZGImgEiwUg4KCZUArBdFW7PwQtvkIln4AtZF0YmOl2Gqh
+aCRqlBiEhLBJ1mxe7rv33TtjsWETi5xqijlzZn5DCwsLSqmyKLIsIxwnqZ231kZmo5Tqdru61ako
+JaX5SBcBoxGRuSxdkg53/w5MWRS61Xk7wMcqpmUpBAIUBICLYgMrQvB8paBbE+3CO5NnWUXp+2GY
+OTd779LZ2W4eWFIFCFYG9tXP/qZtoqs/bazNTybtLDMAtNYqS3VR9nI9f/pEr0iXtytmuXlmomF+
+/nXDZLnOS20CADVaN1Gom/Bsaf3lSr9q4uK3zccfftvA16Y7k0USBSICwaGBQAIa+LjjQmQZNsGz
+ANjzHKJokjFAc0hOBMIE0Yoezs2MbK9Xt4Y+KNDYcJAggIiIyKiuA29Znyp1dbpTJtoJ+KhBgCji
+AjcsImCWp0vrj979WhnYu+enLk916nD4HgVABJ4BotLoVqKJoAi93LQSrYAo4pnlvxsInpEYff/C
+yduzvVaiH1w85QLP9dpv1rZ/7OwTUXMACQZACLG2dawtlF7e3v/c39OKCHixvLH4fXNtz+vg69qG
+qAGY2rmy8Nfb/OXP6pOdvsY4HD7yfsMMcOPmsiaPoXbOWGuTbHin176htCg3AjV+jiIQUYw6j0HZ
+YWWticy7g0HhXCfLcLxq5yprI/M/NCwuriwyO6YAAAAoelRYdFNvZnR3YXJlAAB42vNNTC7Kz01N
+yUxUcMssSi3PL8ouVrAAAGAVCCeCgzaLAAAAAElFTkSuQmCC
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/tailrank.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAArwAAAK8AFCrDSYAAAB
+lElEQVQoz41SMW4UQRCs7um7WbF76wGE99jEshM7QgTOnPkzzsAvuGcgfuPIkeUE8QyQR3gHzR43
+3QRrDsQdEhW11FXVPTVNq9WKmauq8t5jBwYQAGAcx5yzqgozhxBCCM/bdj73BGOCGYrBEZhZVVPO
+34YhxhhjlKqqQgivlssXDw/49JkJM0cGygUVmyNSkWcnJ1XXAcg5i/e+ruumbce7uy8fPwAYHx+/
+p8SOfd2ISNP33fW19n09DN57AeCcs82mffO2effeYF9vb/XmZr5YvLy8bE5P/cGBOz5OpTjnAMjT
+61Stf83LDoR5zvX9/TyExcWFnJ8b0Q/nMAwTUX4HQlDHIFIiZgaRMasIfgX1t+CpYWbrtZkBQCm0
+EzTvZu9mMyICANrl7xPoZP8P7BHQ1vg/J1gpZb3WzcZUd7sCoJRCf5j5pmmPjiQEv1hsFURUSgEg
+4zimlFJKU0IAcHYmV1ckMhwe6jBM7IkzjqPknGOMAOq6nv4SROg6mFnOlPO0QkopxphzFlWdqr3n
+vcX2vH8CEfHAm8QDDNUAAAAoelRYdFNvZnR3YXJlAAB42vNNTC7Kz01NyUxUcMssSi3PL8ouVrAA
+AGAVCCeCgzaLAAAAAElFTkSuQmCC
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/wists.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAAAZiS0dE
+AP8A/wD/oL2nkwAAAAlwSFlzAAAASAAAAEgARslrPgAAAStJREFUOMuNUbFKxEAUnLfkSIKKOdAq
+xW2vcDZWWthY2/gBfsgV/pFY22hxtTZWFufVJ9wKioEEnkWy2X3sE3zN7g7DvJlZYrdk+MlrUGkJ
+AP6LZ7xaAO6xB6oLeBI/n4+8v3A6voNBYQOxc1DH4+1G4rsnMFTMAvD10p/bB0n0uD+9g9KSwfRS
+gOyWzN1nYoJbx9ysk1gGeS2Z7SbZBAD4fgWa9/AeohsqLSGbSrtaFz9voWwAPrrpy5gHq81adcDu
+SQJDdOPbHCfaIubjXr6H6Ca2A0DmjKN12+QHgoO9U33rwZWODz8QBHaOVB4VMxnPT4T1ESaV/Im4
+KEUgjmyC6jwVyGuQhkeRIwFlU2lJ7SeKnI3kw2sg2w+kwgK4AVVnxKtbFsKTivz9F0Y9YH45XwK1
+AAAAInpUWHRTb2Z0d2FyZQAAeNpzTMlPSlXwzE1MTw1KTUypBAAvnAXUrgypTQAAAABJRU5ErkJg
+gg==
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/fark.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAATCAIAAAAWBRqYAAAABGdBTUEAAK/INwWK6QAAAAlwSFlz
+AAAASAAAAEgARslrPgAAAhFJREFUKM+Fks9PE0EUx9+b2ZkddrfFtcXWXhAOwIWTNVwgISYmkkDC
+kfgPkHDgzzDe+AMMHLmawF/gQQ4kGmq5kDQ2UpsWpaVFuttl13kedsVCqH5v8977vJ+DRERE19ea
+CBABEe6IiBBJShE/DQDQGra2Pjcafi6HSt2Jx16vbdvtzc01zjkiGnEWpT5eXeWUSochEQ2EI/p+
+UC6Xjo5KOztvDIMbAIAIQvQZ0wCIyDqdaq93hshil+/rej0yzXMASloazNftVo+PP9TrtRuj1uh5
+4eTk2N8ZBhWGvVbrx9LSwsrK80G7bVuc81tA3DoRRFE4NTW+uDgH9ykZGoBcF4QgxykUiy87nQd7
+eydxm/3+T8vylpcXBgEEeGJZEpE4dycmsr5Ph4fNeCrPO7+4KNVqtfX1NcYYAwAiJHrsOKbrkuuC
+lN85/6LUqVKnSn0dGWm1293d3X2tdVIBEVIpMk2QEhljpdJJpVImSm4eRdho+I4jb21pdBSCAAwO
+QmC12vQ8OTs7/WfXMDNDhcKj+DIJoBTYGRKKTE1SRKurLzY2Xg3dEiJkMsQf2oZlBN1QM4iiCIYo
+qYAmm86N2066kW6aKQEE/wKI6Nvlma4YKfMS4JcRMML/Ae/evj84+BSGEQD0+8GzuafDAAYAjLHt
+7dfz88Vs1s3ns/n8mG1bwwC8+f6+H8SnASAphRDiXuA3lt3Z+kq6oxYAAAAielRYdFNvZnR3YXJl
+AAB42nNMyU9KVfDMTUxPDUpNTKkEAC+cBdSuDKlNAAAAAElFTkSuQmCC
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/smarking.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBI
+WXMAAABIAAAASABGyWs+AAACSklEQVQ4y6WTTUhUYRSGnzs/NXdm1MrGwhCywMwoU6zEMNDQRAnc
+tA9aZItwAoOgFi1atChIqCCIFhGtI6JNQSQURTZlm0Ap0tFR8WeymcE7c+/9Tot75zpktOlsPjjf
+Oe953/OjxeIJ4T8sANBdH6GpJoSIIAKC8yI4Plj39yVV4PU3wwFo3BGif3+U+fk5kskpAPbuO4A/
+EEAUKBEmxr+SzWSIRMuo3VWHrWQNQBCUCJeGzvPh/VtM0+T6zbv09PUjImSzGU6d7ETXwxiGwcjo
+hMMQ8AEONQHLsrhw8Qp19Q2YpomIA2xZFiLC8L1HKGVj2zbiIrgATqAAz589YTY1s+ZztQM8vH+H
+YnzR/JHWs1dba3Xqq4Lo4QiCxp6Gg3T19BGNlqEEAoEgmuZDD0doO9ZJ86E2JhYtPk6bTg9wKx3v
+7qWjqxclflCmxwBN48xAHFWcSgkrrwf5fJ6RVy8RZYMqeMlKBFHuCEX4NPqOdHoZR7Ar4cjOENNj
+Lxg8d5qNIZ1CwWR1NUc2myOb+cXS4gJTP74z9nmUy0MD2JZNxe5WEjOuBBGh5fBRGptaGL5x7Z+b
+tzW2jfaOE0xKySaKQHnFZh48fsrC/Byp1DTp5SUMw0ApRSC4gWi0nMpYFdura9A0H5PjeQC0WDwh
+1RV+KsN+AIJ+GGwvY4vuK+kDLOVsbr/JUbCd0ulVxVxGOQxSKzapFdujmUxbbAoFvWQRIfnTZmzW
+XH9MC7eatVJHLJ4Q5S1X6dicyn/G+/7WKO/yihJUcWjr7Teldm/J5+ReNQAAAEB6VFh0Q29tbWVu
+dAAAeNpzLkpNLElNUSjPLMlQ8MzLLk5OLEhVSMxLUQjJSFVw9/QNUNBVyMpMSS3O1stLLQEAizsQ
+IL6jYWAAAAAASUVORK5CYII=
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://xpt.sourceforge.net/sb/images/segnalo.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAB7BAAAewQHDaVRTAAADF0lEQVQoz22TW2hUVxSG/7XPPpmMmcwkMyaj1ahTotRoNIJEtNQW
+a40FFaaP9kWQCrUExIq+9bUPXghWLaU1lFYxFHqhWixag7dqiCS1mFRMc7G5TJxqJjM558yZmXP2
+Xj6IbR6y3tf3/3yLRZhj2kfa92nWX8QD8Q92JnZ+NZIZwcXJn7G77v2mYWc4olghUZFAvDzeLecC
+bKhuFh3jFzBoPzr+IP2nG5KVvSEZevvc6LcHHOUs87SHarOa11St/fw/gOd0oTTyLsrr/5BCRG69
+Mf+tG9+lfnjzL2eo7ben14a7M13NE4UUfPZgkokN0Y1eIze6BAC+2wuSiYif+XIRIXhGT3WGyC+v
+G/UCtX1GFANlEQwVUsj7FuYZFanttS1qdWTVqeWVr7WR8hXAE3FlXz2tZr7Zpu2eShQLgO3DsAlc
+CEPHkvAaWjkbjF2+P92zb2Nsk1UbXOAMWn8raMWLS9lz3+dHm9geA9sTBufHGrgwkGT3XjO7PwnO
+nwWXLu1Q6kn3MWYOdj/rgutZAACp7IsrVe7ye1rdB1cBwngVUn7cSd7Sdi7vMVkvboP1Y0QN/ioQ
+Xr+XralP19dvdwURAECAxVltdzIDIADsp6GcX5qYhw6L8LqiiCdLTATAh37YodkaXzT7YpIzvXXI
+Z0EMEIVBgdXQ1r2ozl2JCt3wtVEIm1zUIAWgWKymmqaTALYA0AAgoUyQDbALEMccWfXhURYTa5lS
+STF5s4xT10F5gIuAECAiEaBZDQQXpg9RKcrCAngqK3k6VVUWP3LQrDu4VS7ckTQajz6mBe9kyI8U
+Scy3kJ/65GU6AEgqW3JFiHWtOvtkqZGfCXDxfKv3bDwIJ3eSYpv/xcz4flJBw2g59hECsVrOPb07
+2wH5k78TT97Yr0evntLpmwAUiEKaQo0KZg3zP31MyjTkrhOSVrRs5mz6lhH736OUC19nXfKvo4RW
+uN4BTvclYOdIj901yQPTvHpNNcvvsGt1EImB2csvJAKAKvRDlfpFYuttDq3cRBXLPmNnmij8Sg6p
+/j3UsK0PGkNzPd5zNZmDwLKBB6kAAAAASUVORK5CYII=
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://www.gstatic.com/images/branding/product/1x/translate_24dp.png
+
+iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAADFUlEQVR4AWKgC0gC9E5OXW6FUQDt
+c41/VI89UxvvtcZVXNu2jbEV28nYNze3j+f0npV8cY271o6z9/10IZBddOILX3hcAKLgmAD5YfII
+lQC5IjtuDE77rUDxCYErOiHAjwLFR0eyfivAxHEBJmcBQsG///1ARE4k3z2RoxRgg8Qy45cDTJoo
+z1cJSOQpBcwNo3jcjy5XHwwODcFQmMHBQRgYGIjQ398fcDo96XGB/BjywjB5JKAQcMOZcexRm0Xp
+dwP0PBkJJIrLH/HQY+dwYGQC1fZJLH/ARwI5Ii8/m8FstlOE5EScnBEJkJRR9pCH8fEJfNIawMPP
+eHjYzOG+e3xEThy560W1xgQOp4vJvx+ghWTQnb/o4JAtKrtzFsiWC7ju1Dh2dOrBYrGBy+X6cYBk
+jIHhCVS85IHk12oDMD4xgYTeOUlyArNEXnw2gU5vBpvNDpsrZJgY6OvriwZIxmAjyKYteSEIO+8E
+od0yiZ+1XESeKROwsLwG1+2V4IbSo7ipTIKbK+S4tVqFW6pUmBQgGaP0QWgNHotrcOgpD3cbOaT3
+++7ymEUBWYi1J8fx2oOX0NrZDQ6HA6SXbuOzj7WpR5CtECCWA2Kk28bhwHBoF1WKuypWnhlGefUz
+7FVdxLd1jbBdcgrtdjt4vV6SxweyRGkqMuVREuUZ0iAeuuPBUuUl3FAmwfqWTnA6nbToLJI6wISM
+jDCJ8nSRVcdHcGupCndITuPZe4+RAoTb7Qa/3x8NpJDGIwtBYiYn0iRBPH6jFrrUeig9fgHP3XmM
+LODz+WIDQS6VlJHOSJATh257UaMxgt5ghNKTF/FjQ0tyIOfoSFaaNBhMl/LASIthqSREmoTHtKMB
+ApeGWX1iFLVaI50H2k1x6zDlV6+9ez/NW1T0GhcWvSJwQeErPKRsQIPBDLSDCIr8doCuLbvqBxcW
+v0WiWlGPPWoDmMwWcQS2uIDH4/m9wGF5865FJW+xSl6PnZ1a0OmMYI4PsAj3W4GKipa51fJabG9X
+g1qtA4NBHIHJBBaLBaxWKz0TfEODOnfK/7i+AovHxWW/Lj+SAAAAAElFTkSuQmCC
+
+------MultipartBoundary--d3Afqp5sjvKo2JUNuTf9wVlmFtAxHuX9lqYFmVVq9X------

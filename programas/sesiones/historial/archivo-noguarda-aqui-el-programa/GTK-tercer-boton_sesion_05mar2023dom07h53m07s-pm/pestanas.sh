@@ -1,0 +1,10 @@
+https://ostechnix.com/zenity-create-gui-dialog-boxes-in-bash-scripts/
+https://www.google.com/search?q=gtkdialog+interfaces&sxsrf=AJOqlzU_Ndt5ws8IvK-o_cN6Mku88XBjLA%3A1678059871454&ei=XykFZOCgG5OYwt0PvbiVwAs&ved=0ahUKEwigzLKU_MX9AhUTjLAFHT1cBbgQ4dUDCA8&uact=5&oq=gtkdialog+interfaces&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCCEQoAE6CggAEEcQ1gQQsAM6CAgAEIAEEMsBOgQIABAeOgYIABAWEB46CAgAEBYQHhAPSgQIQRgAUJ8GWPYtYJE1aAFwAXgAgAHbAYgB-A6SAQUwLjkuMpgBAKABAcgBBMABAQ&sclient=gws-wiz-serp
+https://es.linux-console.net/?p=848#gsc.tab=0
+https://docs.gtk.org/gtk3/class.Dialog.html
+https://docs.gtk.org/gtk4/class.Dialog.html
+http://tux.iar.unlp.edu.ar/~fede/manuales/gtk/GtkDialog.html
+https://github.com/topics/gtkdialog
+https://developer-old.gnome.org/gtk4/stable/GtkDialog.html
+https://sites.google.com/site/panchoweb2/articulos-informaticos/cursos-y-tutoriales/gtkdialog?tmpl=%2Fsystem%2Fapp%2Ftemplates%2Fprint%2F&showPrintDialog=1
+http://127.0.0.1:8000/

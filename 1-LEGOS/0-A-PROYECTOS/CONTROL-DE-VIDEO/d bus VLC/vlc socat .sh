@@ -1,0 +1,1 @@
+usando socat https://www.youtube.com/watch?v=7414AGIOGfo

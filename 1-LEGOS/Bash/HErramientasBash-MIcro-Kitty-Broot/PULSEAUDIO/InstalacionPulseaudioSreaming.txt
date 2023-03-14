@@ -1,0 +1,42 @@
+SIGA ESTAS INSTRUCCIONES SOLO SI NO FUNCIONA EL STREAMING DE AUDIO DE LA COMPU
+CERRAR PARA CONTINUAR LA INSTALACIÓN
+
+Determinar qué fuente utilizar
+
+Abre una terminal en Ubuntu y escribe 
+
+pactl list sources short
+
+Esto escupirá un montón de texto, pero lo que estás buscando es el 'monitor analógico-estéreo.' Edité la salida de mi máquina y resalté los elementos importantes en rojo.
+
+0 alsa_output.pci-0000_01_00.1.hdmi-stereo.monitor module-alsa-card.c s16le 2ch 44100Hz SUSPENDIDO 
+  1 alsa_output.pci-0000_00_1b.0.analog-stereo.monitor  module-alsa-card.c s16le 2ch 44100Hz SUSPENDIDO 
+  2 alsa_input.pci-0000_00_1b.0.analog-stereo module-alsa-card.c s16le 2ch 44100Hz SUSPEN
+
+Busque "analog-stereo.monitor" y tome nota del número de índice a la izquierda. En mi caso es 1.
+Editar archivos de configuración
+
+Deberá editar los archivos de configuración para cargar este módulo con los parámetros específicos. Para hacerlo, escriba (necesitará la contraseña sudo)
+
+gksu gedit /etc/pulse/default.pa 
+
+Agregue la siguiente línea cerca de la parte inferior, sustituyendo su índice de origen:
+
+módulo de carga módulo-protocolo-simple-tcp fuente=1 registro=puerto verdadero=12345 
+
+Tuve problemas con el puerto predeterminado de 4711 porque parece que ya está en uso, así que elegí 12345.
+
+Para mono, puede usar canales = 1 y para una frecuencia de muestreo más baja = 24000. La aplicación se actualizó para incluir soporte para esto en un intento de reducir la latencia.
+
+Si escucha estática, intente cambiar el formato de audio generado por pulso de Little Endian de 32 bits a Little Endian de 16 bits ( enlace ).
+
+módulo de carga módulo-protocolo-simple-tcp fuente=1 registro=puerto verdadero=12345 formato=s16le 
+
+Pulso de reinicio
+
+Reinicie PulseAudio con la nueva configuración
+
+pulseaudio -k
+pulseaudio --start 
+
+Y eso debería ser todo. 

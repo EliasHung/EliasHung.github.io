@@ -1,0 +1,5 @@
+new_tab micro
+launch micro
+new_tab broot
+cd $programas
+launch broot 

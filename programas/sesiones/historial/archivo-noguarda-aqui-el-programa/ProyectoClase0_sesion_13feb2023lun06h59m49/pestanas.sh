@@ -1,0 +1,15 @@
+chrome://settings/content/notifications
+file:///home/daniel/tron/biblioteca/CURSOS/CursoHarvardWeb/clase0-HTML-CSS/https___cdn.cs50.net_web_2020_spring_lectures_0_lang_en_lecture0.txt-cdn.cs50.net.mhtml
+file:///home/daniel/tron/biblioteca/CURSOS/CursoHarvardWeb/clase0-HTML-CSS/practicas/responsive.html
+file:///home/daniel/tron/biblioteca/CURSOS/CursoHarvardWeb/clase0-HTML-CSS/practicas/B%C3%BAsqueda%20-%20Programaci%C3%B3n%20web%20de%20CS50%20con%20Python%20y%20JavaScript-cs50.harvard.edu.mhtml
+file:///home/daniel/tron/biblioteca/CURSOS/CursoHarvardWeb/clase0-HTML-CSS/Clase%200%20-%20Programaci%C3%B3n%20web%20de%20CS50%20con%20Python%20y%20JavaScript-cs50.harvard.edu%20(1).mhtml
+https://getbootstrap.com/docs/5.2/components/navbar/#how-it-works
+https://getbootstrap.com/docs/5.2/components/card/
+https://www.google.com/
+https://www.google.com/search?q=bootstrap+5+align+elements&sxsrf=AJOqlzUeEzlGVSnGnKnO8AiK-YeutF2CSw%3A1676319231382&ei=_5nqY5T7Fo6i5NoPr5SskA8&oq=bo&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgBMgQIIxAnMgQIIxAnMgQIIxAnMgQIABBDMgQIABBDMgQIABBDMgUIABCRAjIECAAQQzIECAAQQzIECAAQQzoKCAAQRxDWBBCwAzoFCAAQgAQ6BQguEIAEOgsILhCABBDHARDRA0oECEEYAEoECEYYAFDzFFiVJmDGOWgCcAF4AIAB1QGIAcMEkgEFMC4yLjGYAQCgAQHIAQjAAQE&sclient=gws-wiz-serp
+https://getbootstrap.com/docs/5.0/utilities/flex/
+https://www.w3schools.com/bootstrap5/bootstrap_flex.php
+https://bootstrapshuffle.com/classes/flexbox/align-items-*-center
+file:///home/daniel/proyectosHarvard/index.html?
+https://www.google.com/search?q=bootstrap+5+form&oq=bootstrap+5+fo&aqs=chrome.0.0i20i263i512j0i512j69i57j0i512l3j69i60l2.7511j0j1&sourceid=chrome&ie=UTF-8
+https://getbootstrap.com/docs/5.0/forms/form-control/#sizing

@@ -1,0 +1,11 @@
+file:///home/daniel/tron/1-LEGOS/A1-IMBOX-2023/Procesando-contenidoYAML-yq-www.baeldung.com.mhtml
+file:///home/daniel/tron/1-LEGOS/A1-IMBOX-2023/[geekland.eu]%202023.02.02%E2%80%94Uso%20del%20comando%20AWK%20en%20Linux%20y%20UNIX%20con%20ejemplos.mht
+file:///home/daniel/tron/1-LEGOS/A1-IMBOX-2023/Manipulaci%C3%B3n%20de%20cadenas-www.imd.guru.mhtml
+file:///home/daniel/tron/1-LEGOS/Bash/manipulacion%20de%20texto%20bash/Comando%20cat%20linux_%20ejemplos%20y%20pr%C3%A1ctica%20%C2%BB%20Dongee-www.dongee.com.mhtml
+file:///home/daniel/tron/1-LEGOS/Bash/manipulacion%20de%20texto%20bash/Manipulaci%C3%B3n%20de%20cadenas-www.imd.guru.mhtml
+file:///home/daniel/tron/1-LEGOS/Bash/manipulacion%20de%20texto%20bash/manipular%20la%20salida%20de%20texto%20linux%20consola%20-%20Google%20Search-www.google.com.mhtml
+file:///home/daniel/tron/1-LEGOS/Bash/manipulacion%20de%20texto%20bash/Procesar%20texto%20con%20head,%20tail,%20cat,%20split%E2%80%A6%20-%20Atareao-atareao.es.mhtml
+file:///home/daniel/tron/1-LEGOS/Bash/manipulacion%20de%20texto%20bash/Uso%20del%20comando%20AWK%20en%20Linux%20y%20UNIX%20con%20ejemplos-.mhtml
+file:///home/daniel/tron/1-LEGOS/Bash/manipulacion%20de%20texto%20bash/Uso%20del%20comando%20AWK%20en%20Linux%20y%20UNIX%20con%20ejemplos-geekland.eu.mhtml
+file:///home/daniel/tron/1-LEGOS/Bash/manipulacion%20de%20texto%20bash/Uso%20del%20comando%20SED%20en%20Linux%20y%20UNIX%20con%20ejemplos-geekland.eu.mhtml
+file:///home/daniel/tron/1-LEGOS/Bash/manipulacion%20de%20texto%20bash/Uso%20del%20comando%20tr%20en%20Linux%20y%20UNIX%20con%20ejemplos-geekland.eu.mhtml

@@ -1,0 +1,291 @@
+#!/bin/bash
+RECORDAR PASAR LA CONF DE MICRO A LA NUEVA INSTALACION
+ sqlite
+ 
+ https://atareao.es/como/sqlite-desde-bash/
+ https://linuxconfig.org/sqlite-linux-tutorial-for-beginners
+ https://bigcode.wordpress.com/2016/05/10/sqlite-bash-script-tutorial-on-ubuntu-linux/
+ https://www.sqlitetutorial.net/
+ https://sqlite.org/cli.html
+ https://www.google.com/search?q=sqlite3+tui&sxsrf=ALiCzsY4hG3DdReebLACDDSEDPvTFt6Bxg%3A1672180493357&ei=DXOrY9LCFemrwbkP9M-biAc&oq=sqlite+tui&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMgYIABAHEB4yBQgAEIAEMgQIABAeOggIABAHEB4QCjoLCAAQBxAeEPEEEAo6CAgAEAgQBxAeOgcIABCABBAKOgUIABCGA0oECEEYAEoECEYYAFAAWNoTYK4taABwAXgAgAHKAYgB0giSAQUwLjUuMZgBAKABAcABAQ&sclient=gws-wiz-serp
+ 
+ 
+ VLC CONSOLA
+ 
+ https://wiki.videolan.org/Documentation:Modules/dummy/#:~:text=Descriptions-,Interface,audio.ogg%20vlc%3A%2F%2Fquit
+
+eliminar actualizaciones desatendidas:
+editar o crear micro /etc/apt/apt.conf.d/20auto-upgrades
+y colocar
+APT::Periodic::Update-Package-Lists "0";
+APT::Periodic::Unattended-Upgrade "0";
+
+$ cat /etc/apt/apt.conf.d/10periodic 
+APT::Periodic::Update-Package-Lists "0";
+APT::Periodic::Download-Upgradeable-Packages "0";
+APT::Periodic::AutocleanInterval "0";
+Y esto:
+
+$ dconf write /apps/update-manager/remind-reload false
+$ gconftool -s --type bool /apps/update-notifier/auto_launch false
+Y esto:
+
+$ cat /etc/update-manager/release-upgrades
+Prompt=never
+
+
+Fuente: https://www.enmimaquinafunciona.com/pregunta/113369/como-desactivar-las-actualizaciones-de-todo-tipo-y-no-siempre-ver-los-mensajes-de-actualizacion
+
+
+
+
+borrar los errores pedintes de enviar de ubuntu
+sudo rm /var/crash/*
+
+desactivar el servicio de envio de reporte de errores a ubuntu /etc/default/apport 
+gksudo gedit /etc/default/apport
+Ahora, sólo tenemos que localizar una línea con el texto enabled=1.
+Y cambiarlo por enabled=0
+sudo restart apport
+
+# Núcleo de respuesta instantánea.
+apt --install-recommends -y ency linux-lowlatency linux-headers-lowlatency-hwe-20.04
+# Pila de hablilitación de hardware LTS y compatibilidad con x.
+apt --install-recommends linux-generic-hwe-20.04 linux-headers-5.19.0-27-generic
+
+linux-headers
+ wireless-regdb
+
+deb https://mirrors.ustc.edu.cn/debian/ bullseye main contrib non-free
+deb-src https://mirrors.ustc.edu.cn/debian/ bullseye main contrib non-free
+
+deb https://mirrors.ustc.edu.cn/debian/ bullseye-updates main contrib non-free
+deb-src https://mirrors.ustc.edu.cn/debian/ bullseye-updates main contrib non-free
+
+deb https://mirrors.ustc.edu.cn/debian/ bullseye-backports main contrib non-free
+deb-src https://mirrors.ustc.edu.cn/debian/ bullseye-backports main contrib non-free
+
+deb https://mirrors.ustc.edu.cn/debian-security/ bullseye-security main contrib non-free
+deb-src https://mirrors.ustc.edu.cn/debian-security/ bullseye-security main contrib non-free
+
+
+
+
+apt install -y gcc make perl nano dpkg-dev build-essential debian-keyring dkms initramfs-tools unzip htop curl unrar apt-transport-https ufw build-essential zlib1g-dev libgdbm-dev libncurses5-dev libssl-dev libnss3-dev libffi-dev libreadline-dev wget libsqlite3-dev libbz2-dev gnupg software-properties-common unar rar openssh-server bc os-prober unzip htop unrar apt-transport-https ufw build-essential zlib1g-dev libgdbm-dev libncurses5-dev libssl-dev libnss3-dev libffi-dev libreadline-dev wget libsqlite3-dev libbz2-dev gnupg software-properties-common clonezilla  f unar rar openssh-server bc os-prober
+
+
+thunar-volman: Tipo de dispositivo USB «rtl8821cu» no compatible.
+thunar-volman: Tipo de dispositivo USB «usb» no compatible.
+thunar-volman: Tipo de dispositivo USB «rtl8821cu» no compatible.
+
+
+
+libssl3 
+
+
+
+resolvectl status
+asi se ven los DNS en uso
+
+/home/atareao/compartir 192.168.1.0/24(rw,no_subtree_check,async)
+
+
+ 235  balooctl suspend
+  236  apt install baloo-kf5
+  237  balooctl suspend
+  238  balooctl disable
+  239  apt search baloo_file
+  240  editar ~/.config/baloofilerc
+  241  killall baloo_file_extrartor
+  242  killall baloo_file
+  243  apt purge baloo-kf5
+  244  apt autoremove
+  
+  
+  
+  
+    228  alimentardesdelista /home/daniel/Escritorio/desint "umount -fl"
+  229  exit
+  230  synaptic
+  231  mv /usr/bin/baloo_file /usr/bin/baloo_file_BUP
+  232  echo '#!/bin/sh' > /usr/bin/baloo_file
+  233  rm -d -v -r ~/.local/share/baloo
+  
+  
+  
+  
+  108  gsettings list-recursively | grep gedit
+  109  gsettings list-recursively | grep gedit > con1 
+  110  cat con1
+  111  gsettings list-recursively
+  112  gsettings list-recursively
+  113  gsettings list-recursively
+  114  gsettings list-recursively | grep gedit 
+  115  echo $XDG_CONFIG_HOME
+  116  xfconf-query -l
+  117  man xfconf-query 
+  118    xfconf-query -c $PROPERTY -l -v
+  119  xfconf-query -c $PROPERTY -l -v
+  120  xfconf-query -c xsettings -l -v
+
+
+
+
+samba samba-common samba-common-bin samba-dsdb-modules samba-libs samba-vfs-modules smbclient libsmbclient libwbclient0 
+
+ELIMINADOS
+
+  gnome-control-center* gvfs-backends* libsmbclient* libwbclient0* mpv* python3-samba* samba* samba-common*
+  samba-common-bin* samba-dsdb-modules* samba-libs* samba-vfs-modules* smbclient* vlc-plugin-samba*
+
+
+
+
+
+sudo chmod -x /usr/libexec/goa-daemon
+Worked great for me in Ubuntu 22.04. Never saw him again, without any detected side-effects
+
+Share
+Improve this answer
+Follow
+answered May 22 at 22:35
+Giorgos_tph s user avatar
+Giorgos_tph
+16611 silver badge66 bronze badges
+Worked for me on Ubuntu Unity 22.10, w/o any negative side effects regarding the gnome-calendar which is connected to a google account. – 
+tuxaddict
+ Dec 11 at 8:35
+Add a comment
+
+0
+
+
+To disable the GOA service:
+
+$ cd /usr/share/dbus-1/services
+$ sudo ln -snf /dev/null  org.gnome.OnlineAccounts.service
+$ sudo reboot now
+
+
+Skipping BTF generation for /home/daniel/tron/Drivers/rtl8821CU/8821cu.ko due to unavailability of vmlinux
+make[1]: Leaving directory '/usr/src/linux-headers-5.15.0-52-generic'
+mkdir -p /lib/modules/5.15.0-52-generic/kernel/drivers/net/wireless/realtek/rtl8821cu/
+install -p -m 644 8821cu.ko  /lib/modules/5.15.0-52-generic/kernel/drivers/net/wireless/realtek/rtl8821cu/
+/sbin/depmod -a 5.15.0-52-generic
+
+
+
+rygel/focal,now 0.38.3-1ubuntu1 amd64 [instalado, automático]
+  GNOME UPnP/DLNA services
+
+
+prueba () {
+    var=$1
+    case $var in 
+        *si)
+            echo si
+         ;;
+        *no)
+            echo no
+        ;;
+    esac
+}
+
+--exclude "navegadores"
+if [[ -d /home/tron/plugins/navegadores ]]; then
+    mkdir /home/tron/plugins/navegadores
+    cp -a -p -f -v "/home/$usuario/tron/plugins/navegadores" "$ruta_montaje/home/tron/plugins/navegadores"
+fi
+
+
+
+instalar sistema minimo en todos los discos
+WP-CLI
+
+ 2022-12-08 03:24:06: adduser daniel sambashare
+   92  2022-12-08 03:24:24: /etc/init.d/samba restart
+   93  2022-12-08 03:24:44: systemctl restart samba
+   94  2022-12-08 03:25:25: hig
+   95  2022-12-08 03:26:30: hig
+   96  2022-12-08 03:27:11: history > $escritorio/queinstalesamba.sh
+   97  2022-12-08 03:27:28: history > "$escritorio/queinstalesamba.sh"
+   98  2022-12-08 03:27:43: history
+   99  2022-12-08 03:28:02: echo $escritorio
+  100  2022-12-08 03:28:16: history >> "$escritorio/queinstalesamba.sh"
+  101  2022-12-08 03:28:50: history | tee  "$escritorio/queinstalesamba.sh"
+  102  2022-12-08 03:29:19: cat $escritorio/queinstalesamba.sh
+  103  2022-12-08 03:29:45: history >queinstalesamba
+  104  2022-12-08 03:30:10: history >"$escritorio/queinstalesamba"
+  105  2022-12-08 03:45:32: actz
+  106  2022-12-08 03:45:33: grubtodosdiscos
+  107  2022-12-08 03:46:59: grub-install /dev/sdb
+  108  2022-12-08 04:04:17: gsettings list-recursively | grep gedit
+  109  2022-12-08 04:06:45: gsettings list-recursively | grep gedit > con1 
+  110  2022-12-08 04:06:55: cat con1
+  111  2022-12-08 04:16:07: gsettings list-recursively
+  112  2022-12-08 04:17:48: gsettings list-recursively
+  113  2022-12-08 04:18:09: gsettings list-recursively
+  114  2022-12-08 04:59:47: gsettings list-recursively | grep gedit 
+  115  2022-12-08 05:59:09: echo $XDG_CONFIG_HOME
+  116  2022-12-08 06:03:28: xfconf-query -l
+  117  2022-12-08 06:04:04: man xfconf-query 
+  118  2022-12-08 06:05:06:   xfconf-query -c $PROPERTY -l -v
+  119  2022-12-08 06:05:16: xfconf-query -c $PROPERTY -l -v
+  120  2022-12-08 06:05:54: xfconf-query -c xsettings -l -v
+  121  2022-12-08 06:22:41: history
+
+xargs -a <(awk '/^\s*[^#]/' "$escritorio/debo.sh") -r -- apt install -y --download-only $var
+apt install -y --download-only $var
+apt-get download $(apt-cache depends --recurse --no-recommends --no-suggests --no-conflicts --no-breaks --no-replaces --no-enhances $var | grep "^\w" | sort -u)
+
+
+actalizacion del kernel
+perl-base...?
+LISTO revisar por que actz combia el pront en el usuario no root
+
+AUTOMATIZAR EL CLONADO DE LA PARTICIÓN
+
+DOCUMENTACION CON EL DOCUMENTADOR
+
+https://askubuntu.com/questions/198474/how-to-delete-old-versions-of-same-packages-from-a-local-repository
+https://deb-pkg-tools.readthedocs.io/en/latest/api.html
+https://computingforgeeks.com/install-and-configure-samba-server-share-on-ubuntu/
+https://www.techrepublic.com/article/big-change-samba-ubuntu/
+
+AGREGAR CHULETAS BASH 
+https://www.google.com/search?client=ubuntu&hs=Abe&channel=fs&sxsrf=ALiCzsZLxQgGVxorxe0dChNpcmDAEx0Nfw:1670184112267&q=dpkg-dev+documentation&spell=1&sa=X&ved=2ahUKEwi_luLV4OD7AhUIUjABHYTtAj4QBSgAegQIBhAB&biw=1024&bih=634&dpr=1
+
+https://www.google.com/search?channel=fs&client=ubuntu&q=samba+ubuntu+22.04
+
+SAMBA
+
+Samba is not being run as an AD Domain Controller: Masking samba-ad-dc.service
+Please ignore the following error about deb-systemd-helper not finding those services.
+WARNING samba-ad-dc.service should be masked. The install may fail.
+Failed to preset unit: Unit file /etc/systemd/system/nmbd.service is masked.
+/usr/bin/deb-systemd-helper: error: systemctl preset failed on nmbd.service: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/samba-ad-dc.service → /etc/systemd/system/samba-ad-dc.service.
+Failed to preset unit: Unit file /etc/systemd/system/smbd.service is masked.
+/usr/bin/deb-systemd-helper: error: systemctl preset failed on smbd.service: No such file or directory
+nmbd.service is a disabled or a static unit, not starting it.
+smbd.service is a disabled or a static unit, not starting it.
+Job for samba-ad-dc.service failed because the control process exited with error code.
+See "systemctl status samba-ad-dc.service" and "journalctl -xe" for details.
+Procesando disparadores para ufw (0.36-6ubuntu1) ...
+Se han actualizado las reglas para el perfil «OpenSSH»
+El cortafuegos se ha recargado
+Procesando disparadores para systemd (245.4-4ubuntu3.19) ...
+Procesando disparadores para man-db (2.9.1-1) ...
+Procesando disparadores para libc-bin (2.31-0ubuntu9) ...
+root@iglesia:/home/daniel# systemctl start smbd nmbd
+Failed to start smbd.service: Unit smbd.service is masked.
+Failed to start nmbd.service: Unit nmbd.service is masked.
+root@iglesia:/home/daniel# systemctl enable smbd nmbd
+Synchronizing state of smbd.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable smbd
+Synchronizing state of nmbd.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable nmbd
+Failed to enable unit: Unit file /etc/systemd/system/smbd.service is masked.
+
+
+

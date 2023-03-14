@@ -1,0 +1,2768 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://linux.die.net/man/1/whiptail
+Subject: =?utf-8?Q?whiptail=20(1):=20cuadros=20de=20di=C3=A1logo=20de=20scripts=20?=
+ =?utf-8?Q?de=20shell=20-=20p=C3=A1gina=20de=20manual=20de=20Linux?=
+Date: Thu, 2 Mar 2023 22:36:21 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----"
+
+
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: text/html
+Content-ID: <frame-48B7D12C441D4FF866EA71431B9540F6@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://linux.die.net/man/1/whiptail
+
+<!DOCTYPE html><html lang=3D"es" style=3D"height: 100%;" class=3D"translate=
+d-ltr"><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charse=
+t=3Dwindows-1252"><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:cs=
+s-101b7c0e-fb19-4452-b7d4-191d081b8afa@mhtml.blink" />
+<title>whiptail (1): cuadros de di=E1logo de scripts de shell - p=E1gina de=
+ manual de Linux</title>
+<base href=3D"https://linux.die.net/man/1/whiptail">
+<link rel=3D"canonical" href=3D"https://linux.die.net/man/1/whiptail">
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"https://linux.die.net/st=
+yle/white.css">
+<link rel=3D"shortcut icon" href=3D"https://linux.die.net/favicon.ico" type=
+=3D"image/x-icon">
+<link href=3D"https://linux.die.net/style/search.xml" rel=3D"search" title=
+=3D"Buscar en el sitio die.net" type=3D"application/opensearchdescription+x=
+ml">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width,initial-scale=3D1">
+<meta name=3D"description" content=3D"whiptail is a program that will let y=
+ou present a variety of questions or display messages using dialog boxes fr=
+om a shell script.">
+
+<link type=3D"text/css" rel=3D"stylesheet" charset=3D"UTF-8" href=3D"https:=
+//www.gstatic.com/_/translate_http/_/ss/k=3Dtranslate_http.tr.cYEbrOmw59Q.L=
+.W.O/d=3D0/rs=3DAN8SPfpU282joXDlbkUblMtWLWoZn4bb2g/m=3Del_main_css"><meta h=
+ttp-equiv=3D"origin-trial" content=3D"Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpI=
+qMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRw=
+czovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUEl=
+zIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ij=
+p0cnVlfQ=3D=3D"><meta http-equiv=3D"origin-trial" content=3D"A+USTya+tNvDPa=
+xUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAA=
+ACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJl=
+IjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWF=
+pbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=3D=3D"><meta http-equiv=3D"origin-t=
+rial" content=3D"A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hD=
+G9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3Nlc=
+nZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5=
+IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=3D=
+=3D"><meta http-equiv=3D"origin-trial" content=3D"Az6AfRvI8mo7yiW5fLfj04W21=
+t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmln=
+aW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmR=
+ib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaG=
+lyZFBhcnR5Ijp0cnVlfQ=3D=3D"><meta http-equiv=3D"origin-trial" content=3D"A+=
+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41L=
+HHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMi=
+LCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJ=
+pc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=3D=3D"><meta http-equiv=
+=3D"origin-trial" content=3D"A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD9=
+1CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb=
+2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElz=
+IiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp=
+0cnVlfQ=3D=3D"><link rel=3D"preload" href=3D"https://adservice.google.co.ve=
+/adsid/integrator.js?domain=3Dlinux.die.net" as=3D"script"><link rel=3D"pre=
+load" href=3D"https://adservice.google.com/adsid/integrator.js?domain=3Dlin=
+ux.die.net" as=3D"script"><link type=3D"text/css" rel=3D"stylesheet" charse=
+t=3D"UTF-8" href=3D"https://www.gstatic.com/_/translate_http/_/ss/k=3Dtrans=
+late_http.tr.cYEbrOmw59Q.L.W.O/d=3D0/rs=3DAN8SPfpU282joXDlbkUblMtWLWoZn4bb2=
+g/m=3Del_main_css"><link rel=3D"preload" href=3D"https://adservice.google.c=
+o.ve/adsid/integrator.js?domain=3Dlinux.die.net" as=3D"script"><link rel=3D=
+"preload" href=3D"https://adservice.google.com/adsid/integrator.js?domain=
+=3Dlinux.die.net" as=3D"script"></head>
+
+<body style=3D"position: relative; min-height: 100%; top: 0px;">
+<div id=3D"bg">
+<div id=3D"logo">
+<a href=3D"https://www.die.net/"><img src=3D"https://linux.die.net/style/lo=
+go.svg" alt=3D"morir.net" width=3D"120" height=3D"120"></a>
+</div>
+<div id=3D"content">
+
+<!-- google_ad_section_start -->
+<h1><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;">whiptail(1) - p=E1gina del manual de Linux</font></font></h1>
+
+<h2><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;">Nombre</font></font></h2><font style=3D"vertical-align: inherit;=
+"><font style=3D"vertical-align: inherit;">
+whiptail: mostrar cuadros de di=E1logo desde scripts de shell
+</font></font><h2><font style=3D"vertical-align: inherit;"><font style=3D"v=
+ertical-align: inherit;">Sinopsis</font></font></h2>
+<div id=3D"adright">
+
+<ins class=3D"adsbygoogle" style=3D"display:inline-block;width:336px;height=
+:280px" data-ad-client=3D"ca-pub-5823754184406795" data-ad-slot=3D"71307393=
+64" data-adsbygoogle-status=3D"done" data-ad-status=3D"filled"><div id=3D"a=
+swift_0_host" style=3D"border: none; height: 280px; width: 336px; margin: 0=
+px; padding: 0px; position: relative; visibility: visible; background-color=
+: transparent; display: inline-block;" tabindex=3D"0" title=3D"Anuncio" ari=
+a-label=3D"Anuncio"><iframe id=3D"aswift_0" name=3D"aswift_0" style=3D"left=
+:0;position:absolute;top:0;border:0;width:336px;height:280px;" sandbox=3D"a=
+llow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin al=
+low-scripts allow-top-navigation-by-user-activation" width=3D"336" height=
+=3D"280" frameborder=3D"0" marginwidth=3D"0" marginheight=3D"0" vspace=3D"0=
+" hspace=3D"0" allowtransparency=3D"true" scrolling=3D"no" src=3D"cid:frame=
+-C276AF5FD5C98947C9C349181ECFC9D0@mhtml.blink" data-google-container-id=3D"=
+a!1" data-google-query-id=3D"CPKj6uv3vf0CFUWI0QQdOMMMTQ" data-load-complete=
+=3D"true"></iframe></div></ins>
+
+</div>
+
+<b><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">cola de l=E1tigo</font></font></b><font style=3D"vertical-align: =
+inherit;"><font style=3D"vertical-align: inherit;"> [ </font></font><b><fon=
+t style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit=
+;">-title </font></font></b> <i><font style=3D"vertical-align: inherit;"><f=
+ont style=3D"vertical-align: inherit;">title</font></font></i><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;"> ] [=
+ </font></font><b><font style=3D"vertical-align: inherit;"><font style=3D"v=
+ertical-align: inherit;">-backtitle </font></font></b> <i><font style=3D"ve=
+rtical-align: inherit;"><font style=3D"vertical-align: inherit;">backtitle<=
+/font></font></i><font style=3D"vertical-align: inherit;"><font style=3D"ve=
+rtical-align: inherit;"> ] [
+ </font></font><b><font style=3D"vertical-align: inherit;"><font style=3D"v=
+ertical-align: inherit;">-clear</font></font></b><font style=3D"vertical-al=
+ign: inherit;"><font style=3D"vertical-align: inherit;"> ] [ </font></font>=
+<b><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">-default-item </font></font></b> <i><font style=3D"vertical-align=
+: inherit;"><font style=3D"vertical-align: inherit;">string</font></font></=
+i><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: i=
+nherit;"> ] [ </font></font><b><font style=3D"vertical-align: inherit;"><fo=
+nt style=3D"vertical-align: inherit;">-defaultno</font></font></b><font sty=
+le=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;"> ]=
+ [ </font></font><b><font style=3D"vertical-align: inherit;"><font style=3D=
+"vertical-align: inherit;">-fb</font></font></b><font style=3D"vertical-ali=
+gn: inherit;"><font style=3D"vertical-align: inherit;"> ] [ </font></font><=
+b><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: i=
+nherit;">-nocancel</font></font></b><font style=3D"vertical-align: inherit;=
+"><font style=3D"vertical-align: inherit;"> ] [ </font></font><b><font styl=
+e=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">-ye=
+s-button </font></font></b> <i><font style=3D"vertical-align: inherit;"><fo=
+nt style=3D"vertical-align: inherit;">text</font></font></i><font style=3D"=
+vertical-align: inherit;"><font style=3D"vertical-align: inherit;"> ] [
+ </font></font><b><font style=3D"vertical-align: inherit;"><font style=3D"v=
+ertical-align: inherit;">--no-button </font></font></b> <i><font style=3D"v=
+ertical-align: inherit;"><font style=3D"vertical-align: inherit;">text</fon=
+t></font></i><font style=3D"vertical-align: inherit;"><font style=3D"vertic=
+al-align: inherit;"> ] [ </font></font><b><font style=3D"vertical-align: in=
+herit;"><font style=3D"vertical-align: inherit;">--ok-button </font></font>=
+</b> <i><font style=3D"vertical-align: inherit;"><font style=3D"vertical-al=
+ign: inherit;">text</font></font></i><font style=3D"vertical-align: inherit=
+;"><font style=3D"vertical-align: inherit;"> ] [ </font></font><b><font sty=
+le=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">--=
+cancel-button </font></font></b> <i><font style=3D"vertical-align: inherit;=
+"><font style=3D"vertical-align: inherit;">text</font></font></i><font styl=
+e=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;"> ] =
+[ </font></font><b><font style=3D"vertical-align: inherit;"><font style=3D"=
+vertical-align: inherit;">--noitem</font></font></b><font style=3D"vertical=
+-align: inherit;"><font style=3D"vertical-align: inherit;"> [ ] </font></fo=
+nt><b><font style=3D"vertical-align: inherit;"><font style=3D"vertical-alig=
+n: inherit;">--output-fd </font></font></b> <i><font style=3D"vertical-alig=
+n: inherit;"><font style=3D"vertical-align: inherit;">fd</font></font></i><=
+font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inhe=
+rit;"> ] [ </font></font><b><font style=3D"vertical-align: inherit;"><font =
+style=3D"vertical-align: inherit;">--separate-output</font></font></b><font=
+ style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;=
+"> ] [ </font></font><b><font style=3D"vertical-align: inherit;"><font styl=
+e=3D"vertical-align: inherit;">--scrolltext</font></font></b><font style=3D=
+"vertical-align: inherit;"><font style=3D"vertical-align: inherit;"> ] [ </=
+font></font><b><font style=3D"vertical-align: inherit;"><font style=3D"vert=
+ical-align: inherit;">- -superior izquierda</font></font></b><font style=3D=
+"vertical-align: inherit;"><font style=3D"vertical-align: inherit;"> ]</fon=
+t></font><b><font style=3D"vertical-align: inherit;"><font style=3D"vertica=
+l-align: inherit;">opciones de caja</font></font></b>
+<h2><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;">Descripci=F3n</font></font></h2>
+<b><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">whiptail</font></font></b><font style=3D"vertical-align: inherit;=
+"><font style=3D"vertical-align: inherit;"> es un programa que le permitir=
+=E1 presentar una variedad de preguntas o mostrar mensajes usando cuadros d=
+e di=E1logo desde un script de shell. </font><font style=3D"vertical-align:=
+ inherit;">Actualmente, se implementan estos tipos de cuadros de di=E1logo:
+</font></font><p><b><font style=3D"vertical-align: inherit;"></font></b><fo=
+nt style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inheri=
+t;">cuadro </font><b><font style=3D"vertical-align: inherit;">de s=ED/no</f=
+ont></b><font style=3D"vertical-align: inherit;"> , cuadro </font></font><b=
+><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: in=
+herit;">de men=FA</font></font></b><font style=3D"vertical-align: inherit;"=
+><font style=3D"vertical-align: inherit;"> , cuadro </font></font><b><font =
+style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;"=
+>de entrada</font></font></b><font style=3D"vertical-align: inherit;"><font=
+ style=3D"vertical-align: inherit;"> , cuadro de </font></font><b><font sty=
+le=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">me=
+nsaje</font></font></b><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;"> , cuadro de </font></font><b><font style=3D"=
+vertical-align: inherit;"><font style=3D"vertical-align: inherit;">texto</f=
+ont></font></b><font style=3D"vertical-align: inherit;"><font style=3D"vert=
+ical-align: inherit;"> , cuadro de </font></font><b><font style=3D"vertical=
+-align: inherit;"><font style=3D"vertical-align: inherit;">informaci=F3n</f=
+ont></font></b><font style=3D"vertical-align: inherit;"><font style=3D"vert=
+ical-align: inherit;"> , cuadro de </font></font><b><font style=3D"vertical=
+-align: inherit;"><font style=3D"vertical-align: inherit;">lista de verific=
+aci=F3n , cuadro </font></font></b><font style=3D"vertical-align: inherit;"=
+><b><font style=3D"vertical-align: inherit;">de indicador de</font></b><fon=
+t style=3D"vertical-align: inherit;"> cuadro
+ </font></font><b><font style=3D"vertical-align: inherit;"><font style=3D"v=
+ertical-align: inherit;">de lista de radio</font></font></b><font style=3D"=
+vertical-align: inherit;"><font style=3D"vertical-align: inherit;"> y cuadr=
+o </font><b><font style=3D"vertical-align: inherit;">de contrase=F1a</font>=
+</b><font style=3D"vertical-align: inherit;"> .
+</font></font><b><font style=3D"vertical-align: inherit;"></font></b><font =
+style=3D"vertical-align: inherit;"></font><b><font style=3D"vertical-align:=
+ inherit;"></font></b><font style=3D"vertical-align: inherit;"></font></p><=
+h2><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">Opciones</font></font></h2>
+<dl compact=3D"">
+<dt><b><font style=3D"vertical-align: inherit;"><font style=3D"vertical-ali=
+gn: inherit;">--claro</font></font></b>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">La pantalla se borrar=E1 al </font></font><b><font style=3D=
+"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">atribut=
+o de pantalla</font></font></b><font style=3D"vertical-align: inherit;"><fo=
+nt style=3D"vertical-align: inherit;"> al salir. </font><font style=3D"vert=
+ical-align: inherit;">Esto no funciona en un xterm (y descendientes) si el =
+cambio de pantalla alternativa est=E1 habilitado, porque en ese caso, la je=
+rga escribe (y borra) una pantalla alternativa.
+</font></font></dd><dt><b><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">--defaultno</font></font></b>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">El cuadro de di=E1logo se abrir=E1 con el cursor sobre el <=
+/font><font style=3D"vertical-align: inherit;">bot=F3n
+ </font></font><b><font style=3D"vertical-align: inherit;"><font style=3D"v=
+ertical-align: inherit;">No.</font></font></b><font style=3D"vertical-align=
+: inherit;"></font></dd><dt><b><font style=3D"vertical-align: inherit;"></f=
+ont></b> <font style=3D"vertical-align: inherit;"><i><font style=3D"vertica=
+l-align: inherit;">--cadena </font></i><b><font style=3D"vertical-align: in=
+herit;">de elemento predeterminado</font></b></font><i><font style=3D"verti=
+cal-align: inherit;"></font></i>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Establezca el elemento predeterminado en un cuadro de men=
+=FA. </font><font style=3D"vertical-align: inherit;">Normalmente, el primer=
+ elemento del cuadro es el predeterminado.
+</font></font></dd><dt><b><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">--pensi=F3n completa</font></font></b>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Utilice botones completos. </font><font style=3D"vertical-a=
+lign: inherit;">(Por defecto, </font></font><b><font style=3D"vertical-alig=
+n: inherit;"><font style=3D"vertical-align: inherit;">whiptail</font></font=
+></b><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align=
+: inherit;"> usa botones compactos).
+</font></font></dd><dt><b><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">--nocancel</font></font></b>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">El cuadro de di=E1logo no tendr=E1 un </font><font style=3D=
+"vertical-align: inherit;">bot=F3n </font></font><b><font style=3D"vertical=
+-align: inherit;"><font style=3D"vertical-align: inherit;">Cancelar </font>=
+</font></b><font style=3D"vertical-align: inherit;"></font><b><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">.</f=
+ont></font></b>
+</dd><dt><b><font style=3D"vertical-align: inherit;"></font></b> <font styl=
+e=3D"vertical-align: inherit;"><i><font style=3D"vertical-align: inherit;">=
+--texto </font></i><b><font style=3D"vertical-align: inherit;">del bot=F3n =
+s=ED</font></b></font><i><font style=3D"vertical-align: inherit;"></font></=
+i>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Establezca el texto del bot=F3n </font></font><b><font styl=
+e=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">S=
+=ED</font></font></b><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;"> .
+</font></font></dd><dt><b><font style=3D"vertical-align: inherit;"></font><=
+/b><font style=3D"vertical-align: inherit;"><i><font style=3D"vertical-alig=
+n: inherit;">--texto </font></i><b><font style=3D"vertical-align: inherit;"=
+>sin bot=F3n</font></b></font><i><font style=3D"vertical-align: inherit;"><=
+/font></i>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Establece el texto del </font><font style=3D"vertical-align=
+: inherit;">bot=F3n
+ </font></font><b><font style=3D"vertical-align: inherit;"><font style=3D"v=
+ertical-align: inherit;">No.</font></font></b><font style=3D"vertical-align=
+: inherit;"></font></dd><dt><b><font style=3D"vertical-align: inherit;"></f=
+ont></b> <font style=3D"vertical-align: inherit;"><i><font style=3D"vertica=
+l-align: inherit;">--texto </font></i><b><font style=3D"vertical-align: inh=
+erit;">del bot=F3n ok</font></b></font><i><font style=3D"vertical-align: in=
+herit;"></font></i>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Establece el texto del bot=F3n </font></font><b><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">Ok</=
+font></font></b><font style=3D"vertical-align: inherit;"><font style=3D"ver=
+tical-align: inherit;"> .
+</font></font></dd><dt><b><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">--cancel-bot=F3n </font></font></b> <i><fo=
+nt style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inheri=
+t;">de texto</font></font></i>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Establezca el texto del bot=F3n </font></font><b><font styl=
+e=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">Can=
+celar</font></font></b><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;"> .
+</font></font></dd><dt><b><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">--sin objeto</font></font></b>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Los widgets de men=FA, lista de verificaci=F3n y lista de r=
+adio mostrar=E1n solo las etiquetas, no las cadenas de elementos. </font><f=
+ont style=3D"vertical-align: inherit;">El widget de men=FA a=FAn necesita q=
+ue se especifiquen algunos elementos, pero la lista de verificaci=F3n y la =
+lista de radio solo esperan etiquetas y estados.
+</font></font></dd><dt><b><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">--salida separada</font></font></b>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Para los widgets de lista de verificaci=F3n, genere el resu=
+ltado una l=EDnea a la vez, sin comillas. </font><font style=3D"vertical-al=
+ign: inherit;">Esto facilita el an=E1lisis por otro programa.
+</font></font></dd><dt><b><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">--salida-fd </font></font></b> <i><font st=
+yle=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">f=
+d</font></font></i>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Salida directa al descriptor de archivo dado. </font><font =
+style=3D"vertical-align: inherit;">La mayor=EDa de las secuencias de comand=
+os </font></font><b><font style=3D"vertical-align: inherit;"><font style=3D=
+"vertical-align: inherit;">de cola de l=E1tigo</font></font></b><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;"> esc=
+riben con un error est=E1ndar, pero los mensajes de error tambi=E9n pueden =
+escribirse all=ED, seg=FAn su secuencia de comandos.
+</font></font></dd><dt><b><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">--t=EDtulo </font></font></b> <i><font sty=
+le=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">t=
+=EDtulo</font></font></i>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Especifica una cadena </font></font><i><font style=3D"verti=
+cal-align: inherit;"><font style=3D"vertical-align: inherit;">de t=EDtulo</=
+font></font></i><font style=3D"vertical-align: inherit;"><font style=3D"ver=
+tical-align: inherit;"> que se mostrar=E1 en la parte superior del cuadro d=
+e di=E1logo.
+</font></font></dd><dt><b><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">--t=EDtulo </font></font></b> <i><font sty=
+le=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">de=
+ fondo t=EDtulo de fondo</font></font></i>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Especifica una cadena </font></font><i><font style=3D"verti=
+cal-align: inherit;"><font style=3D"vertical-align: inherit;">de t=EDtulo d=
+e fondo</font></font></i><font style=3D"vertical-align: inherit;"><font sty=
+le=3D"vertical-align: inherit;"> que se mostrar=E1 en el fondo, en la parte=
+ superior de la pantalla.
+</font></font></dd><dt><b><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">--texto de desplazamiento</font></font></b=
+>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Fuerza la visualizaci=F3n de una barra de desplazamiento ve=
+rtical.
+</font></font></dd><dt><b><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">--arriba a la izquierda</font></font></b>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Coloque la ventana en la esquina superior izquierda.
+</font></font></dd><dt><b><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">Opciones de caja</font></font></b>
+</dt><dt><b><font style=3D"vertical-align: inherit;"><font style=3D"vertica=
+l-align: inherit;">--yesno </font></font></b> <i><font style=3D"vertical-al=
+ign: inherit;"><font style=3D"vertical-align: inherit;">ancho de la altura =
+del texto</font></font></i>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Se mostrar=E1 </font><font style=3D"vertical-align: inherit=
+;">un </font><font style=3D"vertical-align: inherit;">cuadro de di=E1logo <=
+/font></font><b><font style=3D"vertical-align: inherit;"><font style=3D"ver=
+tical-align: inherit;">s=ED/no de filas de </font></font></b><font style=3D=
+"vertical-align: inherit;"></font><i><font style=3D"vertical-align: inherit=
+;"><font style=3D"vertical-align: inherit;">altura</font></font></i><font s=
+tyle=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">=
+ de tama=F1o por columnas </font></font><i><font style=3D"vertical-align: i=
+nherit;"><font style=3D"vertical-align: inherit;">de ancho . </font></font>=
+</i><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;">La cadena especificada por </font></font><i><font style=3D"verti=
+cal-align: inherit;"><font style=3D"vertical-align: inherit;">texto</font><=
+/font></i><font style=3D"vertical-align: inherit;"><font style=3D"vertical-=
+align: inherit;"> se muestra dentro del cuadro de di=E1logo. </font><font s=
+tyle=3D"vertical-align: inherit;">Si esta cadena es demasiado larga para ca=
+ber en una l=EDnea, se dividir=E1 autom=E1ticamente en varias l=EDneas en l=
+os lugares apropiados. </font><font style=3D"vertical-align: inherit;">La c=
+adena </font></font><i><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;">de texto</font></font></i><font style=3D"vert=
+ical-align: inherit;"><font style=3D"vertical-align: inherit;">=20
+tambi=E9n puede contener la subcadena "\n" o los caracteres de nueva l=EDne=
+a </font></font><i><font style=3D"vertical-align: inherit;"><font style=3D"=
+vertical-align: inherit;">'\n'</font></font></i><font style=3D"vertical-ali=
+gn: inherit;"><font style=3D"vertical-align: inherit;"> para controlar expl=
+=EDcitamente los saltos de l=EDnea. </font><font style=3D"vertical-align: i=
+nherit;">Este cuadro de di=E1logo es =FAtil para hacer preguntas que requie=
+ren que el usuario responda s=ED o no. </font><font style=3D"vertical-align=
+: inherit;">El cuadro de di=E1logo tiene un bot=F3n </font></font><b><font =
+style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;"=
+>S=ED</font></font></b><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;"> y un bot=F3n </font></font><b><font style=3D=
+"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">No</fon=
+t></font></b><font style=3D"vertical-align: inherit;"><font style=3D"vertic=
+al-align: inherit;"> , en los que el usuario puede alternar presionando la =
+tecla </font></font><i><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;">TAB</font></font></i><font style=3D"vertical-=
+align: inherit;"><font style=3D"vertical-align: inherit;"> .
+</font></font></dd><dt><b><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">--msgbox </font></font></b> <i><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">anch=
+o de la altura del texto</font></font></i>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Un cuadro </font></font><b><font style=3D"vertical-align: i=
+nherit;"><font style=3D"vertical-align: inherit;">de mensaje</font></font><=
+/b><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;"> es muy similar a un cuadro </font></font><b><font style=3D"verti=
+cal-align: inherit;"><font style=3D"vertical-align: inherit;">de s=ED/no</f=
+ont></font></b><font style=3D"vertical-align: inherit;"><font style=3D"vert=
+ical-align: inherit;"> . </font><font style=3D"vertical-align: inherit;">La=
+ =FAnica diferencia entre un cuadro </font></font><b><font style=3D"vertica=
+l-align: inherit;"><font style=3D"vertical-align: inherit;">de mensaje</fon=
+t></font></b><font style=3D"vertical-align: inherit;"><font style=3D"vertic=
+al-align: inherit;"> y un cuadro </font></font><b><font style=3D"vertical-a=
+lign: inherit;"><font style=3D"vertical-align: inherit;">de s=ED/no</font><=
+/font></b><font style=3D"vertical-align: inherit;"><font style=3D"vertical-=
+align: inherit;"> es que un
+ cuadro </font></font><b><font style=3D"vertical-align: inherit;"><font sty=
+le=3D"vertical-align: inherit;">de mensaje</font></font></b><font style=3D"=
+vertical-align: inherit;"><font style=3D"vertical-align: inherit;"> tiene s=
+olo un bot=F3n </font></font><b><font style=3D"vertical-align: inherit;"><f=
+ont style=3D"vertical-align: inherit;">Aceptar</font></font></b><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;"> . <=
+/font><font style=3D"vertical-align: inherit;">Puede usar este cuadro de di=
+=E1logo para mostrar cualquier mensaje que desee. </font><font style=3D"ver=
+tical-align: inherit;">Despu=E9s de leer el mensaje, el usuario puede presi=
+onar la tecla </font></font><i><font style=3D"vertical-align: inherit;"><fo=
+nt style=3D"vertical-align: inherit;">ENTER</font></font></i><font style=3D=
+"vertical-align: inherit;"><font style=3D"vertical-align: inherit;"> para q=
+ue </font></font><b><font style=3D"vertical-align: inherit;"><font style=3D=
+"vertical-align: inherit;">la cola de l=E1tigo</font></font></b><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;"> sal=
+ga y el script de shell que llama pueda continuar su operaci=F3n.
+</font></font></dd><dt><b><font style=3D"vertical-align: inherit;"></font><=
+/b> <font style=3D"vertical-align: inherit;"><i><font style=3D"vertical-ali=
+gn: inherit;">--anchura de la altura del texto </font></i><b><font style=3D=
+"vertical-align: inherit;">del cuadro de informaci=F3n</font></b></font><i>=
+<font style=3D"vertical-align: inherit;"></font></i>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Un cuadro </font></font><b><font style=3D"vertical-align: i=
+nherit;"><font style=3D"vertical-align: inherit;">de informaci=F3n</font></=
+font></b><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;"> es b=E1sicamente un cuadro </font></font><b><font style=3D=
+"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">de mens=
+aje</font></font></b><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;"> . </font><font style=3D"vertical-align: inhe=
+rit;">Sin embargo, en este caso, </font></font><b><font style=3D"vertical-a=
+lign: inherit;"><font style=3D"vertical-align: inherit;">whiptail</font></f=
+ont></b><font style=3D"vertical-align: inherit;"><font style=3D"vertical-al=
+ign: inherit;"> saldr=E1 inmediatamente despu=E9s de mostrar el mensaje al =
+usuario. </font><font style=3D"vertical-align: inherit;">La pantalla no se =
+borra cuando sale </font></font><b><font style=3D"vertical-align: inherit;"=
+><font style=3D"vertical-align: inherit;">la cola de l=E1tigo</font></font>=
+</b><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;"> , por lo que el mensaje permanecer=E1 en la pantalla hasta que =
+el script del shell que llama lo borre m=E1s tarde. </font><font style=3D"v=
+ertical-align: inherit;">Esto es =FAtil cuando desea informar al usuario qu=
+e se est=E1n llevando a cabo algunas operaciones que pueden requerir alg=FA=
+n tiempo para finalizar.
+</font></font></dd><dt><b><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">--ancho de la altura del texto del cuadro =
+de entrada </font></font></b> <i><font style=3D"vertical-align: inherit;"><=
+font style=3D"vertical-align: inherit;">[init]</font></font></i>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Un cuadro </font></font><b><font style=3D"vertical-align: i=
+nherit;"><font style=3D"vertical-align: inherit;">de entrada</font></font><=
+/b><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;"> es =FAtil cuando desea hacer preguntas que requieren que el usua=
+rio ingrese una cadena como respuesta. </font><font style=3D"vertical-align=
+: inherit;">Si se proporciona init, se utiliza para inicializar la cadena d=
+e entrada. </font><font style=3D"vertical-align: inherit;">Al ingresar la c=
+adena, la tecla </font></font><i><font style=3D"vertical-align: inherit;"><=
+font style=3D"vertical-align: inherit;">RETROCESO</font></font></i><font st=
+yle=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;"> =
+se puede usar para corregir errores de escritura. </font><font style=3D"ver=
+tical-align: inherit;">Si la cadena de entrada es m=E1s larga que el ancho =
+del cuadro de di=E1logo, el campo de entrada se desplazar=E1. </font><font =
+style=3D"vertical-align: inherit;">Al salir, la cadena de entrada se imprim=
+ir=E1 en </font></font><i><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">stderr</font></font></i><font style=3D"ver=
+tical-align: inherit;"><font style=3D"vertical-align: inherit;"> .
+</font></font></dd><dt><b><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">--passwordbox </font></font></b> <i><font =
+style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;"=
+>texto alto ancho [init]</font></font></i>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Un cuadro </font></font><b><font style=3D"vertical-align: i=
+nherit;"><font style=3D"vertical-align: inherit;">de contrase=F1a</font></f=
+ont></b><font style=3D"vertical-align: inherit;"><font style=3D"vertical-al=
+ign: inherit;"> es similar a un cuadro de entrada, excepto que no se muestr=
+a el texto que ingresa el usuario. </font><font style=3D"vertical-align: in=
+herit;">Esto es =FAtil cuando se solicitan contrase=F1as u otra informaci=
+=F3n confidencial. </font><font style=3D"vertical-align: inherit;">Tenga en=
+ cuenta que si se pasa algo en "init", ser=E1 visible en la tabla de proces=
+os del sistema para los fisgones ocasionales. </font><font style=3D"vertica=
+l-align: inherit;">Adem=E1s, es muy confuso para el usuario proporcionarle =
+una contrase=F1a predeterminada que no puede ver. </font><font style=3D"ver=
+tical-align: inherit;">Por estas razones, se desaconseja encarecidamente ut=
+ilizar "init".
+</font></font></dd><dt><b><font style=3D"vertical-align: inherit;"></font><=
+/b><font style=3D"vertical-align: inherit;"><i><font style=3D"vertical-alig=
+n: inherit;">--ancho de la altura del archivo </font></i><b><font style=3D"=
+vertical-align: inherit;">del cuadro de texto</font></b></font><i><font sty=
+le=3D"vertical-align: inherit;"></font></i>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Un cuadro </font></font><b><font style=3D"vertical-align: i=
+nherit;"><font style=3D"vertical-align: inherit;">de texto</font></font></b=
+><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: in=
+herit;"> le permite mostrar el contenido de un archivo de texto en un cuadr=
+o de di=E1logo. </font><font style=3D"vertical-align: inherit;">Es como un =
+simple visor de archivos de texto. </font><font style=3D"vertical-align: in=
+herit;">El usuario puede desplazarse por el archivo utilizando las teclas <=
+/font></font><i><font style=3D"vertical-align: inherit;"><font style=3D"ver=
+tical-align: inherit;">ARRIBA/ABAJO</font></font></i><font style=3D"vertica=
+l-align: inherit;"><font style=3D"vertical-align: inherit;"> , </font></fon=
+t><i><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align=
+: inherit;">RE P=C1G/AV P=C1G</font></font></i><font style=3D"vertical-alig=
+n: inherit;"><font style=3D"vertical-align: inherit;"> y </font></font><i><=
+font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inhe=
+rit;">INICIO/FIN</font></font></i><font style=3D"vertical-align: inherit;">=
+<font style=3D"vertical-align: inherit;"> disponibles en la mayor=EDa de lo=
+s teclados. </font><font style=3D"vertical-align: inherit;">Si las l=EDneas=
+ son demasiado largas para mostrarlas en el cuadro,
+ </font><font style=3D"vertical-align: inherit;">se pueden usar las teclas =
+</font></font><i><font style=3D"vertical-align: inherit;"><font style=3D"ve=
+rtical-align: inherit;">IZQUIERDA/DERECHA para desplazar la regi=F3n de tex=
+to horizontalmente. </font></font></i><font style=3D"vertical-align: inheri=
+t;"><font style=3D"vertical-align: inherit;">Para mayor comodidad, tambi=E9=
+n se proporcionan funciones de b=FAsqueda hacia adelante y hacia atr=E1s.
+</font></font></dd><dt><b><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">--men=FA </font></font><i><font style=3D"v=
+ertical-align: inherit;"><font style=3D"vertical-align: inherit;">texto alt=
+o ancho men=FA-alto</font></font></i></b><font style=3D"vertical-align: inh=
+erit;"><font style=3D"vertical-align: inherit;"> [ </font></font><i><font s=
+tyle=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">=
+elemento de etiqueta</font></font></i><font style=3D"vertical-align: inheri=
+t;"><font style=3D"vertical-align: inherit;"> ] </font></font><i><font styl=
+e=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">...=
+</font></font></i>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Como sugiere su nombre, un cuadro </font></font><b><font st=
+yle=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">d=
+e men=FA</font></font></b><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;"> es un cuadro de di=E1logo que se puede ut=
+ilizar para presentar una lista de opciones en forma de men=FA para que el =
+usuario elija. </font><font style=3D"vertical-align: inherit;">Cada entrada=
+ de men=FA consta de una cadena </font></font><i><font style=3D"vertical-al=
+ign: inherit;"><font style=3D"vertical-align: inherit;">de etiquetas</font>=
+</font></i><font style=3D"vertical-align: inherit;"><font style=3D"vertical=
+-align: inherit;"> y una cadena </font></font><i><font style=3D"vertical-al=
+ign: inherit;"><font style=3D"vertical-align: inherit;">de elementos</font>=
+</font></i><font style=3D"vertical-align: inherit;"><font style=3D"vertical=
+-align: inherit;"> . </font><font style=3D"vertical-align: inherit;">La </f=
+ont></font><i><font style=3D"vertical-align: inherit;"><font style=3D"verti=
+cal-align: inherit;">etiqueta</font></font></i><font style=3D"vertical-alig=
+n: inherit;"><font style=3D"vertical-align: inherit;"> le da a la entrada u=
+n nombre para distinguirla de las otras entradas en el men=FA. </font><font=
+ style=3D"vertical-align: inherit;">El </font></font><i><font style=3D"vert=
+ical-align: inherit;"><font style=3D"vertical-align: inherit;">elemento</fo=
+nt></font></i><font style=3D"vertical-align: inherit;"><font style=3D"verti=
+cal-align: inherit;"> es una breve descripci=F3n de la opci=F3n que represe=
+nta la entrada. </font><font style=3D"vertical-align: inherit;">El usuario =
+puede moverse entre las entradas del men=FA presionando las teclas </font><=
+/font><i><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">ARRIBA/ABAJO</font></font></i><font style=3D"vertical-align=
+: inherit;"><font style=3D"vertical-align: inherit;">=20
+, la primera letra de la </font></font><i><font style=3D"vertical-align: in=
+herit;"><font style=3D"vertical-align: inherit;">etiqueta</font></font></i>=
+<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
+erit;"> como una tecla de acceso r=E1pido. </font><font style=3D"vertical-a=
+lign: inherit;">Hay entradas </font></font><i><font style=3D"vertical-align=
+: inherit;"><font style=3D"vertical-align: inherit;">de altura de men=FA</f=
+ont></font></i><font style=3D"vertical-align: inherit;"><font style=3D"vert=
+ical-align: inherit;"> que se muestran en el men=FA a la vez, pero el men=
+=FA se desplazar=E1 si hay m=E1s entradas que eso. </font><font style=3D"ve=
+rtical-align: inherit;">cuando </font></font><b><font style=3D"vertical-ali=
+gn: inherit;"><font style=3D"vertical-align: inherit;">cola de l=E1tigo</fo=
+nt></font></b><font style=3D"vertical-align: inherit;"><font style=3D"verti=
+cal-align: inherit;">sale, la </font></font><i><font style=3D"vertical-alig=
+n: inherit;"><font style=3D"vertical-align: inherit;">etiqueta</font></font=
+></i><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align=
+: inherit;"> de la entrada de men=FA elegida se imprimir=E1 en </font></fon=
+t><i><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align=
+: inherit;">stderr</font></font></i><font style=3D"vertical-align: inherit;=
+"><font style=3D"vertical-align: inherit;"> .
+</font></font></dd><dt><b><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">--lista de verificaci=F3n </font></font><i=
+><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: in=
+herit;">altura del texto ancho list-height</font></font></i></b><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;"> [ <=
+/font></font><i><font style=3D"vertical-align: inherit;"><font style=3D"ver=
+tical-align: inherit;">estado del elemento de etiqueta</font></font></i><fo=
+nt style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inheri=
+t;"> ] </font></font><i><font style=3D"vertical-align: inherit;"><font styl=
+e=3D"vertical-align: inherit;">...</font></font></i>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Un cuadro </font></font><b><font style=3D"vertical-align: i=
+nherit;"><font style=3D"vertical-align: inherit;">de lista de verificaci=F3=
+n</font></font></b><font style=3D"vertical-align: inherit;"><font style=3D"=
+vertical-align: inherit;"> es similar a un cuadro </font></font><b><font st=
+yle=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">d=
+e men=FA</font></font></b><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;"> en el que hay varias entradas presentadas=
+ en forma de men=FA. </font><font style=3D"vertical-align: inherit;">Puede =
+seleccionar y anular la selecci=F3n de elementos con la tecla ESPACIO. </fo=
+nt><font style=3D"vertical-align: inherit;">El estado activado/desactivado =
+inicial de cada entrada se especifica mediante </font></font><i><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">stat=
+us</font></font></i><font style=3D"vertical-align: inherit;"><font style=3D=
+"vertical-align: inherit;"> . </font><font style=3D"vertical-align: inherit=
+;">Al salir, </font><font style=3D"vertical-align: inherit;">se imprimir=E1=
+ en </font><i><font style=3D"vertical-align: inherit;">stderr una lista de =
+las cadenas </font></i></font><i><font style=3D"vertical-align: inherit;"><=
+font style=3D"vertical-align: inherit;">de etiquetas</font></font></i><font=
+ style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;=
+"> de esas entradas que est=E1n activadas .
+</font></font><i><font style=3D"vertical-align: inherit;"></font></i><font =
+style=3D"vertical-align: inherit;"></font></dd><dt><b><font style=3D"vertic=
+al-align: inherit;"><font style=3D"vertical-align: inherit;">--radiolist </=
+font></font><i><font style=3D"vertical-align: inherit;"><font style=3D"vert=
+ical-align: inherit;">altura del texto ancho list-height</font></font></i><=
+/b><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;"> [ </font></font><i><font style=3D"vertical-align: inherit;"><fon=
+t style=3D"vertical-align: inherit;">estado del elemento de etiqueta</font>=
+</font></i><font style=3D"vertical-align: inherit;"><font style=3D"vertical=
+-align: inherit;"> ] </font></font><i><font style=3D"vertical-align: inheri=
+t;"><font style=3D"vertical-align: inherit;">...</font></font></i>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Un cuadro </font></font><b><font style=3D"vertical-align: i=
+nherit;"><font style=3D"vertical-align: inherit;">de lista de radio</font><=
+/font></b><font style=3D"vertical-align: inherit;"><font style=3D"vertical-=
+align: inherit;"> es similar a un cuadro </font></font><b><font style=3D"ve=
+rtical-align: inherit;"><font style=3D"vertical-align: inherit;">de men=FA<=
+/font></font></b><font style=3D"vertical-align: inherit;"><font style=3D"ve=
+rtical-align: inherit;"> . </font><font style=3D"vertical-align: inherit;">=
+La =FAnica diferencia es que puede indicar qu=E9 entrada est=E1 seleccionad=
+a actualmente configurando
+ </font><i><font style=3D"vertical-align: inherit;">su </font></i></font><i=
+><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: in=
+herit;">estado</font></font></i><font style=3D"vertical-align: inherit;"><f=
+ont style=3D"vertical-align: inherit;"> en </font><font style=3D"vertical-a=
+lign: inherit;">.
+</font></font><i><font style=3D"vertical-align: inherit;"></font></i><font =
+style=3D"vertical-align: inherit;"></font></dd><dt><b><font style=3D"vertic=
+al-align: inherit;"><font style=3D"vertical-align: inherit;">--calibre </fo=
+nt></font><i><font style=3D"vertical-align: inherit;"><font style=3D"vertic=
+al-align: inherit;">texto alto ancho porcentaje</font></font></i></b>
+</dt><dd><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Un cuadro </font></font><b><font style=3D"vertical-align: i=
+nherit;"><font style=3D"vertical-align: inherit;">de indicador</font></font=
+></b><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align=
+: inherit;"> muestra un metro en la parte inferior del cuadro. </font><font=
+ style=3D"vertical-align: inherit;">El medidor indica un porcentaje. </font=
+><font style=3D"vertical-align: inherit;">Los nuevos porcentajes se leen de=
+ la entrada est=E1ndar, un n=FAmero entero por l=EDnea. </font><font style=
+=3D"vertical-align: inherit;">El medidor se actualiza para reflejar cada nu=
+evo porcentaje. </font><font style=3D"vertical-align: inherit;">Si stdin es=
+ XXX, las l=EDneas subsiguientes hasta otro XXX se utilizan para un nuevo i=
+ndicador. </font><font style=3D"vertical-align: inherit;">El indicador sale=
+ cuando se alcanza EOF en stdin.</font></font></dd></dl>
+<h2><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;">notas</font></font></h2><font style=3D"vertical-align: inherit;"=
+><font style=3D"vertical-align: inherit;">
+whiptail interpreta los argumentos que comienzan con un gui=F3n "-" como ar=
+gumentos. </font><font style=3D"vertical-align: inherit;">Para evitar esto,=
+ y comenzar alg=FAn texto en, por ejemplo, un elemento del cuadro de men=FA=
+, con un gui=F3n, la cola de l=E1tigo respeta la convenci=F3n getopt de ace=
+ptar el argumento especial "--", lo que significa que todos los argumentos =
+siguientes con guiones se deben tratar textualmente y no analizados como op=
+ciones.
+</font></font><h2><font style=3D"vertical-align: inherit;"><font style=3D"v=
+ertical-align: inherit;">Diagn=F3stico</font></font></h2><font style=3D"ver=
+tical-align: inherit;"><font style=3D"vertical-align: inherit;">
+El estado de salida es 0 si se sale </font></font><b><font style=3D"vertica=
+l-align: inherit;"><font style=3D"vertical-align: inherit;">de la cola</fon=
+t></font></b><font style=3D"vertical-align: inherit;"><font style=3D"vertic=
+al-align: inherit;"> de l=E1tigo presionando el bot=F3n </font></font><b><f=
+ont style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inher=
+it;">S=ED</font></font></b><font style=3D"vertical-align: inherit;"><font s=
+tyle=3D"vertical-align: inherit;"> o </font></font><b><font style=3D"vertic=
+al-align: inherit;"><font style=3D"vertical-align: inherit;">Aceptar</font>=
+</font></b><font style=3D"vertical-align: inherit;"><font style=3D"vertical=
+-align: inherit;"> , y 1 si </font><font style=3D"vertical-align: inherit;"=
+>se presiona el bot=F3n </font></font><b><font style=3D"vertical-align: inh=
+erit;"><font style=3D"vertical-align: inherit;">No</font></font></b><font s=
+tyle=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">=
+ o </font></font><b><font style=3D"vertical-align: inherit;"><font style=3D=
+"vertical-align: inherit;">Cancelar . </font></font></b><font style=3D"vert=
+ical-align: inherit;"><font style=3D"vertical-align: inherit;">De lo contra=
+rio, si se producen errores dentro de </font></font><b><font style=3D"verti=
+cal-align: inherit;"><font style=3D"vertical-align: inherit;">la cola de l=
+=E1tigo</font></font></b><font style=3D"vertical-align: inherit;"><font sty=
+le=3D"vertical-align: inherit;"> o se sale de la cola de </font></font><b><=
+font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inhe=
+rit;">l=E1tigo</font></font></b><font style=3D"vertical-align: inherit;"><f=
+ont style=3D"vertical-align: inherit;"> presionando la
+ tecla </font></font><i><font style=3D"vertical-align: inherit;"><font styl=
+e=3D"vertical-align: inherit;">ESC</font></font></i><font style=3D"vertical=
+-align: inherit;"><font style=3D"vertical-align: inherit;"> , el estado de =
+salida es -1.
+</font></font><h2><font style=3D"vertical-align: inherit;"><font style=3D"v=
+ertical-align: inherit;">Autor</font></font></h2><font style=3D"vertical-al=
+ign: inherit;"><font style=3D"vertical-align: inherit;">
+Basado en la p=E1gina del manual para </font></font><i><b><a href=3D"https:=
+//linux.die.net/man/1/dialog"><font style=3D"vertical-align: inherit;"><fon=
+t style=3D"vertical-align: inherit;">el di=E1logo</font></font></a></b><fon=
+t style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit=
+;"> (1)</font></font></i><font style=3D"vertical-align: inherit;"><font sty=
+le=3D"vertical-align: inherit;"> por:
+</font></font><p><font style=3D"vertical-align: inherit;"><font style=3D"ve=
+rtical-align: inherit;">Savio Lam ( </font></font><a href=3D"mailto:lam836@=
+cs.cuhk.hk"><font style=3D"vertical-align: inherit;"><font style=3D"vertica=
+l-align: inherit;">lam836@cs.cuhk.hk</font></font></a><font style=3D"vertic=
+al-align: inherit;"><font style=3D"vertical-align: inherit;"> ) - versi=F3n=
+ 0.3
+</font></font></p><p><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;">Stuart Herbert ( </font></font><a href=3D"mai=
+lto:S.Herbert@sheffield.ac.uk"><font style=3D"vertical-align: inherit;"><fo=
+nt style=3D"vertical-align: inherit;">S.Herbert@sheffield.ac.uk</font></fon=
+t></a><font style=3D"vertical-align: inherit;"><font style=3D"vertical-alig=
+n: inherit;"> ) - parche para la versi=F3n 0.4
+</font></font></p><p><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;">Modificaciones para l=E1tigo por:
+</font></font></p><p><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;">Enrique Zanardi ( </font></font><a href=3D"ma=
+ilto:ezanard@debian.org"><font style=3D"vertical-align: inherit;"><font sty=
+le=3D"vertical-align: inherit;">ezanard@debian.org</font></font></a><font s=
+tyle=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">=
+ )
+</font></font></p><p><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;">Alastair McKinstry ( </font></font><a href=3D=
+"mailto:mckinstry@debian.org"><font style=3D"vertical-align: inherit;"><fon=
+t style=3D"vertical-align: inherit;">mckinstry@debian.org</font></font></a>=
+<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
+erit;"> )
+
+</font></font><!-- google_ad_section_end -->
+</p><h2><font style=3D"vertical-align: inherit;"><font style=3D"vertical-al=
+ign: inherit;">Referenciado por</font></font></h2>
+<b><a href=3D"https://linux.die.net/man/3/udpm" rel=3D"nofollow"><font styl=
+e=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">upp=
+m</font></font></a></b><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;"> (3)
+</font></font><div id=3D"adbottom">
+
+<ins class=3D"adsbygoogle" style=3D"display: inline-block; width: 336px; he=
+ight: 0px;" data-ad-client=3D"ca-pub-5823754184406795" data-ad-slot=3D"8789=
+940313" data-adsbygoogle-status=3D"done" data-ad-status=3D"unfilled"><div i=
+d=3D"aswift_1_host" style=3D"border: none; height: 0px; width: 336px; margi=
+n: 0px; padding: 0px; position: relative; visibility: visible; background-c=
+olor: transparent; display: inline-block; overflow: hidden; opacity: 0;" ta=
+bindex=3D"0" title=3D"Advertisement" aria-label=3D"Advertisement"><iframe i=
+d=3D"aswift_1" name=3D"aswift_1" style=3D"left: 0px; position: absolute; to=
+p: 0px; border: 0px; width: 336px; height: 0px;" sandbox=3D"allow-forms all=
+ow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts al=
+low-top-navigation-by-user-activation" width=3D"336" height=3D"0" framebord=
+er=3D"0" marginwidth=3D"0" marginheight=3D"0" vspace=3D"0" hspace=3D"0" all=
+owtransparency=3D"true" scrolling=3D"no" src=3D"cid:frame-008013F2C972AB67A=
+2C5222E7188BA3C@mhtml.blink" data-google-container-id=3D"a!2" data-google-q=
+uery-id=3D"COX9jp3_vf0CFU2T0QQdSCMJgw" data-load-complete=3D"true"></iframe=
+></div></ins>
+
+</div>
+
+</div>
+<div id=3D"menu">
+<dl>
+<dt><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;">B=FAsqueda de sitio</font></font></dt>
+<dd>
+<form id=3D"cse-search-box-menu" action=3D"https://www.die.net/search/">
+<input name=3D"q" type=3D"text" size=3D"10">
+
+
+
+
+</form>
+
+</dd></dl>
+
+
+
+<dl>
+<dt><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;">Biblioteca</font></font></dt>
+<dd><a href=3D"https://linux.die.net/"><font style=3D"vertical-align: inher=
+it;"><font style=3D"vertical-align: inherit;">documentos de linux</font></f=
+ont></a></dd>
+<dd><a href=3D"https://linux.die.net/man/"><font style=3D"vertical-align: i=
+nherit;"><font style=3D"vertical-align: inherit;">p=E1ginas man de linux</f=
+ont></font></a></dd>
+<dd><a href=3D"https://www.die.net/musings/page_load_time/"><font style=3D"=
+vertical-align: inherit;"><font style=3D"vertical-align: inherit;">tiempo d=
+e carga de la pagina</font></font></a></dd>
+</dl>
+<dl>
+<dt><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;">Juguetes</font></font></dt>
+<dd><a href=3D"https://www.die.net/earth/"><font style=3D"vertical-align: i=
+nherit;"><font style=3D"vertical-align: inherit;">la luz del sol del mundo<=
+/font></font></a></dd>
+<dd><a href=3D"https://www.die.net/moon/"><font style=3D"vertical-align: in=
+herit;"><font style=3D"vertical-align: inherit;">fase lunar</font></font></=
+a></dd>
+<dd><a href=3D"http://trace.die.net/"><font style=3D"vertical-align: inheri=
+t;"><font style=3D"vertical-align: inherit;">explorador de rastros</font></=
+font></a></dd>
+</dl>
+
+
+<dl>
+<dt><a href=3D"https://linux.die.net/man/1/"><img src=3D"https://linux.die.=
+net/style/back.gif" alt=3D"Atr=E1s" width=3D"20" height=3D"22"></a></dt><dd=
+></dd>
+</dl>
+</div></div>
+
+<iframe height=3D"1" width=3D"1" style=3D"position: absolute; top: 0px; lef=
+t: 0px; border: none; visibility: hidden;"></iframe>
+
+<div id=3D"goog-gt-" class=3D"skiptranslate VIpgJd-yAWNEb-L7lbkb" dir=3D"lt=
+r"><div style=3D"padding: 8px;"><div><div class=3D"VIpgJd-yAWNEb-l4eHX"><im=
+g src=3D"https://www.gstatic.com/images/branding/product/1x/translate_24dp.=
+png" width=3D"20" height=3D"20" alt=3D"Google Traductor"></div></div></div>=
+<div style=3D"padding: 8px; float: left; width: 100%;"><h1 class=3D"VIpgJd-=
+yAWNEb-r4nke VIpgJd-yAWNEb-mrxPge">Texto original</h1></div><div style=3D"p=
+adding: 8px;"><div class=3D"VIpgJd-yAWNEb-nVMfcd-fmcmS"></div></div><div cl=
+ass=3D"VIpgJd-yAWNEb-cGMI2b" style=3D"padding: 8px;"><div class=3D"VIpgJd-y=
+AWNEb-Z0Arqf-PLDbbf"><span class=3D"VIpgJd-yAWNEb-Z0Arqf-hSRGPd">Sugiere un=
+a traducci=F3n mejor</span></div><div class=3D"VIpgJd-yAWNEb-fw42Ze-Z0Arqf-=
+haAclf"><hr style=3D"color: #ccc; background-color: #ccc; height: 1px; bord=
+er: none;"><div class=3D"VIpgJd-yAWNEb-Z0Arqf-H9tDt"></div></div></div><div=
+ class=3D"VIpgJd-yAWNEb-jOfkMb-Ne3sFf" style=3D"display: none;"></div></div=
+><ins class=3D"adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status=3D=
+"done" style=3D"display: none !important;" data-ad-status=3D"unfilled"><div=
+ id=3D"aswift_2_host" style=3D"border: none; height: 0px; width: 0px; margi=
+n: 0px; padding: 0px; position: relative; visibility: visible; background-c=
+olor: transparent; display: inline-block;" tabindex=3D"0" title=3D"Anuncio"=
+ aria-label=3D"Anuncio"><iframe id=3D"aswift_2" name=3D"aswift_2" style=3D"=
+left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedp=
+x;" sandbox=3D"allow-forms allow-popups allow-popups-to-escape-sandbox allo=
+w-same-origin allow-scripts allow-top-navigation-by-user-activation" frameb=
+order=3D"0" marginwidth=3D"0" marginheight=3D"0" vspace=3D"0" hspace=3D"0" =
+allowtransparency=3D"true" scrolling=3D"no" src=3D"cid:frame-C4F345146DEAAA=
+F82AC054C2D26E1F9F@mhtml.blink" data-google-container-id=3D"a!3" data-load-=
+complete=3D"true"></iframe></div></ins><div class=3D"VIpgJd-ZVi9od-aZ2wEe-w=
+OHMyf"><div class=3D"VIpgJd-ZVi9od-aZ2wEe-OiiCO"><svg xmlns=3D"http://www.w=
+3.org/2000/svg" class=3D"VIpgJd-ZVi9od-aZ2wEe" width=3D"96px" height=3D"96p=
+x" viewBox=3D"0 0 66 66"><circle class=3D"VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill=
+=3D"none" stroke-width=3D"6" stroke-linecap=3D"round" cx=3D"33" cy=3D"33" r=
+=3D"30"></circle></svg></div></div><div id=3D":0.floatContainer" class=3D" =
+goog-te-ftab-float" style=3D"box-sizing: content-box; width: 86px; height: =
+24px;"><iframe id=3D":0.container" frameborder=3D"0" class=3D"VIpgJd-ZVi9od=
+-SmfZ-OEVmcd skiptranslate" style=3D"visibility: visible; box-sizing: conte=
+nt-box; width: 86px; height: 24px;"></iframe></div><div id=3D"goog-gt-" cla=
+ss=3D"skiptranslate VIpgJd-yAWNEb-L7lbkb" dir=3D"ltr"><div style=3D"padding=
+: 8px;"><div><div class=3D"VIpgJd-yAWNEb-l4eHX"><img src=3D"https://www.gst=
+atic.com/images/branding/product/1x/translate_24dp.png" width=3D"20" height=
+=3D"20" alt=3D"Google Traductor de Google"></div></div></div><div style=3D"=
+padding: 8px; float: left; width: 100%;"><h1 class=3D"VIpgJd-yAWNEb-r4nke V=
+IpgJd-yAWNEb-mrxPge">Texto original</h1></div><div style=3D"padding: 8px;">=
+<div class=3D"VIpgJd-yAWNEb-nVMfcd-fmcmS"></div></div><div class=3D"VIpgJd-=
+yAWNEb-cGMI2b" style=3D"padding: 8px;"><div class=3D"VIpgJd-yAWNEb-Z0Arqf-P=
+LDbbf"><span class=3D"VIpgJd-yAWNEb-Z0Arqf-hSRGPd">Sugiere una traducci=F3n=
+ mejor</span></div><div class=3D"VIpgJd-yAWNEb-fw42Ze-Z0Arqf-haAclf"><hr st=
+yle=3D"color: #ccc; background-color: #ccc; height: 1px; border: none;"><di=
+v class=3D"VIpgJd-yAWNEb-Z0Arqf-H9tDt"></div></div></div><div class=3D"VIpg=
+Jd-yAWNEb-jOfkMb-Ne3sFf" style=3D"display: none;"></div></div><iframe src=
+=3D"cid:frame-5FDE52A7C49607D89FEAFC278C3716F6@mhtml.blink" width=3D"0" hei=
+ght=3D"0" style=3D"display: none;"></iframe></body><iframe id=3D"google_esf=
+" name=3D"google_esf" src=3D"cid:frame-C2734722B6D55798C2396E05FF40860E@mht=
+ml.blink" style=3D"display: none;"></iframe></html>
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-101b7c0e-fb19-4452-b7d4-191d081b8afa@mhtml.blink
+
+@charset "windows-1252";
+
+.goog-te-ftab-float { z-index: 9999999; overflow: visible; position: fixed;=
+ inset: 0px 20px auto auto; }
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://linux.die.net/style/white.css
+
+@charset "windows-1252";
+
+body, table { padding: 0px; font-family: verdana, helvetica, arial, sans-se=
+rif; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); }
+
+body { margin: 0px; background-image: url("data:image/png;base64,iVBORw0KGg=
+oAAAANSUhEUgAAAH4AAAAhAQMAAAAlNY3pAAAABlBMVEVmAABmZmag5upWAAAAE0lEQVQoU2NkQ=
+AUcjKMCowJ4BABBCQEqSqTgLwAAAABJRU5ErkJggg=3D=3D"); background-repeat: repea=
+t-y; background-position: left top; }
+
+table { font-size: 1em; }
+
+#bg { margin: 0px; max-width: 1024px; }
+
+#content { margin: 10px 10px 10px 136px; padding: 0px; font-size: 16px; lin=
+e-height: 1.4; }
+
+#logo, #menu { font-size: 13px; text-align: left; color: rgb(153, 153, 153)=
+; background-color: rgb(102, 0, 0); border: 0px; margin: 0px; position: abs=
+olute; top: 0px; left: 0px; padding: 4px 0px 4px 4px; width: 120px; }
+
+#menu { border-bottom: 1px dashed rgb(0, 0, 0); top: 124px; }
+
+b, strong { font-weight: bold; }
+
+i { font-style: italic; }
+
+a { color: rgb(102, 0, 0); }
+
+hr { height: 1px; border: 0px; color: rgb(102, 0, 0); background-color: rgb=
+(102, 0, 0); }
+
+h1 { text-align: left; font-size: 1.75em; margin-top: 0px; border-bottom: 2=
+px solid rgb(102, 0, 0); line-height: 1.2; }
+
+h2 { font-size: 1.25em; line-height: 1.2; }
+
+img { border: none; }
+
+.shrink { max-width: 100%; height: auto; }
+
+input { border-color: rgb(153, 153, 153); }
+
+pre, tt { font-family: monospace; }
+
+#logo a, #menu a { color: rgb(255, 255, 255); display: block; padding-left:=
+ 8px; text-indent: -8px; text-decoration: none; }
+
+#logo a:hover, #menu a:hover { background-color: rgb(153, 51, 51); }
+
+#menu dl { margin: 8px 0px 8px 4px; padding-left: 0px; text-align: left; }
+
+#menu dd { margin: 0px 0px 0px 8px; padding-left: 0px; }
+
+#menu dt { font-size: 1.25em; }
+
+#menu input { background-color: rgb(255, 204, 204); border-color: rgb(255, =
+204, 204); width: 90%; }
+
+#menu label { font-size: 0.75em; margin-top: 1.5em; display: block; }
+
+#news { margin: 1em 0px; padding: 0px 0.5em 0.5em; background-color: rgb(23=
+8, 238, 238); }
+
+#news dt { text-align: center; font-weight: bold; margin: 0px; padding: 0.5=
+em 0px 0px; }
+
+#news dd { margin: 0px; padding: 0px 0px 0px 3.5em; text-indent: -3.5em; }
+
+.center { text-align: center; }
+
+.source { font-size: 0.75em; font-style: italic; }
+
+.even { background-color: rgb(255, 238, 238); }
+
+.odd { background-color: rgb(238, 238, 238); }
+
+.code { padding: 0px 2em 0px 0px; }
+
+.sidebar { background-color: rgb(255, 238, 238); border: 1px solid rgb(102,=
+ 0, 0); padding: 0.5em 1em; }
+
+.highlight { background-color: rgb(255, 204, 204); }
+
+.error { border: 1px solid rgb(204, 0, 0); padding: 0.5em 1em; color: rgb(2=
+04, 0, 0); }
+
+.button { white-space: nowrap; padding: 0.125em 0.25em; border: 1px solid r=
+gb(102, 102, 102); }
+
+#adlink { background-color: rgb(102, 0, 0); height: 100px; }
+
+#admiddle { margin: 0.5em 3em; }
+
+#adbottom { margin: 1em 0px 4em 0.5em; }
+
+#adright { float: right; margin: 0px 15% 0.5em 1em; }
+
+@media print {
+  body, #bg, #content { margin: 0px; color: rgb(0, 0, 0); background-color:=
+ rgb(255, 255, 255); background-image: none; font-size: 12pt; }
+  pre, tt { font-size: 12pt; }
+  a { text-decoration: underline; }
+  form, #menu, #logo, #admiddle, #adbottom, #adright { display: none; }
+}
+
+@media screen and (max-width: 640px) {
+  body { background-image: none; }
+  #content { margin: 50px 10px 10px; }
+  #logo { padding: 0px; top: -87px; width: 100%; border-bottom: 1px solid r=
+gb(102, 102, 102); }
+  #logo a { padding: 4px 4px 2px 8px; background-image: url("/style/logo.sv=
+g"); background-size: 61px 61px; background-repeat: no-repeat; background-p=
+osition: right 85px; }
+  #menu { font-size: 84%; position: static; width: 100%; border-top: 1px so=
+lid rgb(102, 102, 102); margin: 1em 0px 0px; }
+  #menu dt { margin: 0px 0px 8px; }
+  #menu dd a { padding: 8px 16px; border-width: 1px; border-style: solid; b=
+order-image: initial; border-color: rgb(153, 51, 51) rgb(0, 0, 0) rgb(0, 0,=
+ 0) rgb(153, 51, 51); }
+  #adright { margin: 0px 0px 1em 0.5em; }
+}
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.cYEbrOmw59Q.L.W.O/d=0/rs=AN8SPfpU282joXDlbkUblMtWLWoZn4bb2g/m=el_main_css
+
+@charset "utf-8";
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd { left: 0px; top: 0px; height: 39px; width: 100%=
+; z-index: 10000001; position: fixed; border-top: none; border-right: none;=
+ border-left: none; border-image: initial; border-bottom: 1px solid rgb(107=
+, 144, 218); margin: 0px; box-shadow: rgb(153, 153, 153) 0px 0px 8px 1px; }
+
+.VIpgJd-ZVi9od-xl07Ob-OEVmcd { z-index: 10000002; border: none; position: f=
+ixed; box-shadow: rgb(153, 153, 153) 0px 3px 8px 2px; }
+
+.VIpgJd-ZVi9od-SmfZ-OEVmcd { z-index: 10000000; border: none; margin: 0px; =
+}
+
+.goog-te-gadget { font-family: arial; font-size: 11px; color: rgb(102, 102,=
+ 102); white-space: nowrap; }
+
+.goog-te-gadget img { vertical-align: middle; border: none; }
+
+.goog-te-gadget-simple { background-color: rgb(255, 255, 255); border-width=
+: 1px; border-style: solid; border-color: rgb(155, 155, 155) rgb(213, 213, =
+213) rgb(232, 232, 232); font-size: 10pt; display: inline-block; padding-to=
+p: 1px; padding-bottom: 2px; cursor: pointer; }
+
+.goog-te-gadget-icon { margin-left: 2px; margin-right: 2px; width: 19px; he=
+ight: 19px; border: none; vertical-align: middle; }
+
+.goog-te-combo { margin-left: 4px; margin-right: 4px; vertical-align: basel=
+ine; }
+
+.goog-te-gadget .goog-te-combo { margin: 4px 0px; }
+
+.VIpgJd-ZVi9od-l4eHX-hSRGPd, .VIpgJd-ZVi9od-l4eHX-hSRGPd:link, .VIpgJd-ZVi9=
+od-l4eHX-hSRGPd:visited, .VIpgJd-ZVi9od-l4eHX-hSRGPd:hover, .VIpgJd-ZVi9od-=
+l4eHX-hSRGPd:active { font-size: 12px; font-weight: bold; color: rgb(68, 68=
+, 68); text-decoration: none; }
+
+.VIpgJd-ZVi9od-ORHb .VIpgJd-ZVi9od-l4eHX-hSRGPd, .VIpgJd-ZVi9od-TvD9Pc-hSRG=
+Pd { display: block; margin: 0px 10px; }
+
+.VIpgJd-ZVi9od-ORHb .VIpgJd-ZVi9od-l4eHX-hSRGPd { padding-top: 2px; padding=
+-left: 4px; }
+
+.goog-te-combo, .VIpgJd-ZVi9od-ORHb *, .VIpgJd-ZVi9od-SmfZ *, .VIpgJd-ZVi9o=
+d-xl07Ob *, .VIpgJd-ZVi9od-vH1Gmf *, .VIpgJd-ZVi9od-l9xktf * { font-family:=
+ arial; font-size: 10pt; }
+
+.VIpgJd-ZVi9od-ORHb { margin: 0px; background-color: rgb(228, 239, 251); ov=
+erflow: hidden; }
+
+.VIpgJd-ZVi9od-ORHb img { border: none; }
+
+.VIpgJd-ZVi9od-ORHb-bN97Pc { color: rgb(0, 0, 0); }
+
+.VIpgJd-ZVi9od-ORHb-bN97Pc img { vertical-align: middle; }
+
+.VIpgJd-ZVi9od-ORHb-Tswv1b { color: rgb(102, 102, 102); vertical-align: top=
+; margin-top: 0px; font-size: 7pt; }
+
+.VIpgJd-ZVi9od-ORHb-KE6vqe { width: 8px; }
+
+.VIpgJd-ZVi9od-LgbsSe { border-color: rgb(231, 231, 231); border-style: non=
+e solid solid none; border-width: 0px 1px 1px 0px; }
+
+.VIpgJd-ZVi9od-LgbsSe div { border-color: rgb(204, 204, 204) rgb(153, 153, =
+153) rgb(153, 153, 153) rgb(204, 204, 204); border-style: solid; border-wid=
+th: 1px; height: 20px; }
+
+.VIpgJd-ZVi9od-LgbsSe button { background: transparent; border: none; curso=
+r: pointer; height: 20px; overflow: hidden; margin: 0px; vertical-align: to=
+p; white-space: nowrap; }
+
+.VIpgJd-ZVi9od-LgbsSe button:active { background: none 0px 0px repeat scrol=
+l rgb(204, 204, 204); }
+
+.VIpgJd-ZVi9od-SmfZ { margin: 0px; background-color: rgb(255, 255, 255); wh=
+ite-space: nowrap; }
+
+.VIpgJd-ZVi9od-SmfZ-hSRGPd { text-decoration: none; font-weight: bold; font=
+-size: 10pt; border: 1px outset rgb(136, 136, 136); padding: 6px 10px; whit=
+e-space: nowrap; position: absolute; left: 0px; top: 0px; }
+
+.VIpgJd-ZVi9od-SmfZ-hSRGPd img { margin-left: 2px; margin-right: 2px; width=
+: 19px; height: 19px; border: none; vertical-align: middle; }
+
+.VIpgJd-ZVi9od-SmfZ-hSRGPd span { text-decoration: underline; margin-left: =
+2px; margin-right: 2px; vertical-align: middle; }
+
+.goog-te-float-top .VIpgJd-ZVi9od-SmfZ-hSRGPd { padding: 2px; border-top-wi=
+dth: 0px; }
+
+.goog-te-float-bottom .VIpgJd-ZVi9od-SmfZ-hSRGPd { padding: 2px; border-bot=
+tom-width: 0px; }
+
+.VIpgJd-ZVi9od-xl07Ob-lTBxed { text-decoration: none; color: rgb(0, 0, 204)=
+; white-space: nowrap; margin-left: 4px; margin-right: 4px; }
+
+.VIpgJd-ZVi9od-xl07Ob-lTBxed span { text-decoration: underline; }
+
+.VIpgJd-ZVi9od-xl07Ob-lTBxed img { margin-left: 2px; margin-right: 2px; }
+
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed { color: rgb(0, 0, 0); =
+}
+
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed span { text-decoration:=
+ none; }
+
+.VIpgJd-ZVi9od-xl07Ob { background-color: rgb(255, 255, 255); text-decorati=
+on: none; border: 2px solid rgb(195, 217, 255); overflow: hidden scroll; po=
+sition: absolute; left: 0px; top: 0px; }
+
+.VIpgJd-ZVi9od-xl07Ob-ibnC6b { padding: 3px; text-decoration: none; }
+
+.VIpgJd-ZVi9od-xl07Ob-ibnC6b, .VIpgJd-ZVi9od-xl07Ob-ibnC6b:link { color: rg=
+b(0, 0, 204); background: rgb(255, 255, 255); }
+
+.VIpgJd-ZVi9od-xl07Ob-ibnC6b:visited { color: rgb(85, 26, 139); }
+
+.VIpgJd-ZVi9od-xl07Ob-ibnC6b:hover { background: rgb(195, 217, 255); }
+
+.VIpgJd-ZVi9od-xl07Ob-ibnC6b:active { color: rgb(0, 0, 204); }
+
+.VIpgJd-ZVi9od-vH1Gmf { background-color: rgb(255, 255, 255); text-decorati=
+on: none; border: 1px solid rgb(107, 144, 218); overflow: hidden; padding: =
+4px; }
+
+.VIpgJd-ZVi9od-vH1Gmf-KrhPNb { width: 16px; }
+
+.VIpgJd-ZVi9od-vH1Gmf-hgDUwe { margin: 6px 0px; height: 1px; background-col=
+or: rgb(170, 170, 170); overflow: hidden; }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd div {=
+ padding: 4px; }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b .uDEFge { display: none; }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd .uDEFge { }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd .fmcmS { padding-left: 4px; padding-rig=
+ht: 4px; }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd { text-de=
+coration: none; }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b:link div, .V=
+IpgJd-ZVi9od-vH1Gmf-ibnC6b:visited div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b:active=
+ div { color: rgb(0, 0, 204); background: rgb(255, 255, 255); }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b:hover div { color: rgb(255, 255, 255); backgro=
+und: rgb(51, 102, 204); }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SM=
+d:link div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd:visited div, .VIpgJd-ZVi9od=
+-vH1Gmf-ibnC6b-gk6SMd:hover div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd:active=
+ div { color: rgb(0, 0, 0); font-weight: bold; }
+
+.VIpgJd-ZVi9od-l9xktf { background-color: rgb(255, 255, 255); overflow: hid=
+den; padding: 8px; border: none; border-radius: 10px; }
+
+.VIpgJd-ZVi9od-l9xktf-OEVmcd { background-color: rgb(255, 255, 255); border=
+: 1px solid rgb(107, 144, 218); box-shadow: rgb(153, 153, 153) 0px 3px 8px =
+2px; border-radius: 8px; }
+
+.VIpgJd-ZVi9od-l9xktf img { border: none; }
+
+.VIpgJd-ZVi9od-l9xktf-fmcmS { margin-top: 6px; }
+
+.VIpgJd-ZVi9od-l9xktf-VgwJlc { margin-top: 6px; white-space: nowrap; }
+
+.VIpgJd-ZVi9od-l9xktf-VgwJlc * { vertical-align: middle; }
+
+.VIpgJd-ZVi9od-l9xktf-VgwJlc .DUGJie { background-image: url("https://www&g=
+oogle.com/images/zippy_minus_sm.gif"); }
+
+.VIpgJd-ZVi9od-l9xktf-VgwJlc .TdyTDe { background-image: url("https://www&g=
+oogle.com/images/zippy_plus_sm.gif"); }
+
+.VIpgJd-ZVi9od-l9xktf-VgwJlc span { color: rgb(0, 0, 204); text-decoration:=
+ underline; cursor: pointer; margin: 0px 4px; }
+
+.VIpgJd-ZVi9od-l9xktf-I9GLp { margin: 6px 0px 0px; }
+
+.VIpgJd-ZVi9od-l9xktf-I9GLp form { margin: 0px; }
+
+.VIpgJd-ZVi9od-l9xktf-I9GLp form textarea { margin-bottom: 4px; width: 100%=
+; }
+
+.VIpgJd-ZVi9od-l9xktf-yePe5c { margin: 6px 0px 4px; }
+
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf { z-index: 1000; position: fixed; transition-d=
+elay: 0.6s; left: -1000px; top: -1000px; }
+
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc { transition-delay: 0s; left: -14px; to=
+p: -14px; }
+
+.VIpgJd-ZVi9od-aZ2wEe-OiiCO { display: flex; -webkit-box-align: center; ali=
+gn-items: center; -webkit-box-pack: center; justify-content: center; width:=
+ 104px; height: 104px; border-radius: 50px; background: url("https://www.gs=
+tatic.com/images/branding/product/2x/translate_24dp.png") 50% 50% no-repeat=
+ rgb(255, 255, 255); transition: all 0.6s ease-in-out 0s; transform: scale(=
+0.4); opacity: 0; }
+
+.VIpgJd-ZVi9od-aZ2wEe-OiiCO-ti6hGc { transform: scale(0.5); opacity: 1; }
+
+.VIpgJd-ZVi9od-aZ2wEe { margin: 2px 0px 0px 2px; animation: 1.4s linear 0s =
+infinite normal none running spinner-rotator; }
+
+@-webkit-keyframes spinner-rotator {=20
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(270deg); }
+}
+
+@keyframes spinner-rotator {=20
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(270deg); }
+}
+
+.VIpgJd-ZVi9od-aZ2wEe-Jt5cK { stroke-dasharray: 187; stroke-dashoffset: 0; =
+stroke: rgb(66, 133, 244); transform-origin: center center; animation: 1.4s=
+ ease-in-out 0s infinite normal none running spinner-dash; }
+
+@-webkit-keyframes spinner-dash {=20
+  0% { stroke-dashoffset: 187; }
+  50% { stroke-dashoffset: 46.75; transform: rotate(135deg); }
+  100% { stroke-dashoffset: 187; transform: rotate(450deg); }
+}
+
+@keyframes spinner-dash {=20
+  0% { stroke-dashoffset: 187; }
+  50% { stroke-dashoffset: 46.75; transform: rotate(135deg); }
+  100% { stroke-dashoffset: 187; transform: rotate(450deg); }
+}
+
+.VIpgJd-yAWNEb-L7lbkb html, .VIpgJd-yAWNEb-L7lbkb body, .VIpgJd-yAWNEb-L7lb=
+kb div, .VIpgJd-yAWNEb-L7lbkb span, .VIpgJd-yAWNEb-L7lbkb iframe, .VIpgJd-y=
+AWNEb-L7lbkb h1, .VIpgJd-yAWNEb-L7lbkb h2, .VIpgJd-yAWNEb-L7lbkb h3, .VIpgJ=
+d-yAWNEb-L7lbkb h4, .VIpgJd-yAWNEb-L7lbkb h5, .VIpgJd-yAWNEb-L7lbkb h6, .VI=
+pgJd-yAWNEb-L7lbkb p, .VIpgJd-yAWNEb-L7lbkb a, .VIpgJd-yAWNEb-L7lbkb img, .=
+VIpgJd-yAWNEb-L7lbkb ol, .VIpgJd-yAWNEb-L7lbkb ul, .VIpgJd-yAWNEb-L7lbkb li=
+, .VIpgJd-yAWNEb-L7lbkb table, .VIpgJd-yAWNEb-L7lbkb form, .VIpgJd-yAWNEb-L=
+7lbkb tbody, .VIpgJd-yAWNEb-L7lbkb tr, .VIpgJd-yAWNEb-L7lbkb td { margin: 0=
+px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; =
+font-weight: inherit; font-stretch: inherit; font-family: inherit; font-siz=
+e: 100%; vertical-align: baseline; text-align: left; line-height: normal; }
+
+.VIpgJd-yAWNEb-L7lbkb ol, .VIpgJd-yAWNEb-L7lbkb ul { list-style: none; }
+
+.VIpgJd-yAWNEb-L7lbkb table { border-collapse: collapse; border-spacing: 0p=
+x; }
+
+.VIpgJd-yAWNEb-L7lbkb caption, .VIpgJd-yAWNEb-L7lbkb th, .VIpgJd-yAWNEb-L7l=
+bkb td { text-align: left; font-weight: normal; }
+
+div > .VIpgJd-yAWNEb-L7lbkb { padding: 10px 14px; }
+
+.VIpgJd-yAWNEb-L7lbkb { color: rgb(34, 34, 34); background-color: rgb(255, =
+255, 255); border: 1px solid rgb(238, 238, 238); box-shadow: rgba(0, 0, 0, =
+0.2) 0px 4px 16px; display: none; font-family: arial; font-size: 10pt; widt=
+h: 420px; padding: 12px; position: absolute; z-index: 10000; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-nVMfcd-fmcmS, .VIpgJd-yAWNEb-yAWNEb-Vy=
+2Aqc-pbTTYe { clear: both; font-size: 10pt; position: relative; text-align:=
+ justify; width: 100%; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-r4nke { color: rgb(153, 153, 153); fon=
+t-family: arial, sans-serif; margin: 4px 0px; text-align: left; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-TvD9Pc-LgbsSe { display: none; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-l4eHX { float: left; margin: 0px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-Z0Arqf-PLDbbf { display: inline-block;=
+ }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-fw42Ze-Z0Arqf-haAclf { display: none; =
+width: 100%; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-Z0Arqf-H9tDt { margin-top: 20px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-LK5yu { float: left; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-qwU8Me { float: right; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-cGMI2b { min-height: 15px; position: r=
+elative; height: 1%; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-jOfkMb-Ne3sFf { background: rgb(41, 14=
+5, 13); border-radius: 4px; box-shadow: rgb(30, 102, 9) 0px 2px 2px inset; =
+color: white; font-size: 9pt; font-weight: bolder; margin-top: 12px; paddin=
+g: 6px; text-shadow: rgb(30, 102, 9) 1px 1px 1px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-Z0Arqf-hSRGPd { color: rgb(17, 85, 204=
+); cursor: pointer; font-family: arial; font-size: 11px; margin-right: 15px=
+; text-decoration: none; }
+
+.VIpgJd-yAWNEb-L7lbkb > textarea { font-family: arial; resize: vertical; wi=
+dth: 100%; margin-bottom: 10px; border-radius: 1px; border-width: 1px; bord=
+er-style: solid; border-color: silver rgb(217, 217, 217) rgb(217, 217, 217)=
+; border-image: initial; font-size: 13px; height: auto; overflow-y: auto; p=
+adding: 1px; }
+
+.VIpgJd-yAWNEb-L7lbkb textarea:focus { box-shadow: rgba(0, 0, 0, 0.3) 0px 1=
+px 2px inset; border: 1px solid rgb(77, 144, 254); outline: none; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-Z0Arqf-IbE0S { margin-right: 10px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp { min-height: 25px; verti=
+cal-align: middle; padding-top: 8px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp { margin-bottom: 0px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input { display: inline-block; min-width: 54px; border: 1px solid rgba(0=
+, 0, 0, 0.1); text-align: center; color: rgb(68, 68, 68); font-size: 11px; =
+font-weight: bold; height: 27px; outline: 0px; padding: 0px 8px; vertical-a=
+lign: middle; line-height: 27px; margin: 0px 16px 0px 0px; box-shadow: rgba=
+(0, 0, 0, 0.1) 0px 1px 2px; border-radius: 2px; transition: all 0.218s ease=
+ 0s; background-color: rgb(245, 245, 245); background-image: -webkit-linear=
+-gradient(top, rgb(245, 245, 245), rgb(241, 241, 241)); user-select: none; =
+cursor: default; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input:hover { border: 1px solid rgb(198, 198, 198); color: rgb(34, 34, 3=
+4); transition: all 0s ease 0s; background-color: rgb(248, 248, 248); backg=
+round-image: -webkit-linear-gradient(top, rgb(248, 248, 248), rgb(241, 241,=
+ 241)); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input:active { border: 1px solid rgb(198, 198, 198); color: rgb(51, 51, =
+51); background-color: rgb(246, 246, 246); background-image: -webkit-linear=
+-gradient(top, rgb(246, 246, 246), rgb(241, 241, 241)); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input:focus .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yA=
+WNEb-Z0Arqf-I9GLp input.AHmuwe .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-=
+I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:active, .VIpgJd-yAWNEb-L7lbkb .VIpg=
+Jd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:focus:active { box=
+-shadow: rgba(255, 255, 255, 0.5) 0px 0px 0px 1px inset; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input:focus, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-y=
+AWNEb-Z0Arqf-I9GLp input.AHmuwe { outline: none; border: 1px solid rgb(77, =
+144, 254); z-index: 4 !important; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input.gk6SMd { background-color: rgb(238, 238, 238); background-image: -=
+webkit-linear-gradient(top, rgb(238, 238, 238), rgb(224, 224, 224)); box-sh=
+adow: rgba(0, 0, 0, 0.1) 0px 1px 2px inset; border: 1px solid rgb(204, 204,=
+ 204); color: rgb(51, 51, 51); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf { color: white; border-color: rgb(48,=
+ 121, 237); background-color: rgb(77, 144, 254); background-image: -webkit-=
+linear-gradient(top, rgb(77, 144, 254), rgb(71, 135, 237)); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf:hover .VIpgJd-yAWNEb-L7lbkb .VIpgJd-y=
+AWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-=
+sFeBqf:focus, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAW=
+NEb-Z0Arqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf.AHmuwe .VIpgJd-yAWNEb-L=
+7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd=
+-yAWNEb-Z0Arqf-sFeBqf:active { border-color: rgb(48, 121, 237); background-=
+color: rgb(53, 122, 232); background-image: -webkit-linear-gradient(top, rg=
+b(77, 144, 254), rgb(53, 122, 232)); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf:hover { box-shadow: rgb(255, 255, 255=
+) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.1) 0px 1px 1px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input:focus, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-y=
+AWNEb-Z0Arqf-I9GLp input.AHmuwe, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5=
+e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:active, .VIpgJd-yAWNEb-L7lbkb .VI=
+pgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:hover, .VIpgJd-y=
+AWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input =
+.VIpgJd-yAWNEb-Z0Arqf-sFeBqf:focus, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4=
+Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf.A=
+Hmuwe, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0A=
+rqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf:active, .VIpgJd-yAWNEb-L7lbkb =
+.VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd-yAWNE=
+b-Z0Arqf-sFeBqf:hover { border-color: rgb(48, 121, 237); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-mrxPge { color: rgb(153, 153, 153); fo=
+nt-family: arial, sans-serif; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-W0vJo-fmcmS { color: rgb(153, 1=
+53, 153); font-size: 11px; font-family: arial, sans-serif; margin: 15px 0px=
+ 5px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-u0pjoe-fmcmS { color: rgb(136, =
+0, 0); display: none; font-size: 9pt; }
+
+.VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q { background-color: rgb(201, 215, 241); b=
+ox-shadow: rgb(153, 153, 170) 2px 2px 4px; box-sizing: border-box; position=
+: relative; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-xl07Ob .VIpgJd-yAWNEb-VIpgJd-xl=
+07Ob { background: rgb(255, 255, 255); border: 1px solid rgb(221, 221, 221)=
+; box-shadow: rgb(153, 153, 170) 0px 2px 4px; min-width: 0px; outline: none=
+; padding: 0px; position: absolute; z-index: 2000; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-xl07Ob .VIpgJd-yAWNEb-VIpgJd-j7=
+LFlb { cursor: pointer; padding: 2px 5px 5px; margin-right: 0px; border-sty=
+le: none; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-xl07Ob .VIpgJd-yAWNEb-VIpgJd-j7=
+LFlb:hover { background: rgb(221, 221, 221); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-xl07Ob .VIpgJd-yAWNEb-VIpgJd-j7=
+LFlb h1 { font-size: 100%; font-weight: bold; margin: 4px 0px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-xl07Ob .VIpgJd-yAWNEb-VIpgJd-j7=
+LFlb strong { color: rgb(52, 90, 173); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-VIpgJd-eKm5Fc-hFsbo { text-align: righ=
+t; position: absolute; right: 0px; left: auto; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-VIpgJd-j7LFlb-SIsrTd .VIpgJd-yAWNEb-VI=
+pgJd-eKm5Fc-hFsbo { text-align: left; position: absolute; left: 0px; right:=
+ auto; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-yAWNEb-Vy2Aqc-fmcmS, .VIpgJd-yAWNEb-L7=
+lbkb .VIpgJd-yAWNEb-TVLw9c-ppHlrf-sn54Q { background-color: rgb(241, 234, 0=
+); border-radius: 4px; box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 4px; box-sizi=
+ng: border-box; color: rgb(241, 234, 0); cursor: pointer; margin: -2px -2px=
+ -2px -3px; padding: 2px 2px 2px 3px; position: relative; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-TVLw9c-ppHlrf-sn54Q { color: rgb(34, 3=
+4, 34); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-yAWNEb-Vy2Aqc-pbTTYe { color: white; p=
+osition: absolute !important; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-TVLw9c-ppHlrf, .VIpgJd-yAWNEb-L7lbkb .=
+VIpgJd-yAWNEb-TVLw9c-ppHlrf .VIpgJd-yAWNEb-TVLw9c-ppHlrf-sn54Q { background=
+-color: rgb(201, 215, 241); border-radius: 4px 4px 0px 0px; box-shadow: rgb=
+a(0, 0, 0, 0.5) 3px 3px 4px; box-sizing: border-box; cursor: pointer; margi=
+n: -2px -2px -2px -3px; padding: 2px 2px 3px 3px; position: relative; }
+
+.VIpgJd-yAWNEb-L7lbkb span:focus { outline: none; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-TVLw9c-DyVDA { background-color: trans=
+parent; border: 1px solid rgb(77, 144, 254); border-radius: 0px; margin: -2=
+px; padding: 1px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-yAWNEb-TVLw9c-sn54Q-LzX3ef { border-le=
+ft: 2px solid red; margin-left: -2px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-yAWNEb-TVLw9c-sn54Q-YIAiIb { border-ri=
+ght: 2px solid red; margin-right: -2px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-YPqjbf { padding: 2px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-YPqjbf-fmcmS { font-size: 11px;=
+ padding: 2px 2px 3px; margin: 0px; background-color: rgb(255, 255, 255); c=
+olor: rgb(51, 51, 51); border-width: 1px; border-style: solid; border-color=
+: rgb(192, 192, 192) rgb(217, 217, 217) rgb(217, 217, 217); border-image: i=
+nitial; display: inline-block; vertical-align: top; height: 21px; box-sizin=
+g: border-box; border-radius: 1px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-YPqjbf-fmcmS:hover { border-wid=
+th: 1px; border-style: solid; border-color: rgb(160, 160, 160) rgb(185, 185=
+, 185) rgb(185, 185, 185); border-image: initial; box-shadow: rgba(0, 0, 0,=
+ 0.1) 0px 1px 2px inset; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-YPqjbf-fmcmS:focus { box-shadow=
+: rgba(0, 0, 0, 0.3) 0px 1px 2px inset; outline: none; border: 1px solid rg=
+b(77, 144, 254); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-YPqjbf-sFeBqf { font-size: 11px=
+; padding: 2px 6px 3px; margin: 0px 0px 0px 2px; height: 21px; }
+
+.VIpgJd-yAWNEb-hvhgNd { font-family: "Google Sans", Arial, sans-serif; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c { position: absolu=
+te; top: 10px; left: 14px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-l4eHX-SIsrTd { position: absolu=
+te; top: 10px; right: 14px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c, .VIpgJd-yAWNEb-h=
+vhgNd .VIpgJd-yAWNEb-hvhgNd-k77Iif-SIsrTd { margin: 16px; padding: 0px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-IuizWc { margin: 0px 0px 0px 36=
+px; padding: 0px; color: rgb(116, 119, 117); font-size: 14px; font-weight: =
+500; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-k77Iif-SIsrTd .VIpgJd-yAWNEb-hv=
+hgNd-IuizWc { text-align: right; margin: 0px 36px 0px 0px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-nVMfcd-fmcmS .VIpgJd-yAWNEb-hvhgNd-axA=
+V1 { width: auto; padding: 12px 0px 0px; color: rgb(31, 31, 31); font-size:=
+ 16px; text-align: initial; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-nVMfcd-fmcmS .VIpgJd-yAWNEb-hvhgNd-axA=
+V1 .VIpgJd-yAWNEb-SIsrTd { text-align: right; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid { border-radius: 0px 0px=
+ 12px 12px; margin: 0px; background: rgb(241, 244, 249); position: relative=
+; min-height: 50px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid .VIpgJd-yAWNEb-SIsrTd { =
+text-align: right; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od { display: inline=
+-block; width: 77%; padding: 12px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od .VIpgJd-yAWNEb-SI=
+srTd { text-align: right; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-UTujCb { color: rgb(31, 31, 31)=
+; font-size: 12px; font-weight: 500; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od .VIpgJd-yAWNEb-SI=
+srTd .VIpgJd-yAWNEb-hvhgNd-UTujCb { text-align: right; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-eO9mKe { color: rgb(68, 71, 70)=
+; font-size: 12px; padding-top: 4px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od .VIpgJd-yAWNEb-SI=
+srTd .VIpgJd-yAWNEb-hvhgNd-eO9mKe { text-align: right; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-xgov5 { position: absolute; top=
+: 10px; right: 5px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-xgov5 .VIpgJd-yAWNEb-SIsrTd { l=
+eft: 5px; right: auto; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-THI6Vb { }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-bgm6sf { margin: -4px 2px 0px 0=
+px; padding: 2px 0px 0px; width: 48px; height: 48px; border: none; border-r=
+adius: 24px; cursor: pointer; background: none; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-bgm6sf:hover { background: rgb(=
+232, 235, 236); }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-aXYTce { display: none; }
+
+.VIpgJd-yAWNEb-wdjgF { font-family: "Google Sans", Arial, sans-serif; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c { position: absolut=
+e; top: 10px; left: 10px; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-l4eHX-SIsrTd { position: absolut=
+e; top: 10px; right: 10px; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c { margin: 16px 16p=
+x 16px 48px; padding: 0px; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-k77Iif-SIsrTd { margin: 16px 48p=
+x 16px 16px; padding: 0px; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-IuizWc { margin: 0px; padding: 0=
+px; color: rgb(31, 31, 31); font-size: 14px; font-weight: 500; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-k77Iif-SIsrTd .VIpgJd-yAWNEb-hvh=
+gNd-IuizWc { text-align: right; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-nVMfcd-fmcmS .VIpgJd-yAWNEb-hvhgNd-axAV=
+1 { width: auto; padding: 8px 0px 6px; color: rgb(31, 31, 31); font-size: 1=
+6px; text-align: initial; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-nVMfcd-fmcmS .VIpgJd-yAWNEb-hvhgNd-axAV=
+1 .VIpgJd-yAWNEb-SIsrTd { text-align: right; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-fAt1Sb { height: 0px; width: 70%=
+; border-right: none; border-bottom: none; border-left: none; border-image:=
+ initial; border-top: 1px solid rgb(194, 231, 255); border-collapse: collap=
+se; background: none; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-yVJrbd { margin: 0px; padding: 0=
+px; color: rgb(11, 87, 208); font-size: 14px; font-weight: 500; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-k77Iif-SIsrTd .VIpgJd-yAWNEb-hvh=
+gNd-yVJrbd { text-align: right; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-IkhkZd { width: auto; padding: 8=
+px 0px 0px; color: rgb(11, 87, 208); font-size: 16px; text-align: initial; =
+}
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-IkhkZd .VIpgJd-yAWNEb-SIsrTd { t=
+ext-align: right; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-N7Eqid { border-radius: 0px 0px =
+12px 12px; margin: 0px; background: rgb(241, 244, 249); position: relative;=
+ min-height: 50px; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-N7Eqid .VIpgJd-yAWNEb-SIsrTd { t=
+ext-align: right; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od { display: inline-=
+block; width: 77%; padding: 12px; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od .VIpgJd-yAWNEb-SIs=
+rTd { text-align: right; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-UTujCb { color: rgb(31, 31, 31);=
+ font-size: 12px; font-weight: 500; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od .VIpgJd-yAWNEb-SIs=
+rTd .VIpgJd-yAWNEb-hvhgNd-UTujCb { text-align: right; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-eO9mKe { color: rgb(68, 71, 70);=
+ font-size: 12px; padding-top: 4px; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od .VIpgJd-yAWNEb-SIs=
+rTd .VIpgJd-yAWNEb-hvhgNd-eO9mKe { text-align: right; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-xgov5 { position: absolute; top:=
+ 10px; right: 5px; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-xgov5 .VIpgJd-yAWNEb-SIsrTd { le=
+ft: 5px; right: auto; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-THI6Vb { }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-bgm6sf { margin: -4px 2px 0px 0p=
+x; padding: 2px 0px 0px; width: 48px; height: 48px; border: none; border-ra=
+dius: 24px; cursor: pointer; background: none; }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-bgm6sf:hover { background: rgb(2=
+32, 235, 236); }
+
+.VIpgJd-yAWNEb-wdjgF .VIpgJd-yAWNEb-hvhgNd-aXYTce { display: none; }
+
+sentinel { }
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://www.gstatic.com/images/branding/product/2x/translate_24dp.png
+
+iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAG+UlEQVR4Ae2YVXfbWBCAtc/L8H+W
+ocztYpmflrfccGKIU2ZmZuY2jLbMDjNvw693dkbOKIrWcpR18JzNOV987dL3SXMlpdJE+fr/CwDe
+WHqgY+6inb2e+Tv7hJ55OwaY288cJiPMbA3r97a+hUijjbpYvLdz/oJdfYKJNWBhWtsMRBptBt7s
+7HVr5WMNmGnvfIRIo426IEkjeUKVNxkwy4F/319F7yLSaKIuWHTkApCkujmINJqoCxYd/vgwOnnC
+3vkYkUYTdWFe3nwAj9G4jBBLG8tHHx9iJjI7qXoeIo0W6kIvbCTPAXMz+kDLHEeY2VrS+2Dl/g5w
+uspFVVWDaG5pFa2tYVpaWlSam5sVmpqaItLY2EjQWq6urp+GSIy6GI48oZdntPLMtYceEQxVoQAJ
+//cAprKyZgYiERIvjKWNR2eoo88kn66C3DxZVFXXk3DMAfX1jU5EIiRezDUhvvhAnzj5ohvkik5o
+auuAZsRd2Qmn8LPF+yLLz0KW7WmHzCynkOWAqG9ojDWAkQiJF0biTPL1HtHY2gGvOyJDv7btYk/E
+AOIqjlFhkUcEAiGSGvkAkjSC5F+/HpCtbOiEx65OuF3QBaGa8Gf0uvJQb0T5mfaBMXJ7AqK0tIzE
+WJ4xko8hAOf8p/196pFv/7sDjj3r1l42aQ177vfA0v2R5Tlgaf8YuVx+EQiGRHl5OQmOYADJRODk
+824+8sqs66/32rk3OvrM1QfhMfL7g3QWKIJEhj0+DQ0NhERIvDAKoA1L8k14FubtHCzPmJGfgSSd
+wjHKpTHyi1CoVJSVqRGxB7CYHhKngNxAJ+jFjTb0g+KuiAFLduMYZdIY+USwP4BYtc0Ka5MywIR8
+bAEkbSbgibNLL8+oY+Tz0RiFA1Zus8DK7VYgsRELYEntCM3dyc84YWy3elT2PRzYK1dyuv4lP92G
+WPtg3tZnsPgPCyzbhNJbrQi+bmOssDohA9Yk7kAyGOUzjXzkABbWc0KziekmxvIq6WGOPBn4fSnX
+elieUeSJmSk18OPvFli6MRywYmuaGrACA1Zut6GwQyMfY8AP+wYuo214GT3ytFvMyhgsn3KjR7S2
+h39PTVMXzM/oZfEwNgYjkCsP3DhGbmWMtJu5oqJCIf34BSXizrMs/fgYB5CQEQlXB9/IKuhG5uyE
+m3gj81Z2qp/T70m40mMozwGJeDXKyXUJ2e0XwWBoUIDb6xOr4+ywJj4dyvC9gfzwAjiisYVEI0Nn
+wHare0h5YvGudojLOAVLN1hg56mLwAHELnxPG3rniYtQWVlJouYCeByiQeN0/Fk3uMo7lU3d3NYJ
+HjwD5zO7YemBXmFGnphm7YVTNwrFsg1WWLbZCpm5+Yr8q9wCsQr3AJ2BIqcsKKCqqoqFYwuYEYXp
+9gHMyBOJJyvBcfginoU0+CVtN5TIsvjVskfZzEcu3wIaJwrgiPr6+ugBM4xFTYkzRuIsz/y0sx1e
+vioWG6wHYfmWNFiXkA4rUH6D4wCU4khxgHGELiAWaWJaP2bkp/Zz5b5bPH2ZJ5Zv4cupDYqdsjJO
+HECvHFBdXc0RxgHGwsbieqLLMzRGVZC06wzeE9JwL6TBcryp7Tp5CTiA0QbU1NREDjCWNCHN2MJo
+xA3kEUsvzLE0wPe/psKqzTa4cOeRWBfvgBUYsePkRYowDKitrSUkQuKFeWljccaMPDElrRd+2HAY
+7j58pTxiv8wpEGtxLyzfhhEnLsCwAowFzYsTU/vRiBvKE38dCEB2jkt9xM7MKxTrEhzKOO04rpwJ
+bQARQ4DNmKk6hpL/hgJw/QNejV71P2IHwndljChQIujZyH7sHHAAYRgww9brMpY0L05MsfaKSOIM
+yzOX78mioFAe9Iid1R9x/ModOgP6MSIkQuLFbEv77FikWVxLJPkpOigmQXk2Un7g1z/cMdEDmKnx
+1fOmpr72TbV0Ci1ThuCbtH/zNTIltRO0fKPj65QOhR8czco+cMm0D8q0AfwaPWC02JL4NO6zuTfh
+Ux2fzLmh8umcm7A5+Qnk5eMZcA8+A8S4BsTZn3/0xYI7oOXz+YPZnvoCcvNcorjEK/wBZRMz4x9A
+rP3jRcuXi+7DF3oW3od420vIL5BFEcp7PPyzQdQAjiAkgr6NKkmOrA0UoMLy9hco7xTFxR4cHR/9
+lyOOTwivQqVGAczYBjgcDz7QihNx1uc482F5WfYJnz+ARz8YLYAZ+wBizW8vWlg+3vYcZ75EFBW5
+FXmvz49HP3oArzmgtLxCRiSCvo06ybacP5Qjj/I5ucWiEG9aTqdHkff7owfwe23Aq+yS+YhE0LdR
+Jw7HKM7yGDKz8kVOTpEoKCgRThddNt0KHg/GeL3C5/NxEEFrbSD9Xu+jpzkLEInhxWRl8gf8A1/5
+iBrINb9BAAAAAElFTkSuQmCC
+
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://linux.die.net/style/logo.svg
+
+<svg xmlns=3D"http://www.w3.org/2000/svg" height=3D"120" width=3D"120" vers=
+ion=3D"1">
+<path fill=3D"#111" d=3D"M49 43h500V82H49z"/>
+<path fill=3D"#a44" d=3D"M79.064 27.94c6.96 12.46 7.832 26.413 1.945 31.168=
+s-16.302-1.49-23.263-13.948-7.832-26.413-1.945-31.168 16.3 1.49 23.262 13.9=
+48zM73.02 22.772c4.73 12.555-5.08 27.467-21.915 33.307s-34.317.398-39.05-12=
+.157 5.08-27.466 21.915-33.307 34.317-.398 39.05 12.156zM24.582 67.565c-6.4=
+28-10.927-4.028-22.636 5.36-26.153s22.21 2.49 28.637 13.418 4.027 22.635-5.=
+36 26.152-22.21-2.49-28.638-13.417z"/>
+<path fill=3D"#711" d=3D"M76.04 27c0 11.16-12.664 20.204-28.284 20.204S19.4=
+73 38.16 19.473 27 32.136 6.8 47.756 6.8c15.62 0 28.283 9.045 28.283 20.203=
+z"/>
+<path fill=3D"#e77" d=3D"M26.977 43.686c7.302 11.077 11.882 24.8 10.23 30.6=
+5s-8.915 1.61-16.218-9.467-11.884-24.8-10.23-30.65 8.914-1.61 16.217 9.466z=
+"/>
+<path fill=3D"#411" d=3D"M85.02 51.253c2.56 8.985-5.948 21.4-19 27.727s-25.=
+71 4.176-28.27-4.808c-2.558-8.985 5.95-21.398 19.002-27.727s25.71-4.176 28.=
+268 4.808z"/>
+<path fill=3D"#fff" d=3D"M55.32 12.24c0 1.915-2.392 3.466-5.342 3.466-2.95 =
+0-5.342-1.55-5.342-3.465s2.392-3.464 5.342-3.464c2.95 0 5.342 1.552 5.342 3=
+.465zM32.9 22.5c0 1.915-2.39 3.466-5.34 3.466-2.95 0-5.343-1.55-5.343-3.465=
+s2.392-3.464 5.342-3.464c2.95 0 5.34 1.552 5.34 3.465zM48.422 41.037c0 1.91=
+4-2.392 3.465-5.342 3.465-2.95 0-5.342-1.55-5.342-3.465s2.392-3.465 5.342-3=
+.465c2.95 0 5.342 1.552 5.342 3.465zM73.254 30.114c0 1.914-2.392 3.465-5.34=
+2 3.465-2.95 0-5.342-1.552-5.342-3.466s2.392-3.465 5.342-3.465c2.95 0 5.342=
+ 1.55 5.342 3.464zM17.15 37.106c1.632 2.222 2.53 4.536 2 5.168-.527.63-2.28=
+-.66-3.913-2.882s-2.53-4.536-2.003-5.168c.528-.63 2.28.66 3.915 2.882zM18.5=
+28 45.712c1.633 2.222 2.53 4.536 2.002 5.168-.528.63-2.28-.66-3.914-2.882s-=
+2.53-4.536-2.003-5.168c.528-.63 2.28.66 3.915 2.882zM20.598 54.98c1.633 2.2=
+22 2.53 4.536 2.002 5.168-.528.63-2.28-.66-3.914-2.882s-2.53-4.536-2.003-5.=
+168c.528-.63 2.28.66 3.915 2.882zM29.91 52.332c1.633 2.222 2.53 4.536 2.002=
+ 5.168-.528.63-2.28-.66-3.914-2.882s-2.53-4.536-2.003-5.168c.528-.63 2.28.6=
+6 3.915 2.882zM30.945 60.937c1.633 2.222 2.53 4.536 2.002 5.168-.528.63-2.2=
+8-.66-3.914-2.882s-2.53-4.536-2.003-5.168c.528-.63 2.28.66 3.915 2.882zM32.=
+324 69.874c1.633 2.222 2.53 4.536 2.002 5.168-.528.63-2.28-.66-3.914-2.882s=
+-2.53-4.536-2.003-5.168c.527-.63 2.28.66 3.914 2.882zM53.95 72.954c1.134 1.=
+236.04 3.598-2.446 5.275-2.484 1.676-5.417 2.033-6.55.797s-.04-3.6 2.446-5.=
+276c2.484-1.676 5.417-2.033 6.55-.796zM79.127 46.806c1.134 1.236.04 3.598-2=
+.446 5.275-2.483 1.678-5.416 2.035-6.55.8s-.038-3.6 2.447-5.277c2.484-1.677=
+ 5.417-2.034 6.55-.797z"/>
+<path fill=3D"#fff" d=3D"M24.56 115h-2.32v-3.92h-.08c-.28.68-.68 1.28-1.2 1=
+.84s-1.12 1.04-1.76 1.44c-.68.4-1.4.68-2.16.88-.76.24-1.52.32-2.24.32-1.6 0=
+-2.96-.28-4.12-.84s-2.12-1.36-2.88-2.36c-.8-1-1.36-2.16-1.72-3.48-.4-1.32-.=
+56-2.72-.56-4.2-.04-1.44.16-2.84.56-4.16.36-1.32.92-2.48 1.72-3.48.76-1 1.7=
+2-1.8 2.88-2.4 1.16-.56 2.52-.88 4.12-.88.76 0 1.52.12 2.24.28.72.2 1.44.48=
+ 2.08.88s1.2.84 1.68 1.4.88 1.24 1.16 1.96h.08V86.44h2.52V115M8.04 104.68c0=
+ 1.08.12 2.16.36 3.2s.64 2 1.2 2.8c.56.84 1.24 1.52 2.12 2.04.84.52 1.84.76=
+ 3.08.76 1.32 0 2.44-.24 3.36-.76s1.68-1.2 2.24-2.04c.56-.8 1-1.76 1.24-2.8=
+s.4-2.12.4-3.2c0-1.04-.16-2.12-.4-3.16s-.68-2-1.24-2.84c-.56-.8-1.32-1.48-2=
+.24-2s-2.04-.8-3.36-.8c-1.2 0-2.24.28-3.08.8-.88.52-1.56 1.2-2.12 2-.56.84-=
+.96 1.8-1.2 2.84s-.36 2.12-.36 3.16M29.41 86.44h2.52v4.04h-2.52v-4.04m0 7.9=
+2h2.52V115h-2.52V94.36M51.63 103.24c-.04-.96-.2-1.88-.52-2.76s-.72-1.64-1.2=
+8-2.32-1.24-1.24-2.04-1.64-1.72-.64-2.72-.64c-1.04 0-1.96.24-2.76.64s-1.48.=
+96-2.04 1.64-1.04 1.48-1.36 2.36-.56 1.8-.64 2.72h13.36m-13.36 2.12c0 .92.1=
+2 1.88.36 2.84s.68 1.84 1.24 2.6c.52.8 1.24 1.44 2.12 1.92.84.52 1.84.76 3.=
+08.76 1.84 0 3.28-.48 4.32-1.44s1.76-2.24 2.16-3.84h2.52c-.56 2.36-1.52 4.1=
+6-2.96 5.44s-3.44 1.92-6.04 1.92c-1.64 0-3.04-.28-4.24-.84s-2.16-1.36-2.88-=
+2.36c-.76-1-1.32-2.16-1.68-3.48s-.52-2.72-.52-4.2c0-1.32.16-2.68.52-4 .36-1=
+.28.92-2.44 1.68-3.48.72-1.04 1.68-1.84 2.88-2.48s2.6-.96 4.24-.96 3.04.36 =
+4.24 1c1.16.68 2.12 1.56 2.84 2.64s1.28 2.32 1.6 3.72c.28 1.4.44 2.8.4 4.24=
+H38.27M56.862 115v-4.24h3.36V115h-3.36M63.796 94.36h2.52v3.56h.08c.48-1.24 =
+1.32-2.24 2.56-3 1.2-.76 2.56-1.16 4.04-1.16 1.44 0 2.64.2 3.6.56.96.4 1.76=
+.92 2.36 1.6.56.68.96 1.52 1.24 2.48.24 1 .36 2.12.36 3.32V115h-2.52v-12.88=
+c0-.88-.08-1.68-.24-2.44s-.44-1.44-.84-2-.96-1-1.64-1.32-1.52-.48-2.52-.48c=
+-1.04 0-1.92.2-2.72.56s-1.44.84-2 1.48-.96 1.36-1.28 2.24-.48 1.8-.48 2.8V1=
+15h-2.52V94.36M100.16 103.24c-.04-.96-.2-1.88-.52-2.76s-.72-1.64-1.28-2.32-=
+1.24-1.24-2.04-1.64-1.72-.64-2.72-.64c-1.04 0-1.96.24-2.76.64s-1.48.96-2.04=
+ 1.64-1.04 1.48-1.36 2.36-.56 1.8-.64 2.72h13.36m-13.36 2.12c0 .92.12 1.88.=
+36 2.84s.68 1.84 1.24 2.6c.52.8 1.24 1.44 2.12 1.92.84.52 1.84.76 3.08.76 1=
+.84 0 3.28-.48 4.32-1.44s1.76-2.24 2.16-3.84h2.52c-.56 2.36-1.52 4.16-2.96 =
+5.44s-3.44 1.92-6.04 1.92c-1.64 0-3.04-.28-4.24-.84s-2.16-1.36-2.88-2.36c-.=
+76-1-1.32-2.16-1.68-3.48s-.52-2.72-.52-4.2c0-1.32.16-2.68.52-4 .36-1.28.92-=
+2.44 1.68-3.48.72-1.04 1.68-1.84 2.88-2.48s2.6-.96 4.24-.96 3.04.36 4.24 1c=
+1.16.68 2.12 1.56 2.84 2.64s1.28 2.32 1.6 3.72c.28 1.4.44 2.8.4 4.24H86.8M1=
+10.1 94.36h4.2v2.12h-4.2v13.92c0 .84.08 1.48.32 1.96s.8.72 1.72.76c.72 0 1.=
+44-.04 2.16-.12v2.12c-.4 0-.76.04-1.12.04-.4.04-.76.04-1.12.04-1.68 0-2.88-=
+.32-3.52-.96-.68-.64-1-1.88-.96-3.64V96.48h-3.6v-2.12h3.6v-6.2h2.52v6.2"/>
+</svg>=0A
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://linux.die.net/style/back.gif
+
+R0lGODlhFAAWAIQAAJSIiKyqqOvh4YRcWrN/f/Xy8MCdns/RzpiZls6trYBFRcOYmP7//KFgYdzE
+wqGjoP///////////////////////////////////////////////////////////////yH5BAEA
+ABAALAAAAAAUABYAAAVjICSOZGmeSIoAw4mqauuOcD2LtT3n+ssjj4Dr9zgwGDcA7FE4Im8QZaDp
+LC1MCqPzSDI8RY0Fdft1bMfkKsScbh8dEIHbnYjP23CR/H4sNEpoaQIELmxbDoRQCV9QJYmNkCch
+ADs=
+
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://www.gstatic.com/images/branding/product/1x/translate_24dp.png
+
+iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAADFUlEQVR4AWKgC0gC9E5OXW6FUQDt
+c41/VI89UxvvtcZVXNu2jbEV28nYNze3j+f0npV8cY271o6z9/10IZBddOILX3hcAKLgmAD5YfII
+lQC5IjtuDE77rUDxCYErOiHAjwLFR0eyfivAxHEBJmcBQsG///1ARE4k3z2RoxRgg8Qy45cDTJoo
+z1cJSOQpBcwNo3jcjy5XHwwODcFQmMHBQRgYGIjQ398fcDo96XGB/BjywjB5JKAQcMOZcexRm0Xp
+dwP0PBkJJIrLH/HQY+dwYGQC1fZJLH/ARwI5Ii8/m8FstlOE5EScnBEJkJRR9pCH8fEJfNIawMPP
+eHjYzOG+e3xEThy560W1xgQOp4vJvx+ghWTQnb/o4JAtKrtzFsiWC7ju1Dh2dOrBYrGBy+X6cYBk
+jIHhCVS85IHk12oDMD4xgYTeOUlyArNEXnw2gU5vBpvNDpsrZJgY6OvriwZIxmAjyKYteSEIO+8E
+od0yiZ+1XESeKROwsLwG1+2V4IbSo7ipTIKbK+S4tVqFW6pUmBQgGaP0QWgNHotrcOgpD3cbOaT3
+++7ymEUBWYi1J8fx2oOX0NrZDQ6HA6SXbuOzj7WpR5CtECCWA2Kk28bhwHBoF1WKuypWnhlGefUz
+7FVdxLd1jbBdcgrtdjt4vV6SxweyRGkqMuVREuUZ0iAeuuPBUuUl3FAmwfqWTnA6nbToLJI6wISM
+jDCJ8nSRVcdHcGupCndITuPZe4+RAoTb7Qa/3x8NpJDGIwtBYiYn0iRBPH6jFrrUeig9fgHP3XmM
+LODz+WIDQS6VlJHOSJATh257UaMxgt5ghNKTF/FjQ0tyIOfoSFaaNBhMl/LASIthqSREmoTHtKMB
+ApeGWX1iFLVaI50H2k1x6zDlV6+9ez/NW1T0GhcWvSJwQeErPKRsQIPBDLSDCIr8doCuLbvqBxcW
+v0WiWlGPPWoDmMwWcQS2uIDH4/m9wGF5865FJW+xSl6PnZ1a0OmMYI4PsAj3W4GKipa51fJabG9X
+g1qtA4NBHIHJBBaLBaxWKz0TfEODOnfK/7i+AovHxWW/Lj+SAAAAAElFTkSuQmCC
+
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: text/html
+Content-ID: <frame-DBB68E28BC6ACC7E2292B6555D3EF88B@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body></body></html>
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: text/html
+Content-ID: <frame-C2734722B6D55798C2396E05FF40860E@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://googleads.g.doubleclick.net/pagead/html/r20230301/r20190131/zrt_lookup.html
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"></head><body>
+</body></html>
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: text/html
+Content-ID: <frame-577C0338A6C1833D21C15DA5ABDCAA79@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://linux.die.net/man/1/whiptail
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/css" href=3D"https://www.gs=
+tatic.com/_/translate_http/_/ss/k=3Dtranslate_http.tr.cYEbrOmw59Q.L.W.O/d=
+=3D0/rs=3DAN8SPfpU282joXDlbkUblMtWLWoZn4bb2g/m=3Del_main_css"></head><body =
+class=3D"VIpgJd-ZVi9od-SmfZ goog-te-float-top" scroll=3D"no" style=3D"overf=
+low:hidden" dir=3D"ltr"><a id=3D":0.translate" class=3D"VIpgJd-ZVi9od-SmfZ-=
+hSRGPd"><img src=3D"https://www.google.com/images/cleardot.gif" style=3D"ba=
+ckground-image:url(https://translate.googleapis.com/translate_static/img/te=
+_ctrl3.gif);background-position:-65px 0px"><span>Traducir</span></a></body>=
+</html>
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://translate.googleapis.com/translate_static/img/te_ctrl3.gif
+
+R0lGODlhVAATAOePAAAAyxZBmhdFrBhHrhpMyB1Uxh1Vzh5X0R9ZzR9awSFf1SNk2CYW0SZq2yZs
+4Cka2yt45TB9ITJ11TODHjODIDWKGzdgrDmUGjuaRTybGT1svj6hGUClGEF1tEGnFkGpGUKrFUNn
+rkWjYUWoUkZtskdww0dxy0l/EkmP5EqlLUtLS0uxFFCmLlGY6lON3la4E1e0GFhYD1uxRlu5EVyy
+U1+vLGW8FGef5mmTx22p7W6PEW+d32+e4XKa2Hp6en6p5H9lE4eHh4i06YurxYyqyYyufoy8iI29
+ho7AhpCz55DEhJW55ZaT15jClqGm9afE2KgeFavK7LDN47rV7b7J4cTa9cXi0MjX8Mrd9c0lGs3l
+/9QmGtbW1tfq/9jl9djl+NmcANns0dnt4NonG9otM9yGft4pG9/x4OCrIuG3I+Hv/+Lfz+Px4eRW
+TOSaAeSyNuUpHOWIgOalAOby/+c5P+egD+exAefJcOhYXuqjAOq3Tuq9YOtqbuvHG+vz++xYTOy8
+AO2sAe6xAO7x9+/Ecu/SaPDYaPD2//D47/KzAPS7APfpy/ng3fzp7P347f//////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////yH5BAEKAP8ALAAAAABUABMA
+AAj+AP+pGEiw4MB//4goXMhQ4b8gECNKnIiwosWLGBE+2sjxkaNGIB115KjCB5eTKFP6UEEkypyX
+MGNGIRJkpM2NQSwO2bkzI8aRjOL8oUP0TxxGI1WkXIqSZcynMGnetJnz386OanpWxNGhKw6NHOMQ
+HUs2jsiNSpkudQr1qVScI2vitLpRTZe7XdRoGYKQ65K/Hb5yxEO2MJ0/HdNyYQCgMQAGTYnAfOAY
+wIOociNy1Pwo55BHXZZ07XC3Ct9/HZZUFP1vo9ixfNYsWsOHDp6kKJlUZhIZppPKTjBvhtiZOM7P
+dlN34Xp3Ct/Uqzu0XjT2z5qRaxrhRsn4cUq2Lyn+W475FqfEjkE+4+0yhXkXKUNGy+/6yFAdotc7
+HrqpmItuALz15ltjwQmHnnGbqddcV3jBl9pfEIrmSB+KKILYVNtxB9l3ksX0wGXkyWUeZ8eBdheD
+DcY332iOVKiIIR0tgcKMNKKQwyP9+ReggL4VaGBxNZGYnl3r4TXFE/FFCGEHLVa4SEdR1EhjDofk
+qBZ4bb30lpDGeUYkiu89t2JXTb4Yo5Qz3mglU1hmWZ6IcM01hBZVrDeFFEiipiRgE1ZYREdzaCGo
+Fi3MKASOJql10kotZfnSTHBiWNVOd0qBp1Zj0mdIGiOMYMVNVdAYxSMCGWQqQg2lSsRDGKKnE09j
+p/lU0SNhdDqCCJ929EWhKLTQBamyBuvTRMRKJKywGxlh6whGWOGsESLQeCiwx1Zr7bWyckTDstxi
+0MENHGEr7rjWdqQst7Ya0RG57LZ70UhWQGurCM2O5O697N6EyL773hQQADs=
+
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://www.google.com/images/cleardot.gif
+
+R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: text/html
+Content-ID: <frame-C276AF5FD5C98947C9C349181ECFC9D0@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-5823754184406795&output=html&h=280&slotname=7130739364&adk=1862536188&adf=3894714692&pi=t.ma~as.7130739364&w=336&lmt=1677783834&format=336x280&url=https%3A%2F%2Flinux.die.net%2Fman%2F1%2Fwhiptail&wgl=1&uach=WyJMaW51eCIsIjUuMTUuMCIsIng4NiIsIiIsIjExMC4wLjU0ODEuMTc3IixbXSxmYWxzZSxudWxsLCI2NCIsW1siQ2hyb21pdW0iLCIxMTAuMC41NDgxLjE3NyJdLFsiTm90IEEoQnJhbmQiLCIyNC4wLjAuMCJdLFsiR29vZ2xlIENocm9tZSIsIjExMC4wLjU0ODEuMTc3Il1dLGZhbHNlXQ..&dt=1677783833470&bpp=45&bdt=1116&idt=912&shv=r20230301&mjsv=m202302160101&ptt=9&saldr=aa&abxe=1&cookie=ID%3D9461aac7e1e9a969-2251ec38937f0087%3AT%3D1673886611%3ART%3D1673886611%3AS%3DALNI_MZrwkuOl73jBXyX70lto79rI-jt7Q&gpic=UID%3D000009e52f37f12f%3AT%3D1673886611%3ART%3D1677501234%3AS%3DALNI_MbZAimh98lOjWcY9WMfpVZxEYLntg&correlator=8452043236441&frm=20&pv=2&ga_vid=2107495160.1673886611&ga_sid=1677783834&ga_hid=1107542240&ga_fc=1&ga_wpids=UA-50820-6&u_tz=-240&u_his=1&u_h=864&u_w=1152&u_ah=839&u_aw=1152&u_cd=24&u_sd=1&dmc=2&adx=546&ady=185&biw=1137&bih=734&scr_x=0&scr_y=0&eid=31071756%2C31072730&oid=2&pvsid=41333477863663&tmod=1472635344&uas=0&nvt=1&ref=https%3A%2F%2Ftamirsuliman.medium.com%2Fgetting-started-building-linux-bash-graphical-ui-scripts-447cee97c167&fc=896&brdim=0%2C0%2C0%2C0%2C1152%2C25%2C0%2C0%2C1152%2C734&vis=2&rsz=%7C%7CleEr%7C&abl=CS&pfx=0&fu=0&bc=31&ifi=1&uci=a!1&fsb=1&xpc=U6WeFYsxDM&p=https%3A//linux.die.net&dtd=1087
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
+css" href=3D"cid:css-01644eae-a1be-47ca-bc40-50d6ddcd937a@mhtml.blink" /><l=
+ink rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-98cee327-19e9-40e2=
+-8d09-24212d817042@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css=
+" href=3D"cid:css-64bd35f2-5478-4c3b-913b-4ef1bfd2b193@mhtml.blink" /><link=
+ rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-a7e98344-680b-4917-8c=
+51-aad5e20193db@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" h=
+ref=3D"cid:css-4905fa89-30d0-4eda-a7ba-7c50280c796e@mhtml.blink" /><link re=
+l=3D"preload" href=3D"https://www.gstatic.com/mysidia/89d7ca8249da9b1fce758=
+df22cf4efd3.js?tag=3Dclient_fast_engine_2019" as=3D"script"><link rel=3D"pr=
+eload" href=3D"https://www.gstatic.com/mysidia/110cb13377d3e221c3000d4be350=
+7a7e.js?tag=3Dtext/vanilla_highlight" as=3D"script"><link as=3D"style" data=
+-reload-stylesheet=3D"true" href=3D"https://fonts.googleapis.com/css?family=
+=3DGoogle%20Sans%3A400%2C500" rel=3D"preload"><meta http-equiv=3D"origin-tr=
+ial" content=3D"A/6hmwx8DpHud613fSYYa2C2T61iC513V4BYG/pBH4zs5sGsUc9RgaPKhfk=
+3JhHF30N/9/NntWzEq28kkrMxpgQAAABweyJvcmlnaW4iOiJodHRwczovL2FkLmRvdWJsZWNsaW=
+NrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUGVuZGluZ0JlYWNvbkFQSSIsImV4cGlyeSI6MTY3ODIzM=
+zU5OSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=3D=3D"><link rel=3D"stylesheet" href=3D"h=
+ttps://fonts.googleapis.com/css?family=3DGoogle%20Sans%3A400%2C500"></head>=
+<body marginwidth=3D"0" marginheight=3D"0" class=3D"jar"><div id=3D"mys-wra=
+pper" class=3D"mys-wrapper"><div id=3D"mys-overlay"></div><div id=3D"mys-co=
+ntent" style=3D"width:336px;height:280px;" x-frame-width=3D"336" x-frame-he=
+ight=3D"280" class=3D"dom-content-loaded page-loaded"><div id=3D"mys-meta" =
+style=3D"position:absolute;display:none;"><meta content=3D"898" index=3D"0"=
+ name=3D"sampling_mod"><meta content=3D"st_9" index=3D"0" name=3D"environme=
+nt"><meta content=3D"ns-89kqi" index=3D"0" name=3D"namespace"><meta content=
+=3D"[[[&quot;.x-layout&quot;,[[&quot;class&quot;,&quot;GoogleActiveViewElem=
+ent&quot;],[&quot;data-google-av-cxn&quot;,&quot;https://pagead2.googlesynd=
+ication.com/pcs/activeview?xai=3DAKAOjsseWfGT382b6WjhOnBK5B1TeJy3AKruBRe_zv=
+cO0jhhvis2Stckh8zXArjIXYwE4GEeU-dO6CHcLXctiSXO8KtTP4i4HssqkQjeQKQ2VIwqi113R=
+XytQ3Kb_XCy03AirwdB8ctZ&amp;sai=3DAMfl-YRnG9EDYcnCRbzE2RBrkPihH34se4T6l4YDW=
+d7V-IsskYT6u38H3V-wVITYN0HnQryadsYX-fHtvoj3NzEZcV8LISJaZBUoTbqnytXVaE-jf1vu=
+K4kfFwzJoxzirvBi8cUPaQ&amp;sig=3DCg0ArKJSzEJG8nhCigNwEAE&quot;],[&quot;data=
+-google-av-adk&quot;,&quot;1862536188&quot;],[&quot;data-google-av-metadata=
+&quot;,&quot;la=3D0&amp;xdi=3D0&amp;&quot;],[&quot;data-google-av-ufs-integ=
+rator-metadata&quot;,&quot;&quot;],[&quot;data-google-av-override&quot;,&qu=
+ot;-1&quot;],[&quot;data-google-av-aid&quot;,&quot;0&quot;],[&quot;data-goo=
+gle-av-naid&quot;,&quot;1&quot;],[&quot;data-google-av-slift&quot;,&quot;&q=
+uot;],[&quot;data-google-av-cpmav&quot;,&quot;&quot;],[&quot;data-google-av=
+-btr&quot;,&quot;&quot;],[&quot;data-google-av-itpl&quot;,&quot;22&quot;],[=
+&quot;data-google-av-rs&quot;,&quot;2&quot;],[&quot;data-google-av-dm&quot;=
+,&quot;2&quot;],[&quot;data-google-av-flags&quot;,&quot;[\&quot;x%278440'9e=
+fotm(&amp;753374%2bejvf/%27844>'9wuvb$&amp;56533>!=3D|vqc)!273794&amp;<qqvb=
+/%<1735020!=3Dnehu`/!364=3D5051!9abk{a($160210:3&amp;<cbotf+*0150034:%2bejv=
+f/%72;17613!=3Defdwa*'76463;21$?ebkpb$&amp;0366717>*>bgipf+!3=3D712363%9aih=
+wc)!7202<217'9efotm(&amp;20061;48&amp;>`dopb/%<1707200!=3D8(&amp;2005575?&a=
+mp;>`dopb/%<170642?!=3D|vqc)!7201;=3D50'9wuvb$&amp;03641654*>bgipf+!3=3D731=
+103%9aihwc)!7200?073'9efotm(&amp;2004?51;&amp;>`dopb/%<17>474>!=3Dnehu`/!36=
+406412!9abk{a($160>358<&amp;<cbotfz\&quot;]&quot;],[&quot;lang&quot;,&quot;=
+en&quot;]]]]]" index=3D"0" name=3D"attribute_setter"><meta content=3D"[[336=
+,280,9,&quot;text/vanilla_highlight&quot;,0,0,null,&quot;_top&quot;,&quot;M=
+ozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrom=
+e/110.0.0.0 Safari/537.36,gzip(gfe)&quot;,[null,null,null,null,null,null,nu=
+ll,null,null,null,null,null,null,null,null,null,[],null,null,null,null,null=
+,null,null,null,null,1],[&quot;Arial&quot;,null,null,null,null,null,null,0,=
+[&quot;#ffffff&quot;,&quot;#0088ff&quot;,&quot;#000000&quot;,&quot;#808080&=
+quot;,&quot;#ffffff&quot;,&quot;#000000&quot;],0],null,&quot;&quot;,&quot;V=
+E&quot;,null,0,0,&quot;en&quot;,null,null,1,null,898,null,null,0,[],&quot;&=
+quot;,&quot;en&quot;,null,1,3,null,null,null,0,0,null,0,0,0,1,1,0,3,null,11=
+52,864,null,0,0,[0,0],1,0,null,0,0,0,null,&quot;ca-pub-5823754184406795&quo=
+t;,&quot;7130739364&quot;,0,&quot;&quot;,[0],&quot;&quot;,&quot;&quot;],nul=
+l,null,null,null,null,null,null,null,null,null,[null,1,1,null,null,0,1,[],n=
+ull,null,null,null,null,null,null,null,null,1,1],null,null,null,null]" inde=
+x=3D"0" name=3D"render_config"></div><meta data-ifc-map=3D"[[&quot;confirme=
+dClickAdUnitProtection&quot;,[[[null,null,99,3]]]],[&quot;defaultAdUnitProt=
+ection&quot;,[[[&quot;5,5,5,5&quot;,null,null,2]]]]]"><meta data-asoch-meta=
+=3D"[[[&quot;ad0&quot;,[null,&quot;https://www.googleadservices.com/pagead/=
+aclk?sa=3DL&amp;ai=3DCVIREGvMAZPKuLMWQxtYPuIaz6ASwzMnybuuaysCkD6Tn8u2VAhABI=
+IeJ9QFg34aAgLgloAGb4KnjAsgBAagDAcgDwwSqBOEBT9A-6NgASJjizG2HhO_JiKaDOcENoAK6=
+BvgbdZUP5_4jMbd4Wa6XAhs7_3L7t3YUuZX8_FwpYEFlKlgc_QTv7isvgQ848Uw-SV5gFywWhsy=
+jqGm-U5OdxJY3wUlMfokL5LwY7xKgpW_DGGuCPMtTb6b22l18UbJvIk_A11Zh9rHhQmLrRz3llX=
+mKKYDn-D8lr330LxrLGCCfSAsPQqGRnG8EqNpgsHZ21ELqsXVEX8W1gTtpCWzXShfh_SP1APQY4=
+ChhdOB7czuiiwDlNoVHBfXNp8g-lBXZ3AVm4T5UuZsrwASW_omi-gOQBgGgBmaAB82f1pwBiAcB=
+kAcCqAeOzhuoB5PYG6gH7paxAqgH_p6xAqgHpKOxAqgH1ckbqAemvhuoB5oGqAfz0RuoB5bYG6g=
+HqpuxAqgH_56xAqgH35-xAtgHAdIIEggAEAIYGjIBADoHn9CAgICABLEJOyzvmG8hNGSACgGYCw=
+HICwG4DAHYEwqIFALQFQH4FgGAFwE&amp;ae=3D1&amp;num=3D1&amp;cid=3DCAQSQwDUE5ym=
+v4uifVHGiA5ksxEFdvPATTC7wBBmCePgesiVj1Yjy4PltwlJkBCLTLXOqxQDN_WdknPlkAl_oxJ=
+HBJ8w318YAQ&amp;sig=3DAOD64_2iz6RQnrwHWdDEynVh8EYXoCKCFw&amp;client=3Dca-pu=
+b-5823754184406795&amp;rf=3D1&amp;adurl=3Dhttps://min.io/product/multicloud=
+-azure-kubernetes-service%3Futm_campaign%3DAzure%2520Marketplace%2520Web%25=
+201.0%26utm_source%3Dppc%26utm_medium%3Dgoogle%26utm_term%3Dazure-marketpla=
+ce%26utm_content%3Dweb-011122%26utm_term%3D%26utm_campaign%3DMinIO%2Bfor%2B=
+Google%2BKubernetes%2BEngine%2B1.0%26utm_source%3Dadwords%26utm_medium%3Dpp=
+c%26hsa_acc%3D8976569894%26hsa_cam%3D15844157882%26hsa_grp%3D135899807510%2=
+6hsa_ad%3D575405840334%26hsa_src%3Dd%26hsa_tgt%3D%26hsa_kw%3D%26hsa_mt%3D%2=
+6hsa_net%3Dadwords%26hsa_ver%3D3%26gclid%3DCjwKCAiAr4GgBhBFEiwAgwORrYnOF8ZE=
+MDUzZ5aggvNPENdm7-vp0Uw-eZabFp6cId2aT0I5w1JBexoCZ0sQAvD_BwE&quot;,null,null=
+,null,[],[],null,&quot;https://googleads.g.doubleclick.net/pagead/interacti=
+on/?ai=3DCVIREGvMAZPKuLMWQxtYPuIaz6ASwzMnybuuaysCkD6Tn8u2VAhABIIeJ9QFg34aAg=
+LgloAGb4KnjAsgBAagDAcgDwwSqBOEBT9A-6NgASJjizG2HhO_JiKaDOcENoAK6BvgbdZUP5_4j=
+Mbd4Wa6XAhs7_3L7t3YUuZX8_FwpYEFlKlgc_QTv7isvgQ848Uw-SV5gFywWhsyjqGm-U5OdxJY=
+3wUlMfokL5LwY7xKgpW_DGGuCPMtTb6b22l18UbJvIk_A11Zh9rHhQmLrRz3llXmKKYDn-D8lr3=
+30LxrLGCCfSAsPQqGRnG8EqNpgsHZ21ELqsXVEX8W1gTtpCWzXShfh_SP1APQY4ChhdOB7czuii=
+wDlNoVHBfXNp8g-lBXZ3AVm4T5UuZsrwASW_omi-gOQBgGgBmaAB82f1pwBiAcBkAcCqAeOzhuo=
+B5PYG6gH7paxAqgH_p6xAqgHpKOxAqgH1ckbqAemvhuoB5oGqAfz0RuoB5bYG6gHqpuxAqgH_56=
+xAqgH35-xAtgHAdIIEggAEAIYGjIBADoHn9CAgICABLEJOyzvmG8hNGSACgGYCwHICwG4DAHYEw=
+qIFALQFQH4FgGAFwE&amp;sigh=3DqCAznNEyiFc&amp;cid=3DCAQSQwDUE5ymv4uifVHGiA5k=
+sxEFdvPATTC7wBBmCePgesiVj1Yjy4PltwlJkBCLTLXOqxQDN_WdknPlkAl_oxJHBJ8w318&quo=
+t;,null,&quot;_top&quot;,null,null,null,null,null,&quot;CjwKCAiAr4GgBhBFEiw=
+AgwORrYnOF8ZEMDUzZ5aggvNPENdm7-vp0Uw-eZabFp6cId2aT0I5w1JBexoCZ0sQAvD_BwE&qu=
+ot;]],[&quot;backgroundClk&quot;,[null,null,null,null,2,[],[]]],[&quot;body=
+Clk&quot;,[null,null,null,null,7,[],[]]],[&quot;btnClk&quot;,[null,null,nul=
+l,null,8,[],[]]],[&quot;imageClk&quot;,[null,null,null,null,9,[],[]]],[&quo=
+t;logoClk&quot;,[null,null,null,null,19,[],[]]],[&quot;promoExtClk&quot;,[n=
+ull,null,null,null,13,[],[]]],[&quot;titleClk&quot;,[null,null,null,null,0,=
+[],[]]],[&quot;urlClk&quot;,[null,null,null,null,1,[],[]]]],1,1,null,null,n=
+ull,null,null,null,null,null,null,null,null,null,null,[]]"><div class=3D"ns=
+-89kqi-l-square-eta-vanilla ns-89kqi-v-11" x-ns-89kqi-l=3D"square-eta-vanil=
+la" x-ns-89kqi-v=3D"11" x-ns-89kqi-vc=3D"21" x-ns-89kqi-vp=3D"45"><div clas=
+s=3D"ns-89kqi-e-0 x-layout GoogleActiveViewElement web-on-show" data-google=
+-av-adk=3D"1862536188" data-google-av-aid=3D"0" data-google-av-btr=3D"" dat=
+a-google-av-cpmav=3D"" data-google-av-cxn=3D"https://pagead2.googlesyndicat=
+ion.com/pcs/activeview?xai=3DAKAOjsseWfGT382b6WjhOnBK5B1TeJy3AKruBRe_zvcO0j=
+hhvis2Stckh8zXArjIXYwE4GEeU-dO6CHcLXctiSXO8KtTP4i4HssqkQjeQKQ2VIwqi113RXytQ=
+3Kb_XCy03AirwdB8ctZ&amp;sai=3DAMfl-YRnG9EDYcnCRbzE2RBrkPihH34se4T6l4YDWd7V-=
+IsskYT6u38H3V-wVITYN0HnQryadsYX-fHtvoj3NzEZcV8LISJaZBUoTbqnytXVaE-jf1vuK4kf=
+FwzJoxzirvBi8cUPaQ&amp;sig=3DCg0ArKJSzEJG8nhCigNwEAE" data-google-av-dm=3D"=
+2" data-google-av-flags=3D"[&quot;x%278440'9efotm(&amp;753374%2bejvf/%27844=
+>'9wuvb$&amp;56533>!=3D|vqc)!273794&amp;<qqvb/%<1735020!=3Dnehu`/!364=3D505=
+1!9abk{a($160210:3&amp;<cbotf+*0150034:%2bejvf/%72;17613!=3Defdwa*'76463;21=
+$?ebkpb$&amp;0366717>*>bgipf+!3=3D712363%9aihwc)!7202<217'9efotm(&amp;20061=
+;48&amp;>`dopb/%<1707200!=3D8(&amp;2005575?&amp;>`dopb/%<170642?!=3D|vqc)!7=
+201;=3D50'9wuvb$&amp;03641654*>bgipf+!3=3D731103%9aihwc)!7200?073'9efotm(&a=
+mp;2004?51;&amp;>`dopb/%<17>474>!=3Dnehu`/!36406412!9abk{a($160>358<&amp;<c=
+botfz&quot;]" data-google-av-itpl=3D"22" data-google-av-metadata=3D"la=3D0&=
+amp;xdi=3D0&amp;" data-google-av-naid=3D"1" data-google-av-override=3D"-1" =
+data-google-av-rs=3D"2" data-google-av-slift=3D"" data-google-av-ufs-integr=
+ator-metadata=3D"" data-ifc=3D"[[[&quot;5,5,5,5&quot;,null,null,2]]]" id=3D=
+"square-eta-vanilla" lang=3D"en" x-ns-89kqi-e=3D"0" x-overflow-forbidden=3D=
+"xy" data-creative-load-listener=3D""><div class=3D"ns-89kqi-e-1 column-con=
+tainer full-height" x-ns-89kqi-e=3D"1" x-overflow-forbidden=3D"xy" x-score=
+=3D"60"><div class=3D"ns-89kqi-e-2 column-container canvas flex-filler cent=
+er-justified" x-ns-89kqi-e=3D"2" x-overflow-forbidden=3D"xy"><div class=3D"=
+ns-89kqi-e-3 title-line1" title=3D"min.io" x-ns-89kqi-e=3D"3" x-overflow-fo=
+rbidden=3D"xy"><a class=3D"ns-89kqi-e-4" data-asoch-targets=3D"ad0,titleClk=
+" dir=3D"auto" href=3D"https://www.googleadservices.com/pagead/aclk?sa=3DL&=
+amp;ai=3DCVIREGvMAZPKuLMWQxtYPuIaz6ASwzMnybuuaysCkD6Tn8u2VAhABIIeJ9QFg34aAg=
+LgloAGb4KnjAsgBAagDAcgDwwSqBOEBT9A-6NgASJjizG2HhO_JiKaDOcENoAK6BvgbdZUP5_4j=
+Mbd4Wa6XAhs7_3L7t3YUuZX8_FwpYEFlKlgc_QTv7isvgQ848Uw-SV5gFywWhsyjqGm-U5OdxJY=
+3wUlMfokL5LwY7xKgpW_DGGuCPMtTb6b22l18UbJvIk_A11Zh9rHhQmLrRz3llXmKKYDn-D8lr3=
+30LxrLGCCfSAsPQqGRnG8EqNpgsHZ21ELqsXVEX8W1gTtpCWzXShfh_SP1APQY4ChhdOB7czuii=
+wDlNoVHBfXNp8g-lBXZ3AVm4T5UuZsrwASW_omi-gOQBgGgBmaAB82f1pwBiAcBkAcCqAeOzhuo=
+B5PYG6gH7paxAqgH_p6xAqgHpKOxAqgH1ckbqAemvhuoB5oGqAfz0RuoB5bYG6gHqpuxAqgH_56=
+xAqgH35-xAtgHAdIIEggAEAIYGjIBADoHn9CAgICABLEJOyzvmG8hNGSACgGYCwHICwG4DAHYEw=
+qIFALQFQH4FgGAFwE&amp;ae=3D1&amp;num=3D1&amp;cid=3DCAQSQwDUE5ymv4uifVHGiA5k=
+sxEFdvPATTC7wBBmCePgesiVj1Yjy4PltwlJkBCLTLXOqxQDN_WdknPlkAl_oxJHBJ8w318YAQ&=
+amp;sig=3DAOD64_2iz6RQnrwHWdDEynVh8EYXoCKCFw&amp;client=3Dca-pub-5823754184=
+406795&amp;rf=3D1&amp;nb=3D0&amp;adurl=3Dhttps://min.io/product/multicloud-=
+azure-kubernetes-service%3Futm_campaign%3DAzure%2520Marketplace%2520Web%252=
+01.0%26utm_source%3Dppc%26utm_medium%3Dgoogle%26utm_term%3Dazure-marketplac=
+e%26utm_content%3Dweb-011122%26utm_term%3D%26utm_campaign%3DMinIO%2Bfor%2BG=
+oogle%2BKubernetes%2BEngine%2B1.0%26utm_source%3Dadwords%26utm_medium%3Dppc=
+%26hsa_acc%3D8976569894%26hsa_cam%3D15844157882%26hsa_grp%3D135899807510%26=
+hsa_ad%3D575405840334%26hsa_src%3Dd%26hsa_tgt%3D%26hsa_kw%3D%26hsa_mt%3D%26=
+hsa_net%3Dadwords%26hsa_ver%3D3%26gclid%3DCjwKCAiAr4GgBhBFEiwAgwORrYnOF8ZEM=
+DUzZ5aggvNPENdm7-vp0Uw-eZabFp6cId2aT0I5w1JBexoCZ0sQAvD_BwE" target=3D"_top"=
+ x-ns-89kqi-e=3D"4" x-remove=3D"false">Run S-3 Anywhere, Even Azure</a></di=
+v><div class=3D"ns-89kqi-e-5 title-line2" title=3D"min.io" x-ns-89kqi-e=3D"=
+5" x-overflow-forbidden=3D"xy" x-remove=3D"0"><a class=3D"ns-89kqi-e-6" dat=
+a-asoch-targets=3D"ad0,titleClk" dir=3D"auto" href=3D"https://www.googleads=
+ervices.com/pagead/aclk?sa=3DL&amp;ai=3DCVIREGvMAZPKuLMWQxtYPuIaz6ASwzMnybu=
+uaysCkD6Tn8u2VAhABIIeJ9QFg34aAgLgloAGb4KnjAsgBAagDAcgDwwSqBOEBT9A-6NgASJjiz=
+G2HhO_JiKaDOcENoAK6BvgbdZUP5_4jMbd4Wa6XAhs7_3L7t3YUuZX8_FwpYEFlKlgc_QTv7isv=
+gQ848Uw-SV5gFywWhsyjqGm-U5OdxJY3wUlMfokL5LwY7xKgpW_DGGuCPMtTb6b22l18UbJvIk_=
+A11Zh9rHhQmLrRz3llXmKKYDn-D8lr330LxrLGCCfSAsPQqGRnG8EqNpgsHZ21ELqsXVEX8W1gT=
+tpCWzXShfh_SP1APQY4ChhdOB7czuiiwDlNoVHBfXNp8g-lBXZ3AVm4T5UuZsrwASW_omi-gOQB=
+gGgBmaAB82f1pwBiAcBkAcCqAeOzhuoB5PYG6gH7paxAqgH_p6xAqgHpKOxAqgH1ckbqAemvhuo=
+B5oGqAfz0RuoB5bYG6gHqpuxAqgH_56xAqgH35-xAtgHAdIIEggAEAIYGjIBADoHn9CAgICABLE=
+JOyzvmG8hNGSACgGYCwHICwG4DAHYEwqIFALQFQH4FgGAFwE&amp;ae=3D1&amp;num=3D1&amp=
+;cid=3DCAQSQwDUE5ymv4uifVHGiA5ksxEFdvPATTC7wBBmCePgesiVj1Yjy4PltwlJkBCLTLXO=
+qxQDN_WdknPlkAl_oxJHBJ8w318YAQ&amp;sig=3DAOD64_2iz6RQnrwHWdDEynVh8EYXoCKCFw=
+&amp;client=3Dca-pub-5823754184406795&amp;rf=3D1&amp;nb=3D0&amp;adurl=3Dhtt=
+ps://min.io/product/multicloud-azure-kubernetes-service%3Futm_campaign%3DAz=
+ure%2520Marketplace%2520Web%25201.0%26utm_source%3Dppc%26utm_medium%3Dgoogl=
+e%26utm_term%3Dazure-marketplace%26utm_content%3Dweb-011122%26utm_term%3D%2=
+6utm_campaign%3DMinIO%2Bfor%2BGoogle%2BKubernetes%2BEngine%2B1.0%26utm_sour=
+ce%3Dadwords%26utm_medium%3Dppc%26hsa_acc%3D8976569894%26hsa_cam%3D15844157=
+882%26hsa_grp%3D135899807510%26hsa_ad%3D575405840334%26hsa_src%3Dd%26hsa_tg=
+t%3D%26hsa_kw%3D%26hsa_mt%3D%26hsa_net%3Dadwords%26hsa_ver%3D3%26gclid%3DCj=
+wKCAiAr4GgBhBFEiwAgwORrYnOF8ZEMDUzZ5aggvNPENdm7-vp0Uw-eZabFp6cId2aT0I5w1JBe=
+xoCZ0sQAvD_BwE" target=3D"_top" x-ns-89kqi-e=3D"6">AKS =3D S3 Using MinIO</=
+a></div><div class=3D"ns-89kqi-e-7 body" x-ns-89kqi-e=3D"7" x-overflow-forb=
+idden=3D"xy"><a class=3D"ns-89kqi-e-8" data-asoch-targets=3D"ad0,bodyClk" d=
+ir=3D"auto" href=3D"https://www.googleadservices.com/pagead/aclk?sa=3DL&amp=
+;ai=3DCVIREGvMAZPKuLMWQxtYPuIaz6ASwzMnybuuaysCkD6Tn8u2VAhABIIeJ9QFg34aAgLgl=
+oAGb4KnjAsgBAagDAcgDwwSqBOEBT9A-6NgASJjizG2HhO_JiKaDOcENoAK6BvgbdZUP5_4jMbd=
+4Wa6XAhs7_3L7t3YUuZX8_FwpYEFlKlgc_QTv7isvgQ848Uw-SV5gFywWhsyjqGm-U5OdxJY3wU=
+lMfokL5LwY7xKgpW_DGGuCPMtTb6b22l18UbJvIk_A11Zh9rHhQmLrRz3llXmKKYDn-D8lr330L=
+xrLGCCfSAsPQqGRnG8EqNpgsHZ21ELqsXVEX8W1gTtpCWzXShfh_SP1APQY4ChhdOB7czuiiwDl=
+NoVHBfXNp8g-lBXZ3AVm4T5UuZsrwASW_omi-gOQBgGgBmaAB82f1pwBiAcBkAcCqAeOzhuoB5P=
+YG6gH7paxAqgH_p6xAqgHpKOxAqgH1ckbqAemvhuoB5oGqAfz0RuoB5bYG6gHqpuxAqgH_56xAq=
+gH35-xAtgHAdIIEggAEAIYGjIBADoHn9CAgICABLEJOyzvmG8hNGSACgGYCwHICwG4DAHYEwqIF=
+ALQFQH4FgGAFwE&amp;ae=3D1&amp;num=3D1&amp;cid=3DCAQSQwDUE5ymv4uifVHGiA5ksxE=
+FdvPATTC7wBBmCePgesiVj1Yjy4PltwlJkBCLTLXOqxQDN_WdknPlkAl_oxJHBJ8w318YAQ&amp=
+;sig=3DAOD64_2iz6RQnrwHWdDEynVh8EYXoCKCFw&amp;client=3Dca-pub-5823754184406=
+795&amp;rf=3D1&amp;nb=3D7&amp;adurl=3Dhttps://min.io/product/multicloud-azu=
+re-kubernetes-service%3Futm_campaign%3DAzure%2520Marketplace%2520Web%25201.=
+0%26utm_source%3Dppc%26utm_medium%3Dgoogle%26utm_term%3Dazure-marketplace%2=
+6utm_content%3Dweb-011122%26utm_term%3D%26utm_campaign%3DMinIO%2Bfor%2BGoog=
+le%2BKubernetes%2BEngine%2B1.0%26utm_source%3Dadwords%26utm_medium%3Dppc%26=
+hsa_acc%3D8976569894%26hsa_cam%3D15844157882%26hsa_grp%3D135899807510%26hsa=
+_ad%3D575405840334%26hsa_src%3Dd%26hsa_tgt%3D%26hsa_kw%3D%26hsa_mt%3D%26hsa=
+_net%3Dadwords%26hsa_ver%3D3%26gclid%3DCjwKCAiAr4GgBhBFEiwAgwORrYnOF8ZEMDUz=
+Z5aggvNPENdm7-vp0Uw-eZabFp6cId2aT0I5w1JBexoCZ0sQAvD_BwE" target=3D"_top" x-=
+ns-89kqi-e=3D"8">Kubernetes Native. MinIO Delivers Predictable<br>Performan=
+ce Across any Cloud Even<br>AzureAKS.</a></div><div class=3D"ns-89kqi-e-9 u=
+rl" title=3D"min.io" x-ns-89kqi-e=3D"9" x-overflow-forbidden=3D"xy"><a clas=
+s=3D"ns-89kqi-e-10" data-asoch-targets=3D"ad0,urlClk" dir=3D"auto" href=3D"=
+https://www.googleadservices.com/pagead/aclk?sa=3DL&amp;ai=3DCVIREGvMAZPKuL=
+MWQxtYPuIaz6ASwzMnybuuaysCkD6Tn8u2VAhABIIeJ9QFg34aAgLgloAGb4KnjAsgBAagDAcgD=
+wwSqBOEBT9A-6NgASJjizG2HhO_JiKaDOcENoAK6BvgbdZUP5_4jMbd4Wa6XAhs7_3L7t3YUuZX=
+8_FwpYEFlKlgc_QTv7isvgQ848Uw-SV5gFywWhsyjqGm-U5OdxJY3wUlMfokL5LwY7xKgpW_DGG=
+uCPMtTb6b22l18UbJvIk_A11Zh9rHhQmLrRz3llXmKKYDn-D8lr330LxrLGCCfSAsPQqGRnG8Eq=
+NpgsHZ21ELqsXVEX8W1gTtpCWzXShfh_SP1APQY4ChhdOB7czuiiwDlNoVHBfXNp8g-lBXZ3AVm=
+4T5UuZsrwASW_omi-gOQBgGgBmaAB82f1pwBiAcBkAcCqAeOzhuoB5PYG6gH7paxAqgH_p6xAqg=
+HpKOxAqgH1ckbqAemvhuoB5oGqAfz0RuoB5bYG6gHqpuxAqgH_56xAqgH35-xAtgHAdIIEggAEA=
+IYGjIBADoHn9CAgICABLEJOyzvmG8hNGSACgGYCwHICwG4DAHYEwqIFALQFQH4FgGAFwE&amp;a=
+e=3D1&amp;num=3D1&amp;cid=3DCAQSQwDUE5ymv4uifVHGiA5ksxEFdvPATTC7wBBmCePgesi=
+Vj1Yjy4PltwlJkBCLTLXOqxQDN_WdknPlkAl_oxJHBJ8w318YAQ&amp;sig=3DAOD64_2iz6RQn=
+rwHWdDEynVh8EYXoCKCFw&amp;client=3Dca-pub-5823754184406795&amp;rf=3D1&amp;n=
+b=3D1&amp;adurl=3Dhttps://min.io/product/multicloud-azure-kubernetes-servic=
+e%3Futm_campaign%3DAzure%2520Marketplace%2520Web%25201.0%26utm_source%3Dppc=
+%26utm_medium%3Dgoogle%26utm_term%3Dazure-marketplace%26utm_content%3Dweb-0=
+11122%26utm_term%3D%26utm_campaign%3DMinIO%2Bfor%2BGoogle%2BKubernetes%2BEn=
+gine%2B1.0%26utm_source%3Dadwords%26utm_medium%3Dppc%26hsa_acc%3D8976569894=
+%26hsa_cam%3D15844157882%26hsa_grp%3D135899807510%26hsa_ad%3D575405840334%2=
+6hsa_src%3Dd%26hsa_tgt%3D%26hsa_kw%3D%26hsa_mt%3D%26hsa_net%3Dadwords%26hsa=
+_ver%3D3%26gclid%3DCjwKCAiAr4GgBhBFEiwAgwORrYnOF8ZEMDUzZ5aggvNPENdm7-vp0Uw-=
+eZabFp6cId2aT0I5w1JBexoCZ0sQAvD_BwE" target=3D"_top" x-ns-89kqi-e=3D"10">mi=
+n.io</a></div></div><div class=3D"ns-89kqi-e-11 column-container" x-ns-89kq=
+i-e=3D"11" x-overflow-forbidden=3D"xy"><div class=3D"ns-89kqi-e-12 button-c=
+ontainer flex-filler" x-ns-89kqi-e=3D"12" x-overflow-forbidden=3D"xy"><div =
+class=3D"ns-89kqi-e-13" x-ns-89kqi-e=3D"13" x-overflow-forbidden=3D"xy" x-r=
+emove=3D"false"><a class=3D"ns-89kqi-e-14 cta-outer cta-outer-animated comm=
+on-animation-pattern" data-asoch-targets=3D"ad0,btnClk" href=3D"https://www=
+.googleadservices.com/pagead/aclk?sa=3DL&amp;ai=3DCVIREGvMAZPKuLMWQxtYPuIaz=
+6ASwzMnybuuaysCkD6Tn8u2VAhABIIeJ9QFg34aAgLgloAGb4KnjAsgBAagDAcgDwwSqBOEBT9A=
+-6NgASJjizG2HhO_JiKaDOcENoAK6BvgbdZUP5_4jMbd4Wa6XAhs7_3L7t3YUuZX8_FwpYEFlKl=
+gc_QTv7isvgQ848Uw-SV5gFywWhsyjqGm-U5OdxJY3wUlMfokL5LwY7xKgpW_DGGuCPMtTb6b22=
+l18UbJvIk_A11Zh9rHhQmLrRz3llXmKKYDn-D8lr330LxrLGCCfSAsPQqGRnG8EqNpgsHZ21ELq=
+sXVEX8W1gTtpCWzXShfh_SP1APQY4ChhdOB7czuiiwDlNoVHBfXNp8g-lBXZ3AVm4T5UuZsrwAS=
+W_omi-gOQBgGgBmaAB82f1pwBiAcBkAcCqAeOzhuoB5PYG6gH7paxAqgH_p6xAqgHpKOxAqgH1c=
+kbqAemvhuoB5oGqAfz0RuoB5bYG6gHqpuxAqgH_56xAqgH35-xAtgHAdIIEggAEAIYGjIBADoHn=
+9CAgICABLEJOyzvmG8hNGSACgGYCwHICwG4DAHYEwqIFALQFQH4FgGAFwE&amp;ae=3D1&amp;n=
+um=3D1&amp;cid=3DCAQSQwDUE5ymv4uifVHGiA5ksxEFdvPATTC7wBBmCePgesiVj1Yjy4Pltw=
+lJkBCLTLXOqxQDN_WdknPlkAl_oxJHBJ8w318YAQ&amp;sig=3DAOD64_2iz6RQnrwHWdDEynVh=
+8EYXoCKCFw&amp;client=3Dca-pub-5823754184406795&amp;rf=3D1&amp;nb=3D8&amp;a=
+durl=3Dhttps://min.io/product/multicloud-azure-kubernetes-service%3Futm_cam=
+paign%3DAzure%2520Marketplace%2520Web%25201.0%26utm_source%3Dppc%26utm_medi=
+um%3Dgoogle%26utm_term%3Dazure-marketplace%26utm_content%3Dweb-011122%26utm=
+_term%3D%26utm_campaign%3DMinIO%2Bfor%2BGoogle%2BKubernetes%2BEngine%2B1.0%=
+26utm_source%3Dadwords%26utm_medium%3Dppc%26hsa_acc%3D8976569894%26hsa_cam%=
+3D15844157882%26hsa_grp%3D135899807510%26hsa_ad%3D575405840334%26hsa_src%3D=
+d%26hsa_tgt%3D%26hsa_kw%3D%26hsa_mt%3D%26hsa_net%3Dadwords%26hsa_ver%3D3%26=
+gclid%3DCjwKCAiAr4GgBhBFEiwAgwORrYnOF8ZEMDUzZ5aggvNPENdm7-vp0Uw-eZabFp6cId2=
+aT0I5w1JBexoCZ0sQAvD_BwE" target=3D"_top" title=3D"min.io" x-ns-89kqi-e=3D"=
+14" x-overflow-forbidden=3D"xy"><div class=3D"ns-89kqi-e-15 cta-background-=
+wrapper" x-ns-89kqi-e=3D"15"><div class=3D"ns-89kqi-e-16 cta-background cta=
+-background-animated common-animation-pattern" x-ns-89kqi-e=3D"16" x-overfl=
+ow-forbidden=3D"xy"></div></div><div class=3D"ns-89kqi-e-17 cta-button anim=
+ated" x-ns-89kqi-e=3D"17" x-overflow-forbidden=3D"xy"><div class=3D"ns-89kq=
+i-e-18 cta-text animated cta-text-animated common-animation-pattern" x-ns-8=
+9kqi-e=3D"18" x-overflow-forbidden=3D"xy"><span class=3D"ns-89kqi-e-19" dir=
+=3D"auto" x-ns-89kqi-e=3D"19" x-score=3D"1">OPEN</span></div></div></a></di=
+v></div></div></div></div></div></div></div><div id=3D"abgc" class=3D"abgc"=
+ dir=3D"ltr"><div id=3D"abgb" class=3D"abgb"><div class=3D"il-wrap"><div cl=
+ass=3D"il-icon"><svg xmlns=3D"http://www.w3.org/2000/svg" xmlns:xlink=3D"ht=
+tp://www.w3.org/1999/xlink" viewBox=3D"0 0 15 15"><path d=3D"M7.5,1.5a6,6,0=
+,1,0,0,12a6,6,0,1,0,0,-12m0,1a5,5,0,1,1,0,10a5,5,0,1,1,0,-10ZM6.625,11l1.75=
+,0l0,-4.5l-1.75,0ZM7.5,3.75a1,1,0,1,0,0,2a1,1,0,1,0,0,-2Z"></path></svg></d=
+iv></div></div><div id=3D"abgs" class=3D"abgs"><a id=3D"abgl" class=3D"abgl=
+" href=3D"https://adssettings.google.com/whythisad?source=3Ddisplay&amp;rea=
+sons=3DAaX5wMtijW8n794FmsRX6A4PU77EIB6D3bxRIkN17S_nZecY00pDXSuDzLakj5YNevvN=
+FTtwxfzh3Z7tWnAJtNfV3CEGaoA1uZKKDgb6wgZNSk8xkG8ufPXOH0Fkbs4kI1Qjj_ofIS4s-ad=
+fSBlhcYJ03YlC5Rh1z_V0MrgZGutL8AMhl-IiGWiyKWH-LXCZf4GEvJVidRcF5FPUygKghsveQb=
+O6y0ygZrBSUnpn04Tkw-Dpnwbz6l348b5QKi_ZEKdQhMHkYLz5yQRXaczQILDTbHBcfAQyIzzEF=
+nz2ab1NAQ3XzM3rp4m2sM_JO4QpqclMMhtSp-zPCYJ0UGiKBTIspVRJWhoOYJ8j9y9oy4rlGVG0=
+J2x7Ln7pa6QU_9ALYX59lBG6Fpz7TjEehr8WR-LpKwAUE5-aTLh4tv7rAAAcCLa8wQIXVF84xeW=
+uvuP-SPFAamG3sa_UqW9u_IDUYjZJ5RFuLqMO3tjw9CdAwvvB2lrD0CBRg-VAp-iTisYn1xN5Dm=
+5ihwee_fQS0Mg7k2nXCRuhOwALEBCDo0ewm7tVYKIA_zJ7CeBmRIfmCfoZmznsztkOn6ZdLu9BJ=
+ySmdQSaxsUE1StN3zWasds8ZbxRNnZzCVSvgsldMyq0HEAlIEohnsiBM0sumX7msJlmJ0kb9-2-=
+q2kT98eRTceS0_seUNd8lEhESUtsYkm19hXfvC4uEuXmtdMZSA36-Wcu6IMeUzKLqdRfUhZJhAr=
+o64TQ3cUNvnhhYKpDmUL8eAYSj5_ZoQQzWt0tGu82VWGFH42AE5cQdPxC7e1hkCQ_PB78JFJzCo=
+SePBJIUWP3VA39TaJ-q7-mCEUdoGWmO_74yyk7W4r2D4kl4nQEhgdKNjjx87NzLtZcvI-x8_o8F=
+ll6mYFXkwxecVsPpjTuwgpzOsLsqVTNnLqY9LvD1c5zUNMWbbNcK53dhBCh4tENxw4JDJU6SWq1=
+ccpb9inZmjlGmYlwv8oCnuK5g9sivZO4kig_TTfQ5Rua0m5z7kjqca1ofDYxclHR6jUQ4jNN8ei=
+xFKCe5oln2DUVPEhrMiqiz1v7YipZbgLZ3c0hXYXbS4WZMRvxB0FGJVn2c4NpRAWpih-LtM0U1W=
+CoUMcQYejljyjWrpy5D-Q2TUWxJ-vjvBlpZHXpH90UxfbfrbyYpbNNmChrzKcZIlzAD6HuomG4M=
+8-eP0Ze7L7EWCQ_k7koPSPgZC7d31WBjP_68oNGR60oad0O61rOPcdyszXqJtVaaNwD51XULhkl=
+c5AfYruDY0zDyJ_bgyvkVRIiSniud2nRSoDSAVwklnF096jMyfx5DsG5ckGcFtKEESst5o5OLSW=
+0n1WgUV7xOIe4vqhmavqAMIQpPvuVekvuKJl4gT-UDhop53wiObGYG3Uj2F3il9eiWbQc34I1uk=
+1lz_Ra8cPz3S1piGY5NKqha8DhLlCIiikb0b3QeFcePmrFXVkxwU6YhJVoZzMXoKNcNWoezWHgr=
+CafeU4gqH5Mat1geRpwWMZlxQiRXtkDVfqDIuGDYkmjH4vNJTDkPJmjhorofDf_RBhqwOo8cvsA=
+ALKxPaGPu72v4po15SRnUkf-pkWa01qpXp-DdSpjeE7q9523ubfOpAuWMIa15VSulCuoGllpS6U=
+VD1NwyjVuCvB7X-oicUBALnpEacQ787OF_tJvU2Up9JNgu9d0042CevKzNLnE" target=3D"_b=
+lank"><div class=3D"il-wrap exp"><div class=3D"il-text"><svg xmlns=3D"http:=
+//www.w3.org/2000/svg" xmlns:xlink=3D"http://www.w3.org/1999/xlink" viewBox=
+=3D"0 0 79 16"><path d=3D"M4.51 4.24L8.02 12.83L6.73 12.83L5.72 10.21L2.14 =
+10.21L1.19 12.83L-0.01 12.83L3.29 4.24L4.51 4.24ZM2.46 9.31L5.38 9.31L5.38 =
+9.31Q4.32 6.52 4.19 6.14L4.19 6.14L4.19 6.14Q4.05 5.77 3.89 5.13L3.89 5.13L=
+3.86 5.13L3.86 5.13Q3.70 6 3.42 6.74L3.42 6.74L2.46 9.31ZM13.83 4.24L13.83 =
+12.83L12.85 12.83L12.85 12.04L12.83 12.04L12.83 12.04Q12.26 12.97 11.11 12.=
+97L11.11 12.97L11.11 12.97Q9.97 12.97 9.20 12.07L9.20 12.07L9.20 12.07Q8.44=
+ 11.16 8.44 9.72L8.44 9.72L8.44 9.72Q8.44 8.21 9.16 7.34L9.16 7.34L9.16 7.3=
+4Q9.88 6.47 11.06 6.47L11.06 6.47L11.06 6.47Q12.18 6.47 12.76 7.32L12.76 7.=
+32L12.78 7.32L12.78 4.24L13.83 4.24ZM11.22 12.11L11.22 12.11L11.22 12.11Q11=
+.91 12.11 12.39 11.54L12.39 11.54L12.39 11.54Q12.87 10.97 12.87 9.81L12.87 =
+9.81L12.87 9.81Q12.87 8.68 12.43 8.00L12.43 8.00L12.43 8.00Q11.99 7.33 11.1=
+7 7.33L11.17 7.33L11.17 7.33Q10.35 7.33 9.93 7.99L9.93 7.99L9.93 7.99Q9.52 =
+8.65 9.52 9.72L9.52 9.72L9.52 9.72Q9.52 10.49 9.74 11.03L9.74 11.03L9.74 11=
+.03Q9.97 11.57 10.37 11.84L10.37 11.84L10.37 11.84Q10.78 12.11 11.22 12.11Z=
+M19.98 8.21L18.95 8.35L18.95 8.35Q18.88 7.84 18.54 7.58L18.54 7.58L18.54 7.=
+58Q18.19 7.33 17.58 7.33L17.58 7.33L17.58 7.33Q16.98 7.33 16.61 7.54L16.61 =
+7.54L16.61 7.54Q16.24 7.74 16.24 8.13L16.24 8.13L16.24 8.13Q16.24 8.50 16.5=
+3 8.66L16.53 8.66L16.53 8.66Q16.83 8.82 17.70 9.05L17.70 9.05L17.70 9.05Q18=
+.69 9.30 19.17 9.49L19.17 9.49L19.17 9.49Q19.66 9.69 19.94 10.03L19.94 10.0=
+3L19.94 10.03Q20.21 10.38 20.21 11.00L20.21 11.00L20.21 11.00Q20.21 11.84 1=
+9.53 12.40L19.53 12.40L19.53 12.40Q18.85 12.97 17.71 12.97L17.71 12.97L17.7=
+1 12.97Q16.53 12.97 15.86 12.47L15.86 12.47L15.86 12.47Q15.20 11.97 15.05 1=
+0.97L15.05 10.97L16.10 10.81L16.10 10.81Q16.18 11.46 16.58 11.78L16.58 11.7=
+8L16.58 11.78Q16.98 12.11 17.70 12.11L17.70 12.11L17.70 12.11Q18.39 12.11 1=
+8.76 11.82L18.76 11.82L18.76 11.82Q19.13 11.53 19.13 11.11L19.13 11.11L19.1=
+3 11.11Q19.13 10.83 18.96 10.66L18.96 10.66L18.96 10.66Q18.79 10.49 18.54 1=
+0.40L18.54 10.40L18.54 10.40Q18.28 10.32 17.39 10.10L17.39 10.10L17.39 10.1=
+0Q16.07 9.79 15.64 9.33L15.64 9.33L15.64 9.33Q15.22 8.88 15.22 8.26L15.22 8=
+.26L15.22 8.26Q15.22 7.48 15.84 6.97L15.84 6.97L15.84 6.97Q16.46 6.47 17.51=
+ 6.47L17.51 6.47L17.51 6.47Q18.62 6.47 19.24 6.91L19.24 6.91L19.24 6.91Q19.=
+86 7.34 19.98 8.21L19.98 8.21ZM25.87 7.31L25.90 7.31L25.90 7.31Q26.48 6.47 =
+27.57 6.47L27.57 6.47L27.57 6.47Q28.78 6.47 29.50 7.34L29.50 7.34L29.50 7.3=
+4Q30.22 8.21 30.22 9.62L30.22 9.62L30.22 9.62Q30.22 11.24 29.41 12.11L29.41=
+ 12.11L29.41 12.11Q28.61 12.97 27.53 12.97L27.53 12.97L27.53 12.97Q26.43 12=
+.97 25.82 12.05L25.82 12.05L25.80 12.05L25.80 12.83L24.81 12.83L24.81 4.24L=
+25.87 4.24L25.87 7.31ZM27.45 12.11L27.45 12.11L27.45 12.11Q28.18 12.11 28.6=
+6 11.48L28.66 11.48L28.66 11.48Q29.13 10.85 29.13 9.71L29.13 9.71L29.13 9.7=
+1Q29.13 8.61 28.69 7.97L28.69 7.97L28.69 7.97Q28.25 7.33 27.48 7.33L27.48 7=
+.33L27.48 7.33Q26.72 7.33 26.25 7.99L26.25 7.99L26.25 7.99Q25.79 8.65 25.79=
+ 9.67L25.79 9.67L25.79 9.67Q25.79 10.66 25.98 11.08L25.98 11.08L25.98 11.08=
+Q26.17 11.50 26.56 11.80L26.56 11.80L26.56 11.80Q26.95 12.11 27.45 12.11ZM3=
+5.52 6.61L36.59 6.61L34.21 12.93L34.21 12.93Q34.21 12.94 34.20 12.97L34.20 =
+12.97L34.20 12.97Q33.86 14.03 33.41 14.69L33.41 14.69L33.41 14.69Q32.95 15.=
+35 32.12 15.35L32.12 15.35L32.12 15.35Q31.83 15.35 31.43 15.23L31.43 15.23L=
+31.32 14.23L31.32 14.23Q31.63 14.33 31.92 14.33L31.92 14.33L31.92 14.33Q32.=
+51 14.33 32.73 14.00L32.73 14.00L32.73 14.00Q32.96 13.68 33.24 12.84L33.24 =
+12.84L30.88 6.61L32.02 6.61L33.48 10.68L33.48 10.68Q33.61 11.06 33.76 11.65=
+L33.76 11.65L33.78 11.65L33.78 11.65Q33.93 10.97 34.15 10.35L34.15 10.35L35=
+.52 6.61ZM48.59 8.44L48.59 11.63L48.59 11.63Q46.96 12.97 45.04 12.97L45.04 =
+12.97L45.04 12.97Q43.06 12.97 41.85 11.77L41.85 11.77L41.85 11.77Q40.64 10.=
+56 40.64 8.57L40.64 8.57L40.64 8.57Q40.64 7.35 41.14 6.30L41.14 6.30L41.14 =
+6.30Q41.63 5.24 42.59 4.67L42.59 4.67L42.59 4.67Q43.56 4.09 44.95 4.09L44.9=
+5 4.09L44.95 4.09Q46.40 4.09 47.28 4.73L47.28 4.73L47.28 4.73Q48.15 5.36 48=
+.46 6.63L48.46 6.63L47.44 6.92L47.44 6.92Q47.20 5.99 46.58 5.53L46.58 5.53L=
+46.58 5.53Q45.96 5.06 44.95 5.06L44.95 5.06L44.95 5.06Q43.40 5.06 42.61 6.0=
+1L42.61 6.01L42.61 6.01Q41.82 6.96 41.82 8.50L41.82 8.50L41.82 8.50Q41.82 9=
+.64 42.20 10.41L42.20 10.41L42.20 10.41Q42.59 11.17 43.34 11.56L43.34 11.56=
+L43.34 11.56Q44.09 11.95 44.98 11.95L44.98 11.95L44.98 11.95Q46.32 11.95 47=
+.48 11.06L47.48 11.06L47.48 9.47L44.95 9.47L44.95 8.44L48.59 8.44ZM52.69 6.=
+47L52.69 6.47L52.69 6.47Q53.95 6.47 54.78 7.29L54.78 7.29L54.78 7.29Q55.61 =
+8.11 55.61 9.62L55.61 9.62L55.61 9.62Q55.61 11.46 54.71 12.21L54.71 12.21L5=
+4.71 12.21Q53.81 12.97 52.69 12.97L52.69 12.97L52.69 12.97Q51.51 12.97 50.6=
+4 12.19L50.64 12.19L50.64 12.19Q49.78 11.41 49.78 9.72L49.78 9.72L49.78 9.7=
+2Q49.78 8.08 50.61 7.27L50.61 7.27L50.61 7.27Q51.45 6.47 52.69 6.47ZM52.69 =
+12.11L52.69 12.11L52.69 12.11Q53.59 12.11 54.06 11.44L54.06 11.44L54.06 11.=
+44Q54.53 10.77 54.53 9.68L54.53 9.68L54.53 9.68Q54.53 8.51 54.00 7.92L54.00=
+ 7.92L54.00 7.92Q53.47 7.33 52.69 7.33L52.69 7.33L52.69 7.33Q51.88 7.33 51.=
+37 7.93L51.37 7.93L51.37 7.93Q50.85 8.53 50.85 9.72L50.85 9.72L50.85 9.72Q5=
+0.85 10.90 51.38 11.50L51.38 11.50L51.38 11.50Q51.90 12.11 52.69 12.11ZM59.=
+36 6.47L59.36 6.47L59.36 6.47Q60.62 6.47 61.45 7.29L61.45 7.29L61.45 7.29Q6=
+2.28 8.11 62.28 9.62L62.28 9.62L62.28 9.62Q62.28 11.46 61.38 12.21L61.38 12=
+.21L61.38 12.21Q60.49 12.97 59.36 12.97L59.36 12.97L59.36 12.97Q58.18 12.97=
+ 57.32 12.19L57.32 12.19L57.32 12.19Q56.45 11.41 56.45 9.72L56.45 9.72L56.4=
+5 9.72Q56.45 8.08 57.29 7.27L57.29 7.27L57.29 7.27Q58.13 6.47 59.36 6.47ZM5=
+9.36 12.11L59.36 12.11L59.36 12.11Q60.26 12.11 60.73 11.44L60.73 11.44L60.7=
+3 11.44Q61.20 10.77 61.20 9.68L61.20 9.68L61.20 9.68Q61.20 8.51 60.67 7.92L=
+60.67 7.92L60.67 7.92Q60.14 7.33 59.36 7.33L59.36 7.33L59.36 7.33Q58.56 7.3=
+3 58.04 7.93L58.04 7.93L58.04 7.93Q57.53 8.53 57.53 9.72L57.53 9.72L57.53 9=
+.72Q57.53 10.90 58.05 11.50L58.05 11.50L58.05 11.50Q58.58 12.11 59.36 12.11=
+ZM68.60 6.61L68.60 11.99L68.60 11.99Q68.60 13.31 68.33 13.97L68.33 13.97L68=
+.33 13.97Q68.07 14.62 67.39 14.98L67.39 14.98L67.39 14.98Q66.72 15.35 65.78=
+ 15.35L65.78 15.35L65.78 15.35Q64.73 15.35 64.03 14.88L64.03 14.88L64.03 14=
+.88Q63.32 14.41 63.32 13.34L63.32 13.34L64.35 13.50L64.35 13.50Q64.41 13.99=
+ 64.76 14.24L64.76 14.24L64.76 14.24Q65.12 14.48 65.77 14.48L65.77 14.48L65=
+.77 14.48Q66.59 14.48 66.97 14.15L66.97 14.15L66.97 14.15Q67.35 13.82 67.44=
+ 13.34L67.44 13.34L67.44 13.34Q67.52 12.86 67.52 12.01L67.52 12.01L67.52 12=
+.01Q66.84 12.83 65.79 12.83L65.79 12.83L65.79 12.83Q64.58 12.83 63.85 11.93=
+L63.85 11.93L63.85 11.93Q63.11 11.03 63.11 9.67L63.11 9.67L63.11 9.67Q63.11=
+ 8.30 63.83 7.38L63.83 7.38L63.83 7.38Q64.54 6.47 65.81 6.47L65.81 6.47L65.=
+81 6.47Q66.91 6.47 67.60 7.35L67.60 7.35L67.62 7.35L67.62 6.61L68.60 6.61ZM=
+65.89 11.96L65.89 11.96L65.89 11.96Q66.57 11.96 67.09 11.43L67.09 11.43L67.=
+09 11.43Q67.61 10.89 67.61 9.63L67.61 9.63L67.61 9.63Q67.61 8.52 67.11 7.92=
+L67.11 7.92L67.11 7.92Q66.62 7.33 65.88 7.33L65.88 7.33L65.88 7.33Q65.13 7.=
+33 64.66 7.94L64.66 7.94L64.66 7.94Q64.19 8.55 64.19 9.61L64.19 9.61L64.19 =
+9.61Q64.19 10.83 64.68 11.40L64.68 11.40L64.68 11.40Q65.18 11.96 65.89 11.9=
+6ZM71.23 4.24L71.23 12.83L70.18 12.83L70.18 4.24L71.23 4.24ZM78.25 9.98L78.=
+25 9.98L73.59 9.98L73.59 9.98Q73.65 11.02 74.18 11.56L74.18 11.56L74.18 11.=
+56Q74.70 12.11 75.49 12.11L75.49 12.11L75.49 12.11Q76.09 12.11 76.50 11.79L=
+76.50 11.79L76.50 11.79Q76.91 11.47 77.13 10.82L77.13 10.82L78.21 10.96L78.=
+21 10.96Q77.95 11.93 77.24 12.45L77.24 12.45L77.24 12.45Q76.54 12.97 75.49 =
+12.97L75.49 12.97L75.49 12.97Q74.09 12.97 73.30 12.11L73.30 12.11L73.30 12.=
+11Q72.51 11.26 72.51 9.77L72.51 9.77L72.51 9.77Q72.51 8.30 73.27 7.38L73.27=
+ 7.38L73.27 7.38Q74.04 6.47 75.43 6.47L75.43 6.47L75.43 6.47Q76.11 6.47 76.=
+74 6.77L76.74 6.77L76.74 6.77Q77.37 7.07 77.81 7.78L77.81 7.78L77.81 7.78Q7=
+8.25 8.50 78.25 9.98ZM73.65 9.12L77.16 9.12L77.16 9.12Q77.10 8.17 76.57 7.7=
+5L76.57 7.75L76.57 7.75Q76.05 7.33 75.43 7.33L75.43 7.33L75.43 7.33Q74.68 7=
+.33 74.20 7.83L74.20 7.83L74.20 7.83Q73.72 8.33 73.65 9.12L73.65 9.12Z"></p=
+ath></svg></div><div class=3D"il-icon"><svg xmlns=3D"http://www.w3.org/2000=
+/svg" xmlns:xlink=3D"http://www.w3.org/1999/xlink" viewBox=3D"0 0 15 15"><p=
+ath d=3D"M7.5,1.5a6,6,0,1,0,0,12a6,6,0,1,0,0,-12m0,1a5,5,0,1,1,0,10a5,5,0,1=
+,1,0,-10ZM6.625,11l1.75,0l0,-4.5l-1.75,0ZM7.5,3.75a1,1,0,1,0,0,2a1,1,0,1,0,=
+0,-2Z"></path></svg></div></div></a></div></div><div id=3D"cbb" class=3D"cb=
+b" tabindex=3D"0" role=3D"button"><svg xmlns=3D"http://www.w3.org/2000/svg"=
+ xmlns:xlink=3D"http://www.w3.org/1999/xlink" viewBox=3D"0 0 15 15"><path d=
+=3D"M3.25,3.25l8.5,8.5M11.75,3.25l-8.5,8.5"></path></svg></div><div id=3D"m=
+ute_panel" class=3D"mute_panel" aria-hidden=3D"true"><div id=3D"abgac" clas=
+s=3D"abgac" aria-hidden=3D"true"><div id=3D"mlsc" class=3D"mlsc"><svg class=
+=3D"mls" viewBox=3D"50 50 100 100"><circle class=3D"mlsd" cx=3D"100" cy=3D"=
+100" r=3D"30" fill=3D"none" stroke=3D"#9E9E9E" stroke-width=3D"3"></circle>=
+</svg></div></div></div><div style=3D"display: none; position: absolute; z-=
+index: 2147483647; width: 100%; height: 100%; top: 0px; left: 0px;"></div><=
+div style=3D"display:none" data-google-query-id=3D"CPKj6uv3vf0CFUWI0QQdOMMM=
+TQ"></div><div style=3D"bottom:0;right:0;width:86px;height:250px;background=
+:initial !important;position:absolute !important;max-width:100% !important;=
+max-height:100% !important;pointer-events:none !important;image-rendering:p=
+ixelated !important;z-index:2147483647;background-image:url('data:image/png=
+;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAWBAMAAACrl3iAAAAABlBMVEUAAAD+AciWmZz=
+WAAAAAnRSTlMAApidrBQAAAB8SURBVBjTbZALDsAwCELxBt7/tIuAnyazSzPTJ6UA/xUq/pwOyd=
+NEJnd3QaxAb+rI5aHV7XloDd3a4q3tu4e1k632Mb5xByhNYlzsTLzqECzHRcsKJ1d/MGuvjybz+=
+ub3OmnW6WAzc+LzxjdBWz90dHi42l4euG+U9xL/AEzfBZ54LiA9AAAAAElFTkSuQmCC') !impo=
+rtant;"></div><iframe frameborder=3D"0" style=3D"height: 0px; width: 0px; p=
+osition: absolute;"></iframe></body></html>
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-01644eae-a1be-47ca-bc40-50d6ddcd937a@mhtml.blink
+
+@charset "utf-8";
+
+html, body { height: 100%; width: 100%; margin: 0px; padding: 0px; overflow=
+: hidden; }
+
+#mys-wrapper { height: 100%; width: 100%; overflow: hidden; position: absol=
+ute; top: 0px; left: 0px; align-items: center; display: flex; justify-conte=
+nt: center; line-height: normal; }
+
+#mys-overlay { height: 100%; width: 100%; overflow: hidden; position: absol=
+ute; top: 0px; left: 0px; box-sizing: border-box; pointer-events: none; z-i=
+ndex: 1; display: none; }
+
+.mys-wrapper a, .mys-wrapper a:visited, .mys-wrapper a:hover, .mys-wrapper =
+a:active { color: inherit; cursor: pointer; text-decoration: inherit; }
+
+[dir=3D"rtl"] .flip-on-rtl { transform: scale(-1, 1); transform-origin: cen=
+ter center; }
+
+#mys-content { flex-shrink: 0; position: relative; overflow: hidden; z-inde=
+x: 0; }
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-98cee327-19e9-40e2-8d09-24212d817042@mhtml.blink
+
+@charset "utf-8";
+
+.ns-89kqi-l-square-eta-vanilla { opacity: 0.01; position: absolute; top: 0p=
+x; left: 0px; display: block; width: 336px; height: 280px; }
+
+.ns-89kqi-e-0 { line-height: 1.3; border-color: rgb(230, 231, 232); border-=
+style: solid; border-width: 1px; box-sizing: border-box; display: flex; fle=
+x-direction: column; font-family: "Google Sans", sans-serif; font-size: 10p=
+x; height: 100%; width: 100%; }
+
+.ns-89kqi-e-1 { line-height: 1.3; box-sizing: border-box; display: flex; fl=
+ex-direction: column; flex-grow: 1; height: 100%; }
+
+.ns-89kqi-e-2 { line-height: 1.3; box-sizing: border-box; display: flex; fl=
+ex-direction: column; justify-content: center; flex-grow: 1; }
+
+.ns-89kqi-e-3, .ns-89kqi-e-5 { box-sizing: border-box; font-weight: 500; li=
+ne-height: 1.3; letter-spacing: 0.02em; }
+
+.ns-89kqi-e-7 { box-sizing: border-box; font-weight: 400; line-height: 1.3;=
+ letter-spacing: 0.02em; }
+
+.ns-89kqi-e-9 { box-sizing: border-box; font-weight: 400; line-height: 1.5;=
+ white-space: nowrap; }
+
+.ns-89kqi-e-11 { line-height: 1.3; box-sizing: border-box; display: flex; f=
+lex-direction: column; }
+
+.ns-89kqi-e-12 { line-height: 1.3; box-sizing: border-box; flex-grow: 1; }
+
+.ns-89kqi-e-13 { line-height: 1.3; box-sizing: border-box; }
+
+.ns-89kqi-e-14 { display: flex; align-items: center; justify-content: cente=
+r; flex-grow: 1; border: 1px solid rgb(0, 136, 255); position: relative; fo=
+nt-weight: 400; text-align: center; text-transform: capitalize; }
+
+.ns-89kqi-e-15 { line-height: 1.3; box-sizing: border-box; width: 100%; hei=
+ght: 100%; overflow: hidden; position: absolute; display: flex; align-items=
+: center; justify-content: center; }
+
+.ns-89kqi-e-16 { line-height: 1.3; box-sizing: border-box; width: 100%; pad=
+ding-top: 100%; padding-bottom: 100%; }
+
+.ns-89kqi-e-17 { line-height: 1.3; box-sizing: border-box; display: flex; f=
+lex-grow: 1; align-items: center; justify-content: center; }
+
+.ns-89kqi-e-18 { line-height: 1.3; border: none; }
+
+.ns-89kqi-e-19 { display: inline; }
+
+.ns-89kqi-v-11 .ns-89kqi-e-2 { padding: 19.05px; }
+
+.ns-89kqi-v-11 .ns-89kqi-e-3 { font-size: 19.75px; padding: 9.38px 0px 0px;=
+ }
+
+.ns-89kqi-v-11 .ns-89kqi-e-5 { font-size: 15.6px; padding: 9.38px 0px 0px; =
+}
+
+.ns-89kqi-v-11 .ns-89kqi-e-7 { font-size: 13.6px; padding: 9.38px 0px 0px; =
+}
+
+.ns-89kqi-v-11 .ns-89kqi-e-9 { font-size: 13.25px; padding: 9.38px 0px; }
+
+.ns-89kqi-v-11 .ns-89kqi-e-12 { padding: 6.86px 19.05px 17.25px; }
+
+.ns-89kqi-v-11 .ns-89kqi-e-14 { font-size: 13.8px; padding: 0px 5.8px; heig=
+ht: 35.4px; line-height: 35.4px; max-height: 35.4px; margin: 0px; min-width=
+: 169.51px; }
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-64bd35f2-5478-4c3b-913b-4ef1bfd2b193@mhtml.blink
+
+@charset "utf-8";
+
+.ns-89kqi-l-square-eta-vanilla { opacity: 1; position: relative; }
+
+.title:hover, .title-line1:hover, .title-line2:hover { color: rgba(0, 0, 0,=
+ 0.59); text-decoration: none; }
+
+.body:hover { color: rgba(0, 0, 0, 0.4); text-decoration: none; }
+
+.url:hover { color: rgb(100, 100, 100); text-decoration: none; }
+
+@keyframes fade-in-animation {=20
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes button-expand-animation {=20
+  0% { transform: scale(0.05); }
+  100% { transform: scale(1.05); }
+}
+
+@keyframes shadow-animation {=20
+  0% { box-shadow: none; }
+  100% { box-shadow: rgba(134, 140, 150, 0.65) 0px 6px 12px; background: rg=
+b(0, 136, 255); }
+}
+
+@keyframes color-animation {=20
+  0% { color: rgb(0, 136, 255); }
+  100% { color: rgb(255, 255, 255); }
+}
+
+.ns-89kqi-l-square-eta-vanilla .web-on-show .common-animation-pattern.cta-b=
+ackground-animated { animation-name: button-expand-animation, fade-in-anima=
+tion; }
+
+.ns-89kqi-l-square-eta-vanilla .web-on-show .common-animation-pattern.cta-o=
+uter-animated { animation-name: shadow-animation; }
+
+.ns-89kqi-l-square-eta-vanilla .web-on-show .common-animation-pattern.cta-t=
+ext-animated { animation-name: color-animation; }
+
+.ns-89kqi-l-square-eta-vanilla .common-animation-pattern { animation-durati=
+on: 0.5s; animation-fill-mode: both; animation-timing-function: cubic-bezie=
+r(0.4, 0, 0.2, 1); animation-delay: 3s; }
+
+@media only screen and (prefers-reduced-motion), (hover: hover) {
+  .ns-89kqi-l-square-eta-vanilla .web-on-show .common-animation-pattern.cta=
+-background-animated { transform: scale(1.05); animation-name: none; }
+  .ns-89kqi-l-square-eta-vanilla .web-on-show .common-animation-pattern.cta=
+-outer-animated { animation-name: none; }
+  .ns-89kqi-l-square-eta-vanilla .web-on-show .common-animation-pattern.cta=
+-text-animated { animation-name: none; }
+  .cta-text.animated.cta-text-animated.common-animation-pattern { color: rg=
+b(255, 255, 255); opacity: 1; }
+  .cta-outer.common-animation-pattern.cta-outer-animated { box-shadow: rgba=
+(134, 140, 150, 0.65) 0px 6px 12px; background: rgb(0, 136, 255); }
+  .cta-background.cta-background-animated.common-animation-pattern { backgr=
+ound: rgb(0, 136, 255); opacity: 1; }
+}
+
+.ns-89kqi-e-2, .ns-89kqi-e-12 { background-color: rgb(255, 255, 255); }
+
+.ns-89kqi-e-3, .ns-89kqi-e-5 { color: rgba(0, 0, 0, 0.79); font-family: "Go=
+ogle Sans", Roboto, "Google Sans", sans-serif; }
+
+.ns-89kqi-e-4, .ns-89kqi-e-6, .ns-89kqi-e-8, .ns-89kqi-e-10 { text-decorati=
+on: none; white-space: nowrap; }
+
+.ns-89kqi-e-7 { color: rgba(0, 0, 0, 0.6); font-family: "Google Sans", Robo=
+to, "Google Sans", sans-serif; }
+
+.ns-89kqi-e-9 { color: rgba(0, 0, 0, 0.4); font-family: "Google Sans", Robo=
+to, "Google Sans", sans-serif; }
+
+.ns-89kqi-e-14 { text-decoration: none; background: transparent; box-shadow=
+: none; transform: translateZ(0px); border-radius: 4px; }
+
+.ns-89kqi-e-15, .ns-89kqi-e-17 { background: transparent; }
+
+.ns-89kqi-e-16 { background: rgb(0, 136, 255); border-radius: 50%; opacity:=
+ 0; }
+
+.ns-89kqi-e-18 { background-color: transparent; box-shadow: none; color: rg=
+b(0, 136, 255); z-index: 1; opacity: 1; font-family: "Google Sans", Roboto,=
+ "Google Sans", sans-serif; }
+
+.ns-89kqi-e-19 { white-space: nowrap; }
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-a7e98344-680b-4917-8c51-aad5e20193db@mhtml.blink
+
+@charset "utf-8";
+
+div { margin: 0px; padding: 0px; }
+
+.abgc { display: block; height: 15px; position: absolute; right: 17px; top:=
+ 1px; text-rendering: geometricprecision; z-index: 2147483646; }
+
+.abgb { display: inline-block; height: 15px; }
+
+.abgc, .jar .abgc, .jar .cbb { opacity: 1; }
+
+.abgc { cursor: pointer; }
+
+.cbb { cursor: pointer; height: 15px; width: 15px; z-index: 2147483646; bac=
+kground-color: rgb(255, 255, 255); opacity: 0; }
+
+.cbb svg { position: absolute; top: 0px; right: 0px; height: 15px; width: 1=
+5px; stroke: rgb(0, 174, 205); fill: rgb(0, 174, 205); stroke-width: 1.25; =
+}
+
+.cbb:hover { cursor: pointer; }
+
+.cbb:hover { background-color: rgb(88, 88, 90); }
+
+.cbb:hover svg { stroke: rgb(255, 255, 255); }
+
+.abgb { position: absolute; right: 0px; top: 0px; }
+
+.cbb { position: absolute; right: 1px; top: 1px; }
+
+.abgs { display: none; height: 100%; }
+
+.abgl { text-decoration: none; }
+
+.abgs svg, .abgb svg { display: inline-block; height: 15px; width: auto; ve=
+rtical-align: top; }
+
+.abgc .il-wrap { background-color: rgb(255, 255, 255); height: 15px; white-=
+space: nowrap; }
+
+.abgc .il-wrap.exp { border-bottom-left-radius: 5px; }
+
+.abgc .il-text, .abgc .il-icon { display: inline-block; }
+
+.abgc .il-text { padding-right: 1px; padding-left: 5px; height: 15px; width=
+: 74px; }
+
+.abgc .il-icon { height: 15px; width: 15px; }
+
+.abgc .il-text svg { fill: rgb(0, 0, 0); }
+
+.abgc .il-icon svg { fill: rgb(0, 174, 205); }
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-4905fa89-30d0-4eda-a7ba-7c50280c796e@mhtml.blink
+
+@charset "utf-8";
+
+.mute_panel { z-index: 2147483646; }
+
+.abgac { position: absolute; left: 0px; top: 0px; z-index: 2147483646; disp=
+lay: none; width: 100%; height: 100%; background-color: rgb(250, 250, 250);=
+ }
+
+.mlsc { height: 100%; display: flex; justify-content: center; align-items: =
+center; }
+
+.mls { animation: 2s linear 0s infinite normal none running mlskf; height: =
+50%; width: 50%; }
+
+.mlsd { stroke-dasharray: 1, 189; stroke-dashoffset: 0; animation: 1.4s eas=
+e-in-out 0s infinite normal none running mlsdkf; }
+
+@keyframes mlskf {=20
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes mlsdkf {=20
+  0% { stroke-dasharray: 1, 189; stroke-dashoffset: 0; }
+  50% { stroke-dasharray: 134, 189; stroke-dashoffset: -53px; }
+  100% { stroke-dasharray: 134, 189; stroke-dashoffset: -188px; }
+}
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://fonts.googleapis.com/css?family=Google%20Sans%3A400%2C500
+
+@charset "utf-8";
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 4=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPiIUvaYr.woff2") format("woff2"); uni=
+code-range: U+308, U+530-58F, U+2010, U+2024, U+25CC, U+FB13-FB17; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 4=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjYUvaYr.woff2") format("woff2"); uni=
+code-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 4=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjMUvaYr.woff2") format("woff2"); uni=
+code-range: U+900-97F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B=
+9, U+25CC, U+A830-A839, U+A8E0-A8FB; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 4=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPi0UvaYr.woff2") format("woff2"); uni=
+code-range: U+589, U+10A0-10FF, U+2D00-2D2F; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 4=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjEUvaYr.woff2") format("woff2"); uni=
+code-range: U+370-3FF; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 4=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPhEUvaYr.woff2") format("woff2"); uni=
+code-range: U+964-965, U+A01-A75, U+200C-200D, U+20B9, U+25CC, U+262C, U+A8=
+30-A839; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 4=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjAUvaYr.woff2") format("woff2"); uni=
+code-range: U+590-5FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 4=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjsUvaYr.woff2") format("woff2"); uni=
+code-range: U+E81-EDF, U+25CC; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 4=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPiQUvaYr.woff2") format("woff2"); uni=
+code-range: U+964-965, U+B82-BFA, U+200C-200D, U+20B9, U+25CC; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 4=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPiYUvaYr.woff2") format("woff2"); uni=
+code-range: U+E01-E5B, U+200C-200D, U+25CC; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 4=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPj0UvaYr.woff2") format("woff2"); uni=
+code-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B=
+0, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 4=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjwUvaYr.woff2") format("woff2"); uni=
+code-range: U+100-24F, U+259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF=
+, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 4=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjIUvQ.woff2") format("woff2"); unico=
+de-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-=
+206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFF=
+D; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 5=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPiIUvaYr.woff2") format("woff2"); uni=
+code-range: U+308, U+530-58F, U+2010, U+2024, U+25CC, U+FB13-FB17; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 5=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjYUvaYr.woff2") format("woff2"); uni=
+code-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 5=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjMUvaYr.woff2") format("woff2"); uni=
+code-range: U+900-97F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B=
+9, U+25CC, U+A830-A839, U+A8E0-A8FB; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 5=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPi0UvaYr.woff2") format("woff2"); uni=
+code-range: U+589, U+10A0-10FF, U+2D00-2D2F; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 5=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjEUvaYr.woff2") format("woff2"); uni=
+code-range: U+370-3FF; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 5=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPhEUvaYr.woff2") format("woff2"); uni=
+code-range: U+964-965, U+A01-A75, U+200C-200D, U+20B9, U+25CC, U+262C, U+A8=
+30-A839; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 5=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjAUvaYr.woff2") format("woff2"); uni=
+code-range: U+590-5FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 5=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjsUvaYr.woff2") format("woff2"); uni=
+code-range: U+E81-EDF, U+25CC; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 5=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPiQUvaYr.woff2") format("woff2"); uni=
+code-range: U+964-965, U+B82-BFA, U+200C-200D, U+20B9, U+25CC; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 5=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPiYUvaYr.woff2") format("woff2"); uni=
+code-range: U+E01-E5B, U+200C-200D, U+25CC; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 5=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPj0UvaYr.woff2") format("woff2"); uni=
+code-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B=
+0, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 5=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjwUvaYr.woff2") format("woff2"); uni=
+code-range: U+100-24F, U+259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF=
+, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Google Sans"; font-style: normal; font-weight: 5=
+00; src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1=
+OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjIUvQ.woff2") format("woff2"); unico=
+de-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-=
+206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFF=
+D; }
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: text/html
+Content-ID: <frame-C4F345146DEAAAF82AC054C2D26E1F9F@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-5823754184406795&output=html&adk=1812271804&adf=3025194257&lmt=1677783834&plat=3%3A65536%2C4%3A65536%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1048576%2C32%3A32%2C41%3A32%2C42%3A32&format=0x0&url=https%3A%2F%2Flinux.die.net%2Fman%2F1%2Fwhiptail&ea=0&pra=7&wgl=1&uach=WyJMaW51eCIsIjUuMTUuMCIsIng4NiIsIiIsIjExMC4wLjU0ODEuMTc3IixbXSxmYWxzZSxudWxsLCI2NCIsW1siQ2hyb21pdW0iLCIxMTAuMC41NDgxLjE3NyJdLFsiTm90IEEoQnJhbmQiLCIyNC4wLjAuMCJdLFsiR29vZ2xlIENocm9tZSIsIjExMC4wLjU0ODEuMTc3Il1dLGZhbHNlXQ..&dt=1677783833674&bpp=20&bdt=1320&idt=982&shv=r20230301&mjsv=m202302160101&ptt=9&saldr=aa&abxe=1&cookie=ID%3D9461aac7e1e9a969-2251ec38937f0087%3AT%3D1673886611%3ART%3D1673886611%3AS%3DALNI_MZrwkuOl73jBXyX70lto79rI-jt7Q&gpic=UID%3D000009e52f37f12f%3AT%3D1673886611%3ART%3D1677501234%3AS%3DALNI_MbZAimh98lOjWcY9WMfpVZxEYLntg&prev_fmts=336x280&nras=1&correlator=8452043236441&frm=20&pv=1&ga_vid=2107495160.1673886611&ga_sid=1677783834&ga_hid=1107542240&ga_fc=1&ga_wpids=UA-50820-6&u_tz=-240&u_his=1&u_h=864&u_w=1152&u_ah=839&u_aw=1152&u_cd=24&u_sd=1&dmc=2&adx=-12245933&ady=-12245933&biw=1137&bih=734&scr_x=0&scr_y=0&eid=31071756%2C31072730&oid=2&pvsid=41333477863663&tmod=1472635344&uas=0&nvt=1&ref=https%3A%2F%2Ftamirsuliman.medium.com%2Fgetting-started-building-linux-bash-graphical-ui-scripts-447cee97c167&fc=896&brdim=0%2C0%2C0%2C0%2C1152%2C25%2C0%2C0%2C1152%2C734&vis=2&rsz=%7C%7Cs%7C&abl=NS&fu=32768&bc=31&ifi=3&uci=a!3&fsb=1&dtd=1020
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body marginwidth=3D"0" marginheight=3D"0"></body></html>
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: text/html
+Content-ID: <frame-5FDE52A7C49607D89FEAFC278C3716F6@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.google.com/recaptcha/api2/aframe
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"></head><body><img src=3D"https://pagead2.googlesyn=
+dication.com/pagead/sodar?id=3Dsodar2&amp;v=3D225&amp;li=3Dgda_r20230301&am=
+p;jk=3D41333477863663&amp;rc=3Dnull"></body></html>
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: text/html
+Content-ID: <frame-008013F2C972AB67A2C5222E7188BA3C@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-5823754184406795&output=html&h=280&slotname=8789940313&adk=1864764501&adf=487862869&pi=t.ma~as.8789940313&w=336&lmt=1677785816&format=336x280&url=https%3A%2F%2Flinux.die.net%2Fman%2F1%2Fwhiptail&wgl=1&uach=WyJMaW51eCIsIjUuMTUuMCIsIng4NiIsIiIsIjExMC4wLjU0ODEuMTc3IixbXSxmYWxzZSxudWxsLCI2NCIsW1siQ2hyb21pdW0iLCIxMTAuMC41NDgxLjE3NyJdLFsiTm90IEEoQnJhbmQiLCIyNC4wLjAuMCJdLFsiR29vZ2xlIENocm9tZSIsIjExMC4wLjU0ODEuMTc3Il1dLGZhbHNlXQ..&dt=1677783833515&bpp=7&bdt=1162&idt=1114&shv=r20230301&mjsv=m202302160101&ptt=9&saldr=aa&abxe=1&cookie=ID%3D9461aac7e1e9a969-2251ec38937f0087%3AT%3D1673886611%3ART%3D1673886611%3AS%3DALNI_MZrwkuOl73jBXyX70lto79rI-jt7Q&gpic=UID%3D000009e52f37f12f%3AT%3D1673886611%3ART%3D1677783834%3AS%3DALNI_MbZAimh98lOjWcY9WMfpVZxEYLntg&prev_fmts=336x280%2C0x0&nras=1&correlator=8452043236441&frm=20&pv=1&tl=es&ga_vid=2107495160.1673886611&ga_sid=1677783834&ga_hid=1107542240&ga_fc=1&ga_wpids=UA-50820-6&u_tz=-240&u_his=1&u_h=864&u_w=1152&u_ah=839&u_aw=1152&u_cd=24&u_sd=1&dmc=2&adx=144&ady=3215&biw=1137&bih=674&scr_x=0&scr_y=525&eid=31071756%2C31072730&oid=2&psts=AD37Y7vhJU2fLDkBu8ca0LVg6LNI1fNABjhmfI8JFY57qEOhJ3VyMR_UgXGuCHYybtfqjAdPOtGPgLtyTDeLKOCa3Q&pvsid=41333477863663&tmod=1472635344&uas=0&nvt=1&ref=https%3A%2F%2Ftamirsuliman.medium.com%2Fgetting-started-building-linux-bash-graphical-ui-scripts-447cee97c167&fc=896&brdim=0%2C25%2C0%2C25%2C1152%2C25%2C1152%2C839%2C1152%2C674&vis=1&rsz=%7Cm%7CpeEbr%7Cp&abl=XS&pfx=0&fu=0&bc=31&ifi=2&uci=a!2&btvi=1&fsb=1&xpc=kOHLaTngwX&p=https%3A//linux.die.net&dtd=M
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"></head><body marginwidth=3D"0" marginheight=3D"0">=
+</body></html>
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9----
+Content-Type: text/html
+Content-ID: <frame-F7C2FC10EA68D55D36128BD84F0F6859@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-5823754184406795&output=html&h=280&slotname=7130739364&adk=1862536188&adf=3894714692&pi=t.ma~as.7130739364&w=336&lmt=1677783834&format=336x280&url=https%3A%2F%2Flinux.die.net%2Fman%2F1%2Fwhiptail&wgl=1&uach=WyJMaW51eCIsIjUuMTUuMCIsIng4NiIsIiIsIjExMC4wLjU0ODEuMTc3IixbXSxmYWxzZSxudWxsLCI2NCIsW1siQ2hyb21pdW0iLCIxMTAuMC41NDgxLjE3NyJdLFsiTm90IEEoQnJhbmQiLCIyNC4wLjAuMCJdLFsiR29vZ2xlIENocm9tZSIsIjExMC4wLjU0ODEuMTc3Il1dLGZhbHNlXQ..&dt=1677783833470&bpp=45&bdt=1116&idt=912&shv=r20230301&mjsv=m202302160101&ptt=9&saldr=aa&abxe=1&cookie=ID%3D9461aac7e1e9a969-2251ec38937f0087%3AT%3D1673886611%3ART%3D1673886611%3AS%3DALNI_MZrwkuOl73jBXyX70lto79rI-jt7Q&gpic=UID%3D000009e52f37f12f%3AT%3D1673886611%3ART%3D1677501234%3AS%3DALNI_MbZAimh98lOjWcY9WMfpVZxEYLntg&correlator=8452043236441&frm=20&pv=2&ga_vid=2107495160.1673886611&ga_sid=1677783834&ga_hid=1107542240&ga_fc=1&ga_wpids=UA-50820-6&u_tz=-240&u_his=1&u_h=864&u_w=1152&u_ah=839&u_aw=1152&u_cd=24&u_sd=1&dmc=2&adx=546&ady=185&biw=1137&bih=734&scr_x=0&scr_y=0&eid=31071756%2C31072730&oid=2&pvsid=41333477863663&tmod=1472635344&uas=0&nvt=1&ref=https%3A%2F%2Ftamirsuliman.medium.com%2Fgetting-started-building-linux-bash-graphical-ui-scripts-447cee97c167&fc=896&brdim=0%2C0%2C0%2C0%2C1152%2C25%2C0%2C0%2C1152%2C734&vis=2&rsz=%7C%7CleEr%7C&abl=CS&pfx=0&fu=0&bc=31&ifi=1&uci=a!1&fsb=1&xpc=U6WeFYsxDM&p=https%3A//linux.die.net&dtd=1087
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"></head><body></body></html>
+------MultipartBoundary--tDx3mgYyfAT5XAksldYToi3tG86R0AzsaohgaPZMX9------

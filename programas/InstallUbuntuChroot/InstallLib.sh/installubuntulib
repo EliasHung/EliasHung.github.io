@@ -1,0 +1,416 @@
+#!/bin/bash
+# El profesorverdad@gmail.com
+#Elias Hung
+
+#Libreria para las funciones de instalación de ubuntu
+#Depende de Bajo Nivel y Alto Nivel
+
+#ruta de montaje
+
+Solo_Montar () {
+    pidedisp "Que se MOntará en la Ruta de Montaje"
+    montapar $dsp $ruta_montaje
+}
+
+SoloMontarChroot ()
+{
+
+    pidedisp "DONDE SE MONTARÁ EL CHROOT"
+    montapar $dsp $ruta_montaje
+    montarPartChroot $ruta_montaje
+    cuentafinal 2 "Ejecutando chroot en la partición y script si lo hay..."
+    MontaChroot
+    desmontartodo $ruta_montaje
+    exit 0
+
+}
+
+desmontarParcial() {
+
+    umount -lf $1/dev
+    umount -lf $1/dev/pts
+    umount -lf $1/proc
+    umount -lf $1/sys
+    
+}
+
+# ruta_montaje
+desmontartodo () {
+    rutamontaje=$1
+    echo Desmontar todo 1 para si cualquier tecla para no?
+    read des; if [ -z $des ];then des=0; fi
+    if [ $des == 1 ]
+    then
+        desmontarParcial $rutamontaje
+        umount --recursive $rutamontaje
+        umount -lf $rutamontaje
+    fi
+}
+
+#ruta de montaje
+montarPartChroot () {
+cuentafinal 4 "Montando Particiones chroot..."
+mount --bind /dev $1/dev
+mount --bind /dev/pts $1/dev/pts
+mount -t proc proc $1/proc
+mount -t sysfs sys $1/sys
+}
+
+pidenombrehost (){
+echo "Nombre del Host" 
+read nombre
+echo $nombre > $1/etc/hostname
+cuentafinal 2 "host actualizado" 
+}
+sources () {
+cp-igualito "/home/$usuario/tron/config/sources.list/ubuntu-jammy-original/sources.list" "$ruta_montaje/etc/apt/"
+}
+
+Tron-Init () {
+mkdir $ruta_montaje/home/tron
+chmod -v 775 $ruta_montaje/home/tron
+rsync -azvhl -H --exclude "navegadores" --exclude "Drivers" "/home/$usuario/tron/" "$ruta_montaje/home/tron/"
+}
+
+pidedisp () {
+    echo  "Introduzca la partición $1: Ej: sda, sdd2 "
+    read dsp
+    rutadsp="/dev/$dsp"
+}
+
+estableceretiqueta () {
+e2label $rutadisp $dsp
+}
+
+borraParticionYrutaDeMontaje (){
+    #Si  primer parámetro posicional no viene vacio $1 sobreescribe ruta_montaje.
+    if [[ ! -z $1 ]]; then ruta_montaje=$1; fi
+    echo “La capeta $ruta_montaje ya existe.”
+    echo "se borrará carpeta antigua..."
+    desmontarParcial $ruta_montaje
+    umount -lf $ruta_montaje
+    umount -lf $dsp
+    mkfs.ext4 -F -v $rutadisp
+    preguntasalir "Borró la partición" "Si no lo hizo finalice el script y ejecútelo en una nueva pestaña de la terminal."
+    rm -d -v $ruta_montaje
+    mkdir $ruta_montaje
+    
+}
+
+creaCarpetaRutaDeMontaje () {
+    mkdir $ruta_montaje
+    if [ $? == 0 ]
+    then
+        echo “$ruta_montajes se ha creado con éxito”
+    else
+        echo “TRON: Algo ha fallado al crear $ruta_montaje”
+        echo “TRON: Permisos?”
+        
+    fi
+
+}
+
+
+siErutaDeMontaje_FormatyCreaRutaDeMontaje_SiNo_CreaRutaDeMontaje () {
+
+if [ -d $ruta_montaje ]
+then
+    borraParticionYrutaDeMontaje
+
+else
+    creaCarpetaRutaDeMontaje
+fi
+
+}
+
+
+siNoErutaDeMontaje_CreaRutaDeMontaje () {
+    if [[ ! -d $ruta_montaje ]]; then
+        mkdir $ruta_montaje
+    fi
+}
+
+HacerDebootstrap () {
+    debootstrap --arch=${arch} ${release} $ruta_montaje
+}
+
+
+preguntadera () {
+    
+    desea "Instalar sources.list?"
+    si=$?
+        if [ $si == 1 ]; then
+            sources
+        fi
+        
+    desea "Instalar Tron-Init?"
+    si=$?
+        if [ $si == 1 ]; then
+            Tron-Init
+            cuentafinal 3 "Tron Init Copiado"
+        fi
+        
+    desea "Copiar repos de Apt"
+    si=$?
+        if [ $si == 1 ]; then
+         copiarAptRepos $ruta_montaje
+        fi
+}
+
+
+MontaChroot () {
+
+    if [[ -z $script ]]; then
+        chroot $ruta_montaje 
+    else 
+        
+        chroot $ruta_montaje "$script" "$dsp" "$dele"
+    fi
+if [ $? == 0 ]; then
+    cuentafinal 3 "---->REGRESANDO DEL CHROOT cript Chroot Finalizado Con exito"
+else 
+    cuentafinal 3 "---->REGRESANDO DEL CHROOT Se produjo un error al hacer chroot o Con el Script"
+fi
+}
+
+hacerdeboststrap () {
+        cuentafinal 6 "Instalando Sistema Mínimo Linux en la partición con debootstrap..."
+        {
+            debootstrap --arch=${arch} ${release} $ruta_montaje
+        } 2>&1 | tee /home/$usuario/tron/install/logs/InstallUbuntu/queDebostrap.log
+}
+
+
+preguntaspostchroot () {
+desea "---->REGRESANDO DEL CHROOT Actualizar e instalar grub"
+si=$?
+if [ $si == 1 ]; then
+    update-grub
+    echo "---->REGRESANDO DEL CHROOT En que dispositivo instalar grub"
+    read donde
+    grub-install /dev/$donde
+fi
+desea "---->REGRESANDO DEL CHROOT Desmontar todo"
+    si=$?
+if [ $si == 1 ]; then
+    desmontartodo $ruta_montaje
+fi
+}
+
+
+localesterminal () {
+delemijo=$1
+if [[ -z delemijo ]]; then delemijo=0; fi
+export LC_ALL=es_ES.UTF-8 
+export LANGUAGE=es:en
+export LC_ADDRESS=es_VE.UTF-8
+export LC_COLLATE=es_ES.UTF-8
+export LC_CTYPE=es_ES.UTF-8
+export LC_IDENTIFICATION=es_VE.UTF-8
+export LC_MEASUREMENT=es_VE.UTF-8
+export LC_MESSAGES=es_ES.UTF-8
+export LC_MONETARY=es_VE.UTF-8
+export LC_NAME=es_ES.UTF-8
+export LC_NUMERIC=es_VE.UTF-8
+export LC_PAPER=es_VE.UTF-8
+export LC_TELEPHONE=es_VE.UTF-8
+export LC_TIME=es_VE.UTF-8
+
+if [[ $delemijo == 0 ]]; then
+    echo "locales configurados,en Terminal"
+    echo "Presiona 1 para reconfigurar locales"
+    echo "Presiona Cualquier otra tecla para continuar"
+    read pres
+    if [[ $pres == 1 ]]; then
+       
+        locale-gen es_VE.UTF-8
+        locale-gen es_ES.UTF-8
+        locale-gen en_US.UTF-8
+        dpkg-reconfigure locales
+    fi
+    else
+    locale-gen es_VE.UTF-8
+    locale-gen es_ES.UTF-8
+    locale-gen en_US.UTF-8
+    dpkg-reconfigure locales
+fi
+export LC_ALL=es_ES.UTF-8 
+export LANGUAGE=es:en
+export LC_ADDRESS=es_VE.UTF-8
+export LC_COLLATE=es_ES.UTF-8
+export LC_CTYPE=es_ES.UTF-8
+export LC_IDENTIFICATION=es_VE.UTF-8
+export LC_MEASUREMENT=es_VE.UTF-8
+export LC_MESSAGES=es_ES.UTF-8
+export LC_MONETARY=es_VE.UTF-8
+export LC_NAME=es_ES.UTF-8
+export LC_NUMERIC=es_VE.UTF-8
+export LC_PAPER=es_VE.UTF-8
+export LC_TELEPHONE=es_VE.UTF-8
+export LC_TIME=es_VE.UTF-8
+
+}
+
+localesbien (){
+locale
+pres=0
+echo "Locales bien?"
+echo "Presiona 1 para reconfigurar locales"
+echo "Presiona Cualquier otra tecla para continuar"
+read pres
+if [[ $pres == 1 ]]; then
+    export LC_ALL=C.UTF-8
+    locale-gen es_ES.UTF-8
+    dpkg-reconfigure locales
+fi
+}
+
+instalarpost () {
+
+#Instalando Jellyfin
+cuentafinal 4 "INSTALANDO JELLYFIN"
+apt install -y jellyfin jellyfin-ffmpeg5 jellyfin-server jellyfin-web ffmpeg mpv 
+apt install -y code
+apt -y install code
+
+
+## programa para ver los csv en la terminal y mas
+#npm i -g tty-table
+#cuentafinal 5 "Instalando Tienda de Software"
+#apt install -y /home/$usuario/tron/plugins/tienda/app-outlet_2.1.0_amd64.deb
+#npm install -g firebase-tools
+
+}
+
+instalarpython () {
+
+cuentafinal 10 "INSTALANDO PYTHON"
+echo ****************INSTALANDO PYTHON
+echo
+tar xzvf /home/$usuario/tron/plugins/python/Python-3.11.0.tgz --directory=/home/$usuario/tron/plugins/python/
+cd /home/$usuario/tron/plugins/python/Python-3.11.0
+#sudo -u $usuario ./configure --enable-optimizations --with-lto
+#Tomado de https://www.build-python-from-source.com/
+# Otra a probar https://ubuntuhandbook.org/index.php/2021/10/compile-install-python-3-10-ubuntu/
+cuentafinal 10 "CONFIGURANDO PYTHON"
+sudo -u $usuario ./configure --enable-shared
+#sudo -u $usuario ./configure
+cuentafinal 10 "MAKE PYTHON"
+sudo -u $usuario make
+#sudo -u $usuario make
+cuentafinal 10 "MAKE AltInstall"
+sudo -u $usuario make altinstall
+#sudo -u $usuario make test
+#cuentafinal 10 "************************INSTALANDO PYTHON CON ALTERNATIVE INSTALL"
+#make altinstall
+#/opt/python/3.11.0/bin/python3.11 -m pip install --upgrade pip setuptools wheel
+#ln -s /opt/python/3.11.0/bin/python3.11        /opt/python/3.11.0/bin/python3
+#ln -s /opt/python/3.11.0/bin/python3.11        /opt/python/3.11.0/bin/python
+#ln -s /opt/python/3.11.0/bin/pip3.11           /opt/python/3.11.0/bin/pip3
+#ln -s /opt/python/3.11.0/bin/pip3.11           /opt/python/3.11.0/bin/pip
+#ln -s /opt/python/3.11.0/bin/pydoc3.11         /opt/python/3.11.0/bin/pydoc
+#ln -s /opt/python/3.11.0/bin/idle3.11          /opt/python/3.11.0/bin/idle
+#ln -s /opt/python/3.11.0/bin/python3.11-config      /opt/python/3.11.0/bin/python-config
+#sudo make altinstall
+#cuentafinal 10 "INSTALANDO PYTHON PIP Y MODULOS"
+#sudo -u $usuario $python_ver -m pip install --upgrade pip
+#sudo -u $usuario $python_ver -m pip install -U autopep8
+#sudo -u $usuario $python_ver -m pip install ffpyplayer
+#sudo -u $usuario $python_ver -m pip install kivy
+#sudo -u $usuario $python_ver -m pip install kivymd
+#sudo -u $usuario $python_ver -m pip install tk
+#sudo -u $usuario $python_ver -m pip install tkinter
+
+rm -r -d -v /home/$usuario/tron/plugins/python/Python-3.11.0
+
+}
+
+installkernel6() {
+
+
+echo "el susuario en esta mierda es $us"
+apt install -y gcc make perl nano dpkg-dev build-essential debian-keyring dkms initramfs-tools unzip htop curl unrar apt-transport-https ufw build-essential zlib1g-dev libgdbm-dev libncurses5-dev libssl-dev libnss3-dev libffi-dev libreadline-dev wget libsqlite3-dev libbz2-dev gnupg software-properties-common unar rar openssh-server bc os-prober 
+cd "/home/$usuario/tron/plugins/kernels/k6.0"
+sudo dpkg -i *.deb
+apt install -y grub-pc
+pausa "dentro esta instalado?"
+
+}
+
+
+instalacionbase () {
+
+apt install -y gcc make perl linux-generic  dpkg-dev build-essential debian-keyring figlet toilet nano dkms initramfs-tools grub-pc grub-pc-bin grub2-common gedit gedit-plugin-terminal gedit-plugin-text-size  gedit-plugin-code-comment  gedit-dev gedit-common zenity kdialog gedit-plugins-common gedit-plugins  unzip tasksel  debootstrap htop git synaptic curl lynx gjs gnome-terminal desktop-file-utils zip evince lynx imagemagick-6.q16 exif android-tools-adb grub-imageboot clamav xarchiver node-shebang-command sqlite3 yad socat gparted unrar libreoffice-l10n-es libreoffice-templates apt-transport-https gnome-disk-utility ufw build-essential zlib1g-dev libgdbm-dev libncurses5-dev libssl-dev libnss3-dev libffi-dev libreadline-dev wget libsqlite3-dev libbz2-dev gnupg software-properties-common gdebi clonezilla engrampa file-roller unar rar ark openssh-server bc os-prober fsarchiver zstd kitty-doc kitty-terminfo libjs-sphinxdoc micro ccze sudo sqlite3 silversearcher-ag
+
+#gedit-source-code-browser-plugin gedit-plugin-synctex gedit-plugin-session-saver gedit-plugin-multi-edit gedit-plugin-join-lines gedit-plugin-git gedit-plugin-find-in-files gedit-plugin-draw-spaces gedit-plugin-color-schemer gedit-plugin-color-picker gedit-plugin-character-map gedit-plugin-bookmarks gedit-plugin-word-completion
+#--no-install-recommends linux-image-5.15.0-52-generic linux-headers-5.15.0-52-generic linux-modules-5.15.0-52-generic linux-modules-extra-5.15.0-52-generic
+}
+
+# $1 recibe el dispositivo donde instalar fstab $2 recibe 1 para modo no interactivo
+configurarfstab () {
+di=$1
+palante=$2
+if [[ $palante != 1 ]]; then
+    echo
+    echo ////////////////////////////////////////////////
+    cat /etc/fstab
+    echo "fstab bien..?"
+    echo "Presiona 1 para borrar fstab y volver a recrearlo para el dispositivo $di"
+    echo "Presiona Cualquier otra Tecla para Continuar"
+    pres=0
+    read pres
+    if [[ $pres == 1 ]]
+        then
+        rm $ruta_montaje/etc/fstab
+        echo "UUID=`blkid -s UUID -o value /dev/$di` / ext4 defaults 1 1" >> $ruta_montaje/etc/fstab
+    fi
+    echo "El nuevo fstab es:"
+    cat /etc/fstab
+    pausa
+elif [[ $palante == 1 ]]; then
+        echo "UUID=`blkid -s UUID -o value /dev/$di` / ext4 defaults 1 1" >> $ruta_montaje/etc/fstab
+fi
+
+cuentafinal 3 " fstab actualizado"
+}
+
+
+
+instalarXUbuntuBase () {
+
+apt install -y libjpeg8
+apt install -y ubuntu-standard xubuntu-desktop language-pack-gnome-es  thunderbird-locale-es-ar gimp-help-common hyphen-es libreoffice-l10n-es gnome-user-docs-es libreoffice-help-es libreoffice-help-common pepperflashplugin-nonfree gimp-help-es  thunderbird-locale-es-es vlc-bin
+apt install -y xubuntu-restricted-addons ubuntu-restricted-extras
+
+clear
+apt purge -y firefox 
+dpkg -i /home/$usuario/tron/plugins/navegadores/google-chrome-stable_current_amd64.deb
+
+}
+
+
+
+installconinternet () {
+
+snap install pycharm-community --classic
+snap install vlc 
+snap install gimp 
+snap install jami 
+snap install beekeeper-studio 
+snap install remmina 
+snap install firefox 
+snap install acestreamplayer 
+snap install shotcut --classic 
+snap install vidcutter 
+snap install krop 
+snap install audacity 
+snap install transitionsdj 
+snap install android-studio --classic
+snap install phpstorm --classic
+streamingAudio
+gnome-language-selector
+
+
+
+
+}

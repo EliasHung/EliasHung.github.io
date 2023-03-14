@@ -1,0 +1,11 @@
+https://docusaurus.io/docs/search#using-local-search
+https://docusaurus.io/community/resources#search
+https://github.com/daldridge/docusaurus-plugin-lunr
+https://github.com/praveenn77/docusaurus-lunr-search
+https://github.com/cmfcmf/docusaurus-search-local
+https://christianflach.de/OpenWeatherMap-PHP-API/docs/getting-started
+https://github.com/easyops-cn/docusaurus-search-local
+https://github.com/typesense/docusaurus-theme-search-typesense
+https://docusaurus.io/docs/deployment
+https://dillinger.io/
+https://stackedit.io/app#

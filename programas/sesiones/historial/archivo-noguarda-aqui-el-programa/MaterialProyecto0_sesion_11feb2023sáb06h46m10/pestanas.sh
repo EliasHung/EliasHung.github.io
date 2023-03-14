@@ -1,0 +1,10 @@
+file:///home/daniel/tron/biblioteca/CURSOS/CursoHarvardWeb/clase0-HTML-CSS/practicas/responsive.html
+https://learning.edx.org/course/course-v1:HarvardX+CS50W+Web/home
+https://www.youtube.com/@TecnoEmprendedores
+https://www.youtube.com/watch?v=jOKbQRp-eek
+https://cs50.harvard.edu/web/2020/projects/0/search/
+https://getbootstrap.esdocu.com/docs/5.1/components/navbar/
+https://www.youtube.com/watch?v=lcUWpoAKUYk
+file:///home/daniel/proyectosHarvard/index.html#
+https://www.google.com/advanced_search
+https://www.google.com/?pccc=1

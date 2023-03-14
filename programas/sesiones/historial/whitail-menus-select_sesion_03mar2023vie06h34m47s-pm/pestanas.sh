@@ -1,0 +1,13 @@
+https://www.google.com/search?q=select+bash&oq=select+bash+&aqs=chrome..69i57j0i512j0i22i30l6j0i15i22i30j0i22i30.11883j0j1&sourceid=chrome&ie=UTF-8
+https://noviello.it/es/como-usar-select-en-bash-en-linux/
+https://linuxhint.com/bash_select_command/
+https://linuxize.com/post/bash-select/
+https://www.baeldung.com/linux/shell-script-simple-select-menu
+https://ostechnix.com/bash-select-loop/
+https://linux.die.net/man/1/whiptail
+https://en.wikibooks.org/wiki/Bash_Shell_Scripting/Whiptail
+https://www.google.com/search?q=bash+whiptail-associative-arrays&sxsrf=AJOqlzURzDuHi-d3DHofTZgd6HTiWRzKLw%3A1677880571734&ei=-2wCZI7CLJKAkvQP9eW4kAY&ved=0ahUKEwjOq9Cb4MD9AhUSgIQIHfUyDmIQ4dUDCA8&uact=5&oq=bash+whiptail-associative-arrays&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzoHCCMQ6gIQJzoNCAAQjwEQ6gIQtAIYAToNCC4QjwEQ6gIQtAIYAToICAAQgAQQywE6BggAEAcQHjoLCAAQBxAeEA8Q8QQ6CQgAEAcQHhDxBDoICAAQBxAeEBM6DQgAEAcQHhAPEPEEEBM6CwgAEAcQHhDxBBATOgcIABANEIAEOgYIABAeEA06CwgAEB4QDRAPEPEEOggIABAeEA0QDzoICAAQCBAeEA06BQgAEKIEOgQIIRAKSgQIQRgAUPcPWOHCAWCryQFoAnABeACAAa8CiAHsIpIBBjItMTguMZgBAKABAaABArABFMABAdoBBggBEAEYCg&sclient=gws-wiz-serp
+https://www.google.com/search?q=whiptail+bash+fill+the+menu+automatic&oq=whiptail+bash+fill+the+menu+automatic&aqs=chrome..69i57j33i160.21673j0j1&sourceid=chrome&ie=UTF-8
+https://github.com/pageauc/FileBrowser
+https://saveriomiroddi.github.io/Shell-scripting-adventures-part-3/
+chrome://newtab/
