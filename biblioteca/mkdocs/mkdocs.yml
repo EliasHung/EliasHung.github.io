@@ -1,0 +1,67 @@
+site_name: Biblioteca General
+theme:
+  name: material
+  language: es
+  features:
+      - search.suggest
+      - search.highlight
+      - search.share
+      - navigation.instant
+      - navigation.tracking
+      - navigation.tabs
+      - navigation.footer
+plugins:
+  - search:
+      lang: es  
+      lang: en
+  - tags:
+      tags_file: tags.md
+markdown_extensions:
+  - def_list
+  - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 60
+copyright: Copyright &copy; 2018 - 2023 TRON-Doc Elías Hung.
+extra:
+  #quita el logo de la empresa creadora
+  generator: false
+markdown_extensions:
+
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+
+  

@@ -1,0 +1,1150 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../ejemplos/ejemplo-python/">
+      
+      
+        <link rel="next" href="../shdoc/">
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
+    
+    
+      
+        <title>Manual del Buscador de Plata - Biblioteca General</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.ffa9267a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#manual-del-buscador-de-plata" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../../../.." title="Biblioteca General" class="md-header__button md-logo" aria-label="Biblioteca General" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Biblioteca General
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Manual del Buscador de Plata
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../../.." class="md-tabs__link">
+      Welcome to MkDocs
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../../../tags/" class="md-tabs__link">
+      Tags
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../" class="md-tabs__link md-tabs__link--active">
+        Tron
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="Biblioteca General" class="md-nav__button md-logo" aria-label="Biblioteca General" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Biblioteca General
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        Welcome to MkDocs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../tags/" class="md-nav__link">
+        Tags
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Tron
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Tron
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../" class="md-nav__link">
+        tron
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          1 LEGOS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          1 LEGOS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
+          0 ORGANIZACION
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          0 ORGANIZACION
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../1-LEGOS/0-ORGANIZACION/TODO/" class="md-nav__link">
+        TODO:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
+          Bash
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Bash
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2_1" id="__nav_3_2_2_1_label" tabindex="0">
+          Interfaces bash
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Interfaces bash
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../1-LEGOS/Bash/interfaces-bash/easy/" class="md-nav__link">
+        EasyBashGUI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../1-LEGOS/Bash/interfaces-bash/gtkdialog/" class="md-nav__link">
+        gtkdialog:
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../1-LEGOS/Bash/interfaces-bash/interfaces/" class="md-nav__link">
+        Interfaces:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2_2" id="__nav_3_2_2_2_label" tabindex="0">
+          Matrices
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Matrices
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../1-LEGOS/Bash/matrices/MatricesAsociativas/" class="md-nav__link">
+        Bash Matrices Vectores Array Arrays asociativas asociativa menu y menús
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../1-LEGOS/Bash/matrices/easy/" class="md-nav__link">
+        EasyBashGUI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../1-LEGOS/Bash/matrices/interfaces/" class="md-nav__link">
+        Interfaces:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2_3" id="__nav_3_2_2_3_label" tabindex="0">
+          Notificar cambios archivos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Notificar cambios archivos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../1-LEGOS/Bash/notificar%20cambios%20archivos/notificar-cambios/" class="md-nav__link">
+        Bash notificar cambios  cuando cambia un archivo.
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          Programas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Programas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
+          Heuristic
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Heuristic
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Leeme/" class="md-nav__link">
+        Tron Heurística Diseño del Programa.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1_2" id="__nav_3_3_1_2_label" tabindex="0">
+          Ejemplos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_3_1_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          Ejemplos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ejemplos/ejemplo-python/" class="md-nav__link">
+        Ejemplo de Documentación Python
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1_3" id="__nav_3_3_1_3_label" tabindex="0">
+          Manuales
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_3_1_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3_3_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          Manuales
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Manual del Buscador de Plata
+      </a>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shdoc/" class="md-nav__link">
+        shdoc
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1_4" id="__nav_3_3_1_4_label" tabindex="0">
+          Pendiente
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_3_1_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          Pendiente
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pendiente/pendiente/" class="md-nav__link">
+        Pendiente
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1_5" id="__nav_3_3_1_5_label" tabindex="0">
+          Proyecto
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_3_1_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          Proyecto
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../proyecto/fase1/" class="md-nav__link">
+        Plan de Realización de la App heurística:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+<h1 id="manual-del-buscador-de-plata">Manual del Buscador de Plata<a class="headerlink" href="#manual-del-buscador-de-plata" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code>Uso:<span class="w"> </span>ag<span class="w"> </span><span class="o">[</span>TIPO<span class="w"> </span>DE<span class="w"> </span>ARCHIVO<span class="o">]</span><span class="w"> </span><span class="o">[</span>OPCIONES<span class="o">]</span><span class="w"> </span>PATRÓN<span class="w"> </span><span class="o">[</span>RUTA<span class="o">]</span>
+
+<span class="w">   </span>Busque<span class="w"> </span>recursivamente<span class="w"> </span>PATTERN<span class="w"> </span>en<span class="w"> </span>PATH.
+<span class="w">   </span>Como<span class="w"> </span>grep<span class="w"> </span>o<span class="w"> </span>ack,<span class="w"> </span>pero<span class="w"> </span>más<span class="w"> </span>rápido.
+
+Ejemplo:
+<span class="w">   </span>ag<span class="w"> </span>-i<span class="w"> </span>foo<span class="w"> </span>/bar/
+
+Opciones<span class="w"> </span>de<span class="w"> </span>salida:
+<span class="w">      </span>--ackmate<span class="w"> </span>Imprimir<span class="w"> </span>resultados<span class="w"> </span>en<span class="w"> </span>formato<span class="w"> </span>analizable<span class="w"> </span>AckMate
+<span class="w">   </span>-A<span class="w"> </span>--after<span class="w"> </span><span class="o">[</span>LINES<span class="o">]</span><span class="w"> </span>Imprime<span class="w"> </span>líneas<span class="w"> </span>después<span class="w"> </span>de<span class="w"> </span>la<span class="w"> </span>coincidencia<span class="w"> </span><span class="o">(</span>Predeterminado:<span class="w"> </span><span class="m">2</span><span class="o">)</span>
+<span class="w">   </span>-B<span class="w"> </span>--before<span class="w"> </span><span class="o">[</span>LINES<span class="o">]</span><span class="w"> </span>Imprime<span class="w"> </span>líneas<span class="w"> </span>antes<span class="w"> </span>de<span class="w"> </span>la<span class="w"> </span>coincidencia<span class="w"> </span><span class="o">(</span>Predeterminado:<span class="w"> </span><span class="m">2</span><span class="o">)</span>
+<span class="w">      </span>--<span class="o">[</span>no<span class="o">]</span><span class="nb">break</span><span class="w"> </span>Imprimir<span class="w"> </span>nuevas<span class="w"> </span>líneas<span class="w"> </span>entre<span class="w"> </span>coincidencias<span class="w"> </span>en<span class="w"> </span>diferentes<span class="w"> </span>archivos
+<span class="w">                           </span><span class="o">(</span>Habilitado<span class="w"> </span>por<span class="w"> </span>defecto<span class="o">)</span>
+<span class="w">   </span>-c<span class="w"> </span>--count<span class="w"> </span>Sólo<span class="w"> </span>imprime<span class="w"> </span>el<span class="w"> </span>número<span class="w"> </span>de<span class="w"> </span>coincidencias<span class="w"> </span>en<span class="w"> </span>cada<span class="w"> </span>archivo.
+<span class="w">                           </span><span class="o">(</span>Esto<span class="w"> </span>a<span class="w"> </span>menudo<span class="w"> </span>difiere<span class="w"> </span>del<span class="w"> </span>número<span class="w"> </span>de<span class="w"> </span>líneas<span class="w"> </span>coincidentes<span class="o">)</span>
+<span class="w">      </span>--<span class="o">[</span>no<span class="o">]</span>color<span class="w"> </span>Imprimir<span class="w"> </span>códigos<span class="w"> </span>de<span class="w"> </span>color<span class="w"> </span>en<span class="w"> </span>los<span class="w"> </span>resultados<span class="w"> </span><span class="o">(</span>Habilitado<span class="w"> </span>por<span class="w"> </span>defecto<span class="o">)</span>
+<span class="w">      </span>--color-line-number<span class="w"> </span>Códigos<span class="w"> </span>de<span class="w"> </span>color<span class="w"> </span>para<span class="w"> </span>números<span class="w"> </span>de<span class="w"> </span>línea<span class="w"> </span><span class="o">(</span>Predeterminado:<span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="m">33</span><span class="o">)</span>
+<span class="w">      </span>--color-match<span class="w"> </span>Códigos<span class="w"> </span>de<span class="w"> </span>color<span class="w"> </span>para<span class="w"> </span>números<span class="w"> </span>de<span class="w"> </span>coincidencia<span class="w"> </span>de<span class="w"> </span>resultados<span class="w"> </span><span class="o">(</span>Predeterminado:<span class="w"> </span><span class="m">30</span><span class="p">;</span><span class="m">43</span><span class="o">)</span>
+<span class="w">      </span>--color-path<span class="w"> </span>Códigos<span class="w"> </span>de<span class="w"> </span>color<span class="w"> </span>para<span class="w"> </span>nombres<span class="w"> </span>de<span class="w"> </span>ruta<span class="w"> </span><span class="o">(</span>Predeterminado:<span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="m">32</span><span class="o">)</span>
+<span class="w">      </span>--column<span class="w"> </span>Imprimir<span class="w"> </span>números<span class="w"> </span>de<span class="w"> </span>columna<span class="w"> </span>en<span class="w"> </span>los<span class="w"> </span>resultados
+<span class="w">      </span>--<span class="o">[</span>no<span class="o">]</span>filename<span class="w"> </span>Imprimir<span class="w"> </span>nombres<span class="w"> </span>de<span class="w"> </span>archivo<span class="w"> </span><span class="o">(</span>Habilitado<span class="w"> </span>a<span class="w"> </span>menos<span class="w"> </span>que<span class="w"> </span>busque<span class="w"> </span>un<span class="w"> </span>solo<span class="w"> </span>archivo<span class="o">)</span>
+<span class="w">   </span>-H<span class="w"> </span>--<span class="o">[</span>no<span class="o">]</span>heading<span class="w"> </span>Imprime<span class="w"> </span>los<span class="w"> </span>nombres<span class="w"> </span>de<span class="w"> </span>archivo<span class="w"> </span>antes<span class="w"> </span>de<span class="w"> </span>las<span class="w"> </span>coincidencias<span class="w"> </span>de<span class="w"> </span>cada<span class="w"> </span>archivo
+<span class="w">                           </span><span class="o">(</span>Habilitado<span class="w"> </span>por<span class="w"> </span>defecto<span class="o">)</span>
+<span class="w">   </span>-C<span class="w"> </span>--context<span class="w"> </span><span class="o">[</span>LINES<span class="o">]</span><span class="w"> </span>Imprime<span class="w"> </span>líneas<span class="w"> </span>antes<span class="w"> </span>y<span class="w"> </span>después<span class="w"> </span>de<span class="w"> </span>las<span class="w"> </span>coincidencias<span class="w"> </span><span class="o">(</span>Predeterminado:<span class="w"> </span><span class="m">2</span><span class="o">)</span>
+<span class="w">      </span>--<span class="o">[</span>no<span class="o">]</span>group<span class="w"> </span>Igual<span class="w"> </span>que<span class="w"> </span>--<span class="o">[</span>no<span class="o">]</span><span class="nb">break</span><span class="w"> </span>--<span class="o">[</span>no<span class="o">]</span>heading
+<span class="w">   </span>-g<span class="w"> </span>--filename-pattern<span class="w"> </span>PATRÓN
+<span class="w">                           </span>Imprimir<span class="w"> </span>nombres<span class="w"> </span>de<span class="w"> </span>archivo<span class="w"> </span>que<span class="w"> </span>coincidan<span class="w"> </span>con<span class="w"> </span>PATRÓN
+<span class="w">   </span>-l<span class="w"> </span>--files-with-matches<span class="w"> </span>Solo<span class="w"> </span>imprime<span class="w"> </span>los<span class="w"> </span>nombres<span class="w"> </span>de<span class="w"> </span>archivo<span class="w"> </span>que<span class="w"> </span>contienen<span class="w"> </span>coincidencias
+<span class="w">                           </span><span class="o">(</span>no<span class="w"> </span>imprima<span class="w"> </span>las<span class="w"> </span>líneas<span class="w"> </span>coincidentes<span class="o">)</span>
+<span class="w">   </span>-L<span class="w"> </span>--archivos-sin-coincidencias
+<span class="w">                           </span>Imprima<span class="w"> </span>solo<span class="w"> </span>nombres<span class="w"> </span>de<span class="w"> </span>archivo<span class="w"> </span>que<span class="w"> </span>no<span class="w"> </span>contengan<span class="w"> </span>coincidencias
+<span class="w">      </span>--print-all-files<span class="w"> </span>Imprime<span class="w"> </span>encabezados<span class="w"> </span>para<span class="w"> </span>todos<span class="w"> </span>los<span class="w"> </span>archivos<span class="w"> </span>buscados,<span class="w"> </span>incluso<span class="w"> </span>aquellos<span class="w"> </span>que
+<span class="w">                           </span>no<span class="w"> </span>contiene<span class="w"> </span>coincidencias
+<span class="w">      </span>--<span class="o">[</span>no<span class="o">]</span>numbers<span class="w"> </span>Imprimir<span class="w"> </span>números<span class="w"> </span>de<span class="w"> </span>línea.<span class="w"> </span>El<span class="w"> </span>valor<span class="w"> </span>predeterminado<span class="w"> </span>es<span class="w"> </span>omitir<span class="w"> </span>los<span class="w"> </span>números<span class="w"> </span>de<span class="w"> </span>línea
+<span class="w">                           </span>al<span class="w"> </span>buscar<span class="w"> </span>transmisiones
+<span class="w">   </span>-o<span class="w"> </span>--only-matching<span class="w"> </span>Imprime<span class="w"> </span>solo<span class="w"> </span>la<span class="w"> </span>parte<span class="w"> </span>coincidente<span class="w"> </span>de<span class="w"> </span>las<span class="w"> </span>líneas
+<span class="w">      </span>--print-long-lines<span class="w"> </span>Imprime<span class="w"> </span>coincidencias<span class="w"> </span>en<span class="w"> </span>líneas<span class="w"> </span>muy<span class="w"> </span>largas<span class="w"> </span><span class="o">(</span>Predeterminado:<span class="w"> </span>&gt;2k<span class="w"> </span>caracteres<span class="o">)</span>
+<span class="w">      </span>--passthrough<span class="w"> </span>Al<span class="w"> </span>buscar<span class="w"> </span>un<span class="w"> </span>flujo,<span class="w"> </span>imprime<span class="w"> </span>todas<span class="w"> </span>las<span class="w"> </span>líneas<span class="w"> </span>incluso<span class="w"> </span>si
+<span class="w">                           </span>no<span class="w"> </span>coinciden
+<span class="w">      </span>--silent<span class="w"> </span>Suprimir<span class="w"> </span>todos<span class="w"> </span>los<span class="w"> </span>mensajes<span class="w"> </span>de<span class="w"> </span>registro,<span class="w"> </span>incluidos<span class="w"> </span>los<span class="w"> </span>errores
+<span class="w">      </span>--stats<span class="w"> </span>Imprimir<span class="w"> </span>estadísticas<span class="w"> </span><span class="o">(</span>archivos<span class="w"> </span>escaneados,<span class="w"> </span>tiempo<span class="w"> </span>empleado,<span class="w"> </span>etc.<span class="o">)</span>
+<span class="w">      </span>--stats-only<span class="w"> </span>Imprime<span class="w"> </span>estadísticas<span class="w"> </span>y<span class="w"> </span>nada<span class="w"> </span>más.
+<span class="w">                           </span><span class="o">(</span>Igual<span class="w"> </span>que<span class="w"> </span>--count<span class="w"> </span>al<span class="w"> </span>buscar<span class="w"> </span>en<span class="w"> </span>un<span class="w"> </span>solo<span class="w"> </span>archivo<span class="o">)</span>
+<span class="w">      </span>--vimgrep<span class="w"> </span>Imprime<span class="w"> </span>resultados<span class="w"> </span>como<span class="w"> </span>los<span class="w"> </span>de<span class="w"> </span>vim<span class="w"> </span>:vimgrep<span class="w"> </span>/pattern/g
+<span class="w">                           </span><span class="o">(</span>informa<span class="w"> </span>cada<span class="w"> </span>coincidencia<span class="w"> </span>en<span class="w"> </span>la<span class="w"> </span>línea<span class="o">)</span>
+<span class="w">   </span>-0<span class="w"> </span>--null<span class="w"> </span>--print0<span class="w"> </span>Nombres<span class="w"> </span>de<span class="w"> </span>archivo<span class="w"> </span>separados<span class="w"> </span>con<span class="w"> </span>nulo<span class="w"> </span><span class="o">(</span>para<span class="w"> </span><span class="s1">&#39;xargs -0&#39;</span><span class="o">)</span>
+
+Opciones<span class="w"> </span>de<span class="w"> </span>búsqueda:
+<span class="w">   </span>-a<span class="w"> </span>--all-types<span class="w"> </span>Buscar<span class="w"> </span>todos<span class="w"> </span>los<span class="w"> </span>archivos<span class="w"> </span><span class="o">(</span>no<span class="w"> </span>incluye<span class="w"> </span>archivos<span class="w"> </span>ocultos<span class="o">)</span>
+<span class="w">                           </span>o<span class="w"> </span>patrones<span class="w"> </span>de<span class="w"> </span>archivos<span class="w"> </span>ignorados<span class="o">)</span>
+<span class="w">   </span>-D<span class="w"> </span>--debug<span class="w"> </span>Depuración<span class="w"> </span>ridícula<span class="w"> </span><span class="o">(</span>probablemente<span class="w"> </span>no<span class="w"> </span>útil<span class="o">)</span>
+<span class="w">      </span>--depth<span class="w"> </span>NUM<span class="w"> </span>Buscar<span class="w"> </span>hasta<span class="w"> </span>NUM<span class="w"> </span>directorios<span class="w"> </span>de<span class="w"> </span>profundidad<span class="w"> </span><span class="o">(</span>Predeterminado:<span class="w"> </span><span class="m">25</span><span class="o">)</span>
+<span class="w">   </span>-f<span class="w"> </span>--follow<span class="w"> </span>Seguir<span class="w"> </span>enlaces<span class="w"> </span>simbólicos
+<span class="w">   </span>-F<span class="w"> </span>--fixed-strings<span class="w"> </span>Alias<span class="w"> </span>para<span class="w"> </span>--literal<span class="w"> </span>para<span class="w"> </span>compatibilidad<span class="w"> </span>con<span class="w"> </span>grep
+<span class="w">   </span>-G<span class="w"> </span>--file-search-regex<span class="w"> </span>PATRÓN<span class="w"> </span>Limita<span class="w"> </span>la<span class="w"> </span>búsqueda<span class="w"> </span>a<span class="w"> </span>nombres<span class="w"> </span>de<span class="w"> </span>archivo<span class="w"> </span>que<span class="w"> </span>coincidan<span class="w"> </span>con<span class="w"> </span>PATRÓN
+<span class="w">      </span>--hidden<span class="w"> </span>Buscar<span class="w"> </span>archivos<span class="w"> </span>ocultos<span class="w"> </span><span class="o">(</span>obedece<span class="w"> </span>a<span class="w"> </span>.*ignorar<span class="w"> </span>archivos<span class="o">)</span>
+<span class="w">   </span>-i<span class="w"> </span>--ignore-case<span class="w"> </span>Coincide<span class="w"> </span>con<span class="w"> </span>mayúsculas<span class="w"> </span>y<span class="w"> </span>minúsculas<span class="w"> </span>de<span class="w"> </span>forma<span class="w"> </span>insensible
+<span class="w">      </span>--ignore<span class="w"> </span>PATRÓN<span class="w"> </span>Ignora<span class="w"> </span>archivos/directorios<span class="w"> </span>que<span class="w"> </span>coincidan<span class="w"> </span>con<span class="w"> </span>PATRÓN
+<span class="w">                           </span><span class="o">(</span>también<span class="w"> </span>se<span class="w"> </span>permiten<span class="w"> </span>nombres<span class="w"> </span>de<span class="w"> </span>archivos/directorios<span class="w"> </span>literales<span class="o">)</span>
+<span class="w">      </span>--ignore-dir<span class="w"> </span>NOMBRE<span class="w"> </span>Alias<span class="w"> </span>para<span class="w"> </span>--ignore<span class="w"> </span>para<span class="w"> </span>compatibilidad<span class="w"> </span>con<span class="w"> </span>ack.
+<span class="w">   </span>-m<span class="w"> </span>--max-count<span class="w"> </span>NUM<span class="w"> </span>Omite<span class="w"> </span>el<span class="w"> </span>resto<span class="w"> </span>de<span class="w"> </span>un<span class="w"> </span>archivo<span class="w"> </span>después<span class="w"> </span>de<span class="w"> </span>NUM<span class="w"> </span>coincidencias<span class="w"> </span><span class="o">(</span>Predeterminado:<span class="w"> </span><span class="m">10</span>,000<span class="o">)</span>
+<span class="w">      </span>--one-device<span class="w"> </span>No<span class="w"> </span>siga<span class="w"> </span>enlaces<span class="w"> </span>a<span class="w"> </span>otros<span class="w"> </span>dispositivos.
+<span class="w">   </span>-p<span class="w"> </span>--path-to-ignore<span class="w"> </span>STRING
+<span class="w">                           </span>Usa<span class="w"> </span>el<span class="w"> </span>archivo<span class="w"> </span>.ignore<span class="w"> </span>en<span class="w"> </span>STRING
+<span class="w">   </span>-Q<span class="w"> </span>--literal<span class="w"> </span>No<span class="w"> </span>analiza<span class="w"> </span>PATRÓN<span class="w"> </span>como<span class="w"> </span>una<span class="w"> </span>expresión<span class="w"> </span>regular
+<span class="w">  </span>-s<span class="w"> </span>--case-sensitive<span class="w">  </span>Coincide<span class="w"> </span>con<span class="w"> </span>mayúsculas<span class="w"> </span>y<span class="w"> </span>minúsculas
+<span class="w">   </span>-S<span class="w"> </span>--smart-case<span class="w"> </span>Coincide<span class="w"> </span>con<span class="w"> </span>mayúsculas<span class="w"> </span>y<span class="w"> </span>minúsculas<span class="w"> </span>a<span class="w"> </span>menos<span class="w"> </span>que<span class="w"> </span>PATTERN<span class="w"> </span>contenga
+<span class="w">                           </span>caracteres<span class="w"> </span>en<span class="w"> </span>mayúscula<span class="w"> </span><span class="o">(</span>Habilitado<span class="w"> </span>por<span class="w"> </span>defecto<span class="o">)</span>
+<span class="w">      </span>--search-binary<span class="w"> </span>Buscar<span class="w"> </span>coincidencias<span class="w"> </span>en<span class="w"> </span>archivos<span class="w"> </span>binarios
+<span class="w">   </span>-t<span class="w"> </span>--all-text<span class="w"> </span>Busca<span class="w"> </span>todos<span class="w"> </span>los<span class="w"> </span>archivos<span class="w"> </span>de<span class="w"> </span>texto<span class="w"> </span><span class="o">(</span>no<span class="w"> </span>incluye<span class="w"> </span>archivos<span class="w"> </span>ocultos<span class="o">)</span>
+<span class="w">   </span>-u<span class="w"> </span>--unrestricted<span class="w"> </span>Buscar<span class="w"> </span>todos<span class="w"> </span>los<span class="w"> </span>archivos<span class="w"> </span><span class="o">(</span>ignorar<span class="w"> </span>.ignorar,<span class="w"> </span>.gitignore,<span class="w"> </span>etc.<span class="p">;</span>
+<span class="w">                           </span>busca<span class="w"> </span>archivos<span class="w"> </span>binarios<span class="w"> </span>y<span class="w"> </span>ocultos<span class="w"> </span>también<span class="o">)</span>
+<span class="w">   </span>-U<span class="w"> </span>--skip-vcs-ignores<span class="w"> </span>Ignorar<span class="w"> </span>VCS<span class="w"> </span>ignorar<span class="w"> </span>archivos
+<span class="w">                           </span><span class="o">(</span>.gitignore,<span class="w"> </span>.hgignore<span class="p">;</span><span class="w"> </span>todavía<span class="w"> </span>obedecer<span class="w"> </span>.ignore<span class="o">)</span>
+<span class="w">  </span>-v<span class="w"> </span>--invert-match<span class="w"> </span>invertir<span class="w"> </span>coincidencia
+<span class="w">   </span>-w<span class="w"> </span>--word-regexp<span class="w"> </span>Coincide<span class="w"> </span>solo<span class="w"> </span>con<span class="w"> </span>palabras<span class="w"> </span>completas
+<span class="w">   </span>-W<span class="w"> </span>--width<span class="w"> </span>NUM<span class="w"> </span>Truncar<span class="w"> </span>líneas<span class="w"> </span>de<span class="w"> </span>coincidencia<span class="w"> </span>después<span class="w"> </span>de<span class="w"> </span>NUM<span class="w"> </span>caracteres
+<span class="w">   </span>-z<span class="w"> </span>--search-zip<span class="w"> </span>Busca<span class="w"> </span>contenido<span class="w"> </span>de<span class="w"> </span>archivos<span class="w"> </span>comprimidos<span class="w"> </span><span class="o">(</span>p.<span class="w"> </span>ej.,<span class="w"> </span>gzip<span class="o">)</span>
+
+Tipos<span class="w"> </span>de<span class="w"> </span>archivo:
+La<span class="w"> </span>búsqueda<span class="w"> </span>se<span class="w"> </span>puede<span class="w"> </span>restringir<span class="w"> </span>a<span class="w"> </span>ciertos<span class="w"> </span>tipos<span class="w"> </span>de<span class="w"> </span>archivos.<span class="w"> </span>Ejemplo:
+<span class="w">   </span>ag<span class="w"> </span>--html<span class="w"> </span>aguja
+<span class="w">   </span>-<span class="w"> </span>Busca<span class="w"> </span><span class="s1">&#39;aguja&#39;</span><span class="w"> </span>en<span class="w"> </span>archivos<span class="w"> </span>con<span class="w"> </span>sufijo<span class="w"> </span>.htm,<span class="w"> </span>.html,<span class="w"> </span>.shtml<span class="w"> </span>o<span class="w"> </span>.xhtml.
+
+Para<span class="w"> </span>obtener<span class="w"> </span>una<span class="w"> </span>lista<span class="w"> </span>de<span class="w"> </span>los<span class="w"> </span>tipos<span class="w"> </span>de<span class="w"> </span>archivos<span class="w"> </span>admitidos,<span class="w"> </span>ejecute:
+<span class="w">   </span>ag<span class="w"> </span>--list-file-types
+
+ag<span class="w"> </span>fue<span class="w"> </span>creado<span class="w"> </span>originalmente<span class="w"> </span>por<span class="w"> </span>Geoff<span class="w"> </span>Greer.<span class="w"> </span>Más<span class="w"> </span>información<span class="w"> </span><span class="o">(</span>y<span class="w"> </span>el<span class="w"> </span>último<span class="w"> </span>lanzamiento<span class="o">)</span>
+se<span class="w"> </span>puede<span class="w"> </span>encontrar<span class="w"> </span>en<span class="w"> </span>http://geoff.greer.fm/ag
+</code></pre></div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../../ejemplos/ejemplo-python/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Ejemplo de Documentación Python" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Anterior
+                </span>
+                Ejemplo de Documentación Python
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../shdoc/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: shdoc" rel="next">
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Siguiente
+                </span>
+                shdoc
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2018 - 2023 TRON-Doc Elías Hung.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["search.suggest", "search.highlight", "search.share", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.footer"], "search": "../../../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+      
+    
+  </body>
+</html>

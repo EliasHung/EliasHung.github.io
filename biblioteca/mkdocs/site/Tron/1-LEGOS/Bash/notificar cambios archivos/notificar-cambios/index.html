@@ -1,0 +1,1391 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../matrices/interfaces/">
+      
+      
+        <link rel="next" href="../../../../programas/heuristic/Leeme/">
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
+    
+    
+      
+        <title>Bash notificar cambios cuando cambia un archivo. - Biblioteca General</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.ffa9267a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bash-notificar-cambios-cuando-cambia-un-archivo" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../../../.." title="Biblioteca General" class="md-header__button md-logo" aria-label="Biblioteca General" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Biblioteca General
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Bash notificar cambios  cuando cambia un archivo.
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../../.." class="md-tabs__link">
+      Welcome to MkDocs
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../../../tags/" class="md-tabs__link">
+      Tags
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../" class="md-tabs__link md-tabs__link--active">
+        Tron
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="Biblioteca General" class="md-nav__button md-logo" aria-label="Biblioteca General" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Biblioteca General
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        Welcome to MkDocs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../tags/" class="md-nav__link">
+        Tags
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Tron
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Tron
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../" class="md-nav__link">
+        tron
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          1 LEGOS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          1 LEGOS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
+          0 ORGANIZACION
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          0 ORGANIZACION
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../0-ORGANIZACION/TODO/" class="md-nav__link">
+        TODO:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
+          Bash
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Bash
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2_1" id="__nav_3_2_2_1_label" tabindex="0">
+          Interfaces bash
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Interfaces bash
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces-bash/easy/" class="md-nav__link">
+        EasyBashGUI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces-bash/gtkdialog/" class="md-nav__link">
+        gtkdialog:
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interfaces-bash/interfaces/" class="md-nav__link">
+        Interfaces:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2_2" id="__nav_3_2_2_2_label" tabindex="0">
+          Matrices
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Matrices
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../matrices/MatricesAsociativas/" class="md-nav__link">
+        Bash Matrices Vectores Array Arrays asociativas asociativa menu y menús
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../matrices/easy/" class="md-nav__link">
+        EasyBashGUI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../matrices/interfaces/" class="md-nav__link">
+        Interfaces:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2_3" id="__nav_3_2_2_3_label" tabindex="0">
+          Notificar cambios archivos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3_2_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Notificar cambios archivos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Bash notificar cambios  cuando cambia un archivo.
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Bash notificar cambios  cuando cambia un archivo.
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#con-inotifywait" class="md-nav__link">
+    Con inotifywait
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#con-systemmd-y-una-unidad-de-ruta" class="md-nav__link">
+    Con systemmd y Una unidad de ruta:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#con-entr" class="md-nav__link">
+    Con entr
+  </a>
+  
+    <nav class="md-nav" aria-label="Con entr">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-usar-entr" class="md-nav__link">
+    ¿Cómo usar entr?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entr-ejemplos" class="md-nav__link">
+    entr Ejemplos:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilizar-entr-con-git" class="md-nav__link">
+    Utilizar entr con git
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entr-pagina-man-page" class="md-nav__link">
+    entr pagina man  page
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codigo-simple" class="md-nav__link">
+    Código simple:
+  </a>
+  
+    <nav class="md-nav" aria-label="Código simple:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-1-con-whatch" class="md-nav__link">
+    Ejemplo 1 con Whatch.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-2-con-un-ciclo-y-stat" class="md-nav__link">
+    Ejemplo 2 con un Ciclo y stat.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          Programas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Programas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
+          Heuristic
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Heuristic
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../programas/heuristic/Leeme/" class="md-nav__link">
+        Tron Heurística Diseño del Programa.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1_2" id="__nav_3_3_1_2_label" tabindex="0">
+          Ejemplos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_3_1_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          Ejemplos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../programas/heuristic/ejemplos/ejemplo-python/" class="md-nav__link">
+        Ejemplo de Documentación Python
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1_3" id="__nav_3_3_1_3_label" tabindex="0">
+          Manuales
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_3_1_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          Manuales
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../programas/heuristic/manuales/ag/" class="md-nav__link">
+        Manual del Buscador de Plata
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../programas/heuristic/manuales/shdoc/" class="md-nav__link">
+        shdoc
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1_4" id="__nav_3_3_1_4_label" tabindex="0">
+          Pendiente
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_3_1_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          Pendiente
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../programas/heuristic/pendiente/pendiente/" class="md-nav__link">
+        Pendiente
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1_5" id="__nav_3_3_1_5_label" tabindex="0">
+          Proyecto
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_3_1_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          Proyecto
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../programas/heuristic/proyecto/fase1/" class="md-nav__link">
+        Plan de Realización de la App heurística:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#con-inotifywait" class="md-nav__link">
+    Con inotifywait
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#con-systemmd-y-una-unidad-de-ruta" class="md-nav__link">
+    Con systemmd y Una unidad de ruta:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#con-entr" class="md-nav__link">
+    Con entr
+  </a>
+  
+    <nav class="md-nav" aria-label="Con entr">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-usar-entr" class="md-nav__link">
+    ¿Cómo usar entr?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entr-ejemplos" class="md-nav__link">
+    entr Ejemplos:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilizar-entr-con-git" class="md-nav__link">
+    Utilizar entr con git
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entr-pagina-man-page" class="md-nav__link">
+    entr pagina man  page
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codigo-simple" class="md-nav__link">
+    Código simple:
+  </a>
+  
+    <nav class="md-nav" aria-label="Código simple:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-1-con-whatch" class="md-nav__link">
+    Ejemplo 1 con Whatch.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-2-con-un-ciclo-y-stat" class="md-nav__link">
+    Ejemplo 2 con un Ciclo y stat.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+<h1 id="bash-notificar-cambios-cuando-cambia-un-archivo">Bash notificar cambios  cuando cambia un archivo.<a class="headerlink" href="#bash-notificar-cambios-cuando-cambia-un-archivo" title="Permanent link">&para;</a></h1>
+<h2 id="con-inotifywait">Con inotifywait<a class="headerlink" href="#con-inotifywait" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="k">while</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="s2">&quot;true&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;true&quot;</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">        </span>inotifywait<span class="w"> </span>-q<span class="w"> </span>-e<span class="w"> </span>close_write<span class="w"> </span>ruta_archivo<span class="w"> </span><span class="p">|</span>
+<span class="w">        </span><span class="k">while</span><span class="w"> </span><span class="nb">read</span><span class="w"> </span>-r<span class="w"> </span>filename<span class="w"> </span>event<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">                </span>comandos_a_ejecutar<span class="w">   </span>
+<span class="w">        </span><span class="k">done</span><span class="w">  </span>
+<span class="k">done</span>
+</code></pre></div>
+<h2 id="con-systemmd-y-una-unidad-de-ruta">Con systemmd y Una unidad de ruta:<a class="headerlink" href="#con-systemmd-y-una-unidad-de-ruta" title="Permanent link">&para;</a></h2>
+<p><strong>Fuente:</strong>  <a href="https://www.freedesktop.org/software/systemd/man/systemd.path.html">https://www.freedesktop.org/software/systemd/man/systemd.path.html</a></p>
+<p><strong>Fuente:</strong>  <a href="https://www.putorius.net/systemd-path-units.html">Configurar unidad de ruta: https://www.putorius.net/systemd-path-units.html</a></p>
+<p><strong>Fuente:</strong>  <a href="https://www.digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files"> entender las unidades de sistema: https://www.digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files</a></p>
+<h2 id="con-entr">Con entr<a class="headerlink" href="#con-entr" title="Permanent link">&para;</a></h2>
+<p><strong>Fuente:</strong>  <a href="https://man.archlinux.org/man/community/entr/entr.1.en">Man: https://man.archlinux.org/man/community/entr/entr.1.en</a></p>
+<p><strong>Fuente:</strong>  <a href=""></a></p>
+<div class="highlight"><pre><span></span><code>Instalar:
+<span class="w"> </span>-<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>entr
+</code></pre></div>
+<h3 id="como-usar-entr">¿Cómo usar entr?<a class="headerlink" href="#como-usar-entr" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>*<span class="w"> </span>Si<span class="w"> </span>tiene<span class="w"> </span>un<span class="w"> </span>example.txtarchivo<span class="w"> </span>y<span class="w"> </span>desea<span class="w"> </span>monitorearlo<span class="w"> </span>y<span class="w"> </span>ejecutar<span class="w"> </span>un<span class="w"> </span>comando<span class="w"> </span>cada<span class="w"> </span>vez<span class="w"> </span>que<span class="w"> </span>se<span class="w"> </span>cambia:
+<span class="w">        </span>-ls<span class="w"> </span>example.txt<span class="w"> </span><span class="p">|</span><span class="w"> </span>entr<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;watching...&quot;</span>
+
+*<span class="w"> </span>Otro<span class="w"> </span>uso<span class="w"> </span>básico<span class="w"> </span>es<span class="w"> </span>que<span class="w"> </span>primero<span class="w"> </span>defina<span class="w"> </span>su<span class="w"> </span>script<span class="w"> </span>bash<span class="w"> </span>y<span class="w"> </span>lo<span class="w"> </span>haga<span class="w"> </span>ejecutable,<span class="w"> </span>luego<span class="w"> </span>ejecute<span class="w"> </span>este<span class="w"> </span>comando.
+<span class="w">        </span>-<span class="w"> </span>find<span class="w"> </span>.<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span><span class="p">|</span><span class="w"> </span>entr<span class="w"> </span><span class="s2">&quot;./run.sh&quot;</span>
+
+<span class="w">        </span>find<span class="w"> </span>.<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>devuelve<span class="w"> </span>una<span class="w"> </span>lista<span class="w"> </span>de<span class="w"> </span>archivos<span class="w"> </span>dentro<span class="w"> </span>del<span class="w"> </span>directorio<span class="w"> </span>actual<span class="w"> </span>de<span class="w"> </span>forma<span class="w"> </span>recursiva.
+<span class="w">        </span>El<span class="w"> </span>resultado<span class="w"> </span>se<span class="w"> </span>canaliza<span class="w"> </span>luego<span class="w"> </span>al<span class="w"> </span>entr<span class="w"> </span>comando,<span class="w"> </span>ejecutando<span class="w"> </span>el<span class="w"> </span>script<span class="w"> </span>run.sh.
+
+*<span class="w"> </span>Usos<span class="w"> </span>Varios:
+<span class="w">        </span>-<span class="w"> </span>ls<span class="w"> </span>-d<span class="w"> </span>*<span class="w"> </span><span class="p">|</span><span class="w"> </span>entr<span class="w"> </span>sh<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;make &amp;&amp; make test&#39;</span>
+<span class="w">        </span>-<span class="w"> </span>ls<span class="w"> </span>*.css<span class="w"> </span>*.html<span class="w"> </span><span class="p">|</span><span class="w"> </span>entr<span class="w"> </span>reload-browser<span class="w"> </span>Firefox
+<span class="w">        </span>-<span class="w"> </span><span class="nb">echo</span><span class="w"> </span>file.txt<span class="w"> </span><span class="p">|</span><span class="w"> </span>entr<span class="w"> </span><span class="nb">echo</span><span class="w"> </span>Changed!
+
+*<span class="w"> </span>Para<span class="w"> </span>el<span class="w"> </span>uso<span class="w"> </span>de<span class="w"> </span>directorios<span class="w"> </span>-d,<span class="w"> </span>pero<span class="w"> </span>debe<span class="w"> </span>usarlo<span class="w"> </span>en<span class="w"> </span>el<span class="w"> </span>ciclo,<span class="w"> </span>por<span class="w"> </span>ejemplo:
+<span class="w">        </span>-<span class="w"> </span><span class="k">while</span><span class="w"> </span>true<span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>find<span class="w"> </span>path/<span class="w"> </span><span class="p">|</span><span class="w"> </span>entr<span class="w"> </span>-d<span class="w"> </span><span class="nb">echo</span><span class="w"> </span>Changed<span class="p">;</span><span class="w"> </span><span class="k">done</span>
+<span class="w">        </span>ó:
+<span class="w">        </span>-<span class="w"> </span><span class="k">while</span><span class="w"> </span>true<span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>ls<span class="w"> </span>path/*<span class="w"> </span><span class="p">|</span><span class="w"> </span>entr<span class="w"> </span>-pd<span class="w"> </span><span class="nb">echo</span><span class="w"> </span>Changed<span class="p">;</span><span class="w"> </span><span class="k">done</span>
+
+*<span class="w"> </span>Otra<span class="w"> </span>forma:
+<span class="w">        </span>-<span class="w"> </span><span class="c1">#!/bin/bash</span>
+<span class="w">        </span>-<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>entr<span class="w"> </span>/usr/local/bin/do_stuff<span class="w"> </span>&lt;<span class="w"> </span>&lt;<span class="o">(</span><span class="nb">echo</span><span class="w"> </span>/path/to/file<span class="o">)</span>
+
+*<span class="w"> </span>Correr<span class="w"> </span>en<span class="w"> </span>otro<span class="w">  </span>lenguaje:
+<span class="w">        </span>-<span class="w"> </span>ls<span class="w"> </span>hello_world.rb<span class="w"> </span><span class="p">|</span><span class="w"> </span>entr<span class="w"> </span>-r<span class="w"> </span>ruby<span class="w"> </span>hello_world.rb
+
+<span class="w">        </span>Cuando<span class="w"> </span>cambia<span class="w"> </span>hello_word.rb<span class="w"> </span>ejecuta<span class="w"> </span>ruby<span class="w"> </span>hello_world.rb
+</code></pre></div>
+<h3 id="entr-ejemplos">entr Ejemplos:<a class="headerlink" href="#entr-ejemplos" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Reconstruya<span class="w"> </span>un<span class="w"> </span>proyecto<span class="w"> </span>si<span class="w"> </span>los<span class="w"> </span>archivos<span class="w"> </span>de<span class="w"> </span>origen<span class="w"> </span>cambian,<span class="w"> </span>limitando<span class="w"> </span>la<span class="w"> </span>salida<span class="w"> </span>a<span class="w"> </span>las<span class="w"> </span>primeras<span class="w"> </span><span class="m">20</span><span class="w"> </span>líneas:
+-<span class="w"> </span>find<span class="w"> </span>src/<span class="w"> </span><span class="p">|</span><span class="w"> </span>entr<span class="w"> </span>-s<span class="w"> </span><span class="s1">&#39;make | head -n 20&#39;</span>
+
+Inicie<span class="w"> </span>y<span class="w"> </span>vuelva<span class="w"> </span>a<span class="w"> </span>cargar<span class="w"> </span>automáticamente<span class="w"> </span>un<span class="w"> </span>servidor<span class="w"> </span>node.js:
+<span class="w">        </span>-<span class="w"> </span>ls<span class="w"> </span>*.js<span class="w"> </span><span class="p">|</span><span class="w"> </span>entr<span class="w"> </span>-r<span class="w"> </span>node<span class="w"> </span>app.js
+
+Borre<span class="w"> </span>la<span class="w"> </span>pantalla<span class="w"> </span>y<span class="w"> </span>ejecute<span class="w"> </span>una<span class="w"> </span>consulta<span class="w"> </span>después<span class="w"> </span>de<span class="w"> </span>que<span class="w"> </span>se<span class="w"> </span>actualice<span class="w"> </span>el<span class="w"> </span>script<span class="w"> </span>SQL:
+<span class="w">        </span>-<span class="w"> </span><span class="nb">echo</span><span class="w"> </span>my.sql<span class="w"> </span><span class="p">|</span><span class="w"> </span>entr<span class="w"> </span>-cp<span class="w"> </span>psql<span class="w"> </span>-f<span class="w"> </span>/_
+
+Reconstruya<span class="w"> </span>el<span class="w"> </span>proyecto<span class="w"> </span>si<span class="w"> </span>se<span class="w"> </span>modifica<span class="w"> </span>o<span class="w"> </span>agrega<span class="w"> </span>un<span class="w"> </span>archivo<span class="w"> </span>fuente<span class="w"> </span>al<span class="w"> </span>directorio<span class="w"> </span>src/:
+<span class="w">        </span>-<span class="w"> </span><span class="k">while</span><span class="w"> </span>sleep<span class="w"> </span><span class="m">0</span>.1<span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>ls<span class="w"> </span>src/*.rb<span class="w"> </span><span class="p">|</span><span class="w"> </span>entr<span class="w"> </span>-d<span class="w"> </span>make<span class="p">;</span><span class="w"> </span><span class="k">done</span>
+
+Recargar<span class="w"> </span>automáticamente<span class="w"> </span>un<span class="w"> </span>servidor<span class="w"> </span>web<span class="w"> </span>o<span class="w"> </span>terminar<span class="w"> </span>si<span class="w"> </span>el<span class="w"> </span>servidor<span class="w"> </span>sale
+<span class="w">        </span>-<span class="w"> </span>ls<span class="w"> </span>*<span class="w"> </span><span class="p">|</span><span class="w"> </span>entr<span class="w"> </span>-rz<span class="w"> </span>./httpd
+</code></pre></div>
+<h3 id="utilizar-entr-con-git">Utilizar entr con git<a class="headerlink" href="#utilizar-entr-con-git" title="Permanent link">&para;</a></h3>
+<p><strong>Fuente</strong>: <a href="https://jvns.ca/blog/2020/06/28/entr/">https://jvns.ca/blog/2020/06/28/entr/</a></p>
+<h3 id="entr-pagina-man-page">entr pagina man  page<a class="headerlink" href="#entr-pagina-man-page" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>NAME
+entr<span class="w"> </span>-<span class="w"> </span>run<span class="w"> </span>arbitrary<span class="w"> </span>commands<span class="w"> </span>when<span class="w"> </span>files<span class="w"> </span>change
+SYNOPSIS
+<span class="o">[</span>-cdpr<span class="w"> </span><span class="o">]</span><span class="w"> </span>utility<span class="w"> </span><span class="o">[</span>argument<span class="w"> </span>...<span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">[</span>/_<span class="w"> </span><span class="o">]</span>
+DESCRIPTION
+A<span class="w"> </span>list<span class="w"> </span>of<span class="w"> </span>files<span class="w"> </span>provided<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span>standard<span class="w"> </span>input<span class="w"> </span>and<span class="w"> </span>the<span class="w"> </span>utility<span class="w"> </span>is<span class="w"> </span>executed<span class="w"> </span>using<span class="w"> </span>the<span class="w"> </span>supplied<span class="w"> </span>arguments<span class="w"> </span><span class="k">if</span><span class="w"> </span>any<span class="w"> </span>of<span class="w"> </span>them<span class="w"> </span>change.<span class="w"> </span>waits<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>child<span class="w"> </span>process<span class="w"> </span>to<span class="w"> </span>finish<span class="w"> </span>before<span class="w"> </span>responding<span class="w"> </span>to<span class="w"> </span>subsequent<span class="w"> </span>file<span class="w"> </span>system<span class="w"> </span>events.<span class="w"> </span>A<span class="w"> </span>TTY<span class="w"> </span>is<span class="w"> </span>also<span class="w"> </span>opened<span class="w"> </span>before<span class="w"> </span>entering<span class="w"> </span>the<span class="w"> </span>watch<span class="w"> </span>loop<span class="w"> </span><span class="k">in</span><span class="w"> </span>order<span class="w"> </span>to<span class="w"> </span>support<span class="w"> </span>interactive<span class="w"> </span>utilities.
+
+The<span class="w"> </span>arguments<span class="w"> </span>are<span class="w"> </span>as<span class="w"> </span>follows:
+
+-c
+Execute<span class="w"> </span>/usr/bin/clear<span class="w"> </span>before<span class="w"> </span>invoking<span class="w"> </span>the<span class="w"> </span>utility<span class="w"> </span>specified<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span><span class="nb">command</span><span class="w"> </span>line.
+-d
+Track<span class="w"> </span>the<span class="w"> </span>directories<span class="w"> </span>of<span class="w"> </span>regular<span class="w"> </span>files<span class="w"> </span>provided<span class="w"> </span>as<span class="w"> </span>input<span class="w"> </span>and<span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="k">if</span><span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>file<span class="w"> </span>is<span class="w"> </span>added.<span class="w"> </span>This<span class="w"> </span>option<span class="w"> </span>also<span class="w"> </span>enables<span class="w"> </span>directories<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </span>specified<span class="w"> </span>explicitly.<span class="w"> </span>Files<span class="w"> </span>with<span class="w"> </span>names<span class="w"> </span>beginning<span class="w"> </span>with<span class="w"> </span><span class="sb">`</span>.<span class="s1">&#39; are ignored.</span>
+<span class="s1">-p</span>
+<span class="s1">Postpone the first execution of the utility until a file is modified.</span>
+<span class="s1">-r</span>
+<span class="s1">Reload a persistent child process. SIGTERM is used to terminate the utility before it is restarted. A process group is created to prevent shell scripts from masking signals. waits for the utility to exit to ensure that resources such as sockets have been closed.</span>
+<span class="s1">The first occurrence of /_ on the command line will be replaced with the absolute path of the first file that was modified. If the restart option is used the first file under watch is treated as the default.</span>
+
+<span class="s1">ENVIRONMENT</span>
+<span class="s1">If PAGER is undefined, entr will assign /bin/cat to prevent interactive utilities from waiting for keyboard input if output does not fit on the screen.</span>
+<span class="s1">EXIT STATUS</span>
+<span class="s1">The utility exits with one of the following values:</span>
+<span class="s1">0</span>
+<span class="s1">SIGINT or SIGTERM was received</span>
+<span class="s1">1</span>
+<span class="s1">No regular files were provided as input or an error occurred</span>
+<span class="s1">2</span>
+<span class="s1">A file was added to a directory and the directory watch option was specified</span>
+
+<span class="s1">EXAMPLES</span>
+<span class="s1">Rebuild a project if source files change, limiting output to the first 20 lines:</span>
+<span class="s1">$ find src/ | entr sh -c &#39;</span>make<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-n<span class="w"> </span><span class="m">20</span><span class="err">&#39;</span>
+Launch<span class="w"> </span>and<span class="w"> </span>auto-reload<span class="w"> </span>a<span class="w"> </span>node.js<span class="w"> </span>server:
+
+$<span class="w"> </span>ls<span class="w"> </span>*.js<span class="w"> </span><span class="p">|</span><span class="w"> </span>entr<span class="w"> </span>-r<span class="w"> </span>node<span class="w"> </span>app.js
+Clear<span class="w"> </span>the<span class="w"> </span>screen<span class="w"> </span>and<span class="w"> </span>run<span class="w"> </span>a<span class="w"> </span>query<span class="w"> </span>after<span class="w"> </span>the<span class="w"> </span>SQL<span class="w"> </span>script<span class="w"> </span>is<span class="w"> </span>updated:
+
+$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span>my.sql<span class="w"> </span><span class="p">|</span><span class="w"> </span>entr<span class="w"> </span>-p<span class="w"> </span>psql<span class="w"> </span>-f<span class="w"> </span>/_
+Rebuild<span class="w"> </span>project<span class="w"> </span><span class="k">if</span><span class="w"> </span>a<span class="w"> </span><span class="nb">source</span><span class="w"> </span>file<span class="w"> </span>is<span class="w"> </span>modified<span class="w"> </span>or<span class="w"> </span>added<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>src/<span class="w"> </span>directory:
+
+$<span class="w"> </span><span class="k">while</span><span class="w"> </span>true<span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>ls<span class="w"> </span>src/*.rb<span class="w"> </span><span class="p">|</span><span class="w"> </span>entr<span class="w"> </span>-d<span class="w"> </span>make<span class="p">;</span><span class="w"> </span><span class="k">done</span>
+</code></pre></div>
+<h2 id="codigo-simple">Código simple:<a class="headerlink" href="#codigo-simple" title="Permanent link">&para;</a></h2>
+<h3 id="ejemplo-1-con-whatch">Ejemplo 1 con Whatch.<a class="headerlink" href="#ejemplo-1-con-whatch" title="Permanent link">&para;</a></h3>
+<p><strong>Fuente:</strong> <a href="https://superuser.com/questions/624709/linux-execute-given-command-when-file-directory-changes">https://superuser.com/questions/624709/linux-execute-given-command-when-file-directory-changes</a></p>
+<p>Eso verifica cada cambio de archivo dentro de ese directorio.</p>
+<p>Pequeña explicación: watch -gsale con el código de estado 0 cuando encuentra un cambio en la salida del comando. Cuando sale, ejecuta los siguientes comandos vinculados con expresiones de shell condicionales (pueden ser tantos como desee). Luego simplemente repites eso para siempre hasta que golpeas Control-C(para eso está trap exit SIGQUIT SIGINT).</p>
+<p>Por supuesto, le gustaría modificar un poco este script, como -n2el intervalo de tiempo para las actualizaciones. Cuanto más lo actualice, más recursos gastará.</p>
+<p>Para archivos individuales, recomendaría usar el ls -l --time-format=+%s /path/to/file /path/to/another_filecomando, ya que verifica las fechas de modificación e incluso los cambios de permisos y propiedad.</p>
+<p>Seguramente existe un método mejor y más optimizado para hacer esto, pero este enfoque funciona y definitivamente consume menos recursos que Guard. Ahora, todo depende de la escalabilidad. Si va a enumerar recursivamente todos los archivos con todos sus atributos cada milisegundo, seguramente consumirá más, pero definitivamente no necesita eso. Simplemente establezca un intervalo más grande, digamos 2 segundos como el anterior, tal vez 10 o 30 si su proyecto no cambia tanto y no le importa esperar un tiempo para que se active el comando. Y en mi opinión, este enfoque es bastante bonito y sencillo.</p>
+<h3 id="ejemplo-2-con-un-ciclo-y-stat">Ejemplo 2 con un Ciclo y stat.<a class="headerlink" href="#ejemplo-2-con-un-ciclo-y-stat" title="Permanent link">&para;</a></h3>
+<p><strong>Fuente:</strong> <a href="https://superuser.com/questions/181517/how-to-execute-a-command-whenever-a-file-changes">https://superuser.com/questions/181517/how-to-execute-a-command-whenever-a-file-changes</a></p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+
+<span class="c1">### Set initial time of file</span>
+<span class="nv">LTIME</span><span class="o">=</span><span class="sb">`</span>stat<span class="w"> </span>-c<span class="w"> </span>%Z<span class="w"> </span>/path/to/the/file.txt<span class="sb">`</span>
+
+<span class="k">while</span><span class="w"> </span><span class="nb">true</span><span class="w">    </span>
+<span class="k">do</span>
+<span class="w">   </span><span class="nv">ATIME</span><span class="o">=</span><span class="sb">`</span>stat<span class="w"> </span>-c<span class="w"> </span>%Z<span class="w"> </span>/path/to/the/file.txt<span class="sb">`</span>
+
+<span class="w">   </span><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$ATIME</span><span class="s2">&quot;</span><span class="w"> </span>!<span class="o">=</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$LTIME</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]]</span>
+<span class="w">   </span><span class="k">then</span><span class="w">    </span>
+<span class="w">       </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;RUN COMMAND&quot;</span>
+<span class="w">       </span><span class="nv">LTIME</span><span class="o">=</span><span class="nv">$ATIME</span>
+<span class="w">   </span><span class="k">fi</span>
+<span class="w">   </span>sleep<span class="w"> </span><span class="m">5</span>
+<span class="k">done</span>
+</code></pre></div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../../matrices/interfaces/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Interfaces:" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Anterior
+                </span>
+                Interfaces:
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../../../programas/heuristic/Leeme/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Tron Heurística Diseño del Programa." rel="next">
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Siguiente
+                </span>
+                Tron Heurística Diseño del Programa.
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2018 - 2023 TRON-Doc Elías Hung.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["search.suggest", "search.highlight", "search.share", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.footer"], "search": "../../../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+      
+    
+  </body>
+</html>

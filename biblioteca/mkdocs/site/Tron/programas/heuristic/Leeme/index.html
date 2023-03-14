@@ -1,0 +1,1888 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Descripción del Programa.">
+      
+      
+      
+      
+        <link rel="prev" href="../../../1-LEGOS/Bash/notificar%20cambios%20archivos/notificar-cambios/">
+      
+      
+        <link rel="next" href="../ejemplos/ejemplo-python/">
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
+    
+    
+      
+        <title>Tron Heurística Diseño del Programa. - Biblioteca General</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ffa9267a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#diseno-del-programa-de-heuristica" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../../.." title="Biblioteca General" class="md-header__button md-logo" aria-label="Biblioteca General" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Biblioteca General
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tron Heurística Diseño del Programa.
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../.." class="md-tabs__link">
+      Welcome to MkDocs
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../../tags/" class="md-tabs__link">
+      Tags
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../" class="md-tabs__link md-tabs__link--active">
+        Tron
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Biblioteca General" class="md-nav__button md-logo" aria-label="Biblioteca General" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Biblioteca General
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        Welcome to MkDocs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../tags/" class="md-nav__link">
+        Tags
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Tron
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Tron
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        tron
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          1 LEGOS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          1 LEGOS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
+          0 ORGANIZACION
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          0 ORGANIZACION
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1-LEGOS/0-ORGANIZACION/TODO/" class="md-nav__link">
+        TODO:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
+          Bash
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Bash
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2_1" id="__nav_3_2_2_1_label" tabindex="0">
+          Interfaces bash
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Interfaces bash
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1-LEGOS/Bash/interfaces-bash/easy/" class="md-nav__link">
+        EasyBashGUI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1-LEGOS/Bash/interfaces-bash/gtkdialog/" class="md-nav__link">
+        gtkdialog:
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1-LEGOS/Bash/interfaces-bash/interfaces/" class="md-nav__link">
+        Interfaces:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2_2" id="__nav_3_2_2_2_label" tabindex="0">
+          Matrices
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Matrices
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1-LEGOS/Bash/matrices/MatricesAsociativas/" class="md-nav__link">
+        Bash Matrices Vectores Array Arrays asociativas asociativa menu y menús
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1-LEGOS/Bash/matrices/easy/" class="md-nav__link">
+        EasyBashGUI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1-LEGOS/Bash/matrices/interfaces/" class="md-nav__link">
+        Interfaces:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2_3" id="__nav_3_2_2_3_label" tabindex="0">
+          Notificar cambios archivos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Notificar cambios archivos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1-LEGOS/Bash/notificar%20cambios%20archivos/notificar-cambios/" class="md-nav__link">
+        Bash notificar cambios  cuando cambia un archivo.
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          Programas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Programas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
+          Heuristic
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Heuristic
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Tron Heurística Diseño del Programa.
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Tron Heurística Diseño del Programa.
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#disponible-aqui" class="md-nav__link">
+    Disponible aquí
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ayudantes" class="md-nav__link">
+    Ayudantes:
+  </a>
+  
+    <nav class="md-nav" aria-label="Ayudantes:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pydoc-shdoc-mkdocs" class="md-nav__link">
+    pydoc shdoc mkdocs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-de-carpetas" class="md-nav__link">
+    Estructura de Carpetas
+  </a>
+  
+    <nav class="md-nav" aria-label="Estructura de Carpetas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#posicion-de-carpetas" class="md-nav__link">
+    Posición de Carpetas:
+  </a>
+  
+    <nav class="md-nav" aria-label="Posición de Carpetas:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-lista-de-caracteristicas-de-las-herramientas" class="md-nav__link">
+    2. Lista de Características de las herramientas.
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Lista de Características de las herramientas.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pydoc" class="md-nav__link">
+    Pydoc:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shdoc" class="md-nav__link">
+    shdoc:
+  </a>
+  
+    <nav class="md-nav" aria-label="shdoc:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pydoc_1" class="md-nav__link">
+    pydoc:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shdoc_1" class="md-nav__link">
+    shdoc:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs" class="md-nav__link">
+    Mkdocs:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metadatos-de-estilo-yaml" class="md-nav__link">
+    Metadatos de estilo YAML:
+  </a>
+  
+    <nav class="md-nav" aria-label="Metadatos de estilo YAML:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs-material-desing" class="md-nav__link">
+    Mkdocs-Material Desing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentacion" class="md-nav__link">
+    Documentación:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metadatos" class="md-nav__link">
+    Metadatos
+  </a>
+  
+    <nav class="md-nav" aria-label="Metadatos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vincular-secciones" class="md-nav__link">
+    vincular secciones
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agregar-etiquetas" class="md-nav__link">
+    Agregar Etiquetas:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alinear-imagenes" class="md-nav__link">
+    Alinear Imágenes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-colocar-el-sitio-offline" class="md-nav__link">
+    Para Colocar el sitio  Offline:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-que-necesito-en-cada-situacion-para-que-la-informacion-este-rapidamente-accesible" class="md-nav__link">
+    3. ¿Qué necesito en cada situación para que la información esté rápidamente accesible?
+  </a>
+  
+    <nav class="md-nav" aria-label="3. ¿Qué necesito en cada situación para que la información esté rápidamente accesible?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entradas-de-informacion" class="md-nav__link">
+    Entradas de Información:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1_2" id="__nav_3_3_1_2_label" tabindex="0">
+          Ejemplos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_3_1_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          Ejemplos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ejemplos/ejemplo-python/" class="md-nav__link">
+        Ejemplo de Documentación Python
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1_3" id="__nav_3_3_1_3_label" tabindex="0">
+          Manuales
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_3_1_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          Manuales
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manuales/ag/" class="md-nav__link">
+        Manual del Buscador de Plata
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manuales/shdoc/" class="md-nav__link">
+        shdoc
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1_4" id="__nav_3_3_1_4_label" tabindex="0">
+          Pendiente
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_3_1_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          Pendiente
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pendiente/pendiente/" class="md-nav__link">
+        Pendiente
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1_5" id="__nav_3_3_1_5_label" tabindex="0">
+          Proyecto
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_3_1_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          Proyecto
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../proyecto/fase1/" class="md-nav__link">
+        Plan de Realización de la App heurística:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#disponible-aqui" class="md-nav__link">
+    Disponible aquí
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ayudantes" class="md-nav__link">
+    Ayudantes:
+  </a>
+  
+    <nav class="md-nav" aria-label="Ayudantes:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pydoc-shdoc-mkdocs" class="md-nav__link">
+    pydoc shdoc mkdocs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-de-carpetas" class="md-nav__link">
+    Estructura de Carpetas
+  </a>
+  
+    <nav class="md-nav" aria-label="Estructura de Carpetas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#posicion-de-carpetas" class="md-nav__link">
+    Posición de Carpetas:
+  </a>
+  
+    <nav class="md-nav" aria-label="Posición de Carpetas:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-lista-de-caracteristicas-de-las-herramientas" class="md-nav__link">
+    2. Lista de Características de las herramientas.
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Lista de Características de las herramientas.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pydoc" class="md-nav__link">
+    Pydoc:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shdoc" class="md-nav__link">
+    shdoc:
+  </a>
+  
+    <nav class="md-nav" aria-label="shdoc:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pydoc_1" class="md-nav__link">
+    pydoc:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shdoc_1" class="md-nav__link">
+    shdoc:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs" class="md-nav__link">
+    Mkdocs:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metadatos-de-estilo-yaml" class="md-nav__link">
+    Metadatos de estilo YAML:
+  </a>
+  
+    <nav class="md-nav" aria-label="Metadatos de estilo YAML:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs-material-desing" class="md-nav__link">
+    Mkdocs-Material Desing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentacion" class="md-nav__link">
+    Documentación:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metadatos" class="md-nav__link">
+    Metadatos
+  </a>
+  
+    <nav class="md-nav" aria-label="Metadatos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vincular-secciones" class="md-nav__link">
+    vincular secciones
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agregar-etiquetas" class="md-nav__link">
+    Agregar Etiquetas:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alinear-imagenes" class="md-nav__link">
+    Alinear Imágenes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-colocar-el-sitio-offline" class="md-nav__link">
+    Para Colocar el sitio  Offline:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-que-necesito-en-cada-situacion-para-que-la-informacion-este-rapidamente-accesible" class="md-nav__link">
+    3. ¿Qué necesito en cada situación para que la información esté rápidamente accesible?
+  </a>
+  
+    <nav class="md-nav" aria-label="3. ¿Qué necesito en cada situación para que la información esté rápidamente accesible?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entradas-de-informacion" class="md-nav__link">
+    Entradas de Información:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+<h1 id="diseno-del-programa-de-heuristica">Diseño del programa de heurística:<a class="headerlink" href="#diseno-del-programa-de-heuristica" title="Permanent link">&para;</a></h1>
+<h5 id="disponible-aqui"><a href="file:///home/daniel/tron/programas/heuristic/Leeme.md">Disponible aquí</a><a class="headerlink" href="#disponible-aqui" title="Permanent link">&para;</a></h5>
+<h2 id="ayudantes">Ayudantes:<a class="headerlink" href="#ayudantes" title="Permanent link">&para;</a></h2>
+<h3 id="pydoc-shdoc-mkdocs">pydoc shdoc mkdocs<a class="headerlink" href="#pydoc-shdoc-mkdocs" title="Permanent link">&para;</a></h3>
+<p><a href="../manuales/shdoc/">ver documentación shdoc</a> </p>
+<h2 id="estructura-de-carpetas">Estructura de Carpetas<a class="headerlink" href="#estructura-de-carpetas" title="Permanent link">&para;</a></h2>
+<p>1.La forma más eficiente de realizar una documentación, para ti mismo como programador he investigador es en el mismo instante en que programas o investigas, como usuario es diferente porque los manuales te llevan paso a paso por las características principales de uso, pero no son útiles para el hack.</p>
+<blockquote>
+<p>Hack en este contexto es modificar los programas para que se adapten a tus necesidades, es decir programar con lo que ya has hecho o con lo que otro ha creado.</p>
+</blockquote>
+<h3 id="posicion-de-carpetas">Posición de Carpetas:<a class="headerlink" href="#posicion-de-carpetas" title="Permanent link">&para;</a></h3>
+<p>Las carpetas de ayuda de cada programa pueden estar en un lugar central en un servidor web, pero cuando se programa,  la ayuda se coloca dentro del código, entonces: <strong><em>1. ¿Cómo ubicamos físicamente la ayuda?</em></strong> para responder esta pregunta hay que saber: <strong><em>2. ¿Cuál es la lista de características relacionadas de las herramientas encontradas?</em></strong> , herramientas como mkdocs, pydoc...  con estas ventajas y la necesidad:( <strong><em>3. ¿Qué necesito en cada situación para que la información esté rápidamente accesible?)</em></strong> ; se toma una decisión de ubicación de archivos de ayuda.</p>
+<h4 id="2-lista-de-caracteristicas-de-las-herramientas">2. Lista de Características de las herramientas.<a class="headerlink" href="#2-lista-de-caracteristicas-de-las-herramientas" title="Permanent link">&para;</a></h4>
+<h5 id="pydoc">Pydoc:<a class="headerlink" href="#pydoc" title="Permanent link">&para;</a></h5>
+<p><div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-m<span class="w"> </span>pydoc<span class="w"> </span>-w<span class="w"> </span>programa.py
+</code></pre></div>
+Es el comando utilizado para generar html en la carpeta del .py entonces <strong>hay que configurar una plantilla snippet</strong> en cada editor de código (code y micro) para que contenga el encabezado estándar del programa a documentar este es un ejemplo de plantilla:</p>
+<p><div class="highlight"><pre><span></span><code><span class="sd">&quot;&quot;&quot;Título del módulo o del Programa</span>
+
+<span class="sd">Funcionalidad del programa, entradas y salidas del programa.</span>
+
+<span class="sd">Descripción de dependencias si las tiene</span>
+
+<span class="sd">Funciones si se importa como módulo:</span>
+<span class="sd">(también pueden ser funciones a secas)</span>
+
+<span class="sd">    * get_spreadsheet_cols - devuelve los encabezados de columna del archivo</span>
+<span class="sd">    * main - la función principal del script</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="p">(</span><span class="n">acá</span> <span class="n">el</span> <span class="n">programa</span><span class="p">,</span> <span class="n">las</span> <span class="n">importaciones</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">definiendo</span> <span class="n">la</span> <span class="n">primera</span> <span class="n">clase</span><span class="p">(</span><span class="n">Parámetros</span><span class="p">):</span>
+
+<span class="sd">&quot;&quot;&quot;Que hace la clase...</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    Parametros : clase o tipo</span>
+
+<span class="sd">        Descripción del parámetro...</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    list</span>
+<span class="sd">        Descripción de la salida o retorno</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+
+<span class="n">definiciones</span> <span class="k">del</span> <span class="n">main</span><span class="o">...</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+ <a href="../ejemplos/ejemplo-python/">clic aquí para ver el ejemplo completo</a></p>
+<h5 id="shdoc">shdoc:<a class="headerlink" href="#shdoc" title="Permanent link">&para;</a></h5>
+<p><a href="pages/shdoc.md">ver documentación shdoc</a></p>
+<div class="highlight"><pre><span></span><code><span class="w"> </span>shdoc<span class="w"> </span>&lt;<span class="w"> </span>mi-shell-script.sh<span class="w"> </span>&gt;<span class="w"> </span>doumento.md
+</code></pre></div>
+<blockquote>
+<p>Con shdoc también hay que configurar una plantilla, para los editores</p>
+</blockquote>
+<p>La plantilla sugerida para shdoc es:
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="c1"># @file libexample</span>
+<span class="c1"># @brief A library that solves some common problems.</span>
+<span class="c1"># @description</span>
+<span class="c1">#     The project solves lots of problems:</span>
+<span class="c1">#      * a</span>
+<span class="c1">#      * b</span>
+<span class="c1">#      * c</span>
+<span class="c1">#      * etc</span>
+
+<span class="c1"># @description My super function.</span>
+<span class="c1"># Not thread-safe.</span>
+<span class="c1">#</span>
+<span class="c1"># @example</span>
+<span class="c1">#    echo &quot;test: $(say-hello World)&quot;</span>
+<span class="c1">#</span>
+<span class="c1"># @arg $1 string A value to print</span>
+<span class="c1">#</span>
+<span class="c1"># @stdout Output &#39;Hello $1&#39;.</span>
+<span class="c1">#   It hopes you say Hello back.</span>
+<span class="c1"># @stderr Output &#39;Oups !&#39; on error.</span>
+<span class="c1">#   It did it again.</span>
+<span class="c1">#</span>
+<span class="c1"># @exitcode 0 If successful.</span>
+<span class="c1"># @exitcode 1 If an empty string passed.</span>
+<span class="c1">#</span>
+<span class="c1"># @see validate()</span>
+<span class="c1"># @see Documentation generated using [shdoc](https://github.com/reconquest/shdoc).</span>
+</code></pre></div></p>
+<h6 id="pydoc_1">pydoc:<a class="headerlink" href="#pydoc_1" title="Permanent link">&para;</a></h6>
+<p>Pydoc se ejecuta con un comando de bash y su salida es un documento html, o una pagina web en un servidor</p>
+<h6 id="shdoc_1">shdoc:<a class="headerlink" href="#shdoc_1" title="Permanent link">&para;</a></h6>
+<p>Se ejecuta como bash también y su salida un documento markdown (.md)</p>
+<h5 id="mkdocs">Mkdocs:<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h5>
+<p>Mkdocs acepta metadatos como éstos para formar los títulos de las páginas</p>
+<h3 id="metadatos-de-estilo-yaml">Metadatos de estilo YAML:<a class="headerlink" href="#metadatos-de-estilo-yaml" title="Permanent link">&para;</a></h3>
+<p>Los metadatos de estilo YAML consisten en pares clave/valor YAML envueltos en delimitadores de estilo YAML para marcar el inicio o el final de los metadatos. La primera línea de un documento debe ser ---. Los metadatos terminan en la primera línea que contiene un delimitador final (ya sea ---o ...). El contenido entre los delimitadores se analiza como YAML .
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">My Document</span>
+<span class="nt">summary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">A brief description of my document.</span>
+<span class="nt">authors</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Waylan Limberg</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Tom Christie</span>
+<span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2018-07-10</span>
+<span class="nt">some_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com</span>
+<span class="nn">---</span>
+<span class="l l-Scalar l-Scalar-Plain">This is the first paragraph of the document.</span>
+</code></pre></div>
+YAML es capaz de detectar tipos de datos. Por lo tanto, en el ejemplo anterior, los valores de titley summaryson some_urlcadenas, el valor de authorses una lista de cadenas y el valor de datees un datetime.dateobjeto. Tenga en cuenta que las claves YAML distinguen entre mayúsculas y minúsculas y MkDocs espera que las claves estén en minúsculas. El nivel superior de YAML debe ser una colección de pares clave/valor, lo que da como resultado que dictse devuelva un Python. Si se devuelve cualquier otro tipo o el analizador YAML encuentra un error, entonces MkDocs no reconoce la sección como metadatos, el metaatributo de la página estará vacío y la sección no se eliminará del documento.</p>
+<h5 id="mkdocs-material-desing"><a href="https://squidfunk.github.io/mkdocs-material">Mkdocs-Material Desing</a><a class="headerlink" href="#mkdocs-material-desing" title="Permanent link">&para;</a></h5>
+<h4 id="documentacion">Documentación:<a class="headerlink" href="#documentacion" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://squidfunk.github.io/mkdocs-material/reference/">Referencia</a></li>
+<li><a href="https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#python-markdown-extensions">Extensiones</a></li>
+</ul>
+<h4 id="metadatos">Metadatos<a class="headerlink" href="#metadatos" title="Permanent link">&para;</a></h4>
+<p>Para este Mkdocs, hay algunos metadatos:
+el siguiente metadato se coloca en la entrada para impulsar su búsqueda:</p>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">search</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">boost</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span><span class="w"> </span>
+<span class="nn">---</span>
+</code></pre></div>
+<h6 id="vincular-secciones">vincular secciones<a class="headerlink" href="#vincular-secciones" title="Permanent link">&para;</a></h6>
+<p>Para vincular una página a una sección, cree un nuevo documento con el nombre index.md en la carpeta respectiva y agréguelo al comienzo de su sección de navegación:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">nav</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Section</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">section/index.md</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Page 1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">section/page-1.md</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">...</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Page n</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">section/page-n.md</span>
+</code></pre></div>
+<h6 id="agregar-etiquetas">Agregar Etiquetas:<a class="headerlink" href="#agregar-etiquetas" title="Permanent link">&para;</a></h6>
+<p>Cuando el complemento de etiquetas incorporado está habilitado, se pueden agregar etiquetas para un documento con la tagspropiedad de materia preliminar. Agregue las siguientes líneas en la parte superior de un archivo Markdown:</p>
+<p><div class="highlight"><pre><span></span><code><span class="nn">---</span><span class="w"> </span>
+
+<span class="nt">tags</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HTML5</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">JavaScript</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CSS</span>
+
+<span class="nn">---</span>
+</code></pre></div>
+La página ahora se representará con esas etiquetas sobre el título principal y dentro de la vista previa de búsqueda, que ahora permite encontrar páginas por etiquetas .</p>
+<p>¿Cómo establecer etiquetas para una carpeta completa?
+Agregar un índice de etiquetas¶
+El complemento de etiquetas incorporado permite definir un archivo para representar un índice de etiquetas , que puede ser cualquier página que forme parte de la navsección. Para agregar un índice de etiquetas, cree una página, por ejemplo tags.md:</p>
+<p><div class="highlight"><pre><span></span><code><span class="gh"># Tags</span>
+
+Following is a list of relevant tags:
+
+[TAGS]
+</code></pre></div>
+El [TAGS]marcador especifica la posición del índice de etiquetas, es decir, se reemplaza con el índice de etiquetas real cuando se representa la página. Puede incluir contenido arbitrario antes y después del marcador:</p>
+<p># recordar agregar:</p>
+<p>tags.md</p>
+<h5 id="alinear-imagenes">Alinear Imágenes<a class="headerlink" href="#alinear-imagenes" title="Permanent link">&para;</a></h5>
+<p><a href="https://squidfunk.github.io/mkdocs-material/reference/images/#image-captions">Click aquí para ver como Alinear Imagenes</a></p>
+<h5 id="para-colocar-el-sitio-offline">Para Colocar el sitio  Offline:<a class="headerlink" href="#para-colocar-el-sitio-offline" title="Permanent link">&para;</a></h5>
+<p>En la configuración YAML:</p>
+<div class="highlight"><pre><span></span><code><span class="w"> </span><span class="nt">plugins</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">offline</span>
+</code></pre></div>
+<blockquote>
+<p>creo que la ubicación física en el disco se puede guardar como metadato..?</p>
+</blockquote>
+<h4 id="3-que-necesito-en-cada-situacion-para-que-la-informacion-este-rapidamente-accesible">3. ¿Qué necesito en cada situación para que la información esté rápidamente accesible?<a class="headerlink" href="#3-que-necesito-en-cada-situacion-para-que-la-informacion-este-rapidamente-accesible" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>Recordemos que contestaremos las preguntas 2 y 3 para contestar la 1.</p>
+</blockquote>
+<p>Entonces en cuanto al almacenamiento debe haber una sola Solución de Biblioteca, así que vamos a hacer una prueba de mkdocs, esta prueba consiste en ver como ordena todas las entradas de información posibles:</p>
+<p>Resultados para Mkdocs</p>
+<h5 id="entradas-de-informacion">Entradas de Información:<a class="headerlink" href="#entradas-de-informacion" title="Permanent link">&para;</a></h5>
+<ol>
+<li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Video. (De las marcas de los videos)  </li>
+</ul>
+</li>
+<li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Pdf. De las marcas también</li>
+</ul>
+</li>
+<li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Html.</li>
+</ul>
+</li>
+<li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Audio.</li>
+</ul>
+</li>
+<li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Mhtml.(no soporta todos los sitios web y en HTML con monolit)</li>
+</ul>
+</li>
+<li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Imágenes (Capturas de teléfono o Pantalla).</li>
+</ul>
+</li>
+<li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Markdown.</li>
+</ul>
+</li>
+<li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Recortes de código de copiar y pegar</li>
+</ul>
+</li>
+<li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Documentación embebida en el código fuente. </li>
+</ul>
+</li>
+<li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sesiones de Navegador Guardadas (con monolith)</li>
+<li>(vinculando el nombre de carpeta de una
+ sesión a un .md particular para tener soporte de sesiónWeb)</li>
+</ul>
+</li>
+<li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Marcadores de Navegador guardados 
+    Exportando los marcadores a html y Raspando la pagina para sacar los marcadores convenientes 
+    Descargando las webs como documentación.</li>
+</ul>
+</li>
+</ol>
+<p>Si una Solución de Biblioteca puede ordenar automáticamente Todos los formatos y realizar búsquedas con respuestas entendibles dentro del sistema de biblioteca como en contexto de consola, entonces esa solución es la correcta el "lugar" de esa biblioteca será la respuesta a la pregunta 1. </p>
+<p>Quitando lo innecesario para la primera fase (Notas básicas de clases) y lo
+que mkdocs ya cubre, nos queda:</p>
+<ol>
+<li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Video. (De las marcas de los videos)  </li>
+</ul>
+</li>
+<li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Pdf. De las marcas también</li>
+</ul>
+</li>
+</ol>
+<p>Entonces podemos Hacer un Plan de Realización de la App heuristica desde la primera Fase:</p>
+<h1 id="plan-de-realizacion-de-la-app-heuristica-clic-aqui"><a href="../proyecto/fase1/">Plan de Realización de la App heurística Clic aquí.</a><a class="headerlink" href="#plan-de-realizacion-de-la-app-heuristica-clic-aqui" title="Permanent link">&para;</a></h1>
+<h5 id="entradas-pre-editadas">Entradas pre-editadas:<a class="headerlink" href="#entradas-pre-editadas" title="Permanent link">&para;</a></h5>
+<blockquote>
+<p>Entradas de <strong><em>recortes snipets</em></strong>, <strong><em>resúmenes de procedimientos</em></strong> (como configurar...), <strong><em>resúmenes de 
+comandos</em></strong> de programas (VLC command line...) <strong><em>hojas de trucos</em></strong>, pequeños <strong><em>scripts</em></strong>:</p>
+</blockquote>
+<p>Las entradas pre-editadas son recortes de información de texto que se utilizarán de forma rápida, y en contexto: <strong><em>programando, administrando en tiempo real servidores, servicios...</em></strong></p>
+<p>Entonces para este tipo de notas se necesita un programa especial que permita guardar y recuperar las notas rápidamente pero que también de alguna manera se integre a el ecosistema de la biblioteca.
+Este sistema gestiona información del momento por tanto lo llamaré chismoso.</p>
+<h5 id="chismoso">Chismoso:<a class="headerlink" href="#chismoso" title="Permanent link">&para;</a></h5>
+<p>Chismoso es el punto final, es la manera de tener la información siempre a la mano y de crecer como programador, chismoso almacenará snippets, resúmenes, procedimientos y hasta archivos TODO.</p>
+<p>Para que chismoso funcione debe haber en la biblioteca un sistema de carpetas que refleje la clasificación de la información. Entonces chismoso podrá pedir el inicio de cualquier rama e ir preguntando hacia donde ir con un simple ls de bash.</p>
+<p>Ag permite buscar en determinada carpetas saltando otras, así que se puede introducir solo el nombre de la carpeta (o tema) y chismoso irá directamente a ese tema.</p>
+<p>Creo que lo mejor será que de ahora en adelante todas las entradas <strong>pre-editadas</strong> deberán crearse en markdown, (al menos con títulos "#" y llamados "&gt;") de esta (para los estudiantes será el primer curso) de esta manera se garantiza que con un esfuerzo regular, (y al practicar markdown pequeño), la información sea altamente comprensible.</p>
+<h6 id="estandar-de-chismoso">Estándar de Chismoso:<a class="headerlink" href="#estandar-de-chismoso" title="Permanent link">&para;</a></h6>
+<p>Para que la información sea recuperable como una base de datos hay que practicar un estándar mínimo al guardar la información:</p>
+<ul>
+<li>
+<p>En lo que respecta a los trozos código fuente (recortes snipets) debe estar identificado siempre de principio a fin.con un nivel ###### seis(6), al menos. de esta manera si se desea agregar mas clasificación se hará del nivel 5 hasta el 1. al leer el archivo el script de bash usará Ag para extraer el nombre_título#6 hasta el próximo título 6. Así se recuperará la información al vuelo.</p>
+</li>
+<li>
+<p>Todas las entradas tendrán una clasificación que será registrada, como un tipo: <strong><em>recortes</em></strong>, <strong><em>snippets</em></strong>, <strong><em>resumen de procedimientos</em></strong> (como configurar...), <strong><em>resumen de comandos</em></strong> de programas (VLC command line...) <strong><em>hoja de truco</em></strong>, pequeños <strong><em>script</em></strong>. son buenas etiquetas para comenzar.</p>
+</li>
+<li>
+<p>El lenguaje, o tema  va primero, después el tipo y luego el nombre de la entrada pre-editada si alguno de estos elementos tiene varia palabras irá entre comillas.</p>
+</li>
+<li>
+<p>Para terminar la entrada se finalizará con # fin</p>
+</li>
+</ul>
+<h5 id="ejemplo">Ejemplo:<a class="headerlink" href="#ejemplo" title="Permanent link">&para;</a></h5>
+<h5 id="bash-recorte-if-de-una-linea"># bash recorte  "if de una linea".<a class="headerlink" href="#bash-recorte-if-de-una-linea" title="Permanent link">&para;</a></h5>
+<h5 id="cuerpo-o-contenido-de-la-entrada">...cuerpo o contenido de la entrada...<a class="headerlink" href="#cuerpo-o-contenido-de-la-entrada" title="Permanent link">&para;</a></h5>
+<h5 id="fin"># fin<a class="headerlink" href="#fin" title="Permanent link">&para;</a></h5>
+<hr />
+<h4 id="chismoso-diseno">Chismoso Diseño:<a class="headerlink" href="#chismoso-diseno" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p>Al teclear chismoso, bash mostrará el árbol de clasificaciones para poder elegir donde se guardará o si se creará una clasificación nueva, para eso se puede utilizar br. Buscar en la doc hay un caso de eso.</p>
+</li>
+<li>
+<p>Preguntará sobre las tres cosas fundamentales( <strong><em>Entradas pre-editadas</em></strong> ):</p>
+<ul>
+<li>Tipo.</li>
+<li>Lenguaje, tópico o tema.</li>
+<li>Nombre de la entrada.</li>
+</ul>
+</li>
+<li>
+<p>Chismoso buscará la entrada, y dará una </p>
+</li>
+</ol>
+<p>recordar tomar la entrada de tipo para colocar la plantilla de entrada salida parámetros etc si es una clase o función </p>
+<ol>
+<li>
+<p>Se abrirá micro con un archivo auxiliar, para introducir la entrada, este archivo de texto ya contiene el markdown con el encabezado de la entrada y el # fin de la entrada. solo para escribir dentro.</p>
+<ul>
+<li>Si es un nuevo archivo se creará </li>
+</ul>
+</li>
+</ol>
+<h1 id="solucion-a-como-hacer-entrar-cualquier-texto-rapido-desde-cualquier-parte-chuletas">Solución a como hacer entrar cualquier texto rápido desde cualquier parte (chuletas)<a class="headerlink" href="#solucion-a-como-hacer-entrar-cualquier-texto-rapido-desde-cualquier-parte-chuletas" title="Permanent link">&para;</a></h1>
+<ul>
+<li>
+<p>Si necesito escribir cualquier cosa rápido como un elemento de markdown puedo hacer un script de encapsularon, lo que hará es presentar opciones comunes en un menú, con: titulo, lenguaje-tópico-tema, y nombre_entrada, como metadatos: como autor, fecha, resumen... y lo maquetará a la manera markdown para MKdocs luego de terminado ubicará el documento markdown en la carpeta correcta de Mkdocs.</p>
+</li>
+<li>
+<p>Si se va a trabajar con un documento de programación en $programas, se supone que es un programa para producción, entonces cada carpeta programa, de $programas debe estar representada en $biblioteca/docu/programas, cuando se comienza a realizar un script en esta carpeta, ya debe existir por cada documento en la carpeta programas un documento igual en la carpeta /docu/programas de la biblioteca.</p>
+</li>
+<li>
+<p>Los scripts se escriben de forma arbitraria, aquí uno de python, Javascript, allá sh, pero al crear por primera vez un programa, se hará por medio del script para que facilite la carga del tipo de encabezado de acuerdo al tipo de documento. Una vez creado el programa, solo habrá que correr otro script, para convertir cada encabezado de programa en markdown y guardarlo en la carpeta correcta.</p>
+</li>
+<li>
+<p>Para que todas las entradas tengan título legible (por ejemplo home en lugar de index.md) se estandariza que siempre el el programa preguntará por el título de la entrada, y esta será tanto el <strong>primer título de primer nivel</strong> , como el title metadato del documento markdown. Así MKdocs lo asignará al nombre de la pág, </p>
+</li>
+<li>
+<p>También se puede enviar consultas con partes de un título con un script, el título en este archivo, se envía a Mkdocs, para su búsqueda con un curl u otra cosa. </p>
+</li>
+<li>
+<p>Se puede buscar de manera interna con el buscador de plata y buscar cualquier palabra dentro de la documentación  y devolver el nombre del archivo, y así introducir este nombre en el buscador de Mkdocs (probar esta opción con calma para ver que ofrece mejores resultados)</p>
+</li>
+<li>
+<p>Si la documentación se genera como un recorte web, se utiliza la consola para guardar la página fuente, y dependiendo si lleva código o no se usa markdown.</p>
+</li>
+<li>
+<p>Si la documentación se genera de un video, se ejecutará un script que guarde la posición o captura de pantalla del video un video siempre se ve dentro del contexto de un curso, un curso es una carpeta con clases, ya el programa de cursos abre los archivos relacionados con cada clase, y en cada clase, habrá una carpeta de prácticas, dentro de ella los apuntes.</p>
+</li>
+<li>
+<p>Como las clases son más susceptibles a ser borradas conforme nos volvemos más diestros en un tema, los apuntes deben conformar otro árbol  de carpetas, recomiendo colocar las versiones de los programas para así facilitar el borrado cuando estos caduquen, también la fecha (para poder borrar entradas viejas de un tema determinado) este árbol de apuntes guarda las posiciones (enlaces) de pdf, y de los videos junto con la pagina markdown así como los links a los archivos mhtml (los verdaderamente importantes)</p>
+</li>
+<li>
+<p>Cuando se utiliza shdoc <a href="pages/shdoc.md">ver documentación shdoc</a> el sistema coloca la plantilla automáticamente antes de comenzar a editar el documento, luego lo convierte en .md, y convertido en .md te pregunta por los demás metadatos para incluirlos con manipulación de texto antes de sincronizar la documentación en la biblioteca. </p>
+</li>
+</ul>
+<blockquote>
+<p>creo que la ubicación física en el disco se puede guardar como metadato.. si se puede ver: <a href="#metadatos-de-estilo-yaml">Metadatos de estilo YAML en este documento.</a>
+* Si se puede guardar la ubicación física del archivo que generó el markdown como metadato se puede entonces con un script comprobar que archivos existen en la documentación que no tienen una entrada de programa existente en físico en disco. de esta forma se puede eliminar archivos no deseados.</p>
+</blockquote>
+<ul>
+<li>Todos los programas deben hacerse en dentro de la carpeta tron, específicamente en la carpeta programas o en la carpeta scripts.</li>
+</ul>
+<blockquote>
+<p>NOTA 2: Hay que tener en cuenta las herramientas que se van anexando o descubriendo, por ejemplo: que más puede hacer el buscador de plata Ag...</p>
+<p>NOTA 3: Utilizar yaml para registrar las sesionesWeb, md abiertos, documentos de programación abiertos, pdf abiertos, videos abiertos (y marcadores de videos), ... entradas abiertas y guardarlas en en archivo de sesión recuperable.</p>
+<p>Nota 4: Buscar la forma que ç añada párrafos o retornos de carro en markdown.</p>
+<p>Nota 5: Investigar br (broot) para selecionar carpetas o archivos en un script y así utilizarlo en el sistema de sesiones de Nota 3 (ACTUALIZACIÓN): lo encontré en  <a href="https://dystroy.org/broot/tricks/#a-generic-fuzzy-finder">https://dystroy.org/broot/tricks/#a-generic-fuzzy-finder</a> , también ver:  <a href="#un-buscador-difuso-genérico">Un buscador difuso genérico en este documento</a> </p>
+<p>Nota 6: Para Un sistema de sesiones de archivo de terminal se puede crear una variable de entorno fija que vaya registrando (y guardando cada cierto tiempo) la sesión que se está trabajando, así la sesión será migrable e imune a interrupciones, fallas y perdurará en el tiempo. la variable guarda la ubicación del último yaml utilizado, de esta forma se sabe donde quedó el trabajo </p>
+</blockquote>
+<h1 id="herramientas">Herramientas:<a class="headerlink" href="#herramientas" title="Permanent link">&para;</a></h1>
+<h2 id="el-buscador-de-plata">El buscador de Plata<a class="headerlink" href="#el-buscador-de-plata" title="Permanent link">&para;</a></h2>
+<p><a href="../manuales/ag/">Para ver el manual del buscador de plata ag haz clic aquí</a></p>
+<h2 id="broot">Broot:<a class="headerlink" href="#broot" title="Permanent link">&para;</a></h2>
+<h3 id="un-buscador-difuso-generico">Un buscador difuso genérico:<a class="headerlink" href="#un-buscador-difuso-generico" title="Permanent link">&para;</a></h3>
+<p>El objetivo aquí es tener una función que pueda usar en Shell para brindarle una ruta.</p>
+<p>Paso 1: crea un archivo ~/.config/broot/select.toml con este contenido:</p>
+<p><div class="highlight"><pre><span></span><code><span class="k">[[verbs]]</span>
+<span class="n">invocation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;ok&quot;</span>
+<span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;enter&quot;</span>
+<span class="n">leave_broot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="n">execution</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;:print_path&quot;</span>
+<span class="n">apply_to</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;file&quot;</span>
+<span class="p">]</span>
+</code></pre></div>
+*Paso 2: crea un atajo de algún tipo, por ejemplo usando ~/.bash_aliases</p>
+<p><div class="highlight"><pre><span></span><code><span class="nb">alias</span><span class="w"> </span><span class="nv">bo</span><span class="o">=</span><span class="s2">&quot;br --conf ~/.config/broot/select.toml&quot;</span>
+</code></pre></div>
+Paso 3: luego puede usar broot como selector en otros comandos:</p>
+<p><div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="k">$(</span>bo<span class="k">)</span>
+
+<span class="c1"># Ó</span>
+
+<span class="nb">echo</span><span class="w"> </span><span class="k">$(</span>bo<span class="w"> </span>some/path<span class="k">)</span>
+</code></pre></div>
+Aquí, el archivo de configuración se usó para garantizar que pueda seleccionar un archivo con la tecla Intro.
+Puede usar el mismo archivo de configuración para especificar colores para recordar que no está en un broot estándar.</p>
+<h2 id="yaml">YAML:<a class="headerlink" href="#yaml" title="Permanent link">&para;</a></h2>
+<p>Para procesar Yaml desde la linea de comandos, utilizaré yq.</p>
+<p>*Un tuto Chevere de yq: <a href="pages/Procesando-contenidoYAML-yq-www.baeldung.com.mhtml">Procesando YAML en bash con yq</a></p>
+<p>*Un tuto Chevere de yq: <a href="file:///home/daniel/tron/programas/heuristic/pages/Procesando-contenidoYAML-yq-www.baeldung.com.mhtml">Procesando YAML en bash con yq</a></p>
+<p>*La pagina de github es: <a href="https://github.com/mikefarah/yq">https://github.com/mikefarah/yq</a></p>
+<p>*La de manual es: <a href="https://mikefarah.gitbook.io/yq/">https://mikefarah.gitbook.io/yq/</a></p>
+<h2 id="bash">Bash:<a class="headerlink" href="#bash" title="Permanent link">&para;</a></h2>
+<h3 id="encontrar-la-ruta-relativa">Encontrar la ruta relativa:<a class="headerlink" href="#encontrar-la-ruta-relativa" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>realpath<span class="w"> </span>--relative-to<span class="o">=</span><span class="s2">&quot;</span><span class="nv">$file1</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$file2</span><span class="s2">&quot;</span>
+</code></pre></div>
+<h2 id="monolith">Monolith<a class="headerlink" href="#monolith" title="Permanent link">&para;</a></h2>
+<h3 id="pagina">Página:<a class="headerlink" href="#pagina" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/Y2Z/monolith">monolith</a> </li>
+</ul>
+<h3 id="comandos">Comandos:<a class="headerlink" href="#comandos" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>daniel@HungServ:~/tron/plugins/ComprimidosO.deb/chrome-linux$<span class="w"> </span>./chrome<span class="w"> </span>--headless<span class="w"> </span>--incognito<span class="w"> </span>--dump-dom<span class="w"> </span>file:///Ruta-sin-la-primera-barra.mhtml<span class="w"> </span><span class="p">|</span><span class="w"> </span>monolith<span class="w"> </span>-<span class="w"> </span>-I<span class="w"> </span>-b<span class="w"> </span>https://github.com<span class="w"> </span>-o<span class="w"> </span>prueba6.html
+</code></pre></div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../../../1-LEGOS/Bash/notificar%20cambios%20archivos/notificar-cambios/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Bash notificar cambios  cuando cambia un archivo." rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Anterior
+                </span>
+                Bash notificar cambios  cuando cambia un archivo.
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../ejemplos/ejemplo-python/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Ejemplo de Documentación Python" rel="next">
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Siguiente
+                </span>
+                Ejemplo de Documentación Python
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2018 - 2023 TRON-Doc Elías Hung.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["search.suggest", "search.highlight", "search.share", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.footer"], "search": "../../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+      
+    
+  </body>
+</html>

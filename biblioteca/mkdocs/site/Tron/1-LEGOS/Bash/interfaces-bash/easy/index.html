@@ -1,0 +1,1263 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../../0-ORGANIZACION/TODO/">
+      
+      
+        <link rel="next" href="../gtkdialog/">
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
+    
+    
+      
+        <title>EasyBashGUI - Biblioteca General</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.ffa9267a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#easybashgui" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../../../.." title="Biblioteca General" class="md-header__button md-logo" aria-label="Biblioteca General" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Biblioteca General
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              EasyBashGUI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../../.." class="md-tabs__link">
+      Welcome to MkDocs
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../../../tags/" class="md-tabs__link">
+      Tags
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../" class="md-tabs__link md-tabs__link--active">
+        Tron
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="Biblioteca General" class="md-nav__button md-logo" aria-label="Biblioteca General" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Biblioteca General
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        Welcome to MkDocs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../tags/" class="md-nav__link">
+        Tags
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Tron
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Tron
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../" class="md-nav__link">
+        tron
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          1 LEGOS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          1 LEGOS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
+          0 ORGANIZACION
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          0 ORGANIZACION
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../0-ORGANIZACION/TODO/" class="md-nav__link">
+        TODO:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
+          Bash
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Bash
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2_1" id="__nav_3_2_2_1_label" tabindex="0">
+          Interfaces bash
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_1_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3_2_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Interfaces bash
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        EasyBashGUI
+      </a>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gtkdialog/" class="md-nav__link">
+        gtkdialog:
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interfaces/" class="md-nav__link">
+        Interfaces:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2_2" id="__nav_3_2_2_2_label" tabindex="0">
+          Matrices
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Matrices
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../matrices/MatricesAsociativas/" class="md-nav__link">
+        Bash Matrices Vectores Array Arrays asociativas asociativa menu y menús
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../matrices/easy/" class="md-nav__link">
+        EasyBashGUI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../matrices/interfaces/" class="md-nav__link">
+        Interfaces:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2_3" id="__nav_3_2_2_3_label" tabindex="0">
+          Notificar cambios archivos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Notificar cambios archivos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notificar%20cambios%20archivos/notificar-cambios/" class="md-nav__link">
+        Bash notificar cambios  cuando cambia un archivo.
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          Programas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Programas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
+          Heuristic
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Heuristic
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../programas/heuristic/Leeme/" class="md-nav__link">
+        Tron Heurística Diseño del Programa.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1_2" id="__nav_3_3_1_2_label" tabindex="0">
+          Ejemplos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_3_1_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          Ejemplos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../programas/heuristic/ejemplos/ejemplo-python/" class="md-nav__link">
+        Ejemplo de Documentación Python
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1_3" id="__nav_3_3_1_3_label" tabindex="0">
+          Manuales
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_3_1_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          Manuales
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../programas/heuristic/manuales/ag/" class="md-nav__link">
+        Manual del Buscador de Plata
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../programas/heuristic/manuales/shdoc/" class="md-nav__link">
+        shdoc
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1_4" id="__nav_3_3_1_4_label" tabindex="0">
+          Pendiente
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_3_1_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          Pendiente
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../programas/heuristic/pendiente/pendiente/" class="md-nav__link">
+        Pendiente
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1_5" id="__nav_3_3_1_5_label" tabindex="0">
+          Proyecto
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_3_1_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          Proyecto
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../programas/heuristic/proyecto/fase1/" class="md-nav__link">
+        Plan de Realización de la App heurística:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+<h1 id="easybashgui">EasyBashGUI<a class="headerlink" href="#easybashgui" title="Permanent link">&para;</a></h1>
+<p><strong>Fuente:</strong><a href="https://github.com/BashGui/easybashgui">https://github.com/BashGui/easybashgui</a></p>
+<p>EasyBashGUI es una biblioteca de funciones Bash para *BSD y GNU/Linux que tiene como objetivo brindar funciones GUI simples usando yad, gtkdialog, kdialog, zenity, Xdialog, &copy;dialog, whiptail o bash incorporados dependiendo de si KDE o GNOME se están ejecutando o no, Yad /Gtkdialog/Xdialog instalado o no y, eventualmente, el servidor X ejecutándose o no.</p>
+<p><div class="highlight"><pre><span></span><code>Proyecto<span class="w"> </span>EasyBashGUI.
+
+
+Introducción
+
+EasyBashGUI<span class="w"> </span>es<span class="w"> </span>una<span class="w"> </span>biblioteca<span class="w"> </span>de<span class="w"> </span>funciones<span class="w"> </span>Bash<span class="w"> </span>compatible<span class="w"> </span>con<span class="w"> </span>Posix<span class="w"> </span>que<span class="w"> </span>tiene<span class="w"> </span>como<span class="w"> </span>objetivo<span class="w"> </span>brindar<span class="w"> </span>funciones<span class="w"> </span>GUI<span class="w"> </span>simples<span class="w"> </span>usando<span class="w"> </span>yad,<span class="w"> </span>gtkdialog,<span class="w"> </span>kdialog,<span class="w"> </span>zenity,<span class="w"> </span>Xdialog,<span class="w"> </span>dialog<span class="w"> </span>o<span class="w"> </span>whiptail<span class="w"> </span>dependiendo<span class="w"> </span>de<span class="w"> </span>KDE<span class="w"> </span>o<span class="w"> </span>GNOME<span class="w"> </span>en<span class="w"> </span>ejecución<span class="w"> </span>o<span class="w"> </span>no,<span class="w"> </span>Yad,<span class="w"> </span>Gtkdialog<span class="w"> </span>o<span class="w"> </span>Xdialog<span class="w"> </span>instalado<span class="w"> </span>o<span class="w"> </span>no<span class="w"> </span>y<span class="w"> </span>servidor<span class="w"> </span>X<span class="w"> </span>corriendo<span class="w"> </span>o<span class="w"> </span>no<span class="w"> </span><span class="o">((</span>c<span class="o">)</span>diálogo<span class="w"> </span>o<span class="w"> </span>cola<span class="w"> </span>de<span class="w"> </span>látigo<span class="w"> </span>es<span class="w"> </span>el<span class="w"> </span>mínimo<span class="o">)</span>.<span class="w"> </span>Por<span class="w"> </span>lo<span class="w"> </span>tanto,<span class="w"> </span>si<span class="w"> </span>el<span class="w"> </span>programador<span class="w"> </span>bash<span class="w"> </span>escribe:<span class="w"> </span><span class="s2">&quot;mensaje &#39;Gracias por usar este programa&#39;&quot;</span>,<span class="w"> </span>no<span class="w"> </span>tiene<span class="w"> </span>que<span class="w"> </span>preocuparse<span class="w"> </span>en<span class="w"> </span>qué<span class="w"> </span>entorno<span class="w"> </span>se<span class="w"> </span>ejecuta<span class="w"> </span>su<span class="w"> </span>programa:<span class="w"> </span>es<span class="w"> </span>suficiente<span class="w"> </span>con<span class="w"> </span>al<span class="w"> </span>menos<span class="w"> </span><span class="o">(</span>c<span class="o">)</span>dialog<span class="w"> </span>o<span class="w"> </span>whiptail<span class="w"> </span>instalado,<span class="w"> </span>y<span class="w"> </span>el<span class="w"> </span>programa<span class="w"> </span>funcionará<span class="w"> </span>como<span class="w"> </span>se<span class="w"> </span>espera<span class="w"> </span>.<span class="w"> </span>Obviamente,<span class="w"> </span>si<span class="w"> </span>el<span class="w"> </span>usuario<span class="w"> </span>también<span class="w"> </span>tiene<span class="w"> </span>instalado<span class="w"> </span>KDE,<span class="w"> </span>GNOME<span class="w"> </span>o<span class="w"> </span>gtkdialog/Xdialog<span class="w"> </span><span class="o">(</span>y<span class="w"> </span>está<span class="w"> </span>en<span class="w"> </span>una<span class="w"> </span>sesión<span class="w"> </span>X<span class="o">)</span>,<span class="w"> </span>el<span class="w"> </span>programa<span class="w"> </span>tendrá<span class="w"> </span><span class="s2">&quot;otro aspecto&quot;</span>,<span class="w"> </span>pero<span class="w"> </span>el<span class="w"> </span>flujo<span class="w"> </span>lógico<span class="w"> </span>sigue<span class="w"> </span>siendo<span class="w"> </span>exactamente<span class="w"> </span>el<span class="w"> </span>mismo.
+Puede<span class="w"> </span>forzar<span class="w"> </span>el<span class="w"> </span>uso<span class="w"> </span>del<span class="w"> </span>widget<span class="w"> </span>a<span class="w"> </span>través<span class="w"> </span>de<span class="w"> </span>la<span class="w"> </span>variable<span class="w"> </span><span class="s2">&quot;supermodo&quot;</span><span class="w"> </span><span class="o">(</span>valores<span class="w"> </span>posibles:<span class="w"> </span><span class="s2">&quot;yad&quot;</span>,<span class="w"> </span><span class="s2">&quot;gtkdialog&quot;</span>,<span class="w"> </span><span class="s2">&quot;kdialog&quot;</span>,<span class="w"> </span><span class="s2">&quot;zenity&quot;</span>,<span class="w"> </span><span class="s2">&quot;Xdialog&quot;</span>,<span class="w"> </span><span class="s2">&quot;dialog&quot;</span>,<span class="w"> </span><span class="s2">&quot;none&quot;</span><span class="p">;</span>
+por<span class="w"> </span>ejemplo:<span class="w"> </span>&gt;exportar<span class="w"> </span><span class="nv">supermodo</span><span class="o">=</span><span class="s2">&quot;kdialog&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>fuente<span class="w"> </span>easybashgui<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>mensaje<span class="w"> </span>Hello<span class="w"> </span><span class="o">)</span>.
+NOTA<span class="w"> </span>sobre<span class="w"> </span>el<span class="w"> </span>modo<span class="w"> </span><span class="s2">&quot;ninguno&quot;</span>:<span class="w"> </span>debe<span class="w"> </span>asegurarse<span class="w"> </span>de<span class="w"> </span>que<span class="w"> </span>STDERR<span class="w"> </span>*no*<span class="w"> </span>sea<span class="w"> </span>redirigido,<span class="w"> </span>para<span class="w"> </span>poder<span class="w"> </span>ver<span class="w"> </span>las<span class="w"> </span>cajas<span class="w"> </span>de<span class="w"> </span>shell<span class="w"> </span>en<span class="w"> </span>su<span class="w"> </span>terminal.
+
+En<span class="w"> </span>la<span class="w"> </span><span class="s2">&quot;suite&quot;</span><span class="w"> </span>de<span class="w"> </span>EasyBashGUI<span class="w"> </span>hay<span class="w"> </span>un<span class="w"> </span>iniciador<span class="w"> </span><span class="o">(</span><span class="s2">&quot;easybashgui&quot;</span><span class="o">)</span>,<span class="w"> </span>un<span class="w"> </span>iniciador<span class="w"> </span>que<span class="w"> </span>alterna<span class="w"> </span>algunas<span class="w"> </span>opciones<span class="w"> </span>de<span class="w"> </span>depuración<span class="w"> </span><span class="o">(</span><span class="s2">&quot;easybashgui-debug&quot;</span><span class="o">)</span>,<span class="w"> </span>una<span class="w"> </span>biblioteca<span class="w"> </span>de<span class="w"> </span>widgets<span class="w"> </span><span class="o">(</span><span class="s2">&quot;easybashgui_X.X.X.lib&quot;</span><span class="o">)</span><span class="w"> </span>y<span class="w"> </span>un<span class="w"> </span>script<span class="w"> </span>independiente<span class="w"> </span><span class="o">(</span>más<span class="w"> </span>bien<span class="w"> </span>antiguo<span class="w"> </span>hoy<span class="w"> </span>en<span class="w"> </span>día<span class="o">)</span><span class="w"> </span>para<span class="w"> </span>crear<span class="w"> </span>cuadros<span class="w"> </span>de<span class="w"> </span>diálogo<span class="w"> </span>externamente<span class="w"> </span><span class="o">(</span><span class="s2">&quot;easydialog-legacy&quot;</span><span class="o">)</span>.<span class="w"> </span>Además,<span class="w"> </span>también<span class="w"> </span>hay<span class="w"> </span>otra<span class="w"> </span>biblioteca<span class="w"> </span><span class="o">(</span><span class="s2">&quot;easybashlib&quot;</span><span class="o">)</span><span class="w"> </span>para<span class="w"> </span>funciones<span class="w"> </span>auxiliares<span class="w"> </span>opcionales<span class="w"> </span><span class="o">(</span>gracias<span class="w"> </span>a<span class="w"> </span>ella,<span class="w"> </span>ya<span class="w"> </span>no<span class="w"> </span>necesita<span class="w"> </span>usar<span class="w"> </span>la<span class="w"> </span>función<span class="w"> </span><span class="s2">&quot;clean_temp ()&quot;</span><span class="w"> </span>al<span class="w"> </span>final<span class="w"> </span>de<span class="w"> </span>sus<span class="w"> </span>scripts<span class="w"> </span>EBG<span class="o">)</span>.
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Library<span class="w"> </span>functions.
+
+message
+ok_message
+alert_message
+notify_message
+text
+question
+input
+menu
+tagged_menu
+list
+fselect<span class="w"> </span><span class="o">(=</span><span class="w"> </span><span class="s2">&quot;file select&quot;</span><span class="w"> </span><span class="o">)</span>
+dselect<span class="w"> </span><span class="o">(=</span><span class="w"> </span><span class="s2">&quot;directory select&quot;</span><span class="w"> </span><span class="o">)</span>
+wait_seconds
+wait_for
+terminate_wait_for
+progress
+adjust
+notify<span class="w"> </span><span class="o">(</span>*<span class="o">)</span>
+notify_change<span class="w"> </span><span class="o">(</span>*<span class="o">)</span>
+
+<span class="o">(</span>*<span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span>only<span class="w"> </span><span class="k">if</span><span class="w"> </span>you<span class="w"> </span>have<span class="w"> </span><span class="s2">&quot;yad&quot;</span><span class="w"> </span>installed<span class="o">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>How<span class="w"> </span>to<span class="w"> </span>install<span class="w"> </span>and<span class="w"> </span>use.
+
+Extract<span class="w"> </span>all<span class="w"> </span>files...
+<span class="o">(</span>e.g.:<span class="w"> </span>&gt;tar<span class="w"> </span>-xzvf<span class="w"> </span>EasyBashGUI_X.X.X<span class="w"> </span><span class="o">)</span>
+
+Cd<span class="w"> </span><span class="k">in</span><span class="w"> </span>./EasyBashGUI<span class="w"> </span><span class="nb">source</span><span class="w"> </span>dir...
+<span class="o">(</span>e.g.:<span class="w"> </span>&gt;cd<span class="w"> </span>./EasyBashGUI_X.X.X<span class="w"> </span><span class="o">)</span>
+
+Install<span class="w"> </span>it<span class="w"> </span><span class="o">(</span>as<span class="w"> </span>root<span class="o">)</span>...
+<span class="o">(</span>e.g.:<span class="w"> </span>&gt;sudo<span class="w"> </span>make<span class="w"> </span>install<span class="w"> </span><span class="o">)</span>
+
+Uninstall<span class="w"> </span>it<span class="w"> </span><span class="o">(</span>as<span class="w"> </span>root<span class="o">)</span>...
+<span class="o">(</span>e.g.:<span class="w"> </span>&gt;sudo<span class="w"> </span>make<span class="w"> </span>uninstall<span class="w"> </span><span class="o">)</span>
+
+That<span class="err">&#39;</span>s<span class="w"> </span>it<span class="w"> </span>!!!!!
+
+
+
+If<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>use<span class="w"> </span>it<span class="w"> </span><span class="k">in</span><span class="w"> </span>your<span class="w"> </span>scripts,<span class="w"> </span>simply<span class="w"> </span><span class="nb">source</span><span class="w"> </span><span class="s2">&quot;easybashgui&quot;</span><span class="w"> </span>before<span class="w"> </span>use...
+<span class="o">(</span>e.g.:<span class="w"> </span><span class="s2">&quot;source easybashgui&quot;</span><span class="w"> </span><span class="o">)</span>
+
+
+E.g.:
+-------------------
+<span class="c1">#!/bin/bash</span>
+<span class="nb">source</span><span class="w"> </span>easybashgui
+<span class="c1">#</span>
+message<span class="w"> </span><span class="s2">&quot;this&quot;</span>
+input<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">(</span><span class="w"> </span><span class="s2">&quot;that&quot;</span><span class="w"> </span><span class="o">)</span>
+menu<span class="w"> </span><span class="s2">&quot;this&quot;</span><span class="w"> </span><span class="s2">&quot;that&quot;</span>
+list<span class="w"> </span>+<span class="s2">&quot;you&quot;</span><span class="w"> </span>-<span class="s2">&quot;me&quot;</span><span class="w"> </span>+<span class="s2">&quot;her&quot;</span>
+...
+etc.etc.
+...
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Synopsis.
+
+question<span class="w"> </span>-&gt;<span class="w"> </span><span class="s2">&quot;[text]&quot;</span><span class="w">                 </span><span class="o">=</span>&gt;<span class="w">       </span><span class="o">(</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>argument,<span class="w"> </span>box<span class="w"> </span>output<span class="w"> </span>to<span class="w"> </span><span class="nb">exit</span><span class="w"> </span>code<span class="w"> </span>and<span class="w"> </span>STDERR<span class="w"> </span><span class="o">)</span><span class="w"> </span><span class="o">(</span>*<span class="o">)</span>
+message<span class="w"> </span>-&gt;<span class="w"> </span><span class="s2">&quot;[text]&quot;</span><span class="w">                  </span><span class="o">=</span>&gt;<span class="w">       </span><span class="o">(</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>argument<span class="w"> </span><span class="o">)</span>
+alert_message<span class="w"> </span>-&gt;<span class="w"> </span><span class="s2">&quot;[text]&quot;</span><span class="w">            </span><span class="o">=</span>&gt;<span class="w">       </span><span class="o">(</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>argument<span class="w"> </span><span class="o">)</span>
+ok_message<span class="w"> </span>-&gt;<span class="w"> </span><span class="s2">&quot;[text]&quot;</span><span class="w">               </span><span class="o">=</span>&gt;<span class="w">       </span><span class="o">(</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>argument<span class="w"> </span><span class="o">)</span>
+notify_message<span class="w"> </span>-&gt;<span class="w"> </span>&lt;-i<span class="w"> </span><span class="s2">&quot;[icon]&quot;</span>&gt;<span class="w"> </span><span class="s2">&quot;[text]&quot;</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w">   </span><span class="o">(</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>option,<span class="w"> </span><span class="m">1</span><span class="w"> </span>argument<span class="w"> </span><span class="o">)</span>
+<span class="nv">text</span><span class="w">                                 </span><span class="o">=</span>&gt;<span class="w">       </span><span class="o">(</span><span class="w"> </span>STDIN,<span class="w"> </span>NO<span class="w"> </span>argument,<span class="w"> </span>box<span class="w"> </span>output<span class="w"> </span>to<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">dir_tmp</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">file_tmp</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>and<span class="w"> </span>STDERR<span class="w"> </span><span class="o">)</span><span class="w"> </span><span class="o">(</span>^<span class="o">)</span>
+wait_seconds<span class="w"> </span>-&gt;<span class="w"> </span><span class="s2">&quot;[integer]&quot;</span><span class="w">          </span><span class="o">=</span>&gt;<span class="w">       </span><span class="o">(</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>argument<span class="w"> </span><span class="o">)</span>
+wait_for<span class="w"> </span>-&gt;<span class="w"> </span><span class="s2">&quot;[text]&quot;</span><span class="w">                 </span><span class="o">=</span>&gt;<span class="w">       </span><span class="o">(</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>argument,<span class="w"> </span>PID<span class="w"> </span>to<span class="w"> </span><span class="nb">kill</span><span class="w"> </span>to<span class="w"> </span><span class="s2">&quot;wait_for__PID&quot;</span><span class="w"> </span>variable<span class="w"> </span>and<span class="w"> </span>STDERR<span class="w"> </span><span class="o">)</span><span class="w"> </span><span class="o">(</span>@<span class="o">)</span>
+<span class="nv">terminate_wait_for</span><span class="w">                   </span><span class="o">=</span>&gt;<span class="w">       </span><span class="o">(</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>argument<span class="w"> </span>only<span class="w"> </span><span class="k">in</span><span class="w"> </span>easydialog,<span class="w"> </span>otherwise,<span class="w"> </span>NO<span class="w"> </span>argument<span class="w"> </span><span class="o">)</span><span class="w"> </span><span class="o">(</span>@<span class="o">)</span>
+fselect<span class="w"> </span>-&gt;<span class="w"> </span><span class="s2">&quot;&lt;init. dir.&gt;&quot;</span><span class="w">            </span><span class="o">=</span>&gt;<span class="w">       </span><span class="o">(</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>&lt;optional&gt;<span class="w"> </span>argument,<span class="w"> </span>box<span class="w"> </span>output<span class="w"> </span>to<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">dir_tmp</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">file_tmp</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>and<span class="w"> </span>STDERR<span class="w"> </span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="c1">#)</span>
+dselect<span class="w"> </span>-&gt;<span class="w"> </span><span class="s2">&quot;&lt;init. dir.&gt;&quot;</span><span class="w">            </span><span class="o">=</span>&gt;<span class="w">       </span><span class="o">(</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>&lt;optional&gt;<span class="w"> </span>argument,<span class="w"> </span>box<span class="w"> </span>output<span class="w"> </span>to<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">dir_tmp</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">file_tmp</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>and<span class="w"> </span>STDERR<span class="w"> </span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="c1">#)</span>
+input<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="s2">&quot;&lt;label 1&gt;&quot;</span><span class="w"> </span><span class="s2">&quot;[init 1]&quot;</span><span class="w">    </span><span class="o">=</span>&gt;<span class="w">       </span><span class="o">(</span><span class="w"> </span><span class="m">2</span>-3<span class="w"> </span>arguments,<span class="w"> </span>box<span class="w"> </span>output<span class="w"> </span>to<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">dir_tmp</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">file_tmp</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>and<span class="w"> </span>STDERR<span class="w"> </span><span class="o">)</span>
+input<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="s2">&quot;[label 1]&quot;</span><span class="w"> </span><span class="s2">&quot;[init 1]&quot;</span><span class="w"> </span><span class="s2">&quot;[label 2]&quot;</span><span class="w"> </span><span class="s2">&quot;[init 2]&quot;</span><span class="w">                     </span><span class="o">=</span>&gt;<span class="w"> </span><span class="o">(</span><span class="w"> </span><span class="m">5</span><span class="w"> </span>arguments,<span class="w"> </span>box<span class="w"> </span>output<span class="w"> </span>to<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">dir_tmp</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">file_tmp</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>and<span class="w"> </span>STDERR<span class="w"> </span><span class="o">)</span>
+input<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="s2">&quot;[label 1]&quot;</span><span class="w"> </span><span class="s2">&quot;[init 1]&quot;</span><span class="w"> </span><span class="s2">&quot;[label 2]&quot;</span><span class="w"> </span><span class="s2">&quot;[init 2]&quot;</span><span class="w"> </span><span class="s2">&quot;[label 3]&quot;</span><span class="w"> </span><span class="s2">&quot;[init 3]&quot;</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="o">(</span><span class="w"> </span><span class="m">7</span><span class="w"> </span>arguments,<span class="w"> </span>box<span class="w"> </span>output<span class="w"> </span>to<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">dir_tmp</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">file_tmp</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>and<span class="w"> </span>STDERR<span class="w"> </span><span class="o">)</span>
+menu<span class="w"> </span>-&gt;<span class="w"> </span><span class="s2">&quot;[item 1]&quot;</span><span class="w"> </span>...<span class="w"> </span><span class="s2">&quot;[item n]&quot;</span><span class="w">    </span><span class="o">=</span>&gt;<span class="w">       </span><span class="o">(</span><span class="w"> </span><span class="o">[</span>n<span class="o">]</span><span class="w"> </span>arguments,<span class="w"> </span>box<span class="w"> </span>output<span class="w"> </span>to<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">dir_tmp</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">file_tmp</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>and<span class="w"> </span>STDERR<span class="w"> </span><span class="o">)</span><span class="w"> </span><span class="o">(</span>%<span class="o">)</span>
+tagged_menu<span class="w"> </span>-&gt;<span class="w"> </span><span class="s2">&quot;[item 1]&quot;</span><span class="w"> </span><span class="s2">&quot;[tag 1]&quot;</span><span class="w"> </span>...<span class="w"> </span><span class="s2">&quot;[item n]&quot;</span><span class="w"> </span><span class="s2">&quot;[tag n]&quot;</span><span class="w">    </span><span class="o">=</span>&gt;<span class="w">       </span><span class="o">(</span><span class="w"> </span><span class="o">[</span>n*2<span class="o">]</span><span class="w"> </span>arguments,<span class="w"> </span>box<span class="w"> </span>output<span class="w"> </span>to<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">dir_tmp</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">file_tmp</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>and<span class="w"> </span>STDERR<span class="w"> </span><span class="o">)</span><span class="w"> </span><span class="o">(</span>%<span class="o">)</span>
+list<span class="w"> </span>-&gt;<span class="w"> </span>&lt;+<span class="p">|</span>-&gt;<span class="s2">&quot;[item 1]&quot;</span><span class="w"> </span>...<span class="w"> </span>&lt;+<span class="p">|</span>-&gt;<span class="s2">&quot;[item n]&quot;</span><span class="w">    </span><span class="o">=</span>&gt;<span class="w">       </span><span class="o">(</span><span class="w"> </span><span class="o">[</span>n<span class="o">]</span><span class="w"> </span>arguments,<span class="w"> </span>optionally<span class="w"> </span>prefixed<span class="w"> </span>by<span class="w"> </span><span class="s2">&quot;+&quot;</span><span class="o">(</span>plus<span class="o">)</span><span class="w"> </span>or<span class="w"> </span><span class="s2">&quot;-&quot;</span><span class="o">(</span>minus<span class="o">)</span>,<span class="w"> </span>box<span class="w"> </span>output<span class="w"> </span>to<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">dir_tmp</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">file_tmp</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>and<span class="w"> </span>STDERR<span class="w"> </span><span class="o">)</span><span class="w"> </span><span class="o">(</span>%<span class="o">)</span>
+progress<span class="w"> </span>-&gt;<span class="w"> </span><span class="s2">&quot;[text]&quot;</span><span class="w">                         </span><span class="o">=</span>&gt;<span class="w">       </span><span class="o">(</span><span class="w"> </span>percent<span class="w"> </span>with<span class="w"> </span>or<span class="w"> </span>without<span class="w"> </span><span class="s1">&#39;%&#39;</span><span class="w"> </span><span class="k">in</span><span class="w"> </span>STDIN,<span class="w"> </span><span class="m">1</span><span class="w"> </span>argument<span class="w"> </span><span class="o">)</span>
+progress<span class="w"> </span>-&gt;<span class="w"> </span><span class="s2">&quot;[text]&quot;</span><span class="w"> </span><span class="s2">&quot;[elements number]&quot;</span><span class="w">     </span><span class="o">=</span>&gt;<span class="w">       </span><span class="o">(</span><span class="w"> </span><span class="s2">&quot;PROGRESS&quot;</span><span class="w"> </span>string<span class="w"> </span><span class="k">in</span><span class="w"> </span>STDIN,<span class="w"> </span><span class="m">2</span><span class="w"> </span>arguments<span class="w"> </span><span class="o">)</span>
+adjust<span class="w"> </span>-&gt;<span class="w"> </span><span class="s2">&quot;[text]&quot;</span><span class="w"> </span><span class="s2">&quot;[min]&quot;</span><span class="w"> </span><span class="s2">&quot;[init]&quot;</span><span class="w"> </span><span class="s2">&quot;[max]&quot;</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="o">(</span><span class="w"> </span><span class="m">4</span><span class="w"> </span>arguments,<span class="w"> </span>box<span class="w"> </span>output<span class="w"> </span>to<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">dir_tmp</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">file_tmp</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>and<span class="w"> </span>STDERR<span class="w"> </span><span class="o">)</span>
+notify<span class="w"> </span>-&gt;<span class="w"> </span>&lt;-c<span class="w"> </span><span class="s2">&quot;[click command (for mouse left button)]&quot;</span>&gt;<span class="w"> </span>&lt;-i<span class="w"> </span><span class="s2">&quot;[icon_good]#[icon_bad]&quot;</span>&gt;<span class="w"> </span>&lt;-t<span class="w"> </span><span class="s2">&quot;[tooltip_good]#[tooltip_bad]&quot;</span>&gt;<span class="w"> </span><span class="s2">&quot;[menu item 1]&quot;</span><span class="w"> </span><span class="s2">&quot;[menu command 1]&quot;</span><span class="w"> </span>...<span class="w"> </span><span class="s2">&quot;[menu item n]&quot;</span><span class="w"> </span><span class="s2">&quot;[menu command n]&quot;</span><span class="w">        </span><span class="o">=</span>&gt;<span class="w">       </span><span class="o">(</span><span class="w"> </span><span class="m">3</span><span class="w"> </span>options,<span class="w"> </span><span class="o">[</span>n*2<span class="o">]</span><span class="w"> </span>mandatory<span class="w"> </span>arguments<span class="w"> </span><span class="o">)</span>
+notify_change<span class="w"> </span>-&gt;<span class="w"> </span>&lt;-i<span class="w"> </span><span class="s2">&quot;[new icon]&quot;</span>&gt;<span class="w"> </span>&lt;-t<span class="w"> </span><span class="s2">&quot;[new tooltip]&quot;</span>&gt;<span class="w"> </span><span class="s2">&quot;[good|bad]&quot;</span><span class="w">        </span><span class="o">=</span>&gt;<span class="w">      </span><span class="o">(</span><span class="w"> </span><span class="m">2</span><span class="w"> </span>options,<span class="w"> </span><span class="m">1</span><span class="w"> </span>mandatory<span class="w"> </span>argument<span class="w"> </span><span class="o">)</span><span class="w"> </span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">(</span>*<span class="o">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0&quot;</span><span class="w"> </span>el<span class="w"> </span>estado<span class="w"> </span>de<span class="w"> </span>salida<span class="w"> </span>es<span class="w"> </span><span class="s2">&quot;SÍ&quot;</span>,<span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="w"> </span>el<span class="w"> </span>estado<span class="w"> </span>de<span class="w"> </span>salida<span class="w"> </span>es<span class="w"> </span><span class="s2">&quot;NO&quot;</span>,<span class="w"> </span>otros<span class="w"> </span>códigos<span class="w"> </span>de<span class="w"> </span>salida<span class="w"> </span>que<span class="w"> </span>debe<span class="w"> </span>hacer<span class="w"> </span>salir<span class="w"> </span>del<span class="w"> </span>programa:<span class="w"> </span>normalmente<span class="w"> </span>en<span class="w"> </span>un<span class="w"> </span>script<span class="w"> </span>solo<span class="w"> </span>tiene<span class="w"> </span>que<span class="w"> </span>verificar<span class="w"> </span>el<span class="w"> </span>estado<span class="w"> </span>de<span class="w"> </span>salida<span class="w"> </span>para<span class="w"> </span>conocer<span class="w"> </span>la<span class="w"> </span>elección<span class="w"> </span>del<span class="w"> </span>usuario<span class="p">;</span>
+<span class="o">(</span>^<span class="o">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>función<span class="w"> </span>de<span class="w"> </span>texto<span class="w"> </span>escribe<span class="w"> </span>texto<span class="w"> </span>en<span class="w"> </span>STDIN<span class="w"> </span>en<span class="w"> </span>el<span class="w"> </span>archivo<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">dir_tmp</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">file_tmp</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>y<span class="w"> </span><span class="o">(</span>solo<span class="o">)</span><span class="w"> </span>para<span class="w"> </span>kdialog,<span class="w"> </span>zenity<span class="w"> </span>y<span class="w"> </span>Xdialog<span class="w"> </span>también<span class="w"> </span>puede<span class="w"> </span>editar<span class="w"> </span>texto<span class="w"> </span>para<span class="w"> </span>escribir<span class="p">;</span>
+<span class="o">(</span>@<span class="o">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>la<span class="w"> </span>función<span class="w"> </span><span class="s2">&quot;esperar&quot;</span><span class="w"> </span>crea<span class="w"> </span>una<span class="w"> </span>ventana<span class="w"> </span>con<span class="w"> </span>un<span class="w"> </span>texto<span class="w"> </span>y<span class="w"> </span>devuelve<span class="w"> </span>el<span class="w"> </span>control<span class="w"> </span>al<span class="w"> </span>programa<span class="w"> </span>principal...<span class="w"> </span>después<span class="w"> </span>de<span class="w"> </span>un<span class="w"> </span>trabajo,<span class="w"> </span>puede<span class="w"> </span>cerrar<span class="w"> </span>la<span class="w"> </span>ventana<span class="w"> </span>a<span class="w"> </span>través<span class="w"> </span>de<span class="w"> </span>la<span class="w"> </span>función<span class="w"> </span><span class="s2">&quot;terminar_esperar&quot;</span><span class="w"> </span><span class="o">(</span>no<span class="w"> </span>necesita<span class="w"> </span>argumento<span class="o">)</span><span class="p">;</span>
+<span class="o">(</span><span class="c1">#) = tenga cuidado que si está en &quot;modo consola&quot; o sin X, a través de cdialog, la selección se hace con la tecla ESPACIO, y NO con la tecla enter: recuérdelo;</span>
+<span class="o">(</span>%<span class="o">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>las<span class="w"> </span>funciones<span class="w"> </span><span class="s2">&quot;menú&quot;</span><span class="w"> </span>y<span class="w"> </span><span class="s2">&quot;lista&quot;</span><span class="w"> </span>difieren<span class="w"> </span>en<span class="w"> </span>cuanto<span class="w"> </span>a<span class="w"> </span>las<span class="w"> </span>opciones:<span class="w"> </span>el<span class="w"> </span>menú<span class="w"> </span>permite<span class="w"> </span>una<span class="w"> </span>sola<span class="w"> </span>opción,<span class="w"> </span>la<span class="w"> </span>lista<span class="w"> </span>permite<span class="w"> </span>múltiples<span class="w"> </span>opciones<span class="p">;</span><span class="w"> </span>desde<span class="w"> </span>la<span class="w"> </span>versión<span class="w"> </span><span class="m">7</span>.1.0,<span class="w"> </span>puede<span class="w"> </span>usar<span class="w"> </span>tagged_menu<span class="w"> </span><span class="o">()</span>:<span class="w"> </span>genera<span class="w"> </span>etiquetas<span class="w"> </span><span class="o">(</span>por<span class="w"> </span>ejemplo:<span class="w"> </span><span class="s2">&quot;tagged_menu 1 A 2 B&quot;</span><span class="w"> </span>-&gt;<span class="w"> </span>si<span class="w"> </span>el<span class="w"> </span>usuario<span class="w"> </span>selecciona<span class="w"> </span>la<span class="w"> </span>etiqueta<span class="w"> </span><span class="s2">&quot;A&quot;</span>,<span class="w"> </span>la<span class="w"> </span>función<span class="w"> </span>genera<span class="w"> </span>el<span class="w"> </span>elemento<span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="o">)</span><span class="p">;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Since<span class="w"> </span>EasyBashGUI<span class="w"> </span>v.1.2.4,<span class="w"> </span>all<span class="w"> </span>windows<span class="w"> </span>functions<span class="w"> </span>support<span class="w"> </span>options<span class="w"> </span><span class="s2">&quot;&lt;-w|-width&gt; [integer]&quot;</span>,<span class="w"> </span>and<span class="w"> </span><span class="s2">&quot;&lt;-h|-height&gt; [integer]&quot;</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>custom<span class="w"> </span>window<span class="w"> </span>size<span class="w"> </span><span class="o">(</span>note:<span class="w"> </span>not<span class="w"> </span>used<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="s2">&quot;notify_message&quot;</span><span class="o">)</span>:
+</code></pre></div></p>
+<p><div class="highlight"><pre><span></span><code>Library<span class="w"> </span>examples:
+<span class="m">1</span><span class="o">)</span>
+question<span class="w"> </span><span class="s2">&quot;Do you like Contry music ?&quot;</span>
+<span class="nv">answer</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="p">?</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="si">${</span><span class="nv">answer</span><span class="si">}</span><span class="w"> </span>-eq<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span>
+<span class="w">    </span><span class="k">then</span>
+<span class="w">    </span>ok_message<span class="w"> </span><span class="s2">&quot;You do like it :)&quot;</span>
+<span class="k">elif</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="si">${</span><span class="nv">answer</span><span class="si">}</span><span class="w"> </span>-eq<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">]</span>
+<span class="w">    </span><span class="k">then</span>
+<span class="w">    </span>alert_message<span class="w"> </span><span class="s2">&quot;You don&#39;t like it :(&quot;</span>
+<span class="k">else</span>
+<span class="w">    </span>ok_message<span class="w"> </span><span class="s2">&quot;See you&quot;</span>
+<span class="w">    </span><span class="nb">exit</span><span class="w"> </span><span class="m">0</span>
+<span class="k">fi</span>
+
+<span class="m">2</span><span class="o">)</span>
+<span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;What&#39;s your name?\n\nMy name&#39;s:\nVittorio&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>text
+
+<span class="m">3</span><span class="o">)</span>
+wait_for<span class="w"> </span><span class="s2">&quot;I&#39;m sleeping 4 seconds... good night...&quot;</span>
+sleep<span class="w"> </span><span class="m">4</span>
+terminate_wait_for
+
+<span class="m">4</span><span class="o">)</span>
+fselect
+<span class="nv">file</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span><span class="m">0</span>&lt;<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">dir_tmp</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">file_tmp</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="k">)</span><span class="s2">&quot;</span>
+
+<span class="m">5</span><span class="o">)</span>
+input<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="s2">&quot;(write here IP address)&quot;</span>
+input<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="s2">&quot;Please, write IP address&quot;</span><span class="w"> </span><span class="s2">&quot;192.168.1.1&quot;</span>
+input<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="s2">&quot;Username&quot;</span><span class="w"> </span><span class="s2">&quot;root&quot;</span><span class="w"> </span><span class="s2">&quot;IP address&quot;</span><span class="w"> </span><span class="s2">&quot;192.168.0.1&quot;</span><span class="w"> </span><span class="s2">&quot;Destination directory&quot;</span><span class="w"> </span><span class="s2">&quot;/tmp&quot;</span>
+<span class="nv">IFS</span><span class="o">=</span><span class="s1">$&#39;\n&#39;</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="nv">choices</span><span class="o">=(</span><span class="w"> </span><span class="k">$(</span><span class="m">0</span>&lt;<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">dir_tmp</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">file_tmp</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="k">)</span><span class="w"> </span><span class="o">)</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="nv">IFS</span><span class="o">=</span><span class="s1">$&#39; \t\n&#39;</span>
+<span class="nv">user</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">choices</span><span class="p">[0]</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="nv">ip</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">choices</span><span class="p">[1]</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="nv">dir</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">choices</span><span class="p">[2]</span><span class="si">}</span><span class="s2">&quot;</span>
+
+<span class="m">6</span><span class="o">)</span>
+<span class="k">for</span><span class="w"> </span>i<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">20</span><span class="w"> </span><span class="m">30</span><span class="w"> </span><span class="m">40</span><span class="w"> </span><span class="m">50</span><span class="w"> </span><span class="m">60</span><span class="w"> </span><span class="m">70</span><span class="w"> </span><span class="m">80</span><span class="w"> </span><span class="m">90</span><span class="w"> </span><span class="m">100</span>
+<span class="w">    </span><span class="k">do</span>
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">i</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="w">    </span>sleep<span class="w"> </span><span class="m">2</span>
+<span class="k">done</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>progress<span class="w"> </span><span class="s2">&quot;This is a test progress...&quot;</span>
+
+<span class="m">7</span><span class="o">)</span>
+adjust<span class="w"> </span><span class="s2">&quot;Please, set Volume level&quot;</span><span class="w"> </span><span class="m">15</span><span class="w"> </span><span class="m">40</span><span class="w"> </span><span class="m">75</span>
+
+<span class="m">8</span><span class="o">)</span>
+<span class="nv">women</span><span class="o">=(</span><span class="w"> </span>Angela<span class="w"> </span>Carla<span class="w"> </span>Michelle<span class="w"> </span>Noemi<span class="w"> </span>Urma<span class="w"> </span>Marisa<span class="w"> </span>Karina<span class="w"> </span>Anita<span class="w"> </span>Josephine<span class="w"> </span>Rachel<span class="w"> </span><span class="o">)</span>
+<span class="k">for</span><span class="w"> </span><span class="o">((</span><span class="w"> </span><span class="nv">index</span><span class="o">=</span><span class="m">0</span><span class="w"> </span><span class="p">;</span><span class="w"> </span>index<span class="w"> </span>&lt;<span class="w"> </span><span class="si">${#</span><span class="nv">women</span><span class="p">[@]</span><span class="si">}</span><span class="w"> </span><span class="p">;</span><span class="w"> </span>index++<span class="w"> </span><span class="o">}))</span><span class="w"> </span>
+<span class="w">    </span><span class="k">do</span>
+<span class="w">    </span><span class="nv">today_prefered_woman</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">women</span><span class="p">[</span><span class="si">${</span><span class="nv">index</span><span class="si">}</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="w">    </span>kiss<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">today_prefered_woman</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="w">    </span>sleep<span class="w"> </span><span class="m">1</span>
+<span class="w">    </span><span class="c1">#</span>
+<span class="w">    </span><span class="c1"># Job done !!</span>
+<span class="w">    </span><span class="c1"># then...</span>
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;PROGRESS&quot;</span>
+<span class="w">    </span><span class="c1">#</span>
+<span class="k">done</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>progress<span class="w"> </span><span class="s2">&quot;This is a _LOVE_ progress...&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${#</span><span class="nv">women</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="c1"># if you use &quot;PROGRESS&quot; string in STDIN do not forget second argument ( &quot;[elements number]&quot; )</span>
+
+<span class="m">9</span><span class="o">)</span>
+notify<span class="w"> </span>-t<span class="w"> </span><span class="s2">&quot;Good tooltip:OK#Bad tooltip:BAD&quot;</span><span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;/usr/local/share/pixmaps/nm-signal-100.png#gtk-fullscreen&quot;</span><span class="w"> </span><span class="s2">&quot;Xclock&quot;</span><span class="w"> </span><span class="s2">&quot;xclock&quot;</span><span class="w"> </span><span class="s2">&quot;Xcalc&quot;</span><span class="w"> </span><span class="s2">&quot;xcalc&quot;</span>
+<span class="c1">#</span>
+<span class="k">while</span><span class="w"> </span>:
+<span class="w">    </span><span class="k">do</span>
+<span class="w">    </span>menu<span class="w"> </span>GOOD<span class="w"> </span>BAD
+<span class="w">    </span><span class="nv">answer</span><span class="o">=</span><span class="k">$(</span><span class="m">0</span>&lt;<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">dir_tmp</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">file_tmp</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="k">)</span>
+<span class="w">    </span><span class="c1">#</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">answer</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;GOOD&quot;</span><span class="w"> </span><span class="o">]</span>
+<span class="w">        </span><span class="k">then</span>
+<span class="w">        </span>notify_message<span class="w"> </span><span class="s2">&quot;Changed in \&quot;good\&quot; ...&quot;</span>
+<span class="w">        </span>notify_change<span class="w"> </span><span class="s2">&quot;good&quot;</span>
+<span class="w">    </span><span class="k">elif</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">answer</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;BAD&quot;</span><span class="w"> </span><span class="o">]</span>
+<span class="w">        </span><span class="k">then</span>
+<span class="w">        </span>notify_message<span class="w"> </span><span class="s2">&quot;Changed in \&quot;bad\&quot; ...&quot;</span>
+<span class="w">        </span>notify_change<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;gtk-help&quot;</span><span class="w"> </span>-t<span class="w"> </span><span class="s2">&quot;This tooltip is bad&quot;</span><span class="w"> </span><span class="s2">&quot;bad&quot;</span>
+<span class="w">    </span><span class="k">else</span>
+<span class="w">        </span><span class="nb">exit</span>
+<span class="w">    </span><span class="k">fi</span>
+<span class="w">    </span><span class="c1">#</span>
+<span class="k">done</span>
+
+
+
+
+
+<span class="o">(</span><span class="w"> </span>For<span class="w"> </span>the<span class="w"> </span>old<span class="w"> </span><span class="s2">&quot;easydialog-legacy&quot;</span><span class="w"> </span>examples,<span class="w"> </span>you<span class="w"> </span>would<span class="w"> </span>launch<span class="w"> </span>it<span class="w"> </span>simply<span class="w"> </span>with<span class="w"> </span><span class="s2">&quot;-h&quot;</span><span class="w"> </span>option<span class="w"> </span><span class="o">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Nota<span class="w"> </span>sobre<span class="w"> </span>el<span class="w"> </span>modo<span class="w"> </span>de<span class="w"> </span>consola.
+
+EasyBashGUI<span class="w"> </span>no<span class="w"> </span>funciona<span class="w"> </span>con<span class="w"> </span>el<span class="w"> </span><span class="s2">&quot;diálogo&quot;</span><span class="w"> </span>original<span class="w"> </span><span class="o">(</span>el<span class="w"> </span>antiguo<span class="o">)</span><span class="w"> </span>que<span class="w"> </span>es<span class="w"> </span>muy<span class="w"> </span>limitado<span class="p">;</span><span class="w"> </span>si<span class="w"> </span>tiene<span class="w"> </span>la<span class="w"> </span>primera<span class="w"> </span>versión<span class="w"> </span><span class="s2">&quot;dialog&quot;</span><span class="w"> </span>en<span class="w"> </span>su<span class="w"> </span>caja,<span class="w"> </span>instale<span class="w"> </span><span class="s2">&quot;cdialog&quot;</span><span class="w"> </span>y<span class="w"> </span><span class="nb">alias</span><span class="w"> </span>o<span class="w"> </span>vincule<span class="w"> </span><span class="s2">&quot;dialog&quot;</span><span class="w"> </span>a<span class="w"> </span>cdialog.<span class="w"> </span>No<span class="w"> </span>hay<span class="w"> </span>problema<span class="w"> </span>en<span class="w"> </span>caso<span class="w"> </span>de<span class="w"> </span>que<span class="w"> </span>tenga<span class="w"> </span>instalado<span class="w"> </span>al<span class="w"> </span>menos<span class="w"> </span><span class="s2">&quot;whiptail&quot;</span>:<span class="w"> </span>desde<span class="w"> </span>la<span class="w"> </span>versión<span class="w"> </span><span class="m">4</span>.0.0,<span class="w"> </span>EasyBashGUI<span class="w"> </span>puede<span class="w"> </span>usarlo<span class="w"> </span>en<span class="w"> </span>lugar<span class="w"> </span>de<span class="w"> </span><span class="o">(</span>c<span class="o">)</span>dialog.
+Desde<span class="w"> </span>la<span class="w"> </span>versión<span class="w"> </span><span class="m">5</span>.0.0,<span class="w"> </span>puede<span class="w"> </span>usar<span class="w"> </span>EasyBashGUI<span class="w"> </span>incluso<span class="w"> </span>si<span class="w"> </span>NO<span class="w"> </span>hay<span class="w"> </span>ningún<span class="w"> </span>WIDGET<span class="w"> </span>instalado<span class="w"> </span><span class="o">(</span>es<span class="w"> </span>decir:<span class="w"> </span>no<span class="w"> </span>gtkdialog,<span class="w"> </span>no<span class="w"> </span>kdialog,<span class="w"> </span>no<span class="w"> </span>zenity,<span class="w"> </span>no<span class="w"> </span>Xdialog,<span class="w"> </span>no<span class="w"> </span><span class="o">(</span>c<span class="o">)</span>dialog,<span class="w"> </span>no<span class="w"> </span>whiptail...<span class="w"> </span>doh!!!!!<span class="o">)</span>.<span class="w"> </span>Para<span class="w"> </span>usar<span class="w"> </span>EBG<span class="w"> </span><span class="s2">&quot;super bare&quot;</span>,<span class="w"> </span>simplemente<span class="w"> </span>elimine<span class="w"> </span>la<span class="w"> </span>biblioteca<span class="w"> </span><span class="s2">&quot;.lib&quot;</span><span class="w"> </span>de<span class="w"> </span>su<span class="w"> </span>ruta,<span class="w"> </span>o<span class="w"> </span>establezca<span class="w"> </span>var<span class="w"> </span><span class="s2">&quot;supermodo&quot;</span><span class="w"> </span>en<span class="w"> </span><span class="s2">&quot;ninguno&quot;</span><span class="w"> </span>antes<span class="w"> </span>de<span class="w"> </span>obtener<span class="w"> </span>el<span class="w"> </span>abastecimiento<span class="w"> </span>de<span class="w"> </span>easybashgui<span class="w"> </span><span class="o">(</span>por<span class="w"> </span>ejemplo:<span class="w"> </span>&gt;exportar<span class="w"> </span><span class="nv">supermodo</span><span class="o">=</span><span class="s2">&quot;ninguno&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>fuente<span class="w"> </span>easybashgui<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>mensaje<span class="w"> </span><span class="s2">&quot;Hola mundo...&quot;</span><span class="w"> </span><span class="o">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Nota<span class="w"> </span>sobre<span class="w"> </span>el<span class="w"> </span>modo<span class="w"> </span>gtkdialog.
+
+EasyBashGUI<span class="w"> </span>establece<span class="w"> </span>declaraciones<span class="w"> </span>de<span class="w"> </span>salida<span class="w"> </span>de<span class="w"> </span>gtkdialog<span class="w"> </span>como<span class="w"> </span>variables<span class="w"> </span>a<span class="w"> </span>través<span class="w"> </span>de<span class="w"> </span><span class="s2">&quot;eval&quot;</span>.<span class="w"> </span>De<span class="w"> </span>esta<span class="w"> </span>manera,<span class="w"> </span>en<span class="w"> </span>teoría,<span class="w"> </span>podría<span class="w"> </span>ser<span class="w"> </span>posiblemente<span class="w"> </span>peligroso<span class="p">;</span><span class="w"> </span>sin<span class="w"> </span>embargo,<span class="w"> </span>hasta<span class="w"> </span>el<span class="w"> </span>momento,<span class="w"> </span>no<span class="w"> </span>conozco<span class="w"> </span>ninguna<span class="w"> </span>forma<span class="w"> </span>alternativa...
+</code></pre></div></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../../../0-ORGANIZACION/TODO/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: TODO:" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Anterior
+                </span>
+                TODO:
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../gtkdialog/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: gtkdialog:" rel="next">
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Siguiente
+                </span>
+                gtkdialog:
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2018 - 2023 TRON-Doc Elías Hung.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["search.suggest", "search.highlight", "search.share", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.footer"], "search": "../../../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+      
+    
+  </body>
+</html>
